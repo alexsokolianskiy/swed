@@ -1,0 +1,228 @@
+// /* GLOBAL STYLES
+// -------------------------------------------------- */
+// /* Padding below the footer and lighter body text */
+//    #distanceValue{
+//    /* font-family: LED;*/
+//    font-size: 65px;
+//    }
+
+//    html,body {
+//        height:100%;
+//        margin:0;
+//        padding:0;
+//        color: #5a5a5a;
+//    }
+
+//    .modal .modal-body {
+//        max-height: 420px;
+//        overflow-y: auto;
+//    }
+//    /* CUSTOMIZE THE NAVBAR
+//    -------------------------------------------------- */
+
+//    /* Special class on .container surrounding .navbar, used for positioning it into place. */
+//    .navbar-wrapper {
+//        position: absolute;
+//        top: 0;
+//        right: 0;
+//        left: 0;
+//        z-index: 20;
+//    }
+
+//    /* Flip around the padding for proper display in narrow viewports */
+//    .navbar-wrapper > .container {
+//        padding-right: 0;
+//        padding-left: 0;
+//    }
+//    .navbar-wrapper .navbar {
+//        padding-right: 15px;
+//        padding-left: 15px;
+
+//    }
+//    .navbar-wrapper .navbar .container {
+//        width: auto;
+//    }
+
+
+//    /* CUSTOMIZE THE CAROUSEL
+//    -------------------------------------------------- */
+
+//    @media (max-width: 767px) {
+//        .carousel-main { height:100%; }
+//    }
+//    @media (min-width: 767px) and (max-width: 992px ) {
+//        .carousel-main { height:100%; }
+//    }
+//    @media (min-width: 992px ) {
+//        .carousel-main { height:50%; min-height:400px; }
+//    }
+
+//    #experiments-container {
+//    text-align:center;
+//    margin-top:120px;
+//    margin-bottom:60px;
+//    /* background-image:url(../images/bg.png);
+//    background-color:rgb(220,220,220); */
+//    z-index:0;
+//    }
+
+//    .carousel-main {
+//    margin-bottom:60px;
+//    }
+
+    .carousel-item {
+        max-height: 450px;
+    }
+   .carousel-inner,.item {
+        min-height:400px;
+        max-height: 450px;
+   }
+
+//    .carousel-caption {
+//    z-index:10;
+//    }
+
+//    .carousel-main .item {
+//    background-color:#777;
+//    }
+
+//    .carousel-main .carousel-inner .bg {
+//    background-repeat:no-repeat;
+//    background-size:cover;
+//    }
+
+//    .carousel-main .carousel-inner .bg1 {
+//    background-image:url(/images/s1.jpg);
+//    background-position:center center;
+//    }
+
+//    .carousel-main .carousel-inner .bg2 {
+//    background-image:url(/images/s2.jpg);
+//    background-position:center center;
+//    }
+
+//    .carousel .carousel-inner .bg3 {
+//    background-image:url(/images/s3.jpg);
+//    background-position:center center;
+//    }
+//    .carousel .carousel-inner .bg4{
+//        background-image:url(/images/iot.png);
+//        background-position:center center;
+//    }
+
+//    .carousel-fade .carousel-inner .item {
+//    opacity:0;
+//    transition-property:opacity;
+//    }
+
+//    .carousel-fade .carousel-inner .active,.carousel-fade .carousel-inner .next.left,.carousel-fade .carousel-inner .prev.right {
+//    opacity:1;
+//    }
+
+//    .carousel-fade .carousel-inner .active.left,.carousel-fade .carousel-inner .active.right {
+//    left:0;
+//    opacity:0;
+//    z-index:1;
+//    }
+
+//    .carousel-fade .carousel-control {
+//    z-index:2;
+//    }
+
+
+//    /* MARKETING CONTENT
+//    -------------------------------------------------- */
+
+//    /* Center align the text within the three columns below the carousel */
+//    .marketing .col-lg-4 {
+//        text-align: center;
+//    }
+//    .marketing h2 {
+//        font-weight: normal;
+//    }
+//    .marketing .col-lg-4 p {
+//        margin-right: 10px;
+//        margin-left: 10px;
+//    }
+
+
+//    /* Featurettes
+//    ------------------------- */
+
+//    .featurette-divider {
+//        margin: 40px 0; /* Space out the Bootstrap <hr> more */
+//    }
+
+//    /* Thin out the marketing headings */
+//    .featurette-heading {
+//        font-weight: 300;
+//        line-height: 1;
+//        letter-spacing: -1px;
+//        margin-top: 0px;
+//    }
+
+
+//    /* RESPONSIVE CSS
+//    -------------------------------------------------- */
+
+//    @media (min-width: 768px) {
+//        /* Navbar positioning foo */
+//        .navbar-wrapper {
+//            margin-top: 20px;
+//        }
+//        .navbar-wrapper .container {
+//            padding-right: 15px;
+//            padding-left: 15px;
+//        }
+//        .navbar-wrapper .navbar {
+//            padding-right: 0;
+//            padding-left: 0;
+//        }
+
+//        /* The navbar becomes detached from the top, so we round the corners */
+//        .navbar-wrapper .navbar {
+//            border-radius: 4px;
+//        }
+
+//        /* Bump up size of carousel content */
+//        .carousel-caption p {
+//            margin-bottom: 20px;
+//            font-size: 21px;
+//            line-height: 1.4;
+//        }
+
+//        .featurette-heading {
+//            font-size: 45px;
+//        }
+//    }
+
+//    #experiments-container .carousel-control { width: 5%; color:#222; }
+//    .carousel-control.left, .carousel-control.right { background-image:none; opacity: 0.5; }
+//    .carousel-control:hover { opacity: 1; }
+//    @media (max-width: 767px) {
+//        .carousel-inner .active.left  { left: -100%; }
+//        .carousel-inner .active.right { left:  100%; }
+//        .carousel-inner .prev	  { left: -100%; }
+//        .carousel-inner .next         { left:  100%; }
+//        .active > div { display:none; }
+//        .active > div:first-child { display:block; }
+//    }
+//    @media (min-width: 767px) and (max-width: 992px ) {
+//        .carousel-inner .active.left  { left: -50%; }
+//        .carousel-inner .active.right { left:  50%; }
+//        .carousel-inner .prev	  { left: -50%; }
+//        .carousel-inner .next         { left:  50%; }
+//        .active > div { display:none; }
+//        .active > div:first-child { display:block; }
+//        .active > div:first-child + div { display:block; }
+//    }
+//    @media (min-width: 992px ) {
+//        .carousel-inner .active.left  { left: -33.33%; }
+//        .carousel-inner .active.right { left:  33.33%; }
+//        .carousel-inner .prev	  { left: -33.33%; }
+//        .carousel-inner .next         { left:  33.33%; }
+//    }
+
+//    .row {
+//        text-align: justify;
+//    }

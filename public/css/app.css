@@ -10877,3 +10877,13 @@ a.text-dark:focus {
   }
 }
 
+.carousel-item {
+  max-height: 450px;
+}
+
+.carousel-inner,
+.item {
+  min-height: 400px;
+  max-height: 450px;
+}
+
