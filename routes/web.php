@@ -21,4 +21,10 @@ Route::group(['namespace' => 'Landing'], function () {
 Route::group(['namespace' => 'RecSystem'], function () {
     Route::get('/rec-system/description', 'RecSystemController@description')->name('rec-system.description');
 });
+Route::group(['namespace' => 'Overview'], function () {
+    Route::get('/overview/arduino', 'OverviewController@arduino')->name('overview.arduino');
+    Route::get('/overview/ide', 'OverviewController@ide')->name('overview.ide');
+    Route::get('/overview/rpi', 'OverviewController@rpi')->name('overview.rpi');
+    Route::get('/overview/oh', 'OverviewController@oh')->name('overview.oh');
+});
 

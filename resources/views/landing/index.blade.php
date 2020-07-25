@@ -13,7 +13,7 @@
         <div class="carousel-caption d-none d-md-block">
             <h1>{{ trans("all.slide1") }}</h1>
             <p>{{ trans("all.slide1_desc") }}</p>
-            <p><a class="btn btn-lg btn-primary" id="gotoReg" href="#" role="button">{{ trans("all.slide1_button") }}</a></p>
+        <p><a class="btn btn-lg btn-primary" href="{{ route('register') }}" role="button">{{ trans("all.slide1_button") }}</a></p>
           </div>
       </div>
       <div class="carousel-item">

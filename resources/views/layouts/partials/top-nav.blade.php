@@ -20,10 +20,10 @@
                         {{ trans("all.platforms") }} <span class="caret"></span>
                     </a>
                     <div class="dropdown-menu" aria-labelledby="platform-dropdown">
-                        <a class="dropdown-item" href="#">Arduino</a>
-                        <a class="dropdown-item" href="#">Arduino IDE</a>
-                        <a class="dropdown-item" href="#">Raspberry PI</a>
-                        <a class="dropdown-item" href="#index.php/front/oh">OpenHAB</a>
+                        <a class="dropdown-item" href="{{ route('overview.arduino') }}">Arduino</a>
+                        <a class="dropdown-item" href="{{ route('overview.ide') }}">Arduino IDE</a>
+                        <a class="dropdown-item" href="{{ route('overview.rpi') }}">Raspberry PI</a>
+                        <a class="dropdown-item" href="{{ route('overview.oh') }}">OpenHAB</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
