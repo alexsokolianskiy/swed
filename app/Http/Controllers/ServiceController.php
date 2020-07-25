@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Session;
 
-class ServiceController
+class ServiceController extends Controller
 {
     /**
      * Change app locale

@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-<a class="navbar-brand" href="#">{{ config('app.name') }}</a>
+<a class="navbar-brand" href="{{ route('landing.index') }}">{{ config('app.name') }}</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -10,7 +10,7 @@
                         {{ trans("all.recommendation") }}
                       </a>
                       <div class="dropdown-menu" aria-labelledby="rec-dropdown">
-                        <a class="dropdown-item" href="#">{{ trans("all.recommendation_over") }}</a>
+                        <a class="dropdown-item" href="{{ route('rec-system.description') }}">{{ trans("all.recommendation_over") }}</a>
                         <a class="dropdown-item" href="#">{{ trans("all.recommendation_select") }}</a>
                       </div>
                 </li>
