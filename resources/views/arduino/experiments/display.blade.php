@@ -1,0 +1,101 @@
+@extends('layouts.experiment.experiment')
+@section('content')
+<script>
+    var exId = 4;
+</script>
+
+<div class="container cont">
+
+	<!-- DESCRIPTIONS -->
+	<div class="description">
+		<h2>{{ trans('all.display')}}</h2>
+
+		<div class="row featurette">
+                <div style="padding-right: 25px;">
+
+                    <div class="col-md-6" style="margin-bottom: 15px;">
+                        <p>{{ trans('all.display_desc_1')}}</p>
+                        <p>{{ trans('all.display_desc_2')}}</p>
+                        <img class="img-responsive" src="/images/displayImg.png" alt="Arduino IDE">
+                    </div>
+                </div>
+
+            <div class="col-md-6" style="margin-bottom: 15px;">
+                <img class="img-responsive" src="/images/displaySchem.png" alt="Arduino IDE">
+            </div>
+	    </div>
+
+
+        <div class="col-md-6">
+            <h3><b>{{ trans('all.display_example_1')}}</b></h3>
+            <h3><{{ trans('all.exaple') }}</h3>
+            <div class="copy-btn">
+                <div class="btn btn-default">{{ trans('all.copy') }}</div>
+            </div>
+            <pre class="pre-copy"><?=$model->getExamples()['hello']?></pre>
+            <p>{{ trans('all.display_desc_3')}}</p>
+        </div>
+        <div class="col-md-6">
+            <h3><b>{{ trans('all.display_example_2')}}</b></h3>
+            <p>{{ trans('all.display_example_4')}}</p>
+            <h3><{{ trans('all.exaple') }}</h3>
+            <div class="copy-btn">
+                <div class="btn btn-default">{{ trans('all.copy') }}</div>
+            </div>
+            <pre class="pre-copy"><?=$model->getExamples()['running']?></pre>
+        </div>
+        <div class="col-md-6">
+            <h3><b>Lines</b></h3>
+            <h3><{{ trans('all.exaple') }}</h3>
+            <div class="copy-btn">
+                <div class="btn btn-default">{{ trans('all.copy') }}</div>
+            </div>
+            <pre class="pre-copy"><?=$model->getExamples()['lines']?></pre>
+        </div>
+        <div class="col-md-6">
+            <h3><b>Text</b></h3>
+            <h3><{{ trans('all.exaple') }}</h3>
+            <div class="copy-btn">
+                <div class="btn btn-default">{{ trans('all.copy') }}</div>
+            </div>
+            <pre class="pre-copy"><?=$model->getExamples()['text']?></pre>
+        </div>
+        <div class="col-md-6">
+            <h3><b>Rectangles</b></h3>
+            <h3><{{ trans('all.exaple') }}</h3>
+            <div class="copy-btn">
+                <div class="btn btn-default">{{ trans('all.copy') }}</div>
+            </div>
+            <pre class="pre-copy"><?=$model->getExamples()['rectangles']?></pre>
+        </div>
+        <div class="col-md-6">
+            <h3><b>Triangles</b></h3>
+            <h3><{{ trans('all.exaple') }}</h3>
+            <div class="copy-btn">
+                <div class="btn btn-default">{{ trans('all.copy') }}</div>
+            </div>
+            <pre class="pre-copy"><?=$model->getExamples()['triangles']?></pre>
+        </div>
+        <div class="col-md-6">
+            <h3><b>Color</b></h3>
+            <h3><{{ trans('all.exaple') }}</h3>
+            <div class="copy-btn">
+                <div class="btn btn-default">{{ trans('all.copy') }}</div>
+            </div>
+            <pre class="pre-copy"><?=$model->getExamples()['color']?></pre>
+        </div>
+        <div class="col-md-6">
+            <h3><b>Circles</b></h3>
+            <h3><{{ trans('all.exaple') }}</h3>
+            <div class="copy-btn">
+                <div class="btn btn-default">{{ trans('all.copy') }}</div>
+            </div>
+            <pre class="pre-copy"><?=$model->getExamples()['circles']?></pre>
+        </div>
+
+	</div>
+    <!-- /END THE DESCRIPTIONS -->
+
+</div><!-- /.container -->
+
+@endsection

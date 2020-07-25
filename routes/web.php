@@ -21,10 +21,16 @@ Route::group(['namespace' => 'Landing'], function () {
 Route::group(['namespace' => 'RecSystem'], function () {
     Route::get('/rec-system/description', 'RecSystemController@description')->name('rec-system.description');
 });
-Route::group(['namespace' => 'Overview'], function () {
-    Route::get('/overview/arduino', 'OverviewController@arduino')->name('overview.arduino');
-    Route::get('/overview/ide', 'OverviewController@ide')->name('overview.ide');
-    Route::get('/overview/rpi', 'OverviewController@rpi')->name('overview.rpi');
-    Route::get('/overview/oh', 'OverviewController@oh')->name('overview.oh');
+Route::group(['namespace' => 'Overview',  'prefix' => 'overview'], function () {
+    Route::get('/arduino', 'OverviewController@arduino')->name('overview.arduino');
+    Route::get('/ide', 'OverviewController@ide')->name('overview.ide');
+    Route::get('/rpi', 'OverviewController@rpi')->name('overview.rpi');
+    Route::get('/oh', 'OverviewController@oh')->name('overview.oh');
 });
 
+Route::group(['namespace' => 'Arduino', 'prefix' => 'experiments'], function () {
+    Route::get('/distance', 'ExperimentController@distance')->name('experiments.distance');
+    Route::get('/servo', 'ExperimentController@servo')->name('experiments.servo');
+    Route::get('/led', 'ExperimentController@led')->name('experiments.led');
+    Route::get('/display', 'ExperimentController@display')->name('experiments.display');
+});
