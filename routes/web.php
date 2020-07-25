@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Auth::routes();
-
+Route::get('change-lang/{locale}', 'ServiceController@switchLang')->name('switch-lang');
 Route::group(['namespace' => 'landing'], function () {
     Route::get('/', 'LandingController@index')->name('landing.index');
 });

@@ -1,7 +1,3 @@
-<?php
-    $language = 'english';
-?>
-
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
 <a class="navbar-brand" href="#">{{ config('app.name') }}</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -106,11 +102,11 @@
                 @endguest
                 <li class="dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="lang-dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <?php if($language == "" || $language == "english")echo 'English'; else echo 'Українська'?> <span class="caret"></span>
+                         {{ (app()->getLocale() == "en") ? 'English' : 'Українська' }} <span class="caret"></span>
                     </a>
                     <div class="dropdown-menu" aria-labelledby="lang-dropdown">
-                        <a class="dropdown-item" href="#index.php/front/setLanguage/english">English</a>
-                        <a class="dropdown-item" href="#index.php/front/setLanguage/ukrainian">Українська</a>
+                    <a class="dropdown-item" href="{{ route('switch-lang', ['locale' => 'en' ]) }}">English</a>
+                        <a class="dropdown-item" href="{{ route('switch-lang', ['locale' => 'ua' ]) }}">Українська</a>
                     </div>
                 </li>
             </ul>
