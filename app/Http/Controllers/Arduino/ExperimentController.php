@@ -32,7 +32,7 @@ class ExperimentController extends Controller
     public function display()
     {
         return view('arduino.experiments.display', [
-            'model' => $this->exampleService
+            'examples' => $this->exampleService->getExamples('display')
         ]);
     }
 }

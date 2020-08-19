@@ -3,9 +3,14 @@ namespace App\Services\Experiment;
 
 class Example
 {
-    public $experiment;
-
-    public function getExample($experiment, $name) {
+    /**
+     * Get example for experiment
+     *
+     * @param string $experiment
+     * @param string $name
+     * @return string|null
+     */
+    public function getExample(string $experiment, string $name) {
         $path = public_path("code-examples/$experiment/$name.cpp");
         if (!file_exists($path)) {
             return null;
@@ -18,7 +23,13 @@ class Example
         return null;
     }
 
-    public function getExamples()
+    /**
+     * Get examples
+     *
+     * @param string $experiment
+     * @return array
+     */
+    public function getExamples(string $experiment)
     {
         $examples = [
             'display' => [
@@ -36,12 +47,12 @@ class Example
             ]
         ];
 
-        if (!in_array($this->experiment, array_keys($examples))) {
+        if (!in_array($experiment, array_keys($examples))) {
             return [];
         }
         $result = [];
-        foreach ($examples[$this->experiment] as $example) {
-            $result[$example] = $this->getExample($this->experiment, $example);
+        foreach ($examples[$experiment] as $example) {
+            $result[$example] = $this->getExample($experiment, $example);
         }
         return $result;
     }

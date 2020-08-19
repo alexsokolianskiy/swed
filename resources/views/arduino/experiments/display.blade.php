@@ -4,8 +4,7 @@
     var exId = 4;
 </script>
 
-<div class="container cont">
-
+<div>
 	<!-- DESCRIPTIONS -->
 	<div class="description">
 		<h2>{{ trans('all.display')}}</h2>
@@ -32,7 +31,7 @@
             <div class="copy-btn">
                 <div class="btn btn-default">{{ trans('all.copy') }}</div>
             </div>
-            <pre class="pre-copy"><?=$model->getExamples()['hello']?></pre>
+            <pre class="pre-copy"><?=$examples['hello']?></pre>
             <p>{{ trans('all.display_desc_3')}}</p>
         </div>
         <div class="col-md-6">
@@ -42,7 +41,7 @@
             <div class="copy-btn">
                 <div class="btn btn-default">{{ trans('all.copy') }}</div>
             </div>
-            <pre class="pre-copy"><?=$model->getExamples()['running']?></pre>
+            <pre class="pre-copy"><?=$examples['running']?></pre>
         </div>
         <div class="col-md-6">
             <h3><b>Lines</b></h3>
@@ -50,7 +49,7 @@
             <div class="copy-btn">
                 <div class="btn btn-default">{{ trans('all.copy') }}</div>
             </div>
-            <pre class="pre-copy"><?=$model->getExamples()['lines']?></pre>
+            <pre class="pre-copy"><?=$examples['lines']?></pre>
         </div>
         <div class="col-md-6">
             <h3><b>Text</b></h3>
@@ -58,7 +57,7 @@
             <div class="copy-btn">
                 <div class="btn btn-default">{{ trans('all.copy') }}</div>
             </div>
-            <pre class="pre-copy"><?=$model->getExamples()['text']?></pre>
+            <pre class="pre-copy"><?=$examples['text']?></pre>
         </div>
         <div class="col-md-6">
             <h3><b>Rectangles</b></h3>
@@ -66,7 +65,7 @@
             <div class="copy-btn">
                 <div class="btn btn-default">{{ trans('all.copy') }}</div>
             </div>
-            <pre class="pre-copy"><?=$model->getExamples()['rectangles']?></pre>
+            <pre class="pre-copy"><?=$examples['rectangles']?></pre>
         </div>
         <div class="col-md-6">
             <h3><b>Triangles</b></h3>
@@ -74,7 +73,7 @@
             <div class="copy-btn">
                 <div class="btn btn-default">{{ trans('all.copy') }}</div>
             </div>
-            <pre class="pre-copy"><?=$model->getExamples()['triangles']?></pre>
+            <pre class="pre-copy"><?=$examples['triangles']?></pre>
         </div>
         <div class="col-md-6">
             <h3><b>Color</b></h3>
@@ -82,7 +81,7 @@
             <div class="copy-btn">
                 <div class="btn btn-default">{{ trans('all.copy') }}</div>
             </div>
-            <pre class="pre-copy"><?=$model->getExamples()['color']?></pre>
+            <pre class="pre-copy"><?=$examples['color']?></pre>
         </div>
         <div class="col-md-6">
             <h3><b>Circles</b></h3>
@@ -90,7 +89,7 @@
             <div class="copy-btn">
                 <div class="btn btn-default">{{ trans('all.copy') }}</div>
             </div>
-            <pre class="pre-copy"><?=$model->getExamples()['circles']?></pre>
+            <pre class="pre-copy"><?=$examples['circles']?></pre>
         </div>
 
 	</div>
