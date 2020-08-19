@@ -10,17 +10,16 @@
 		<h2>{{ trans('all.display')}}</h2>
 
 		<div class="row featurette">
-                <div style="padding-right: 25px;">
-
-                    <div class="col-md-6" style="margin-bottom: 15px;">
-                        <p>{{ trans('all.display_desc_1')}}</p>
-                        <p>{{ trans('all.display_desc_2')}}</p>
-                        <img class="img-responsive" src="/images/displayImg.png" alt="Arduino IDE">
-                    </div>
-                </div>
+ 
+            <div class="col-md-6" style="margin-bottom: 15px;">
+                <p>{{ trans('all.display_desc_1')}}</p>
+                <p>{{ trans('all.display_desc_2')}}</p>
+                <img class="img-fluid" src="/images/displayImg.png" alt="Arduino IDE">
+            </div>
+      
 
             <div class="col-md-6" style="margin-bottom: 15px;">
-                <img class="img-responsive" src="/images/displaySchem.png" alt="Arduino IDE">
+                <img class="img-fluid" src="/images/displaySchem.png" alt="Arduino IDE">
             </div>
 	    </div>
 
