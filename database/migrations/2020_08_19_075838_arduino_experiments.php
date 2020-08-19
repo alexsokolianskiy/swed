@@ -17,6 +17,7 @@ class ArduinoExperiments extends Migration
             $table->bigIncrements('id');
             $table->string('name', 255);
             $table->unsignedSmallInteger('type');
+            $table->integer('time');
             $table->timestamps();
         });
     }

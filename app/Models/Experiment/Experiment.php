@@ -3,9 +3,13 @@
 namespace App\Models\Experiment;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Builder;
 
 class Experiment extends Model
 {
+    const ARDUINO = 1;
+    const OPEN_HAB = 2;
+
     /**
      * The attributes that are mass assignable.
      *
@@ -13,6 +17,7 @@ class Experiment extends Model
      */
     protected $fillable = [
         'name',
+        'time',
         'type',
     ];
     /**
@@ -44,5 +49,26 @@ class Experiment extends Model
     public function endAction()
     {
         return $this->hasOne(ExperimentEndAction::class);
+    }
+
+    /**
+     * Arduino scope
+     *
+     * @param Builder $query
+     * @return Builder
+     */
+    public function scopeArduino(Builder $query)
+    {
+        return $query->where('type', static::ARDUINO);
+    }
+    /**
+     * OpenHab scope
+     *
+     * @param Builder $query
+     * @return Builder
+     */
+    public function scopeOpenHab(Builder $query)
+    {
+        return $query->where('type', static::OPEN_HAB);
     }
 }
