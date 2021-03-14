@@ -1,4 +1,6 @@
-@extends('layouts.experiment.experiment')
+@extends('layouts.experiment.experiment', [
+    'experiment' => 'display'
+])
 @section('content')
 <script>
     var exId = 4;

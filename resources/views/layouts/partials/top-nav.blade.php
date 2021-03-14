@@ -31,10 +31,10 @@
                         {{ trans("all.experiments") }} <span class="caret"></span>
                     </a>
                     <div class="dropdown-menu" aria-labelledby="experiments-dropdown">
-                        <a class="dropdown-item" href="{{ route('experiments.distance') }}">{{ trans("all.distance") }}</a>
-                        <a class="dropdown-item" href="{{ route('experiments.servo') }}">{{ trans("all.servo") }}</a>
-                        <a class="dropdown-item" href="{{ route('experiments.led') }}">{{ trans("all.led") }}</a>
-                        <a class="dropdown-item" href="{{ route('experiments.display') }}">{{ trans("all.display") }}</a>
+                        <a class="dropdown-item" href="{{ route('experiments.distance.description') }}">{{ trans("all.distance") }}</a>
+                        <a class="dropdown-item" href="{{ route('experiments.servo.description') }}">{{ trans("all.servo") }}</a>
+                        <a class="dropdown-item" href="{{ route('experiments.led.description') }}">{{ trans("all.led") }}</a>
+                        <a class="dropdown-item" href="{{ route('experiments.display.description') }}">{{ trans("all.display") }}</a>
                         <a class="dropdown-item" href="#"  data-toggle="modal" data-target="#basicModalInfo">{{ trans("all.infoTitle") }}</a>
                         <!-- <li class="divider"></li>
                         <li class="dropdown-header">Nav header</li>

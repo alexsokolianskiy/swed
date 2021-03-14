@@ -17,7 +17,7 @@ class ArduinoExperimentEndActionSeeder extends Seeder
     
             $experiment->endAction()->attach([
                 
-            ])
+            ]);
         }
     }
 }

@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Arduino;
 use App\Http\Controllers\Controller;
 use App\Services\Experiment\Example;
 
-class ExperimentController extends Controller
+class DescriptionController extends Controller
 {
     protected $exampleService;
 
@@ -17,21 +17,19 @@ class ExperimentController extends Controller
 
     public function distance()
     {
-        return view('arduino.experiments.distance', [
-            'model' => $this->exampleService
-        ]);
+        return view('arduino.experiments.distance.page');
     }
     public function servo()
     {
-        return view('arduino.experiments.servo');
+        return view('arduino.experiments.servo.page');
     }
     public function led()
     {
-        return view('arduino.experiments.led');
+        return view('arduino.experiments.led.page');
     }
     public function display()
     {
-        return view('arduino.experiments.display', [
+        return view('arduino.experiments.display.page', [
             'examples' => $this->exampleService->getExamples('display')
         ]);
     }

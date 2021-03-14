@@ -12,4 +12,5 @@ const mix = require('laravel-mix');
  */
 
 mix.js('resources/js/app.js', 'public/js')
+mix.js('resources/js/experiments/arduino/menu.js', 'public/js/experiments/arduino/menu.js')
     .sass('resources/sass/app.scss', 'public/css');
