@@ -2,7 +2,7 @@
     $menuService = new \App\Services\Experiment\Menu();
     $menu = $menuService->getExperiments();
  ?>
- <script src="{{ asset('js/experiments/arduino/menu.js') }}"></script>
+
  <!-- Main Sidebar Container -->
  <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
@@ -22,7 +22,7 @@
                   <p>
                     {{ trans(sprintf('all.%s', $name)) }}
                     <i class="fas fa-angle-left right"></i>
-                    <span class="badge badge-info right timer">
+                    <span class="badge badge-info right">
                       
                     </span>
                   </p>
@@ -31,7 +31,14 @@
                   <li class="nav-item">
                     <a href="pages/layout/collapsed-sidebar.html" class="nav-link">
                       <i class="far fa-circle nav-icon"></i>
-                      <p>Collapsed Sidebar</p>
+                      <p class="timer">
+        
+          
+                          Days: <div data-days></div>
+                          Hours: <div data-hours></div>
+                          Minutes: <div data-minutes></div>
+                          Seconds: <div data-seconds></div>
+                      </p>
                     </a>
                   </li>
                 </ul>
@@ -44,3 +51,8 @@
     </div>
     <!-- /.sidebar -->
   </aside>
+  
+  @section('js')
+  <script src="{{asset('js/app.js') }}"></script>
+   <script src="{{ asset('js/experiments/arduino/menu.js') }}"></script>
+  @endsection
