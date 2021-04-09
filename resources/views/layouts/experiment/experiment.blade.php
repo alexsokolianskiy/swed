@@ -9,10 +9,7 @@
     @section('css')
     <link rel="stylesheet" href="{{ asset('vendor/fontawesome-free/css/all.min.css') }}">
     <link rel="stylesheet" href="{{ asset('vendor/overlayScrollbars/css/OverlayScrollbars.min.css') }}">
-  
-    {{-- Configured Stylesheets --}}
-    @include('adminlte::plugins', ['type' => 'css'])
-  
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('vendor/adminlte/dist/css/adminlte.min.css') }}">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
     @show
@@ -28,11 +25,7 @@
         </section>
     </div>
     <footer class="main-footer">
-        <strong>Copyright &copy; 2014-2019 <a href="http://adminlte.io">AdminLTE.io</a>.</strong>
-        All rights reserved.
-        <div class="float-right d-none d-sm-inline-block">
-            <b>Version</b> 3.0.0
-        </div>
+        <strong></strong>
     </footer>
     <!-- Control Sidebar -->
     <aside class="control-sidebar control-sidebar-dark">
@@ -40,15 +33,12 @@
     </aside>
     <!-- /.control-sidebar -->
 </div>
-@section('js')
+ <!-- Scripts -->
+<script src="{{ asset('js/app.js') }}" defer></script>
 <script src="{{ asset('vendor/jquery/jquery.min.js') }}"></script>
 <script src="{{ asset('vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
 <script src="{{ asset('vendor/overlayScrollbars/js/jquery.overlayScrollbars.min.js') }}"></script>
-
-{{-- Configured Scripts --}}
-@include('adminlte::plugins', ['type' => 'js'])
 <script src="{{ asset('vendor/adminlte/dist/js/adminlte.min.js') }}"></script>
-@show
 <!-- ./wrapper -->
 </body>
 </html>

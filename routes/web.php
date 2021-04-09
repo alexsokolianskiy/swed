@@ -49,3 +49,7 @@ Route::group(['namespace' => 'Arduino', 'prefix' => 'experiments'], function () 
         Route::get('/display', 'RunController@display')->name('experiments.display.run');
     });
 });
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

@@ -14,7 +14,7 @@ class Menu {
             $result[$experiment] = [
                 'tts' => null,
                 'tte' => null,
-                'queue_length' => null
+                'queue_qty' => null
             ];
         }
 
