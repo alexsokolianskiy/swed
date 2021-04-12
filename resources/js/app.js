@@ -14,4 +14,3 @@ require('./bootstrap');
 
 require('./components/experiments/arduino/ExperimentTimer');
 require('./components/experiments/arduino/Menu');
-import languageBundle from '@kirschbaum-development/laravel-translations-loader!@kirschbaum-development/laravel-translations-loader';

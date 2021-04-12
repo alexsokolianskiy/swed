@@ -86,6 +86,559 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./node_modules/@babel/runtime/helpers/arrayLikeToArray.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/arrayLikeToArray.js ***!
+  \*****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function _arrayLikeToArray(arr, len) {
+  if (len == null || len > arr.length) len = arr.length;
+
+  for (var i = 0, arr2 = new Array(len); i < len; i++) {
+    arr2[i] = arr[i];
+  }
+
+  return arr2;
+}
+
+module.exports = _arrayLikeToArray;
+module.exports["default"] = module.exports, module.exports.__esModule = true;
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/arrayWithHoles.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/arrayWithHoles.js ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function _arrayWithHoles(arr) {
+  if (Array.isArray(arr)) return arr;
+}
+
+module.exports = _arrayWithHoles;
+module.exports["default"] = module.exports, module.exports.__esModule = true;
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/classCallCheck.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/classCallCheck.js ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
+
+module.exports = _classCallCheck;
+module.exports["default"] = module.exports, module.exports.__esModule = true;
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/createClass.js":
+/*!************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/createClass.js ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function _defineProperties(target, props) {
+  for (var i = 0; i < props.length; i++) {
+    var descriptor = props[i];
+    descriptor.enumerable = descriptor.enumerable || false;
+    descriptor.configurable = true;
+    if ("value" in descriptor) descriptor.writable = true;
+    Object.defineProperty(target, descriptor.key, descriptor);
+  }
+}
+
+function _createClass(Constructor, protoProps, staticProps) {
+  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+  if (staticProps) _defineProperties(Constructor, staticProps);
+  return Constructor;
+}
+
+module.exports = _createClass;
+module.exports["default"] = module.exports, module.exports.__esModule = true;
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/defineProperty.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/defineProperty.js ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function _defineProperty(obj, key, value) {
+  if (key in obj) {
+    Object.defineProperty(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    });
+  } else {
+    obj[key] = value;
+  }
+
+  return obj;
+}
+
+module.exports = _defineProperty;
+module.exports["default"] = module.exports, module.exports.__esModule = true;
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/esm/assertThisInitialized.js":
+/*!**************************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/assertThisInitialized.js ***!
+  \**************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _assertThisInitialized; });
+function _assertThisInitialized(self) {
+  if (self === void 0) {
+    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+  }
+
+  return self;
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/classCallCheck.js ***!
+  \*******************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _classCallCheck; });
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/esm/createClass.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/createClass.js ***!
+  \****************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _createClass; });
+function _defineProperties(target, props) {
+  for (var i = 0; i < props.length; i++) {
+    var descriptor = props[i];
+    descriptor.enumerable = descriptor.enumerable || false;
+    descriptor.configurable = true;
+    if ("value" in descriptor) descriptor.writable = true;
+    Object.defineProperty(target, descriptor.key, descriptor);
+  }
+}
+
+function _createClass(Constructor, protoProps, staticProps) {
+  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+  if (staticProps) _defineProperties(Constructor, staticProps);
+  return Constructor;
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/defineProperty.js ***!
+  \*******************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _defineProperty; });
+function _defineProperty(obj, key, value) {
+  if (key in obj) {
+    Object.defineProperty(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    });
+  } else {
+    obj[key] = value;
+  }
+
+  return obj;
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js ***!
+  \*******************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _getPrototypeOf; });
+function _getPrototypeOf(o) {
+  _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
+    return o.__proto__ || Object.getPrototypeOf(o);
+  };
+  return _getPrototypeOf(o);
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/esm/inherits.js":
+/*!*************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/inherits.js ***!
+  \*************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _inherits; });
+/* harmony import */ var _setPrototypeOf_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./setPrototypeOf.js */ "./node_modules/@babel/runtime/helpers/esm/setPrototypeOf.js");
+
+function _inherits(subClass, superClass) {
+  if (typeof superClass !== "function" && superClass !== null) {
+    throw new TypeError("Super expression must either be null or a function");
+  }
+
+  subClass.prototype = Object.create(superClass && superClass.prototype, {
+    constructor: {
+      value: subClass,
+      writable: true,
+      configurable: true
+    }
+  });
+  if (superClass) Object(_setPrototypeOf_js__WEBPACK_IMPORTED_MODULE_0__["default"])(subClass, superClass);
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/esm/objectSpread.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/objectSpread.js ***!
+  \*****************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _objectSpread; });
+/* harmony import */ var _defineProperty_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./defineProperty.js */ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js");
+
+function _objectSpread(target) {
+  for (var i = 1; i < arguments.length; i++) {
+    var source = arguments[i] != null ? Object(arguments[i]) : {};
+    var ownKeys = Object.keys(source);
+
+    if (typeof Object.getOwnPropertySymbols === 'function') {
+      ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) {
+        return Object.getOwnPropertyDescriptor(source, sym).enumerable;
+      }));
+    }
+
+    ownKeys.forEach(function (key) {
+      Object(_defineProperty_js__WEBPACK_IMPORTED_MODULE_0__["default"])(target, key, source[key]);
+    });
+  }
+
+  return target;
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js":
+/*!******************************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js ***!
+  \******************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _possibleConstructorReturn; });
+/* harmony import */ var _babel_runtime_helpers_typeof__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/typeof */ "./node_modules/@babel/runtime/helpers/typeof.js");
+/* harmony import */ var _babel_runtime_helpers_typeof__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_typeof__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _assertThisInitialized_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./assertThisInitialized.js */ "./node_modules/@babel/runtime/helpers/esm/assertThisInitialized.js");
+
+
+function _possibleConstructorReturn(self, call) {
+  if (call && (_babel_runtime_helpers_typeof__WEBPACK_IMPORTED_MODULE_0___default()(call) === "object" || typeof call === "function")) {
+    return call;
+  }
+
+  return Object(_assertThisInitialized_js__WEBPACK_IMPORTED_MODULE_1__["default"])(self);
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/esm/setPrototypeOf.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/setPrototypeOf.js ***!
+  \*******************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _setPrototypeOf; });
+function _setPrototypeOf(o, p) {
+  _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {
+    o.__proto__ = p;
+    return o;
+  };
+
+  return _setPrototypeOf(o, p);
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/esm/typeof.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/typeof.js ***!
+  \***********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _typeof; });
+function _typeof(obj) {
+  "@babel/helpers - typeof";
+
+  if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
+    _typeof = function _typeof(obj) {
+      return typeof obj;
+    };
+  } else {
+    _typeof = function _typeof(obj) {
+      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+    };
+  }
+
+  return _typeof(obj);
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/iterableToArrayLimit.js":
+/*!*********************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/iterableToArrayLimit.js ***!
+  \*********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function _iterableToArrayLimit(arr, i) {
+  if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return;
+  var _arr = [];
+  var _n = true;
+  var _d = false;
+  var _e = undefined;
+
+  try {
+    for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) {
+      _arr.push(_s.value);
+
+      if (i && _arr.length === i) break;
+    }
+  } catch (err) {
+    _d = true;
+    _e = err;
+  } finally {
+    try {
+      if (!_n && _i["return"] != null) _i["return"]();
+    } finally {
+      if (_d) throw _e;
+    }
+  }
+
+  return _arr;
+}
+
+module.exports = _iterableToArrayLimit;
+module.exports["default"] = module.exports, module.exports.__esModule = true;
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/nonIterableRest.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/nonIterableRest.js ***!
+  \****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function _nonIterableRest() {
+  throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
+}
+
+module.exports = _nonIterableRest;
+module.exports["default"] = module.exports, module.exports.__esModule = true;
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/objectWithoutProperties.js":
+/*!************************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/objectWithoutProperties.js ***!
+  \************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var objectWithoutPropertiesLoose = __webpack_require__(/*! ./objectWithoutPropertiesLoose.js */ "./node_modules/@babel/runtime/helpers/objectWithoutPropertiesLoose.js");
+
+function _objectWithoutProperties(source, excluded) {
+  if (source == null) return {};
+  var target = objectWithoutPropertiesLoose(source, excluded);
+  var key, i;
+
+  if (Object.getOwnPropertySymbols) {
+    var sourceSymbolKeys = Object.getOwnPropertySymbols(source);
+
+    for (i = 0; i < sourceSymbolKeys.length; i++) {
+      key = sourceSymbolKeys[i];
+      if (excluded.indexOf(key) >= 0) continue;
+      if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue;
+      target[key] = source[key];
+    }
+  }
+
+  return target;
+}
+
+module.exports = _objectWithoutProperties;
+module.exports["default"] = module.exports, module.exports.__esModule = true;
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/objectWithoutPropertiesLoose.js":
+/*!*****************************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/objectWithoutPropertiesLoose.js ***!
+  \*****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function _objectWithoutPropertiesLoose(source, excluded) {
+  if (source == null) return {};
+  var target = {};
+  var sourceKeys = Object.keys(source);
+  var key, i;
+
+  for (i = 0; i < sourceKeys.length; i++) {
+    key = sourceKeys[i];
+    if (excluded.indexOf(key) >= 0) continue;
+    target[key] = source[key];
+  }
+
+  return target;
+}
+
+module.exports = _objectWithoutPropertiesLoose;
+module.exports["default"] = module.exports, module.exports.__esModule = true;
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/slicedToArray.js":
+/*!**************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/slicedToArray.js ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var arrayWithHoles = __webpack_require__(/*! ./arrayWithHoles.js */ "./node_modules/@babel/runtime/helpers/arrayWithHoles.js");
+
+var iterableToArrayLimit = __webpack_require__(/*! ./iterableToArrayLimit.js */ "./node_modules/@babel/runtime/helpers/iterableToArrayLimit.js");
+
+var unsupportedIterableToArray = __webpack_require__(/*! ./unsupportedIterableToArray.js */ "./node_modules/@babel/runtime/helpers/unsupportedIterableToArray.js");
+
+var nonIterableRest = __webpack_require__(/*! ./nonIterableRest.js */ "./node_modules/@babel/runtime/helpers/nonIterableRest.js");
+
+function _slicedToArray(arr, i) {
+  return arrayWithHoles(arr) || iterableToArrayLimit(arr, i) || unsupportedIterableToArray(arr, i) || nonIterableRest();
+}
+
+module.exports = _slicedToArray;
+module.exports["default"] = module.exports, module.exports.__esModule = true;
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/typeof.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/typeof.js ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function _typeof(obj) {
+  "@babel/helpers - typeof";
+
+  if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
+    module.exports = _typeof = function _typeof(obj) {
+      return typeof obj;
+    };
+
+    module.exports["default"] = module.exports, module.exports.__esModule = true;
+  } else {
+    module.exports = _typeof = function _typeof(obj) {
+      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+    };
+
+    module.exports["default"] = module.exports, module.exports.__esModule = true;
+  }
+
+  return _typeof(obj);
+}
+
+module.exports = _typeof;
+module.exports["default"] = module.exports, module.exports.__esModule = true;
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/unsupportedIterableToArray.js":
+/*!***************************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/unsupportedIterableToArray.js ***!
+  \***************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var arrayLikeToArray = __webpack_require__(/*! ./arrayLikeToArray.js */ "./node_modules/@babel/runtime/helpers/arrayLikeToArray.js");
+
+function _unsupportedIterableToArray(o, minLen) {
+  if (!o) return;
+  if (typeof o === "string") return arrayLikeToArray(o, minLen);
+  var n = Object.prototype.toString.call(o).slice(8, -1);
+  if (n === "Object" && o.constructor) n = o.constructor.name;
+  if (n === "Map" || n === "Set") return Array.from(o);
+  if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return arrayLikeToArray(o, minLen);
+}
+
+module.exports = _unsupportedIterableToArray;
+module.exports["default"] = module.exports, module.exports.__esModule = true;
+
+/***/ }),
+
 /***/ "./node_modules/@kirschbaum-development/laravel-translations-loader/all.js!./node_modules/@kirschbaum-development/laravel-translations-loader/all.js":
 /*!***********************************************************************************************************************************************************!*\
   !*** ./node_modules/@kirschbaum-development/laravel-translations-loader/all.js!./node_modules/@kirschbaum-development/laravel-translations-loader/all.js ***!
@@ -93,7 +646,18 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = {"en":{"auth":{"failed":"These credentials do not match our records.","throttle":"Too many login attempts. Please try again in :seconds seconds."},"experiments":{"description":"Description","tpc":"Typical program code","run":"Run","tts":"Time to start","tte":"Time to end","queue_qty":"Queue length"},"pagination":{"previous":"&laquo; Previous","next":"Next &raquo;"},"passwords":{"reset":"Your password has been reset!","sent":"We have emailed your password reset link!","throttled":"Please wait before retrying.","token":"This password reset token is invalid.","user":"We can't find a user with that email address."},"validation":{"accepted":"The :attribute must be accepted.","active_url":"The :attribute is not a valid URL.","after":"The :attribute must be a date after :date.","after_or_equal":"The :attribute must be a date after or equal to :date.","alpha":"The :attribute may only contain letters.","alpha_dash":"The :attribute may only contain letters, numbers, dashes and underscores.","alpha_num":"The :attribute may only contain letters and numbers.","array":"The :attribute must be an array.","before":"The :attribute must be a date before :date.","before_or_equal":"The :attribute must be a date before or equal to :date.","between":{"numeric":"The :attribute must be between :min and :max.","file":"The :attribute must be between :min and :max kilobytes.","string":"The :attribute must be between :min and :max characters.","array":"The :attribute must have between :min and :max items."},"boolean":"The :attribute field must be true or false.","confirmed":"The :attribute confirmation does not match.","date":"The :attribute is not a valid date.","date_equals":"The :attribute must be a date equal to :date.","date_format":"The :attribute does not match the format :format.","different":"The :attribute and :other must be different.","digits":"The :attribute must be :digits digits.","digits_between":"The :attribute must be between :min and :max digits.","dimensions":"The :attribute has invalid image dimensions.","distinct":"The :attribute field has a duplicate value.","email":"The :attribute must be a valid email address.","ends_with":"The :attribute must end with one of the following: :values.","exists":"The selected :attribute is invalid.","file":"The :attribute must be a file.","filled":"The :attribute field must have a value.","gt":{"numeric":"The :attribute must be greater than :value.","file":"The :attribute must be greater than :value kilobytes.","string":"The :attribute must be greater than :value characters.","array":"The :attribute must have more than :value items."},"gte":{"numeric":"The :attribute must be greater than or equal :value.","file":"The :attribute must be greater than or equal :value kilobytes.","string":"The :attribute must be greater than or equal :value characters.","array":"The :attribute must have :value items or more."},"image":"The :attribute must be an image.","in":"The selected :attribute is invalid.","in_array":"The :attribute field does not exist in :other.","integer":"The :attribute must be an integer.","ip":"The :attribute must be a valid IP address.","ipv4":"The :attribute must be a valid IPv4 address.","ipv6":"The :attribute must be a valid IPv6 address.","json":"The :attribute must be a valid JSON string.","lt":{"numeric":"The :attribute must be less than :value.","file":"The :attribute must be less than :value kilobytes.","string":"The :attribute must be less than :value characters.","array":"The :attribute must have less than :value items."},"lte":{"numeric":"The :attribute must be less than or equal :value.","file":"The :attribute must be less than or equal :value kilobytes.","string":"The :attribute must be less than or equal :value characters.","array":"The :attribute must not have more than :value items."},"max":{"numeric":"The :attribute may not be greater than :max.","file":"The :attribute may not be greater than :max kilobytes.","string":"The :attribute may not be greater than :max characters.","array":"The :attribute may not have more than :max items."},"mimes":"The :attribute must be a file of type: :values.","mimetypes":"The :attribute must be a file of type: :values.","min":{"numeric":"The :attribute must be at least :min.","file":"The :attribute must be at least :min kilobytes.","string":"The :attribute must be at least :min characters.","array":"The :attribute must have at least :min items."},"not_in":"The selected :attribute is invalid.","not_regex":"The :attribute format is invalid.","numeric":"The :attribute must be a number.","password":"The password is incorrect.","present":"The :attribute field must be present.","regex":"The :attribute format is invalid.","required":"The :attribute field is required.","required_if":"The :attribute field is required when :other is :value.","required_unless":"The :attribute field is required unless :other is in :values.","required_with":"The :attribute field is required when :values is present.","required_with_all":"The :attribute field is required when :values are present.","required_without":"The :attribute field is required when :values is not present.","required_without_all":"The :attribute field is required when none of :values are present.","same":"The :attribute and :other must match.","size":{"numeric":"The :attribute must be :size.","file":"The :attribute must be :size kilobytes.","string":"The :attribute must be :size characters.","array":"The :attribute must contain :size items."},"starts_with":"The :attribute must start with one of the following: :values.","string":"The :attribute must be a string.","timezone":"The :attribute must be a valid zone.","unique":"The :attribute has already been taken.","uploaded":"The :attribute failed to upload.","url":"The :attribute format is invalid.","uuid":"The :attribute must be a valid UUID.","custom":{"attribute-name":{"rule-name":"custom-message"}},"attributes":[]}},"ua":{"auth":{"failed":"These credentials do not match our records.","throttle":"Too many login attempts. Please try again in :seconds seconds."},"experiments":{"description":"Опис","run":"Виконання эксперименту","tpc":"Типовий програмний код","tts":"Час до старту","tte":"Час до закiнчення","queue_qty":"Кiлькiсть людей в черзi"},"pagination":{"previous":"&laquo; Previous","next":"Next &raquo;"},"passwords":{"reset":"Your password has been reset!","sent":"We have emailed your password reset link!","throttled":"Please wait before retrying.","token":"This password reset token is invalid.","user":"We can't find a user with that email address."},"validation":{"accepted":"The :attribute must be accepted.","active_url":"The :attribute is not a valid URL.","after":"The :attribute must be a date after :date.","after_or_equal":"The :attribute must be a date after or equal to :date.","alpha":"The :attribute may only contain letters.","alpha_dash":"The :attribute may only contain letters, numbers, dashes and underscores.","alpha_num":"The :attribute may only contain letters and numbers.","array":"The :attribute must be an array.","before":"The :attribute must be a date before :date.","before_or_equal":"The :attribute must be a date before or equal to :date.","between":{"numeric":"The :attribute must be between :min and :max.","file":"The :attribute must be between :min and :max kilobytes.","string":"The :attribute must be between :min and :max characters.","array":"The :attribute must have between :min and :max items."},"boolean":"The :attribute field must be true or false.","confirmed":"The :attribute confirmation does not match.","date":"The :attribute is not a valid date.","date_equals":"The :attribute must be a date equal to :date.","date_format":"The :attribute does not match the format :format.","different":"The :attribute and :other must be different.","digits":"The :attribute must be :digits digits.","digits_between":"The :attribute must be between :min and :max digits.","dimensions":"The :attribute has invalid image dimensions.","distinct":"The :attribute field has a duplicate value.","email":"The :attribute must be a valid email address.","ends_with":"The :attribute must end with one of the following: :values.","exists":"The selected :attribute is invalid.","file":"The :attribute must be a file.","filled":"The :attribute field must have a value.","gt":{"numeric":"The :attribute must be greater than :value.","file":"The :attribute must be greater than :value kilobytes.","string":"The :attribute must be greater than :value characters.","array":"The :attribute must have more than :value items."},"gte":{"numeric":"The :attribute must be greater than or equal :value.","file":"The :attribute must be greater than or equal :value kilobytes.","string":"The :attribute must be greater than or equal :value characters.","array":"The :attribute must have :value items or more."},"image":"The :attribute must be an image.","in":"The selected :attribute is invalid.","in_array":"The :attribute field does not exist in :other.","integer":"The :attribute must be an integer.","ip":"The :attribute must be a valid IP address.","ipv4":"The :attribute must be a valid IPv4 address.","ipv6":"The :attribute must be a valid IPv6 address.","json":"The :attribute must be a valid JSON string.","lt":{"numeric":"The :attribute must be less than :value.","file":"The :attribute must be less than :value kilobytes.","string":"The :attribute must be less than :value characters.","array":"The :attribute must have less than :value items."},"lte":{"numeric":"The :attribute must be less than or equal :value.","file":"The :attribute must be less than or equal :value kilobytes.","string":"The :attribute must be less than or equal :value characters.","array":"The :attribute must not have more than :value items."},"max":{"numeric":"The :attribute may not be greater than :max.","file":"The :attribute may not be greater than :max kilobytes.","string":"The :attribute may not be greater than :max characters.","array":"The :attribute may not have more than :max items."},"mimes":"The :attribute must be a file of type: :values.","mimetypes":"The :attribute must be a file of type: :values.","min":{"numeric":"The :attribute must be at least :min.","file":"The :attribute must be at least :min kilobytes.","string":"The :attribute must be at least :min characters.","array":"The :attribute must have at least :min items."},"not_in":"The selected :attribute is invalid.","not_regex":"The :attribute format is invalid.","numeric":"The :attribute must be a number.","password":"The password is incorrect.","present":"The :attribute field must be present.","regex":"The :attribute format is invalid.","required":"The :attribute field is required.","required_if":"The :attribute field is required when :other is :value.","required_unless":"The :attribute field is required unless :other is in :values.","required_with":"The :attribute field is required when :values is present.","required_with_all":"The :attribute field is required when :values are present.","required_without":"The :attribute field is required when :values is not present.","required_without_all":"The :attribute field is required when none of :values are present.","same":"The :attribute and :other must match.","size":{"numeric":"The :attribute must be :size.","file":"The :attribute must be :size kilobytes.","string":"The :attribute must be :size characters.","array":"The :attribute must contain :size items."},"starts_with":"The :attribute must start with one of the following: :values.","string":"The :attribute must be a string.","timezone":"The :attribute must be a valid zone.","unique":"The :attribute has already been taken.","uploaded":"The :attribute failed to upload.","url":"The :attribute format is invalid.","uuid":"The :attribute must be a valid UUID.","custom":{"attribute-name":{"rule-name":"custom-message"}},"attributes":[]}},"vendor":{"adminlte/ar/adminlte":{"full_name":"الاسم الثلاثي","email":"البريد الإلكتروني","password":"كلمة السر","retype_password":"أعد إدخال كلمة السر","remember_me":"ذكرني","register":"تسجيل جديد","register_a_new_membership":"تسجيل عضوية جديدة","i_forgot_my_password":"نسيت كلمة السر؟","i_already_have_a_membership":"هذا الحساب لديه عضوية سابقة","sign_in":"تسجيل الدخول","log_out":"تسجيل خروج","toggle_navigation":"القائمة الجانبية","login_message":"يجب تسجيل الدخول","register_message":"تم تسجيل العضوية الجديدة ","password_reset_message":"تم إعادة تعيين كلمة المرور","reset_password":"إعادة تعيين كلمة السر","send_password_reset_link":"إرسال رابط إعادة تعيين كلمة السر"},"adminlte/ca/adminlte":{"full_name":"Nom complet","email":"Email","password":"Contrasenya","retype_password":"Confirmar la contrasenya","remember_me":"Recordar-me","register":"Registrar-se","register_a_new_membership":"Crear un nou compte","i_forgot_my_password":"He oblidat la meva contrasenya","i_already_have_a_membership":"Ja tinc un compte","sign_in":"Accedir","log_out":"Sortir","toggle_navigation":"Commutar la navegació","login_message":"Autenticar-se per a iniciar sessió","register_message":"Crear un nou compte","password_reset_message":"Restablir la contrasenya","reset_password":"Restablir la contrasenya","send_password_reset_link":"Enviar enllaç de restabliment de contrasenya"},"adminlte/de/adminlte":{"full_name":"Vollständiger Name","email":"E-Mail","password":"Passwort","retype_password":"Passwort bestätigen","remember_me":"Angemeldet bleiben","register":"Registrieren","register_a_new_membership":"Ein neues Konto registrieren","i_forgot_my_password":"Ich habe mein Passwort vergessen","i_already_have_a_membership":"Ich bin bereits registriert","sign_in":"Anmelden","log_out":"Abmelden","toggle_navigation":"Navigation umschalten","login_message":"Bitte melden Sie sich an, um auf den geschützten Bereich zuzugreifen","register_message":"Bitte füllen Sie das Formular aus, um ein neues Konto zu registrieren","password_reset_message":"Bitte geben Sie Ihre E-Mail Adresse ein, um Ihr Passwort zurückzusetzen","reset_password":"Passwort zurücksetzen","send_password_reset_link":"Link zur Passwortwiederherstellung senden","verify_message":"Ihr Account muss noch bestätigt werden","verify_email_sent":"Es wurde ein neuer Bestätigungslink an Ihre E-Mail Adresse gesendet.","verify_check_your_email":"Bevor Sie fortfahren, überprüfen Sie bitte Ihre E-Mail auf einen Bestätigungslink.","verify_if_not_recieved":"Wenn Sie die E-Mail nicht empfangen haben","verify_request_another":"klicken Sie hier, um eine neue E-Mail anzufordern"},"adminlte/de/menu":{"main_navigation":"HAUPTMENÜ","blog":"Blog","pages":"Seiten","account_settings":"KONTOEINSTELLUNGEN","profile":"Profil","change_password":"Passwort ändern","multilevel":"Multi Level","level_one":"Level 1","level_two":"Level 2","level_three":"Level 3","labels":"Beschriftungen","important":"Wichtig","warning":"Warnung","information":"Information"},"adminlte/en/adminlte":{"full_name":"Full name","email":"Email","password":"Password","retype_password":"Retype password","remember_me":"Remember Me","register":"Register","register_a_new_membership":"Register a new membership","i_forgot_my_password":"I forgot my password","i_already_have_a_membership":"I already have a membership","sign_in":"Sign In","log_out":"Log Out","toggle_navigation":"Toggle navigation","login_message":"Sign in to start your session","register_message":"Register a new membership","password_reset_message":"Reset Password","reset_password":"Reset Password","send_password_reset_link":"Send Password Reset Link","verify_message":"Your account needs a verification","verify_email_sent":"A fresh verification link has been sent to your email address.","verify_check_your_email":"Before proceeding, please check your email for a verification link.","verify_if_not_recieved":"If you did not receive the email","verify_request_another":"click here to request another","confirm_password_message":"Please, confirm your password to continue."},"adminlte/en/menu":{"main_navigation":"MAIN NAVIGATION","blog":"Blog","pages":"Pages","account_settings":"ACCOUNT SETTINGS","profile":"Profile","change_password":"Change Password","multilevel":"Multi Level","level_one":"Level 1","level_two":"Level 2","level_three":"Level 3","labels":"LABELS","important":"Important","warning":"Warning","information":"Information"},"adminlte/es/adminlte":{"full_name":"Nombre completo","email":"Email","password":"Contraseña","retype_password":"Confirmar la contraseña","remember_me":"Recordarme","register":"Registrarse","register_a_new_membership":"Crear una nueva cuenta","i_forgot_my_password":"Olvidé mi contraseña","i_already_have_a_membership":"Ya tengo una cuenta","sign_in":"Acceder","log_out":"Salir","toggle_navigation":"Alternar barra de navegación","login_message":"Autenticarse para iniciar sesión","register_message":"Crear una nueva cuenta","password_reset_message":"Restablecer la contraseña","reset_password":"Restablecer la contraseña","send_password_reset_link":"Enviar enlace para restablecer la contraseña","verify_message":"Tu cuenta necesita una verificación","verify_email_sent":"Se ha enviado un nuevo enlace de verificación a su correo electrónico.","verify_check_your_email":"Antes de continuar, busque en su correo electrónico un enlace de verificación.","verify_if_not_recieved":"Si no has recibido el correo electrónico","verify_request_another":"haga clic aquí para solicitar otro","confirm_password_message":"Por favor, confirme su contraseña para continuar."},"adminlte/es/menu":{"main_navigation":"MENU PRINCIPAL","blog":"Blog","pages":"Páginas","account_settings":"AJUSTES DE LA CUENTA","profile":"Perfil","change_password":"Cambiar Contraseña","multilevel":"Multi Nivel","level_one":"Nivel 1","level_two":"Nivel 2","level_three":"Nivel 3","labels":"ETIQUETAS","important":"Importante","warning":"Advertencia","information":"Información"},"adminlte/fa/adminlte":{"full_name":"نام","email":"ایمیل","password":"رمز عبور","retype_password":"تکرار رمز عبور","remember_me":"مرا به یاد داشته باش","register":"ثبت نام","register_a_new_membership":"ایجاد یک عضویت جدید","i_forgot_my_password":"رمز عبور را فراموش کرده ام","i_already_have_a_membership":"قبلا ثبت نام کرده ام","sign_in":"ورود","log_out":"خروج","toggle_navigation":"نمایش/مخفی کردن منو","login_message":"وارد شوید","register_message":"ثبت نام","password_reset_message":"بازنشانی رمز عبور","reset_password":"بازنشانی رمز عبور","send_password_reset_link":"ارسال لینک بازنشانی رمز عبور"},"adminlte/fr/adminlte":{"full_name":"Nom","email":"Email","password":"Mot de passe","retype_password":"Entrez à nouveau le mot de passe","remember_me":"Se souvenir de moi","register":"Enregistrement","register_a_new_membership":"Enregistrer un nouveau membre","i_forgot_my_password":"J'ai oublié mon mot de passe","i_already_have_a_membership":"J'ai déjà un compte","sign_in":"Connexion","log_out":"Déconnexion","toggle_navigation":"Basculer la navigation","login_message":"Connectez-vous pour commencer une session","register_message":"Enregistrement d'un nouveau membre","password_reset_message":"Réinitialisation du mot de passe","reset_password":"Réinitialisation du mot de passe","send_password_reset_link":"Envoi de la réinitialisation du mot de passe"},"adminlte/hr/adminlte":{"full_name":"Ime","email":"Email","password":"Lozinka","retype_password":"Ponovljena lozinka","remember_me":"Zapamti me","register":"Novi korisnik","register_a_new_membership":"Registracija","i_forgot_my_password":"Zaboravljena zaporka","i_already_have_a_membership":"Već imam korisnički račun","sign_in":"Prijava","log_out":"Odjava","toggle_navigation":"Pregled navigacije","login_message":"Prijava","register_message":"Registracija","password_reset_message":"Nova lozinka","reset_password":"Nova lozinka","send_password_reset_link":"Pošalji novi zahtjev lozinke"},"adminlte/hu/adminlte":{"full_name":"Teljes név","email":"Email","password":"Jelszó","retype_password":"Jelszó újra","remember_me":"Emlékezz rám","register":"Regisztráció","register_a_new_membership":"Regisztrálás új tagként","i_forgot_my_password":"Elfelejtetem a jelszavam","i_already_have_a_membership":"Már tag vagyok","sign_in":"Belépés","log_out":"Kilépés","toggle_navigation":"Lenyíló navigáció","login_message":"Belépés a munkamenet elkezdéséhez","register_message":"Regisztrálás új tagként","password_reset_message":"Jelszó visszaállítása","reset_password":"Jelszó visszaállítása","send_password_reset_link":"Jelszó visszaállítás link küldése"},"adminlte/it/adminlte":{"full_name":"Nome completo","email":"Email","password":"Password","retype_password":"Ripeti password","remember_me":"Ricordami","register":"Registrazione","register_a_new_membership":"Registra un nuovo abbonamento","i_forgot_my_password":"Ho dimenticato la password","i_already_have_a_membership":"Ho già un abbonamento","sign_in":"Accedi","log_out":"Logout","toggle_navigation":"Attiva la navigazione","login_message":"Accedi per iniziare la tua sessione","register_message":"Registra un nuovo abbonamento","password_reset_message":"Resetta la password","reset_password":"Resetta la password","send_password_reset_link":"Invia link di reset della password"},"adminlte/ja/adminlte":{"full_name":"氏名","email":"メールアドレス","password":"パスワード","retype_password":"もう一度入力","remember_me":"パスワードを記憶する","register":"登録する","register_a_new_membership":"アカウントを登録する","i_forgot_my_password":"パスワードを忘れた","i_already_have_a_membership":"すでにアカウントを持っている","sign_in":"ログイン","log_out":"ログアウト","toggle_navigation":"ナビゲーションを開閉","login_message":"ログインしてセッションを開始する","register_message":"アカウントを登録する","password_reset_message":"パスワードをリセットする","reset_password":"パスワードをリセットする","send_password_reset_link":"パスワードリセットリンクを送信する。","verify_message":"あなたのアカウントは認証が必要です。","verify_email_sent":"あなたのメールアドレスに認証用のリンクを送信しました。","verify_check_your_email":"続行する前に、認証用リンクについてメールを確認してください。","verify_if_not_recieved":"メールが届かない場合","verify_request_another":"ここをクリックしてもう一度送信する"},"adminlte/ja/menu":{"main_navigation":"メインメニュー","blog":"ブログ","pages":"ページ","account_settings":"アカウント設定","profile":"プロフィール","change_password":"パスワード変更","multilevel":"マルチ階層","level_one":"階層 1","level_two":"階層 2","level_three":"階層 3","labels":"ラベル","important":"重要","warning":"警告","information":"インフォメーション"},"adminlte/nl/adminlte":{"full_name":"Volledige naam","email":"E-mailadres","password":"Wachtwoord","retype_password":"Wachtwoord nogmaals invoeren","remember_me":"Ingelogd blijven","register":"Registreren","register_a_new_membership":"Registreer een nieuw lidmaatschap","i_forgot_my_password":"Ik ben mijn wachtwoord vergeten","i_already_have_a_membership":"Ik heb al een lidmaatschap","sign_in":"Inloggen","log_out":"Uitloggen","toggle_navigation":"Schakel navigatie","login_message":"Log in om je sessie te starten","register_message":"Registreer een nieuw lidmaatschap","password_reset_message":"Wachtwoord herstellen","reset_password":"Wachtwoord herstellen","send_password_reset_link":"Verzend link voor wachtwoordherstel"},"adminlte/pl/adminlte":{"full_name":"Imię i nazwisko","email":"Email","password":"Hasło","retype_password":"Powtórz hasło","remember_me":"Zapamiętaj mnie","register":"Zarejestruj","register_a_new_membership":"Załóż nowe konto","i_forgot_my_password":"Zapomniałem hasła","i_already_have_a_membership":"Mam już konto","sign_in":"Zaloguj","log_out":"Wyloguj","toggle_navigation":"Przełącz nawigację","login_message":"Zaloguj się aby uzyskać dostęp do panelu","register_message":"Załóż nowe konto","password_reset_message":"Resetuj hasło","reset_password":"Resetuj hasło","send_password_reset_link":"Wyślij link do resetowania hasła"},"adminlte/pt-br/adminlte":{"full_name":"Nome completo","email":"Email","password":"Senha","retype_password":"Repita a senha","remember_me":"Lembrar-me","register":"Registrar","register_a_new_membership":"Registrar um novo membro","i_forgot_my_password":"Esqueci minha senha","i_already_have_a_membership":"Já sou um membro","sign_in":"Entrar","log_out":"Sair","toggle_navigation":"Trocar navegação","login_message":"Entre para iniciar uma nova sessão","register_message":"Registrar um novo membro","password_reset_message":"Recuperar senha","reset_password":"Recuperar senha","send_password_reset_link":"Enviar link de recuperação de senha"},"adminlte/pt-br/menu":{"main_navigation":"Navegação Principal","blog":"Blog","pages":"Página","account_settings":"Configurações da Conta","profile":"Perfil","change_password":"Mudar Senha","multilevel":"Multinível","level_one":"Nível 1","level_two":"Nível 2","level_three":"Nível 3","labels":"Etiquetas","Important":"Importante","Warning":"Aviso","Information":"Informação"},"adminlte/ru/adminlte":{"full_name":"Полное имя","email":"Почта","password":"Пароль","retype_password":"Подтверждение пароля","remember_me":"Запомнить меня","register":"Регистрация","register_a_new_membership":"Регистрация нового пользователя","i_forgot_my_password":"Восстановление пароля","i_already_have_a_membership":"Я уже зарегистрирован","sign_in":"Вход","log_out":"Выход","toggle_navigation":"Переключить навигацию","login_message":"Вход в систему","register_message":"Регистрация нового пользователя","password_reset_message":"Восстановление пароля","reset_password":"Восстановление пароля","send_password_reset_link":"Отправить ссылку для восстановления пароля"},"adminlte/ru/menu":{"main_navigation":"ГЛАВНОЕ МЕНЮ","blog":"Блог","pages":"Страницы","account_settings":"НАСТРОЙКИ ПРОФИЛЯ","profile":"Профиль","change_password":"Изменить пароль","multilevel":"Многоуровневое меню","level_one":"Уровень 1","level_two":"Уровень 2","level_three":"Уровень 3","labels":"Метки","important":"Важно","warning":"Внимание","information":"Информация"},"adminlte/tr/adminlte":{"full_name":"Ad ve Soyadı","email":"E-Posta Adresi","password":"Parola","retype_password":"Yeniden Parola","remember_me":"Beni Hatırla","register":"Kaydol","register_a_new_membership":"Yeni üye kaydı","i_forgot_my_password":"Parolamı unuttum","i_already_have_a_membership":"Zaten üye kaydım var","sign_in":"Giriş Yap","log_out":"Çıkış Yap","toggle_navigation":"Ana menüyü aç/kapa","login_message":"Oturumunuzu devam ettirmek için giriş yapmalısınız","register_message":"Yeni üye kaydı oluştur","password_reset_message":"Parola Sıfırlama","reset_password":"Parola Sıfırlama","send_password_reset_link":"Parola Sıfırlama Linki Gönder","verify_message":"Hesabınızın doğrulanmaya ihtiyacı var","verify_email_sent":"Hesap doğrulama linki E-posta adresinize gönderildi.","verify_check_your_email":"İşlemlere devam etmeden önce doğrulama linki için e-posta adresinizi kontrol edin.","verify_if_not_recieved":"Eğer doğrulama e-postası adresinize ulaşmadıysa","verify_request_another":"buraya tıklayarak yeni bir doğrulama linki talep edebilirsiniz","confirm_password_message":"Devam etmek için lütfen parolanızı doğrulayın."},"adminlte/tr/menu":{"main_navigation":"ANA MENÜ","blog":"Blog","pages":"Sayfalar","account_settings":"HESAP AYARLARI","profile":"Profil","change_password":"Parolanı değiştir","multilevel":"Çoklu Seviye","level_one":"Seviye 1","level_two":"Seviye 2","level_three":"Seviye 3","labels":"ETİKETLER","important":"Önemli","warning":"Uyarı","information":"Bilgi"},"adminlte/uk/adminlte":{"full_name":"Повне і'мя","email":"Пошта","password":"Пароль","retype_password":"Підтвердження пароля","remember_me":"Запам'ятати мене","register":"Реєстрація","register_a_new_membership":"Реєстрація нового користувача","i_forgot_my_password":"Відновлення пароля","i_already_have_a_membership":"Я вже зареєстрований","sign_in":"Вхід","log_out":"Вихід","toggle_navigation":"Переключити навігацію","login_message":"Вхід до системи","register_message":"Реєстрація нового користувача","password_reset_message":"Відновлення пароля","reset_password":"Відновлення пароля","send_password_reset_link":"Відправити посилання для відновлення пароля"},"adminlte/uk/menu":{"main_navigation":"ГОЛОВНЕ МЕНЮ","blog":"Блог","pages":"Сторінки","account_settings":"НАЛАШТУВАННЯ ПРОФІЛЮ","profile":"Профіль","change_password":"Змінити пароль","multilevel":"Багаторівневе меню","level_one":"Рівень 1","level_two":"Рівень 2","level_three":"Рівень 3","labels":"Мітки","important":"Важливо","warning":"Увага","information":"Інформація"},"adminlte/vi/adminlte":{"full_name":"Tên đầy đủ","email":"Email","password":"Mật khẩu","retype_password":"Nhập lại mật khẩu","remember_me":"Nhớ tôi","register":"Đăng ký","register_a_new_membership":"Đăng ký thành viên mới","i_forgot_my_password":"Tôi quên mật khẩu của tôi","i_already_have_a_membership":"Tôi đã là thành viên","sign_in":"Đăng nhập","log_out":"Đăng xuất","toggle_navigation":"Chuyển đổi điều hướng","login_message":"Đăng nhập để bắt đầu phiên của bạn","register_message":"Đăng ký thành viên mới","password_reset_message":"Đặt lại mật khẩu","reset_password":"Đặt lại mật khẩu","send_password_reset_link":"Gửi liên kết đặt lại mật khẩu"},"adminlte/vi/menu":{"main_navigation":"ĐIỀU HƯỚNG CHÍNH","blog":"Blog","pages":"Trang","account_settings":"CÀI ĐẶT TÀI KHOẢN","profile":"Hồ sơ","change_password":"Đổi mật khẩu","multilevel":"Đa cấp","level_one":"Cấp độ 1","level_two":"Cấp độ 2","level_three":"Cấp độ 3","labels":"NHÃN","Important":"Quan trọng","Warning":"Cảnh báo","Information":"Thông tin"},"adminlte/zh-CN/adminlte":{"full_name":"姓名","email":"邮箱","password":"密码","retype_password":"重输密码","remember_me":"记住我","register":"注册","register_a_new_membership":"注册新用户","i_forgot_my_password":"忘记密码","i_already_have_a_membership":"已经有账户","sign_in":"登录","log_out":"退出","toggle_navigation":"切换导航","login_message":"请先登录","register_message":"注册新用户","password_reset_message":"重置密码","reset_password":"重置密码","send_password_reset_link":"发送密码重置链接"},"adminlte/zh-CN/menu":{"main_navigation":"主导航","blog":"博客","pages":"页面","account_settings":"账户设置","profile":"用户信息","change_password":"修改密码","multilevel":"多级","level_one":"第一级","level_two":"第二级","level_three":"第三级","labels":"标签","important":"重要","warning":"警告","information":"信息"}}}
+module.exports = {"en":{"all":{"access":"Access control","access_1":"The experiment allows studying the principles of creating of access control systems to different rooms using a combination lock.","access_10":"Electric lock drive","access_2":"The access identifier is the RFID card or keychain and the RFID reader RC522. The RFID reader RC522 reads the radio tags, which are within the range of the reader, permanently.","access_3":"RFID reader RC522","access_4":"Servo SG90","access_5":"The RFID module does the polls with a frequency of 13.56 MHz and interacts with the Arduino NANO v3 controller using the SPI interface. When one of the keys (card or keychain) is moved to the reader, the key is read and compared with the database of users with authorized access in the controller. Users who do not have permission are denied. As the actuator, the servo drive SG90 is used.","access_6":"Entrance door","access_7":"Electric lock kit","access_8":"RFID keys","access_9":"Electric lock","apiDesc":"RELDES API provide access to resources (data entities) via URI paths. To use a RELDES API, your application will make an HTTP request and parse the response. The response format is JSON. API provides standard HTTP methods like GET, PUT, POST and DELETE. You can use any development language to access the API using HTTP request.","apiDesc1":"To use our API, you need to register by going that you will get your API the KEY, you will need to enable it in the query parameters such as: key = YourAPIkey. Also our API uses HTTP Basic Auth, so when you send a request, you must set the string in the request header: \"Authorization: Basic\" + convert the string \"user: password\" in base64.","apiDesc10":"status - current status of the experiment 1 - busy, 0 - free","apiDesc11":"end - the end of the experiment for the user with the current user_id","apiDesc12":"Lets take an experiment","apiDesc13":"message - a message which can be several answers:","apiDesc14":"This user is already in the queue for this experiment,          \"Success\" - the user has successfully registered in the queue","apiDesc15":"status - will be set to false if the user is in the queue, true if it was free to experiment, and he immediately took his","apiDesc16":"Experiment's time","apiDesc17":"Returns a list of data about the start, end, waiting for the experiment","apiDesc18":"While waiting in the queue if negative then the current user has already taken the experiment as seconds ago","apiDesc19":"1 if the user performs the experiment, 0 if there is a queue","apiDesc2":"Experiment's state","apiDesc20":"start of the experiment","apiDesc21":"the end of the experiment","apiDesc22":"Experiment's queue","apiDesc23":"It returns a list of all users in the queue for this experiment","apiDesc24":"Experiments's queues","apiDesc25":"It returns a list of all queues on all experiments","apiDesc26":"experiment's id","apiDesc27":"the user who performs the experiment","apiDesc28":"Loads the code","apiDesc29":"Parameters:","apiDesc3":"Occupy experiment","apiDesc30":"code for uploading","apiDesc4":"Returns the current status of the experiment.","apiDesc5":"Request example","apiDesc6":"where the first parameter may range between 1 and 4, and the mean number of the experiment","apiDesc7":"Response example","apiDesc8":"user_id - user on the system which is currently working on an experiment.","apiDesc9":"Where","apimethods":"API methods:","auth":"Authorization","browse":"Browse…","clean":"Empty code","climate":"Climate control","climate_1":"This experiment allows studying the method of climate control, based on data from temperature and humidity sensors. Also, the possibility of air quality control implemented, using of sensor for chemical impurities determining in the air.","climate_10":"Xiaomi humidity & temperature sensor","climate_11":"Everspring Temperature and Humidity Sensor (EVR_ST814)","climate_12":"ALQ-CO2 - Air quality and carbon dioxide sensor","climate_13":"Humidity / Temperature Sensor - EVR_ST814","climate_2":"DHT11 sensor (Digital Temperature Sensor (0-50 ° C) and Humidity (20-90%))","climate_3":"Air quality sensor MQ135 (It is designed to determine the content and quantity of harmful and dangerous gases in the air such as: NH3, NOx, alcohol, gasoline, smoke, CO2, etc.. It has a digital (comparator) and analog output)","climate_4":"Climate indicators","climate_5":"Climate control","climate_6":"Temperature on sensor","climate_7":"Air humidity on sensor","climate_8":"Air quality","climate_9":"Ground humidity","close":"Close","conf":"Configurable experiment","conf_desc":"Write your own code or use code templates","copy":"Copy","cote":"Components of the experiment","cross":"Cross-platform","cross_desc":"Use any device and operation system","cyber_1":"The experiment allows studying the principle of wireless wi-fi sensors operation and investigation their safety usage.","cyber_2":"The experiment demonstrates the possibility wireless wi-fi sensors usage for monitoring Smart House system indicators, as well as the results of a wi-fi connection violation due to deauthentication. The possibilities of mobile and cloud technologies application for efficient storage, visualization of data and monitoring of system status are shown.","cyber_3":"DHT11 sensor (Digital Temperature Sensor (0-50 ° C) and Humidity (20-90%))","cyber_4":"Air quality sensor MQ135 (It is designed to determine the content and quantity of harmful and dangerous gases in the air such as: NH3, NOx, alcohol, gasoline, smoke, CO2, etc.. It has a digital (comparator) and analog output)","cyber_5":"Deauthentication is an attack that sends packets to disconnect one or more clients currently connected to a specific access point. In this experiment, the forced client disconnection (capture handshakes WPA / WPA2) is used. Press the ATTACK button, observe a failure in receiving data from the sensor.","cyber_6":"Attack","cyber_7":"Connection status","cyber_8":"Deautentification","cyber_9":"Mobile technology","description":"Description","display":"Display","display_desc_1":"In this experiment user is allowed to control LCD and TFT LCD displays. Display has integrated controller and not accessed by Arduino directly. Communication is done vie I2C serial protocol.","display_desc_2":"Firstly LiquidCrystal_I2C.h and Wire.h libraries are included. Wire.h implements I2C protocol and LiquidCrystal_I2C.h implements communication with LCD via I2C. LiquidCrystal_I2C class object is created on the beginning of the code with parameters specific to given LCD controller. Changing those is not recommended. The code consists of setup and loop functions. Setup is called only once when board powers on. In this case in the function LCD parameters are set in begin call. Its parameters are numbers of rows and columns. backlight()/noBacklight() function is called to enable/disable LCD’s back light. Loop function is called continuously during all the work time of the board. Cursor position may is set by calling setCursor( column, row ) function. clear() function is called to remove all the symbols from LCD. delay( milliseconds ) function is called to delay activity of the board for stated time in milliseconds. Function print( string ) is called to print symbols starting from cursor position.","display_desc_3":"In this example string “Hello, world!” is printed into 1st line of the LCD. Second later string “I am display” is printed in the second line. One more second later LCD is cleared. These actions are repeating in the loop.","display_desc_4":"Text scrolling is implemented in this example. On each iteration of the loop cursor position is shifted and text is reprinted from this position.","display_example_1":"Hello, world!","display_example_2":"Scrolling text","distance":"Distance sensor","distance_desc":"In this experiment user works with sonic distance sensor. Sensor has 4 pins: vcc, ground, trigger and signal.","distance_desc_1":"User receives data from sensor through the serial interface. Serial class is used for that. The code consists of setup and loop functions. Setup is called only once when board powers on. In this function serial interface is initialized with baudrate of 9600 and sensor pins modes are set with pinMode call. Variables with sensor pins are declared before setup function. Loop function is called continuously during all the work time of the board. In this function all the work is done. Distance sensor has two modes: measuring and sending data. To set it in measuring mode pulse with 10 microseconds length must be sent to the sensor (trig pin). It is done by calling digitalWrite function. Its parameters are pin number and pin value. To form the pulse function called multiple times with LOW and HIGH values.","distance_desc_1-1":"Delays between calls are made with delayMicroseconds function. To read date from the sensor pulsing is called. This function’s arguments are pin number and expected value (HIGH or LOW). Returned value will represent travel time of sonic signal measured by the sensor. To convert that value to distance functions microsecondsToCentimeters and microsecondsToInches are used. Results are returned to user by print method of serial interface.","distance_desc_2":"Distance measurement","distance_desc_3":"Distance sensor with servo","distance_desc_4":"In this case sensor is attached to servo. It allows user to turn the sensor manually and measure distance to different objects. Servo position is set by write method of Servo object. Angle values are stored in the array. After servo position is set command to measure distance is called. To do so logical 1 pulse with duration of 10 microseconds is sent to the sensor with digitalWrite call. To read the measurements pulseIn is called. Results are sent to the user via serial interface by calling print method.","distance_title":"Sonic distance sensor","documentation":"documentation","dote":"Description of the experiment","emailMessage":"Thank you for registering in our system to confirm your registration click on the link:","endTime":"End","example":"Code example","exit":"Logout","expStatuses":"Experiment's statuses","expUploadCode":"Upload code","experiment":"Experiment","experiments":"Experiments","field":"Field of application","field_desc":"Decisions support in the design of moving objects control systems based on microcontrollers.","fr":"Starting Raspbian OS","fr_desc_1":"If you have enabled graphical uploading, you do not need to enter your user password, but if you have changed your password, you may need to enter it. In the case of console mode, login is required","fr_desc_10":"Connecting Arduino with Downloaded Sketch","fr_desc_11":"You need to connect an Arduino to a Raspberry Pi","fr_desc_12":"Get lab sketch # 1 and connected Arduino sensors. Run sketch and leave running.","fr_desc_13":"Pull Arduino USB Wire off Computer","fr_desc_14":"Insert Arduino USB Wire into Running Raspberry Pi","fr_desc_15":"Give full access to the port that the Arduino will use. To do this, write in the terminal: chmod 777 / dev / ttyACM0","fr_desc_1_li1":"Browser","fr_desc_1_li2":"Explorer","fr_desc_1_li3":"Terminal utility","fr_desc_1_li4":"Wolfram software","fr_desc_2":"By clicking on the menu button (Raspberry Pi logo) you can see the programs installed on the system The menu contains the following sections:","fr_desc_3_li1":"Programming: contains programs and tools (Python IDE, Geany, BlueJ, etc.)","fr_desc_3_li10":"Run: take action","fr_desc_3_li11":"Shutdown: Switch to Card Disconnect Window","fr_desc_3_li2":"Office: contains office applications (OpenOffice package)","fr_desc_3_li3":"Internet: contains applications and tools to work online","fr_desc_3_li4":"Games: contains games (MineCraft)","fr_desc_3_li5":"Accessories: contains additional related programs (Archiver, calculator)","fr_desc_3_li6":"Sound & Video: contains video and audio players (VLC Player)","fr_desc_3_li7":"System Tools: contains system programs (Midnight Commander)","fr_desc_3_li8":"Help: Help","fr_desc_3_li9":"Preferences: System Settings","fr_desc_4":"Basically, most of Raspbian's actions (like any Unix-like OS) use the Terminal utility. To start it, click the appropriate icon.","fr_desc_5":"You may need to change the system configuration, change the user password, turn on the camera, etc while working. All this can be done using the sudo raspi-config command","fr_desc_5_li":"Learn more about menu items:","fr_desc_5_li1":"Change User Password","fr_desc_5_li2":"Hostname is the name of the computer on the network","fr_desc_5_li3":"Boot options - boot settings","fr_desc_5_li4":"Localization Options - Select Language and Regional Settings","fr_desc_5_li5":"Interfacing Options - Interface Settings (Camera, SSH, VNC, SPI, I2C, Serial, 1-Wire, GPIO)","fr_desc_5_li6":"CPU Overclock","fr_desc_5_li7":"Advanced Options","fr_desc_5_li8":"Update - raspi-config","fr_desc_5_li9":"About raspi-config - application information","fr_desc_6":"When done, Finish should be selected. The OS will ask for permission to restart. You should agree and wait for the restart to finish. When changing the system settings, care must be taken that the error may lead to undesirable consequences.","fr_desc_7":"Setting up the Internet","fr_desc_8":"You do not need to do anything else if you are connected to a network that has a DHCP server and automatic address sharing (such as a home network). If DHCP is missing, the network settings can be set using the console. To do this, run the terminal where you want to open the network interface configuration file using the command: sudo nano / etc / network / interfaces. The following should be added to the file: iface <interface> inet static address <ip address> netmask <subnet mask> gateway <gateway address> dns-nameservers <whitespace DNS addresses> auto <interface>, where the interface is a network interface connected to Raspberry Pi (most often eth0); ip address - the address to be assigned; subnet mask - mask; gateway address - The ip address of a computer that serves as the gateway to the network. Then you need to exit saving the changes by pressing Ctrl + X, confirm saving by pressing Y, and then Enter to confirm the file overwriting. After changing the file, you must restart the Raspberry Pi by running the sudo reboot command. To check the network settings, run the ifconfig command","fr_desc_9":"To work with a proxy server, some time is required for the files / etc / environment (system-wide proxy settings) and /etc/apt/apt.conf (apt-get batch manager settings). The following should be added to the / etc / environment file: export http_proxy = \"http: // host: port\", and to the file /etc/apt/apt.conf: Acquire :: http :: proxy \"http: // host: port\"; . After performing these actions, you will be able to use the network functions, including the apt-get manager.","functional":"Functional capabilities","functional_desc":"The laboratory provides users with information on software and hardware solutions for further implementation; allows them to obtain skills in embedded systems programming.","ide":"Arduino Development Environment","ide_extra":"More information","ide_extra_desc":"<h3>Sketchbook</h3> <p> The Arduino environment uses the concept of a sketchbook: a standard place to store your programs (or sketches). The sketches in your sketchbook can be opened from the File > Sketchbook menu or from the Open button on the toolbar. The first time you run the Arduino software, it will automatically create a directory for your sketchbook. You can view or change the location of the sketchbook location from with the Preferences dialog. </p> <h3>Tabs, Multiple Files, and Compilation</h3> <p> Allows you to manage sketches with more than one file (each of which appears in its own tab). These can be normal Arduino code files (no extension), C files (.c extension), C++ files (.cpp), or header files (.h). </p> <h3>Uploading</h3> <p> Before uploading your sketch, you need to select the correct items from the Tools > Board and Tools > Serial Port menus. The boards are described below. On the Mac, the serial port is probably something like /dev/tty.usbmodem241 (for an Uno or Mega2560 or Leonardo) or /dev/tty.usbserial-1B1 (for a Duemilanove or earlier USB board), or /dev/tty.USA19QW1b1P1.1 (for a serial board connected with a Keyspan USB-to-Serial adapter). On Windows, it's probably COM1 or COM2 (for a serial board) or COM4, COM5, COM7, or higher (for a USB board) - to find out, you look for USB serial device in the ports section of the Windows Device Manager. On Linux, it should be /dev/ttyUSB0, /dev/ttyUSB1 or similar. </p> <p> Once you've selected the correct serial port and board, press the upload button in the toolbar or select the Upload item from the File menu. Current Arduino boards will reset automatically and begin the upload. With older boards (pre-Diecimila) that lack auto-reset, you'll need to press the reset button on the board just before starting the upload. On most boards, you'll see the RX and TX LEDs blink as the sketch is uploaded. The Arduino environment will display a message when the upload is complete, or show an error. </p> <p> When you upload a sketch, you're using the Arduino bootloader, a small program that has been loaded on to the microcontroller on your board. It allows you to upload code without using any additional hardware. The bootloader is active for a few seconds when the board resets; then it starts whichever sketch was most recently uploaded to the microcontroller. The bootloader will blink the on-board (pin 13) LED when it starts (i.e. when the board resets). </p> <h3>Libraries</h3> <p> Libraries provide extra functionality for use in sketches, e.g. working with hardware or manipulating data. To use a library in a sketch, select it from the Sketch > Import Library menu. This will insert one or more #include statements at the top of the sketch and compile the library with your sketch. Because libraries are uploaded to the board with your sketch, they increase the amount of space it takes up. If a sketch no longer needs a library, simply delete its #include statements from the top of your code. </p> <p> There is a list of libraries in the reference. Some libraries are included with the Arduino software. Others can be downloaded from a variety of sources. Starting with version 1.0.5 of the IDE, you do can import a library from a zip file and use it in an open sketch. </p> <h3>Third-Party Hardware</h3> <p> Support for third-party hardware can be added to the hardware directory of your sketchbook directory. Platforms installed there may include board definitions (which appear in the board menu), core libraries, bootloaders, and programmer definitions. To install, create the hardware directory, then unzip the third-party platform into its own sub-directory. (Don't use \"arduino\" as the sub-directory name or you'll override the built-in Arduino platform.) To uninstall, simply delete its directory. </p> <h3>Serial Monitor</h3> <p> Displays serial data being sent from the Arduino board (USB or serial board). To send data to the board, enter text and click on the \"send\" button or press enter. Choose the baud rate from the drop-down that matches the rate passed to Serial.begin in your sketch. Note that on Mac or Linux, the Arduino board will reset (rerun your sketch from the beginning) when you connect with the serial monitor. </p> <p> You can also talk to the board from Processing, Flash, MaxMSP, etc (see the interfacing page for details). </p> <h3>Preferences</h3> <p> Some preferences can be set in the preferences dialog (found under the Arduino menu on the Mac, or File on Windows and Linux). The rest can be found in the preferences file, whose location is shown in the preference dialog. </p> <h3>Language Support</h3> <p> The Arduino 1.0.1 software environment has been translated into 30+ different languages. By default, the IDE loads in the language selected by your operating system. (Note: on Windows and possibly Linux, this is determined by the locale setting which controls currency and date formats, not by the language the operating system is displayed in.) </p> <p> If you would like to change the language manually, start the Arduino software and open the Preferences window. Next to the Editor Language there is a dropdown menu of currently supported languages. Select your preferred language from the menu, and restart the software to use the selected language. If your preferred language is not supported, the IDE will default to English. </p> <p> You can return Arduino to its default setting of selecting its language based on your operating system by selecting System Default from the Editor Language drop-down. This setting will take effect when you restart the Arduino software. Similarly, after changing your operating system's settings, you must restart the Arduino software to update it to the new default language. </p> <h3>Boards</h3> <p> The board selection has two effects: it sets the parameters (e.g. CPU speed and baud rate) used when compiling and uploading sketches; and sets and the file and fuse settings used by the burn bootloader command. Some of the board definitions differ only in the latter, so even if you've been uploading successfully with a particular selection you'll want to check it before burning the bootloader. </p>","ide_info":"Overview","ide_info_desc":"<p> The Arduino development environment contains a text editor for writing code, a message area, a text console, a toolbar with buttons for common functions, and a series of menus. It connects to the Arduino hardware to upload programs and communicate with them. </p> <p> Software written using Arduino are called sketches. These sketches are written in the text editor. Sketches are saved with the file extension .ino. It has features for cutting/pasting and for searching/replacing text. The message area gives feedback while saving and exporting and also displays errors. The console displays text output by the Arduino environment including complete error messages and other information. The bottom righthand corner of the window displays the current board and serial port. The toolbar buttons allow you to verify and upload programs, create, open, and save sketches, and open the serial monitor: </p> <ul> <li>Verify – Checks your code for errors;</li> <li>Upload – Compiles your code and uploads it to the Arduino I/O board. See uploading below for details;</li> <li>New – Creates a new sketch;</li> <li>Open – Presents a menu of all the sketches in your sketchbook. Clicking one will open it within the current window;</li> <li>Save – Saves your sketch;</li> <li>Serial Monitor – Opens the serial monitor.</li> </ul>","ide_menu":"<p style='font-weight: bold;'> Additional commands are found within the five menus: File, Edit, Sketch, Tools, Help. The menus are context sensitive which means only those items relevant to the work currently being carried out are available. </p> <h4>Edit:</h4> <ul> <li>Copy for Forum (copies the code of your sketch to the clipboard in a form suitable for posting to the forum, complete with syntax coloring);</li> <li>Copy as HTML (copies the code of your sketch to the clipboard as HTML, suitable for embedding in web pages);</li> </ul> <h4>Sketch:</h4> <ul> <li>Verify/Compile (checks your sketch for errors);</li> <li>Show Sketch Folder (opens the current sketch folder);</li> <li>Add File... (adds a source file to the sketch (it will be copied from its current location). The new file appears in a new tab in the sketch window. Files can be removed from the sketch using the tab menu);</li> <li>Import Library (adds a library to your sketch by inserting #include statements at the start of your code. For more details, see libraries below. Additionally, with version 1.0.5 and later of the IDE, you can import a library from a .zip file).</li> </ul> <h4>Tools:</h4> <ul> <li>Auto Format (this formats your code nicely: i.e. indents it so that opening and closing curly braces line up, and that the statements inside curly braces are indented more);</li> <li>Archive Sketch (archives a copy of the current sketch in .zip format. The archive is placed in the same directory as the sketch);</li> <li>Board (select the board that you're using. See below for descriptions of the various boards);</li> <li>Serial Port (this menu contains all the serial devices (real or virtual) on your machine. It should automatically refresh every time you open the top-level tools menu);</li> <li>Programmer (for selecting a harware programmer when programming a board or chip and not using the onboard USB-serial connection. Normally you won't need this, but if you're burning a bootloader to a new microcontroller, you will use this);</li> <li>Burn Bootloader (the items in this menu allow you to burn a bootloader onto the microcontroller on an Arduino board. This is not required for normal use of an Arduino board but is useful if you purchase a new ATmega microcontroller (which normally come without a bootloader). Ensure that you've selected the correct board from the Boards menu before burning the bootloader).</li> </ul>","illum_1":"The experiment give possibility to study the basics of the loads driver functioning and the principle of multicolored (RGB) LED lighting systems creating, as well as RGB LED tape control","illum_10":"RGB color","illum_11":"Lighting can be set not only by color, but also by mood. Choose the mood you want and evaluate the color of the lighting.","illum_12":"Choose your mood","illum_13":"Delight","illum_14":"Relax","illum_15":"Sorrow","illum_16":"Turn on the switch and evaluate the result at different speeds.","illum_17":"Execute scenario with random colors","illum_18":"RGB controller","illum_19":"The circuit of components connection","illum_2":"Arduino NANO has the ability to generate a PWM (Pulse Wide Modulation) signal on some pins, which is transmitted to the inputs of the L298N load driver. The L298N module acts as RGB controller and gives possibility to control four DC load channels, depending on the PWM input signal. The level of output DC on the channels of RGB tape is proportional to the input channel. The multi-colored (RGB) LED tape (depending on the type of tape) has 4 inputs (RED, GREEN, BLUE, + 12V). Depending on the level of DC, the brightness of the required color sets on the LEDs. * The L298N load driver has the ability to control loads with a current of 2A. Pay attention to the characteristics of the LED tape.","illum_3":"Loads driver L298 (5-35V, 2A)","illum_4":"RGB LED tape","illum_5":"DC Power Supply 5V, 1А and 12V, 4А","illum_6":"Color selection","illum_7":"Selection of mood","illum_8":"Color change","illum_9":"Select the desired color of the light on the tape and click \"choose\".","illumination":"Illumination control","infoDescription":"Description of the experiment scenarios","infoFirst":"1. Select experiment","infoFirst_desc":"List of available experiments:","infoFourth":"4. See results","infoFourth_desc":"During the experiment performance, you can see the results received from the server.","infoSamples":"Examples of the experiment program codes","infoSchema":"Scheme of the experiment","infoSecond":"2. Read about it","infoSecond_desc":"Each experiment page contains:","infoThird":"3. Run the sample code","infoThird_desc":"On the page with the experiment you can use ready examples of program codes or write your own.","infoTitle":"User manual","led":"LED","led_desc_1":"This experiment allows users to control LEDs with Arduino board. LEDs are connected to digital pins of the board. Resistors are used to restrict the current flowing through the diodes. Diodes have common ground.","led_desc_10":"In this experiment, checked the serviceability LEDs with an analog port","led_desc_2":"The code consists of setup and loop functions. Setup is called only once when board powers on. In this case in the function pins from 2 to 5 are set up in output mode. Function pinMode is used for that. Its firs argument is pin number and second is pin mode. Loop function is called continuously during all the work time of the board. In this function all the work is done. To control diodes’ brightness analogWrite call is used. Its arguments are pin number and voltage value. Voltage range is 0-5V. Voltage value is not used directly as parameter of analogWrite, value ranged from 0 to 255 is used instead. Each value in this range is corresponded to voltage from 0 to 5V. It is done by so called pulse width modulation (PWM). To make it possible for user to see diodes brightness change function delay is called. It stops board’s work for amount of time (in ms) stated as argument of the function.","led_desc_3":"In this example diodes are light up and down one by one with delay of 700ms.","led_desc_4":"Running lights","led_desc_5":"In this example all LEDs are light up by for loop. Second for loops dims LEDs down. The loops are repeating.","led_desc_6":"Brightness change","led_desc_7":"In this example brightness of each LED is changed smoothly by changing voltage from 0 to 5V in for loop.","led_desc_8":"Sequential lights","led_desc_9":"Simalation defective LEDs","light_1":"The experiment gives possibility to study the basics of dimmer’s operation using the example of control of a white LED strip. The dimmer allows you to control the electrical power and thus control the level of illumination. The experiment also makes it possible to reproduce the automatic control algorithm under the necessary conditions.","light_10":"Remotely controlled dimmer for LEDs","light_11":"LED tape (White)","light_2":"Arduino Nano receives a numerical value for the required level of illumination and generates a PWM (Pulse Wide Modulation) signal for the load driver. The load driver controls voltage on the LEDs. Thus, the illumination level is controlled. The load driver performs the dimmer function. The dimmer, depending on the type, can control the alternative and direct voltage.","light_3":"LED tape","light_4":"Light level control","light_5":"Setting the illumination","light_6":"Drag the slider to change the light level (from 0 to 100%) and analyze the data from the light sensor.","light_7":"Set the time of day and estimate the level of illumination.","light_8":"AC Voltage Dimmer","light_9":"DC Voltage Dimmer (industrial)","lighting":"Lighting control","log_in":"Log in","login":"login","mailer":"Mailer","mega_extra":"Specification","mega_extra_desc":"<div class=\"spoiler-body collapse\"> <h4>Power</h4> <p> The Arduino Mega can be powered via the USB connection or with an external power supply. The power source is selected automatically. </p> <p> External (non-USB) power can come either from an AC-to-DC adapter (wall-wart) or battery. The adapter can be connected by plugging a 2.1mm center-positive plug into the board's power jack. Leads from a battery can be inserted in the Gnd and Vin pin headers of the POWER connector. </p> <p> The board can operate on an external supply of 6 to 20 volts. If supplied with less than 7V, however, the 5V pin may supply less than five volts and the board may be unstable. If using more than 12V, the voltage regulator may overheat and damage the board. The recommended range is 7 to 12 volts. </p> <p> The power pins are as follows: <ul> <li><strong>VIN.</strong> The input voltage to the Arduino board when it's using an external power source (as opposed to 5 volts from the USB connection or other regulated power source). You can supply voltage through this pin, or, if supplying voltage via the power jack, access it through this pin.</li> <li><strong>5V.</strong> This pin outputs a regulated 5V from the regulator on the board. The board can be supplied with power either from the DC power jack (7 - 12V), the USB connector (5V), or the VIN pin of the board (7-12V). Supplying voltage via the 5V or 3.3V pins bypasses the regulator, and can damage your board. We don't advise it.</li> <li><strong>3V3.</strong> A 3.3 volt supply generated by the on-board regulator. Maximum current draw is 50 mA.</li> <li><strong>GND.</strong> Ground pins.</li> <li><strong>IOREF.</strong> This pin on the Arduino board provides the voltage reference with which the microcontroller operates. A properly configured shield can read the IOREF pin voltage and select the appropriate power source or enable voltage translators on the outputs for working with the 5V or 3.3V.</li> </ul> </p> <h4>Memory</h4> <p> The ATmega2560 has 256 KB of flash memory for storing code (of which 8 KB is used for the bootloader), 8 KB of SRAM and 4 KB of EEPROM (which can be read and written with the EEPROM library). </p> <h4>Input and Output</h4> <p> Each of the 54 digital pins on the Mega can be used as an input or output, using pinMode(), digitalWrite(), and digitalRead() functions. They operate at 5 volts. Each pin can provide or receive a maximum of 40 mA and has an internal pull-up resistor (disconnected by default) of 20-50 kOhms. In addition, some pins have specialized functions: <ul> <li><strong>Serial: 0 (RX) and 1 (TX); Serial 1: 19 (RX) and 18 (TX); Serial 2: 17 (RX) and 16 (TX); Serial 3: 15 (RX) and 14 (TX).</strong> Used to receive (RX) and transmit (TX) TTL serial data. Pins 0 and 1 are also connected to the corresponding pins of the ATmega16U2 USB-to-TTL Serial chip.</li> <li><strong>External Interrupts: 2 (interrupt 0), 3 (interrupt 1), 18 (interrupt 5), 19 (interrupt 4), 20 (interrupt 3), and 21 (interrupt 2).</strong> These pins can be configured to trigger an interrupt on a low value, a rising or falling edge, or a change in value. See the attachInterrupt() function for details.</li> <li><strong>PWM: 2 to 13 and 44 to 46.</strong> Provide 8-bit PWM output with the analogWrite() function.</li> <li><strong>SPI: 50 (MISO), 51 (MOSI), 52 (SCK), 53 (SS).</strong> These pins support SPI communication using the SPI library. The SPI pins are also broken out on the ICSP header, which is physically compatible with the Uno, Duemilanove and Diecimila.</li> <li><strong>LED: 13.</strong> There is a built-in LED connected to digital pin 13. When the pin is HIGH value, the LED is on, when the pin is LOW, it's off.</li> <li><strong>TWI: 20 (SDA) and 21 (SCL).</strong> Support TWI communication using the Wire library. Note that these pins are not in the same location as the TWI pins on the Duemilanove or Diecimila.</li> </ul> <p> The Mega2560 has 16 analog inputs, each of which provide 10 bits of resolution (i.e. 1024 different values). By default they measure from ground to 5 volts, though is it possible to change the upper end of their range using the AREF pin and analogReference() function. </p> <p> There are a couple of other pins on the board: <ul> <li><strong>AREF.</strong> Reference voltage for the analog inputs. Used with analogReference().</li> <li><strong>Reset.</strong> Bring this line LOW to reset the microcontroller. Typically used to add a reset button to shields which block the one on the board.</li> </ul> </p> <h4>Communication</h4> <p> The Arduino Mega2560 has a number of facilities for communicating with a computer, another Arduino, or other microcontrollers. The ATmega2560 provides four hardware UARTs for TTL (5V) serial communication. An ATmega16U2 (ATmega 8U2 on the revision 1 and revision 2 boards) on the board channels one of these over USB and provides a virtual com port to software on the computer (Windows machines will need a .inf file, but OSX and Linux machines will recognize the board as a COM port automatically. The Arduino software includes a serial monitor which allows simple textual data to be sent to and from the board. The RX and TX LEDs on the board will flash when data is being transmitted via the ATmega8U2/ATmega16U2 chip and USB connection to the computer (but not for serial communication on pins 0 and 1). </p> <p> A SoftwareSerial library allows for serial communication on any of the Mega2560's digital pins. </p> <p> The ATmega2560 also supports TWI and SPI communication. The Arduino software includes a Wire library to simplify use of the TWI bus; see the documentation for details. For SPI communication, use the SPI library. </p> <h4>Programming</h4> <p> The Arduino Mega can be programmed with the Arduino software (download). For details, see the reference and tutorials. </p> <p> The ATmega2560 on the Arduino Mega comes preburned with a bootloader that allows you to upload new code to it without the use of an external hardware programmer. It communicates using the original STK500 protocol. </p> <p> You can also bypass the bootloader and program the microcontroller through the ICSP (In-Circuit Serial Programming) header using Arduino ISP or similar. </p> <p> The ATmega16U2 (or 8U2 in the rev1 and rev2 boards) firmware source code is available in the Arduino repository. The ATmega16U2/8U2 is loaded with a DFU bootloader. You can then use Atmel's FLIP software (Windows) or the DFU programmer (Mac OS X and Linux) to load a new firmware. Or you can use the ISP header with an external programmer (overwriting the DFU bootloader). See this user-contributed tutorial for more information. </p> <h4>Automatic (Software) Reset</h4> <p> Rather then requiring a physical press of the reset button before an upload, the Arduino Mega2560 is designed in a way that allows it to be reset by software running on a connected computer. One of the hardware flow control lines (DTR) of the ATmega8U2 is connected to the reset line of the ATmega2560 via a 100 nanofarad capacitor. When this line is asserted (taken low), the reset line drops long enough to reset the chip. The Arduino software uses this capability to allow you to upload code by simply pressing the upload button in the Arduino environment. This means that the bootloader can have a shorter timeout, as the lowering of DTR can be well-coordinated with the start of the upload. </p> <p> This setup has other implications. When the Mega2560 is connected to either a computer running Mac OS X or Linux, it resets each time a connection is made to it from software (via USB). For the following half-second or so, the bootloader is running on the Mega2560. While it is programmed to ignore malformed data (i.e. anything besides an upload of new code), it will intercept the first few bytes of data sent to the board after a connection is opened. If a sketch running on the board receives one-time configuration or other data when it first starts, make sure that the software with which it communicates waits a second after opening the connection and before sending this data. </p> <p> The Mega2560 contains a trace that can be cut to disable the auto-reset. The pads on either side of the trace can be soldered together to re-enable it. It's labeled \"RESET-EN\". You may also be able to disable the auto-reset by connecting a 110 ohm resistor from 5V to the reset line; see this forum thread for details. </p> <h4>USB Overcurrent Protection</h4> <p> The Arduino Mega2560 has a resettable polyfuse that protects your computer's USB ports from shorts and overcurrent. Although most computers provide their own internal protection, the fuse provides an extra layer of protection. If more than 500 mA is applied to the USB port, the fuse will automatically break the connection until the short or overload is removed. </p> <h4>Physical Characteristics and Shield Compatibility</h4> <p> The maximum length and width of the Mega2560 PCB are 4 and 2.1 inches respectively, with the USB connector and power jack extending beyond the former dimension. Three screw holes allow the board to be attached to a surface or case. Note that the distance between digital pins 7 and 8 is 160 mil (0.16\"), not an even multiple of the 100 mil spacing of the other pins. </p> <p> The Mega2560 is designed to be compatible with most shields designed for the Uno, Diecimila or Duemilanove. Digital pins 0 to 13 (and the adjacent AREF and GND pins), analog inputs 0 to 5, the power header, and ICSP header are all in equivalent locations. Further the main UART (serial port) is located on the same pins (0 and 1), as are external interrupts 0 and 1 (pins 2 and 3 respectively). SPI is available through the ICSP header on both the Mega2560 and Duemilanove / Diecimila. Please note that I2C is not located on the same pins on the Mega (20 and 21) as the Duemilanove / Diecimila (analog inputs 4 and 5). </p> </div>","mega_info":"Overview","mega_info_desc":"The Arduino Mega 2560 is a microcontroller board based on the ATmega2560 (<a target='_blank' href='http://www.atmel.com/Images/Atmel-2549-8-bit-AVR-Microcontroller-ATmega640-1280-1281-2560-2561_datasheet.pdf'>datasheet, pdf</a>). It has 54 digital input/output pins (of which 15 can be used as PWM outputs), 16 analog inputs, 4 UARTs (hardware serial ports), a 16 MHz crystal oscillator, a USB connection, a power jack, an ICSP header, and a reset button. It contains everything needed to support the microcontroller; simply connect it to a computer with a USB cable or power it with a AC-to-DC adapter or battery to get started. The Mega is compatible with most shields designed for the Arduino Duemilanove or Diecimila.","mega_summary":"<tr><td>Microcontroller</td><td>ATmega2560</td></tr> <tr><td>Operating Voltage</td><td>5V</td></tr> <tr><td>Input Voltage (recommended)</td><td>7-12V</td></tr> <tr><td>Input Voltage (limits)</td><td>6-20V</td></tr> <tr><td>Digital I/O Pins</td><td>54 (of which 15 provide PWM output)</td></tr> <tr><td>Analog Input Pins</td><td>16</td></tr> <tr><td>DC Current per I/O Pin</td><td>40 mA</td></tr> <tr><td>DC Current for 3.3V Pin</td><td>50 mA</td></tr> <tr><td>Flash Memory</td><td>256 KB of which 8 KB used by bootloader</td></tr> <tr><td>SRAM</td><td>8 KB</td></tr> <tr><td>EEPROM</td><td>4 KB</td></tr> <tr><td>Clock Speed</td><td>16 MHz</td></tr>","name":"first name","oh_li1":"to all items (access can be contacted by name);","oh_li2":"to all statuses and teams;","oh_li3":"to standard actions to perform various operations.","oh_li4":"from the rules;","oh_li5":"from the XMPP console;","oh_li6":"from the entries in the Google Calendar.","oh_text":"OpenHAB (Open Home Automation Bus) - a Java-based open source smart house implementation project, distributed under the GPLv3 license, and Jetty is used to organize the work of the web-interface. This open platform is capable of performing functions such as turning on and off the light, controlling sockets, and so on. OpenHAB provides tools for organizing the work of various systems, equipment and home automation interfaces. At the same time OpenHAB does not depend on protocols and equipment, providing a separate level of abstraction, which allows you to interact with different types of devices and software. To determine the control logic used scripts, written in a special subject-oriented programming language, developed with the help of Eclipse -Xtext. The main OpenHAB service is the event bus. Modules that do not require state tracking use this bus to share event information with other modules. There are two main types of events: 1. Commands that initiate any action or change the state of a particular item or device. 2. Status updates that report changes in the state of a particular item or device. Binding protocols that communicate with real devices should communicate with each other precisely through the event bus. This ensures communication between the modules. OpenHAB uses a very powerful expression language, which defines scenarios. A script or script is a code block defined by the user and can be called and used in different places. Scripts are placed in the openhab / configurations / scripts folder. The demo.script demo file is in the workspace. Scripts may also be inside a rule file in the openhab / configurations / rules folder: they are used to define the rule execution block. Each rule consists of two parts: one contains action switches, in other scripts - for their execution. For efficient use of scripts OpenHAB provides access:","oh_text2":"The script is identified by the name (in the demo.script file, the name of the demo script). Each script always returns the value that is the result of the last expression contained therein. Scripts may be called:","oh_text3":"Installation and configuration OpenHAB on Raspberry Pi","oh_text4":"To install OpenHAB on Raspberry Pi, you must perform a sequence of actions and commands (using a terminal) as described below.","oh_text4_li1":"Download key: wget -qO - 'https://bintray.com/user/downloadSubjectPublicKey?username= openhab '| sudo apt-key add -","oh_text4_li10":"Overload systemd: sudo systemctl daemon-reload","oh_text4_li11":"Add port to be used with Arduino: sudo nano /usr/share/openhab/bin/openhab.sh In the section \"JAVA_ARGS_DEFAULT\" add to the end","oh_text4_li12":"Overload OpenHAB: sudo service openhab restart","oh_text4_li13":"Write code to receive data from Arduino: sudo nano /etc/openhab/configurations/items/home.items","oh_text4_li14":"Create interface for displaying data: sudo nano /etc/openhab/configurations/sitemaps/home.sitemap","oh_text4_li15":"Find the Java process and remember its number: top","oh_text4_li16":"Stop the Java process. For example, the Java process number is 3234, then: kill 3234","oh_text4_li17":"Rename the openhab_default.cfg file at openhab.cfg in /etc/openhab/configurations/","oh_text4_li18":"Create OpenHAB rule for sensor control: sudo nano etc / openhab / configurations / rules / home.rules","oh_text4_li19":"Connect Arduino with a loaded sketch;","oh_text4_li2":"Install the OpenHAB Repository: echo \"deb http://dl.bintray.com/openhab/apt-repo stable main\" | sudo tee /etc/apt/sources.list.d/openhab.list","oh_text4_li20":"Provide full access to the port to be used by Arduino: chmod 777 /dev/ttyACM0","oh_text4_li21":"Go to the openHab directory: cd /usr/share/openhab/bin","oh_text4_li22":"Run the .sh file: sudo ./openhab.sh","oh_text4_li23":"Go to: RaspberryPi-IP: 8080/openhab.app?sitemap = home","oh_text4_li3":"Update system files: sudo apt-get update","oh_text4_li4":"Install OpenHAB: sudo apt-get install openhab-runtime","oh_text4_li5":"Add a user to the group: sudo usermod -a g openhab pi","oh_text4_li6":"Run OpenHAB: sudo systemctl enable openhab","oh_text4_li7":"Install the add-on for GPIO: sudo apt-get install openhab-addon-io-gpio sudo apt-get install openhab-addon-binding-gpio","oh_text4_li8":"Install add-ons for working with ports: sudo apt-get install openhab-addons-binding-serial","oh_text4_li9":"Specify a user name and group name : sudo nano /etc/default/openhab sudo nano /usr/lib/systemd/system/openhab.service","oh_title":"Integration of Smart House subsystems based on OpenHAB platform","passwd":"password","passwd_repeat":"repeat password","personal":"personal use","pi_install_desc":"There are two ways to install Raspbian on Raspberry Pi:","pi_install_desc_li1":"Download NOOBS from the official site to your MicroSD memory card and install;","pi_install_desc_li2":"Mounting a Raspbian OS file on a MicroSD memory card. In this case, it will be possible to start working immediately after the Raspberry Pi is turned on.","pi_install_v1":"An example of installing Raspbian OS using NOOBS","pi_install_v1_desc_1":"You must download the package from the official site https://www.raspberrypi.org/downloads/noobs/. You must select NOOBS 'Offline and network install' for installation without the Internet or NOOBS LITE 'Network install only' for installation with the Internet.","pi_install_v1_desc_2":"Before formatting NOOBS files to a microSD card, it must be formatted in the FAT32 file system. Next, unzip the NOOBS archive to your microSD memory card. The next step is to connect the peripherals to the Raspberry Pi: USB keyboard, USB mouse, monitor (via HDMI), and you must insert the microSD card into the appropriate slot. Last but not least, the MicroUSB power is plugged in. In the window that appears, select Raspbian OS (first option). The second option is to split sections of the memory card manually, the third option is to download directly to Scratch, a program for creating computer graphics and animations. You need to click “Install” and confirm the recording to the MicroSD memory card. The installation and reboot process must be completed. In the Configuration Tool window (you can change the settings later), select the \"Enable boot to Desktop\" option and confirm the selection, which will make LXDE the default boot interface. Next, click Done and agree to restart. You will then be ready to go.","pi_install_v2":"An example of installing Raspbian using file-image mounting","pi_install_v2_desc2_li1":"you need to unzip the image file on your computer","pi_install_v2_desc2_li2":"You should format your memory card with a standard Windows tool","pi_install_v2_desc2_li3":"Next, in Win32DiskImager you must select a Raspbian OS file (for example: \"2017-09-07-raspbian-stretch.img\")","pi_install_v2_desc2_li4":"In the Device section, select the name of the microSD memory card. You should be careful if you make a mistake, you can harm the hard disk","pi_install_v2_desc2_li5":"Finally select Write 'and wait for the writing process to complete. The approximate recording time is 5-10 minutes","pi_install_v2_desc3":"You must then connect the peripherals to the Raspberry Pi: USB keyboard, USB mouse, monitor (via HDMI), and insert the microSD card into the appropriate slot. Last but not least, the MicroUSB power is plugged in.","pi_install_v2_desc3_li1":"Raspbian OS will be downloaded and ready to go.","pi_install_v2_desc3_li2":"If using Unix-like OS:","pi_install_v2_desc3_li3":"should format microSD memory card in FAT 32 / ext2","pi_install_v2_desc3_li4":"Execute command: sudo dd bs = 4m if = / home / user / raspbian.img of = / dev / disk1;","pi_install_v2_desc3_li5":"Raspbian OS will be downloaded and ready to go. It is important to remember that the Raspberry Pi starts immediately after connecting MicroUSB, and that the Raspberry Pi should be switched off as follows:","pi_install_v2_desc3_li6":"Complete all actions","pi_install_v2_desc3_li7":"Click on Raspberry Pi logo in the upper left corner","pi_install_v2_desc3_li8":"Select Shutdown and in the new window confirm - Shutdown","pi_install_v2_desc3_li9":"Only after the Raspberry Pi is disconnected can you disconnect the MicroUSB cord and change the composition of the peripherals connected to the Raspberry Pi.","pi_install_v2_desc_1":"You must first download the OS from the official site: https://www.raspberrypi.org/downloads/raspbian/. We recommend choosing \"Raspbian Stretch With Desktop\".","pi_install_v2_desc_2":"You also need to install Win32DiskImager (https://sourceforge.net/projects/win32diskimager/) on your computer and use it to write a Raspbian OS file to your microSD:","pi_ul_li1":"Raspbian (Debian modification)","pi_ul_li2":"Pidora (Fedora mofification)","pi_ul_li3":"Arch Linux ARM","pi_ul_li4":"Kali Linux","platforms":"Platforms","presence":"Presence control","presence_1":"The experiment allows studying the principles of presence monitoring systems and security systems operation by changing the mode of operation of the subsystem. The possibility of motion control in several areas has been realized.","presence_2":"PIR sensor (passive infrared sensor, often used in alarm systems)","presence_3":"Interior door","queue":"Queue","recommendation":"Recommendation system","recommendation_over":"Overview","recommendation_select":"Platform selection","register":"Register","registration":"Registration","reldes":"Remote laboratory","reldes_desc":"RELDES (REmote Laboratory of Embedded Systems Design) – developed at Software Tools department of Zaporizhzhya National Technical University, Ukraine. Provides remote access to Arduino based experimental equipment.","rp":"Real project","rpi_sd":"The Raspberry Pi is a bank card-sized single-board computer, originally designed as a budget system for computer science education, which has subsequently become much more widely used and popular. The first versions were created in 2011. Built on an ARM architecture processor. The Raspberry Pi works mainly on Linux-based operating systems such as:","rs_pic1":"<img src=\"/images/rs_manufacturer_ukr.png\"/ width=\"150\" hight=\"150\" alt=\"KnowlageBase\">","rs_pic2":"<img src=\"/images/rs_platforms_ukr.png\"/ width=\"150\" hight=\"150\" alt=\"Platforms\">","rs_tab1_text1":"Developer","rs_tab1_text2":"knowledge level","rs_tab2_text1":"Hardware criterias","rs_tab2_text2":"analog input; digital input; power; processor family.","rs_tab3_text1":"Software criterias","rs_tab3_text2":"language","rs_tab4_text1":"Additional","rs_tab4_text2":"price; form-factor.","rs_text1":"is a service created at the Software Department of the Zaporozhzhia Polytechnic National University within the RELDES laboratory. The service was designed to help embedded system designers choose hardware-software platforms, depending on the developer's requirements for the platform they are looking for.","rs_text2":"Great choice among the most popular platforms","rs_text3":"The database includes more than 40 platforms produced by the different companies, such as: Arduino, Raspberry Pi, Texas Instrument, STMicrocontroller, Intel, Netduino, Iskra, BeagleBone","rs_text4":"The recommendation system is built based on the principle of knowledge-based systems. This is a case where the developer describes his needs himself, and the system, using a database (formed on the basis of knowledge about platforms from different sources), looks for platforms that meet his needs. Platform search criteria:","rs_title1":"Recommendation System (RS) -","rs_title2":"How is it works?","rs_title3":"STAGES OF WORKING WITH THE SERVICE","run":"Run","safety_1":"Arduino NANO has the ability to generate a PWM (Pulse Wide Modulation) signal on some pins, which is transmitted to the inputs of the L298N load driver. The L298N module acts as RGB controller and gives possibility to control four DC load channels, depending on the PWM input signal. The level of output DC on the channels of RGB tape is proportional to the input channel. The multi-colored (RGB) LED tape (depending on the type of tape) has 4 inputs (RED, GREEN, BLUE, + 12V). Depending on the level of DC, the brightness of the required color sets on the LEDs. * The L298N load driver has the ability to control loads with a current of 2A. Pay attention to the characteristics of the LED tape.","safety_2":"Signaling","safety_3":"Select alarm operation mode","safety_4":"status","safety_5":"Window","safety_6":"Electric drive for windows","safety_7":"PIR sensors","security":"Safety control","send":"Send","servo":"Servo","servo_desc_1":"In this experiment user is allowed to control servo. It is controlled through digital pin. Servo got 3 pins: vcc, ground and control pin.","servo_desc_2":"Program is using Servo.h library, which contains Servo class implementation. It is used to communicate with motor. Servo object is created on the beginning of the code. The code consists of setup and loop functions. Setup is called only once when board powers on. In this function servo is attached to pin 9 by calling attach metod of Servo object. Loop function is called continuously during all the work time of the board. In this function all the work is done. To set position of the servo method write is used. Angle is passed to the method as parameter. Function delay is halt board’s work for desirable time in milliseconds. It is necessary to give the servo time to perform turn before next command is given. Not all servos got turning range of 0-180 degrees. It may vary depending on model.","servo_desc_3":"Servo continuously receives commands to turn between two positions. Two seconds delay is made to give servo time to turn.","servo_desc_4":"In this case smooth turns are performed. To achieve that servo changes position by one degree each 15 milliseconds in for loop.","servo_example_1":"Two position turns","servo_example_2":"Smooth turns","sh":"Smart House & IoT","simpl":"Accessibility","simpl_desc":"Use our hardware instead of spending money","slide1":"Registration","slide1_button":"Sign up today","slide1_desc":"To get access to remote experiments it is necessary to be registered.","slide2":"Students' project","slide2_desc":"Project of master and post-graduate students of Software Tools Department of Zaporizhzhya National Technical University.","slide3":"Embedded systems","slide3_desc":"Embedded systems today rules the world. Use the laboratory for rapid prototyping of embedded system.","sname":"second name","solar_1":"The experiment allows studying the principles of solar energy obtaining and accumulating. Also, the experiment demonstrates the typical scheme for organizing of the process of energy accumulation in batteries.","solar_10":"Solar panel","solar_11":"Solar charge controller","solar_12":"Inverter","solar_13":"Accumulators","solar_2":"During the experiment, it is possible to trace the change of the voltage produced by the solar panel when the illumination intensity is changed. For the holding of the experiment, turn on the lighting and analyze the changes on the graph.","solar_3":"Arduino Nano V3 (5V)","solar_4":"Solar panel (6V, 250mA)","solar_5":"Resistive divider (1/2)","solar_6":"Charge Controller (TP4056)","solar_7":"Accumulator (3.7V, 1100mA)","solar_8":"Turn on/off light","solar_9":"Solar station voltage(V)","solar_station":"Solar station","start":"Start","startTime":"Start","stat":"Statistics","stud":"student","target":"Target audience","target_desc":"Students, teachers and developers in the field of embedded systems design.","theme":"Theme","titlename":"RELDES","to_top":"Back to top","tpc":"Typical program code","univer":"ZNTU","uno_extra":"Specification","uno_extra_desc":"<div class=\"spoiler-body collapse\"> <h4>Power</h4> <p> The Arduino Uno can be powered via the USB connection or with an external power supply. The power source is selected automatically. </p> <p> External (non-USB) power can come either from an AC-to-DC adapter (wall-wart) or battery. The adapter can be connected by plugging a 2.1mm center-positive plug into the board's power jack. Leads from a battery can be inserted in the Gnd and Vin pin headers of the POWER connector. </p> <p> The board can operate on an external supply of 6 to 20 volts. If supplied with less than 7V, however, the 5V pin may supply less than five volts and the board may be unstable. If using more than 12V, the voltage regulator may overheat and damage the board. The recommended range is 7 to 12 volts. </p> <p> The power pins are as follows: <ul> <li><strong>VIN.</strong> The input voltage to the Arduino board when it's using an external power source (as opposed to 5 volts from the USB connection or other regulated power source). You can supply voltage through this pin, or, if supplying voltage via the power jack, access it through this pin.</li> <li><strong>5V.</strong> This pin outputs a regulated 5V from the regulator on the board. The board can be supplied with power either from the DC power jack (7 - 12V), the USB connector (5V), or the VIN pin of the board (7-12V). Supplying voltage via the 5V or 3.3V pins bypasses the regulator, and can damage your board. We don't advise it.</li> <li><strong>3V3.</strong> A 3.3 volt supply generated by the on-board regulator. Maximum current draw is 50 mA.</li> <li><strong>GND.</strong> Ground pins.</li> <li><strong>IOREF.</strong> This pin on the Arduino board provides the voltage reference with which the microcontroller operates. A properly configured shield can read the IOREF pin voltage and select the appropriate power source or enable voltage translators on the outputs for working with the 5V or 3.3V.</li> </ul> </p> <h4>Memory</h4> <p> The ATmega328 has 32 KB (with 0.5 KB used for the bootloader). It also has 2 KB of SRAM and 1 KB of EEPROM (which can be read and written with the EEPROM library). </p> <h4>Input and Output</h4> <p> Each of the 14 digital pins on the Uno can be used as an input or output, using pinMode(), digitalWrite(), and digitalRead() functions. They operate at 5 volts. Each pin can provide or receive a maximum of 40 mA and has an internal pull-up resistor (disconnected by default) of 20-50 kOhms. In addition, some pins have specialized functions: <ul> <li><strong>Serial: 0 (RX) and 1 (TX).</strong> Used to receive (RX) and transmit (TX) TTL serial data. These pins are connected to the corresponding pins of the ATmega8U2 USB-to-TTL Serial chip.</li> <li><strong>External Interrupts: 2 and 3.</strong> These pins can be configured to trigger an interrupt on a low value, a rising or falling edge, or a change in value. See the attachInterrupt() function for details.</li> <li><strong>PWM: 3, 5, 6, 9, 10, and 11.</strong> Provide 8-bit PWM output with the analogWrite() function.</li> <li><strong>SPI: 10 (SS), 11 (MOSI), 12 (MISO), 13 (SCK).</strong> These pins support SPI communication using the SPI library.</li> <li><strong>LED: 13.</strong> There is a built-in LED connected to digital pin 13. When the pin is HIGH value, the LED is on, when the pin is LOW, it's off.</li> <li><strong>TWI: A4 or SDA pin and A5 or SCL pin.</strong> Support TWI communication using the Wire library.</li> </ul> <p> The Uno has 6 analog inputs, labeled A0 through A5, each of which provide 10 bits of resolution (i.e. 1024 different values). By default they measure from ground to 5 volts, though is it possible to change the upper end of their range using the AREF pin and the analogReference() function. </p> <p> There are a couple of other pins on the board: <ul> <li><strong>AREF.</strong> Reference voltage for the analog inputs. Used with analogReference().</li> <li><strong>Reset.</strong> Bring this line LOW to reset the microcontroller. Typically used to add a reset button to shields which block the one on the board.</li> </ul> </p> <h4>Communication</h4> <p> The Arduino Uno has a number of facilities for communicating with a computer, another Arduino, or other microcontrollers. The ATmega328 provides UART TTL (5V) serial communication, which is available on digital pins 0 (RX) and 1 (TX). An ATmega16U2 on the board channels this serial communication over USB and appears as a virtual com port to software on the computer. The '16U2 firmware uses the standard USB COM drivers, and no external driver is needed. However, on Windows, a .inf file is required. The Arduino software includes a serial monitor which allows simple textual data to be sent to and from the Arduino board. The RX and TX LEDs on the board will flash when data is being transmitted via the USB-to-serial chip and USB connection to the computer (but not for serial communication on pins 0 and 1). </p> <p> A SoftwareSerial library allows for serial communication on any of the Uno's digital pins. </p> <p> The ATmega328 also supports I2C (TWI) and SPI communication. The Arduino software includes a Wire library to simplify use of the I2C bus; see the documentation for details. For SPI communication, use the SPI library. </p> <h4>Programming</h4> <p> The Arduino Uno can be programmed with the Arduino software (download). Select Arduino Uno from the Tools > Board menu (according to the microcontroller on your board). For details, see the reference and tutorials. </p> <p> The ATmega328 on the Arduino Uno comes preburned with a bootloader that allows you to upload new code to it without the use of an external hardware programmer. It communicates using the original STK500 protocol. </p> <p> You can also bypass the bootloader and program the microcontroller through the ICSP (In-Circuit Serial Programming) header using Arduino ISP or similar. </p> <p> The ATmega16U2 (or 8U2 in the rev1 and rev2 boards) firmware source code is available . The ATmega16U2/8U2 is loaded with a DFU bootloader. You can then use Atmel's FLIP software (Windows) or the DFU programmer (Mac OS X and Linux) to load a new firmware. Or you can use the ISP header with an external programmer (overwriting the DFU bootloader). See this user-contributed tutorial for more information. </p> <h4>Automatic (Software) Reset</h4> <p> Rather than requiring a physical press of the reset button before an upload, the Arduino Uno is designed in a way that allows it to be reset by software running on a connected computer. One of the hardware flow control lines (DTR) of the ATmega8U2/16U2 is connected to the reset line of the ATmega328 via a 100 nanofarad capacitor. When this line is asserted (taken low), the reset line drops long enough to reset the chip. The Arduino software uses this capability to allow you to upload code by simply pressing the upload button in the Arduino environment. This means that the bootloader can have a shorter timeout, as the lowering of DTR can be well-coordinated with the start of the upload. </p> <p> This setup has other implications. When the Uno is connected to either a computer running Mac OS X or Linux, it resets each time a connection is made to it from software (via USB). For the following half-second or so, the bootloader is running on the Uno. While it is programmed to ignore malformed data (i.e. anything besides an upload of new code), it will intercept the first few bytes of data sent to the board after a connection is opened. If a sketch running on the board receives one-time configuration or other data when it first starts, make sure that the software with which it communicates waits a second after opening the connection and before sending this data. </p> <p> The Uno contains a trace that can be cut to disable the auto-reset. The pads on either side of the trace can be soldered together to re-enable it. It's labeled \"RESET-EN\". You may also be able to disable the auto-reset by connecting a 110 ohm resistor from 5V to the reset line. </p> <h4>USB Overcurrent Protection</h4> <p> The Arduino Uno has a resettable polyfuse that protects your computer's USB ports from shorts and overcurrent. Although most computers provide their own internal protection, the fuse provides an extra layer of protection. If more than 500 mA is applied to the USB port, the fuse will automatically break the connection until the short or overload is removed. </p> <h4>Physical Characteristics</h4> <p> The maximum length and width of the Uno PCB are 2.7 and 2.1 inches respectively, with the USB connector and power jack extending beyond the former dimension. Four screw holes allow the board to be attached to a surface or case. Note that the distance between digital pins 7 and 8 is 160 mil (0.16\"), not an even multiple of the 100 mil spacing of the other pins. </p> </div>","uno_info":"Overview","uno_info_desc":"The Arduino Uno is a microcontroller board based on the ATmega328 (<a target='_blank' href='http://www.atmel.com/Images/doc8161.pdf'>datasheet, pdf</a>). It has 14 digital input/output pins (of which 6 can be used as PWM outputs), 6 analog inputs, a 16 MHz ceramic resonator, a USB connection, a power jack, an ICSP header, and a reset button. It contains everything needed to support the microcontroller; simply connect it to a computer with a USB cable or power it with a AC-to-DC adapter or battery to get started.","uno_summary":"<tr><td>Microcontroller</td><td>ATmega328</td></tr> <tr><td>Operating Voltage</td><td>5V</td></tr> <tr><td>Input Voltage (recommended)</td><td>7-12V</td></tr> <tr><td>Input Voltage (limits)</td><td>6-20V</td></tr> <tr><td>Digital I/O Pins</td><td>14 (of which 6 provide PWM output)</td></tr> <tr><td>Analog Input Pins</td><td>6</td></tr> <tr><td>DC Current per I/O Pin</td><td>40 mA</td></tr> <tr><td>DC Current for 3.3V Pin</td><td>50 mA</td></tr> <tr><td>Flash Memory</td><td>32 KB of which 0.5 KB used by bootloader</td></tr> <tr><td>SRAM</td><td>2 KB</td></tr> <tr><td>EEPROM</td><td>1 KB</td></tr> <tr><td>Clock Speed</td><td>16 MHz</td></tr>","upload":"Upload","usage":"Using experiments","vent_1":"The experiment demonstrates the principles of ventilation system constructing with air flow speed controlling and air heating for heating the rooms.","vent_10":"Recuperator unit","vent_11":"Inside recuperator construction","vent_12":"Air heating unit","vent_2":"Arduino Nano generates a wide-pulse signal for the L298 load driver thereby controlling the fan speed. Also, Arduino Nano controls the Peltier element by the means of relay module for air heating. DHT22 sensor controls the temperature and humidity in the room.","vent_3":"L298 Load Management Driver","vent_4":"Relay 5V","vent_5":"Element of Peltier","vent_6":"Temperature and humidity sensor DHT22","vent_7":"To conduct the experiment, drag the slider to the desired position, thereby adjusting the speed of the fan in the ventilation system. Turn on the air heating and analyze the results on the graph. Control the fan speed and analyze the results on the graph.","vent_8":"Turn on\\off heating","vent_9":"Recuperator","ventilation":"Ventilation","virtual_model":"Virtual model","vritual_model_error":"Currently virtual model not supported on mobile devices","wireless":"Cyber-security","zone":"Zone control","zone_1":"The experiment allows studying the principles of security systems creation based on lasers. It gives possibilities of realization of invisible controlled barriers for specific zones.","zone_2":"The experiment was created for studying the operation and construction of perimeter control systems based on the source of the laser transmitter and receiver. These systems allow to control a certain area using a very thin laser with a long working distance. Laser reflectors are often used in such systems.","zone_3":"Laser Module","zone_4":"Light Sensor","zone_5":"Turn on perimeter control and simulate the crossing of the perimeter by opening the garage door. Review the result of turning on the light alarm in the experiment window.","zone_6":"Turn on/off perimeter control","zone_7":"Crossing the perimeter","zone_8":"Infrared perimeter example"},"auth":{"failed":"These credentials do not match our records.","throttle":"Too many login attempts. Please try again in :seconds seconds."},"experiments":{"description":"Description","tpc":"Typical program code","run":"Run","tts":"Time to start","tte":"Time to end","queue_qty":"Queue length"},"menu":{"swed":"SWED","arduino":"Arduino","arduino-ide":"Arduino IDE","raspberry-pi":"Raspberry PI","oh":"OpenHAB","experients":"Experiments","distance-sensor":"Distance sensor","servo":"Servo","LED":"Distance sensor","display":"Display"},"pagination":{"previous":"&laquo; Previous","next":"Next &raquo;"},"passwords":{"reset":"Your password has been reset!","sent":"We have emailed your password reset link!","throttled":"Please wait before retrying.","token":"This password reset token is invalid.","user":"We can't find a user with that email address."},"validation":{"accepted":"The :attribute must be accepted.","active_url":"The :attribute is not a valid URL.","after":"The :attribute must be a date after :date.","after_or_equal":"The :attribute must be a date after or equal to :date.","alpha":"The :attribute may only contain letters.","alpha_dash":"The :attribute may only contain letters, numbers, dashes and underscores.","alpha_num":"The :attribute may only contain letters and numbers.","array":"The :attribute must be an array.","before":"The :attribute must be a date before :date.","before_or_equal":"The :attribute must be a date before or equal to :date.","between":{"numeric":"The :attribute must be between :min and :max.","file":"The :attribute must be between :min and :max kilobytes.","string":"The :attribute must be between :min and :max characters.","array":"The :attribute must have between :min and :max items."},"boolean":"The :attribute field must be true or false.","confirmed":"The :attribute confirmation does not match.","date":"The :attribute is not a valid date.","date_equals":"The :attribute must be a date equal to :date.","date_format":"The :attribute does not match the format :format.","different":"The :attribute and :other must be different.","digits":"The :attribute must be :digits digits.","digits_between":"The :attribute must be between :min and :max digits.","dimensions":"The :attribute has invalid image dimensions.","distinct":"The :attribute field has a duplicate value.","email":"The :attribute must be a valid email address.","ends_with":"The :attribute must end with one of the following: :values.","exists":"The selected :attribute is invalid.","file":"The :attribute must be a file.","filled":"The :attribute field must have a value.","gt":{"numeric":"The :attribute must be greater than :value.","file":"The :attribute must be greater than :value kilobytes.","string":"The :attribute must be greater than :value characters.","array":"The :attribute must have more than :value items."},"gte":{"numeric":"The :attribute must be greater than or equal :value.","file":"The :attribute must be greater than or equal :value kilobytes.","string":"The :attribute must be greater than or equal :value characters.","array":"The :attribute must have :value items or more."},"image":"The :attribute must be an image.","in":"The selected :attribute is invalid.","in_array":"The :attribute field does not exist in :other.","integer":"The :attribute must be an integer.","ip":"The :attribute must be a valid IP address.","ipv4":"The :attribute must be a valid IPv4 address.","ipv6":"The :attribute must be a valid IPv6 address.","json":"The :attribute must be a valid JSON string.","lt":{"numeric":"The :attribute must be less than :value.","file":"The :attribute must be less than :value kilobytes.","string":"The :attribute must be less than :value characters.","array":"The :attribute must have less than :value items."},"lte":{"numeric":"The :attribute must be less than or equal :value.","file":"The :attribute must be less than or equal :value kilobytes.","string":"The :attribute must be less than or equal :value characters.","array":"The :attribute must not have more than :value items."},"max":{"numeric":"The :attribute may not be greater than :max.","file":"The :attribute may not be greater than :max kilobytes.","string":"The :attribute may not be greater than :max characters.","array":"The :attribute may not have more than :max items."},"mimes":"The :attribute must be a file of type: :values.","mimetypes":"The :attribute must be a file of type: :values.","min":{"numeric":"The :attribute must be at least :min.","file":"The :attribute must be at least :min kilobytes.","string":"The :attribute must be at least :min characters.","array":"The :attribute must have at least :min items."},"not_in":"The selected :attribute is invalid.","not_regex":"The :attribute format is invalid.","numeric":"The :attribute must be a number.","password":"The password is incorrect.","present":"The :attribute field must be present.","regex":"The :attribute format is invalid.","required":"The :attribute field is required.","required_if":"The :attribute field is required when :other is :value.","required_unless":"The :attribute field is required unless :other is in :values.","required_with":"The :attribute field is required when :values is present.","required_with_all":"The :attribute field is required when :values are present.","required_without":"The :attribute field is required when :values is not present.","required_without_all":"The :attribute field is required when none of :values are present.","same":"The :attribute and :other must match.","size":{"numeric":"The :attribute must be :size.","file":"The :attribute must be :size kilobytes.","string":"The :attribute must be :size characters.","array":"The :attribute must contain :size items."},"starts_with":"The :attribute must start with one of the following: :values.","string":"The :attribute must be a string.","timezone":"The :attribute must be a valid zone.","unique":"The :attribute has already been taken.","uploaded":"The :attribute failed to upload.","url":"The :attribute format is invalid.","uuid":"The :attribute must be a valid UUID.","custom":{"attribute-name":{"rule-name":"custom-message"}},"attributes":[]}},"ua":{"all":{"titlename":"RELDES","experiments":"Експерименти","experiment":"Експеримент","led":"Cвітлодіоди","servo":"Сервопривод","distance":"Датчик відстанні","display":"Дісплей","platforms":"Платформи","recommendation":"Рекомендаційна система","recommendation_over":"Опис","recommendation_select":"Вибір платформи","sh":"Розумний будинок та Інтернет речей","solar_station":"Сонячна станція","lighting":"Контроль освітленості","climate":"Клімат-контроль","access":"Контроль доступу","security":"Контроль безпеки","zone":"Контроль зони","presence":"Контроль присутності","ventilation":"Вентиляція","illumination":"Керування освітленням","slide1":"Реєстрація","slide1_desc":"Для отримання доступу до експериментів необхідно пройти реєстрацію.","slide1_button":"Зареєструйтеся сьогодні","slide2":"Студентський проект.","slide2_desc":"Проект магістрів та аспірантів кафедри Програмних засобів Національного Університету «Запорізька Політехніка» (Zaporizhzhia National Polytechnic University).","slide3":"Вбудовані системи","slide3_desc":"Вбудовані системи сьогодні правлять світом. Використовуйте віддалену лабораторію для швидкого прототипування вбудованої системи.","cross":"Кросплатформність","cross_desc":"Використовуйте будь-який пристрій та операційну систему","conf":"Конфігурований експеримент","conf_desc":"Створюйте свій програмний код або використовуйте шаблони","simpl":"Простота доступу","simpl_desc":"Використовуйте наше обладнання – заощаджуйте гроші","reldes":"Віддалена лабораторія","reldes_desc":"RELDES (REmote Laboratory for Design of Embedded Systems) ‑ віддалена лабораторія проектування вбудованих систем, розроблена на кафедрі програмних засобів Національного Університету «Запорізька Політехніка» (Zaporizhzhia National Polytechnic University). Надає віддалений доступ до експериментального обладнання на основі платформ Arduino.","field":"Область застосування","field_desc":"Підтримка прийняття проектних рішень при проектуванні вбудованих систем управління рухомими об'єктами на основі мікроконтролерів.","target":"Цільова аудиторія","target_desc":"Студенти, викладачі та розробники в галузі проектування вбудованих систем.","functional":"Функціональні можливості","functional_desc":"Лабораторія надає користувачам інформацію про програмні та апаратні компоненти для подальшого впровадження в реальних проектах, дозволяє отримати навички програмування вбудованих систем.","univer":"НУ «Запорізька політехніка»","to_top":"До початку","log_in":"Вхід","exit":"Вихід","login":"логін","passwd":"пароль","passwd_repeat":"повторіть пароль","auth":"Авторизація","close":"Закрити","uno_info":"Загальні відомості","uno_info_desc":"Arduino Uno побудовано на базі мікроконтролера ATmega328 (<a target=> '_blank' href=> 'http://www.atmel.com/Images/doc8161.pdf'>технічний опис, pdf</a>). Платформа має 14 цифрових входів/виходів (з котрих 6 можуть також працювати як входи ШІМ), 6 аналогових входів, кварцовий генератор 16 МГц, роз’єм USB та ICSP, силовий роз’єм, та кнопку перезавантаження. Для роботи необхідно підключити платформу до комп’ютеру за допомогою кабелю USB, або підключити живлення за допомогою адаптера AC/DC або батарей","uno_summary":"\r\n\t<tr><td>Мікроконтролер</td><td>ATmega328</td></tr>\r\n\t<tr><td>Робоча напруга</td><td>5В</td></tr>\r\n\t<tr><td>Вхідна напруга (рекомендована)</td><td>7-12В</td></tr>\r\n\t<tr><td>Вхідна напруга (максимальна)</td><td>6-20В</td></tr>\r\n\t<tr><td>Цифрові Входи/Виходи</td><td>14 (з котрих 6 можуть також працювати як входи ШІМ)</td></tr>\r\n\t<tr><td>Аналогові входи</td><td>6</td></tr>\r\n\t<tr><td>Постійний струм через вхід/вихід</td><td>40 мА</td></tr>\r\n\t<tr><td>Постійний струм для 3.3В виводу</td><td>50 мА</td></tr>\r\n\t<tr><td>Флеш-пам’ять</td><td>32 КБ (з котрих 0.5 КБ використовуються для завантажувача програм)</td></tr>\r\n\t<tr><td>ОЗП</td><td>2 КБ</td></tr>\r\n\t<tr><td>Енергонезалежна пам’ять</td><td>1 КБ</td></tr>\r\n\t<tr><td>Тактова частота</td><td>16 МГц</td></tr>","uno_extra":"Характеристики","uno_extra_desc":"\r\n\t<div class=\"spoiler-body collapse\">\r\n\t<h4>Живлення</h4>\r\n\t<p>\r\n\t\tArduino Uno може отримувати живлення як через підключення по USB, так і від зовнішнього джерела живлення. Джерело живлення вибирається автоматично.\r\n\t</p>\r\n\t<p>\r\n\t\tЗовнішнє живлення (не USB) може подаватися через перетворювач напруги AC/DC (блок живлення) або акумуляторною батареєю. Перетворювач напруги підключається за допомогою роз’єму 2.1 мм з позитивним полюсом на центральному контакті. Дроти від батареї підключаються до виводів Gnd і Vin.\r\n\t</p>\r\n\t<p>\r\n\t\tПлатформа може працювати при зовнішньому живленні від 6 В до 20 В. При напрузі живлення нижче 7 В, вивід 5V може видавати менше 5 В, при цьому платформа може працювати нестабільно. При використанні напруги вище 12 В регулятор напруги може перегрітися і пошкодити плату. Рекомендований діапазон від 7 В до 12 В.\r\n\t</p>\r\n\t<p>\r\n\t\tВиводи живлення:\r\n\t\t<ul>\r\n\t\t\t<li><strong>VIN.</strong> Вхід використовується для подачі живлення від зовнішнього джерела (за відсутності 5 В від роз’єму USB або іншого регульованого джерела живлення). Подача напруги живлення відбувається через даний вивід. Якщо харчування подається на роз'єм 2.1мм, то VIN можна використовувати для отримання живлення.</li>\r\n\t\t\t<li><strong>5V.</strong> Регульоване джерело напруги, що використовується для живлення мікроконтролера і компонентів на платі. Живлення може подаватися від виведення VIN через регулятор напруги, або від роз’єму USB, або іншого регульованого джерела напруги 5 В.</li>\r\n\t\t\t<li><strong>3V3.</strong> Напруга на виводі 3.3 В генерується мікросхемою FTDI на платформі. Максимальне споживання струму 50 мА.</li>\r\n\t\t\t<li><strong>GND.</strong> Виводи заземлення.</li>\r\n\t\t</ul>\r\n\t</p>\r\n\t<h4>Пам’ять</h4>\r\n\t<p>\r\n\t\tМікроконтролер ATmega328 має 32 кБ флеш пам’яті, з яких 0.5 кБ використовується для зберігання завантажувача, а також 2 кБ ОЗП (SRAM) і 1 Кб EEPROM (читання і запис виконується за допомогою бібліотеки EEPROM).\r\n\t</p>\r\n\t<h4>Входи і виходи</h4>\r\n\t<p>\r\n\t\tКожен з 14 цифрових виводів Uno може бути налаштований як вхід або вихід, використовуючи функції pinMode (), digitalWrite (), і digitalRead (),. Виводи працюють при напрузі 5 В. Кожен вивід має навантажувальний резистор (за замовчуванням відключений) 20-50 кОм і може пропускати до 40 мА. Деякі виводи мають особливі функції:\r\n\t\t<ul>\r\n\t\t\t<li><strong>Послідовна шина: 0 (RX) і 1 (TX).</strong> Виводи використовуються для отримання (RX) і передачі (TX) даних TTL. Дані виводи підключені до відповідних ніжок мікросхеми послідовної шини ATmega8U2 USB-to-TTL.</li>\r\n\t\t\t<li><strong>Зовнішнє переривання: 2 і 3.</strong> Дані виводи можуть бути налаштовані на виклик переривання або на молодшому значенні, або на передньому чи задньому фронті, або при зміні значення. Детальна інформація знаходиться в описі функції attachInterrupt ().</li>\r\n\t\t\t<li><strong>ШІМ: 3, 5, 6, 9, 10, і 11.</strong> Будь-який з виводів забезпечує ШІМ з роздільною здатністю 8 біт за допомогою функції analogWrite ().</li>\r\n\t\t\t<li><strong>SPI: 10 (SS), 11 (MOSI), 12 (MISO), 13 (SCK).</strong> За допомогою даних виводів здійснюється зв’язок SPI, для чого використовується бібліотека SPI.</li>\r\n\t\t\t<li><strong>LED: 13.</strong>Вбудований світлодіод, підключений до цифрового виводу 13. Якщо значення на виході має високий потенціал, то світлодіод горить.</li>\r\n\t\t\t<li><strong>I2C: 4 (SDA) та 5 (SCL).</strong> За допомогою виводів здійснюється зв’язок I2C (TWI), для створення якого використовується бібліотека Wire.</li>\r\n\t\t</ul>\r\n\t\t<p>\r\n\t\t\tНа платформі Uno встановлені 6 аналогових входів (позначених як A0 .. A5), кожен з роздільною здатністю 10 біт (тобто може приймати 1024 різних значення). За замовчанням виводи мають діапазон вимірювання до 5 В щодо землі, проте є можливість змінити верхню межу за допомогою виведення AREF і функції analogReference ().\r\n\t\t</p>\r\n\t\t<p>\r\n\t\t\t Додаткова пара виводів платформи:\r\n\t\t\t<ul>\r\n\t\t\t\t<li><strong>AREF.</strong> Опорна напруга для аналогових входів. Використовується з функцією analogReference ().</li>\r\n\t\t\t\t<li><strong>Reset.</strong> Низький рівень сигналу на виводі перезавантажує мікроконтролер. Зазвичай застосовується для підключення кнопки перезавантаження на платі розширення, що закриває доступ до кнопки на самій платі Arduino.</li>\r\n\t\t\t</ul>\r\n\t\t</p>\r\n\t\t<h4>Зв’язок</h4>\r\n\t\t<p>\r\n\t\tНа платформі Arduino Uno встановлено кілька пристроїв для здійснення зв’язку з комп’ютером, іншими пристроями Arduino або мікроконтролерами. ATmega328 підтримують послідовний інтерфейс UART TTL (5 В), який здійснюється виводами 0 (RX) і 1 (TX).\r\n\t\tВстановлена на платі мікросхема ATmega8U2 направляє даний інтерфейс через USB; програми на стороні комп’ютера \"спілкуються\" з платою через віртуальний COM порт. Прошивка ATmega8U2 використовує стандартні драйвера USB COM, ніяких сторонніх драйверів не потрібно, але на Windows для підключення потрібно файл ArduinoUNO.inf. Моніторинг послідовної шини (Serial Monitor) програми Arduino дозволяє посилати і отримувати текстові дані при підключенні до платформи. Світлодіоди RX і TX на платформі будуть мерехтіти при передачі даних через мікросхему FTDI або USB підключення (але не при використанні послідовної передачі через виводи 0 і 1).\r\n\t\t</p>\r\n\t\t<p>\r\n\t\tБібліотекою SoftwareSerial можливо створити послідовну передачу даних через будь-який з цифрових виводів Uno.\r\n\t\t</p>\r\n\t\t<p>\r\n\t\tATmega328 підтримує інтерфейси I2C (TWI) і SPI. В Arduino включена бібліотека Wire для зручності використання шини I2C.\r\n\t\t</p>\r\n\t\t<h4>Програмування</h4>\r\n\t\t<p>\r\n\t\tПлатформа програмується за допомогою ПЗ Arduino. Детальна інформація знаходиться в довіднику та інструкціях.\r\n\t\t</p>\r\n\t\t<p>\r\n\t\t\t Микроконтроллер ATmega328 поставляется с записанным загрузчиком, облегчающим запись новых программ без использования внешних программаторов. Связь осуществляется оригинальным протоколом STK500.\r\n\t\t</p>\r\n\t\t<p>\r\n\t\t\tЄ можливість не використовувати завантажувач і запрограмувати мікроконтролер через виводи ICSP (внутрішньосхемне програмування).\r\n\t\t</p>\r\n\t\t<p>\r\n\t\tКод прошивки для контролера ATmega8U2 є у вільному доступі в мережі Інтернет. Контролер ATmega8U2 має власний DFU завантажувач, який може бути активований замиканням джампера на звороті плати (поруч з картою Італії) і перезавантаженням контролера. Для запису нової прошивки можливо використовувати Atmel's FLIP (під Windows) або DFU програматор (на Mac OS X або Linux). Також можна переписати програму зовнішнім програматором, використовуючи ISP вхід.\r\n\t\t</p>\r\n\t\t<h4>Автоматичне (програмне) перезавантаження</h4>\r\n\t\t<p>\r\n\t\tUno розроблена таким чином, щоб перед записом нового коду перезавантаження здійснювалася самою програмою Arduino на комп’ютері, а не натисканням кнопки на платформі. Одна з ліній DTR мікросхеми ATmega8U2, керуючих потоком даних (DTR), підключена до виводу перезавантаження мікроконтролеру ATmega328 через 100 нФ конденсатор. Активація даної лінії, тобто подача сигналу низького рівня, перезавантажує мікроконтролер. Програма Arduino, використовуючи цю функцію, завантажує код одним натисканням кнопки Upload в самому середовищі програмування. Подача сигналу низького рівня по лінії DTR скоординована з початком запису коду, що скорочує таймаут завантажувача.\r\n\t\t</p>\r\n\t\t<p>\r\n\t\tФункція має ще одне застосування. Перезавантаження Uno відбувається кожного разу при підключенні до програми Arduino на комп’ютері з ОС Mac X або Linux (через USB). Наступні пів секунди після перезавантаження працює завантажувач. Під час програмування відбувається затримка декількох перших байтів коду, щоб уникнути отримання платформою некоректних даних (всіх, окрім коду нової програми). Якщо виконується разове налагодження скетчу, записаного в платформу, або введення будь-яких інших даних при першому запуску, необхідно переконатися, що програма на комп’ютері очікує протягом секунди перед передачею даних.\r\n\t\t</p>\r\n\t\t<p>\r\n\t\tНа Uno є можливість відключити лінію автоматичного перезавантаження розривом відповідної лінії. Контакти мікросхем з обох кінців лінії можуть бути з’єднані з метою відновлення. Лінія маркована «RESET-EN». Вимкнення автоматичного перезавантаження також можливо підключивши резистор 110 Ом між джерелом 5 В і даною лінією.\r\n\t\t</p>\r\n\t\t<h4>Струмовий захист роз’єму USB</h4>\r\n\t\t<p>\r\n\t\tВ Arduino Uno вбудований запобіжник (який спрацьовує автоматично), що захищає порт USB комп’ютера від струмів короткого замикання і надструмів. Хоча практично всі комп’ютери мають подібний захист, тим не менш, цей запобіжник забезпечує додатковий бар’єр. Запобіжник спрацьовує при проходженні струму більше 500 мА через USB порт і розмикає ланцюг до тих пір поки нормальні значення струмів НЕ будуть відновлено.\r\n\t\t</p>\r\n\t\t<h4>Фізичні характеристики</h4>\r\n\t\t<p>\r\n\t\tДовжина і ширина друкованої плати Uno складають 6.9 і 5.3 см відповідно. Роз’єм USB і силовий роз’єм виходять за межі даних розмірів. Чотири отвори в платі дозволяють закріпити її на поверхні. Відстань між цифровими виводами 7 і 8 дорівнює 0,4 см, хоча між іншими виводами воно становить 0,25 см.\r\n\t\t</p>\r\n\t</div>","mega_info":"Загальні відомості","mega_info_desc":"Arduino Mega побудована на мікроконтролері ATmega2560 (<a target=> '_blank' href=> 'http://www.atmel.com/Images/Atmel-2549-8-bit-AVR-Microcontroller-ATmega640-1280-1281-2560-2561_datasheet.pdf'>технічний опис, pdf</a>). Плата має 54 цифрових входів/виходів (15 з яких можуть використовуватися як виходи ШІМ), 16 аналогових входів, 4 послідовних порту UART, кварцовий генератор 16 МГц, USB та ICSP роз’єм, роз’єм живлення і кнопка перезавантаження. Для роботи необхідно підключити платформу до комп’ютера за допомогою кабелю USB або подати живлення за допомогою адаптера AC/DC, або акумуляторною батареєю. Arduino Mega 2560 сумісна з усіма платами розширення, розробленими для платформ Uno або Duemilanove.","mega_summary":"\r\n\t<tr><td>Мікроконтролер</td><td>ATmega2560</td></tr>\r\n\t<tr><td>Робоча напруга</td><td>5В</td></tr>\r\n\t<tr><td>Вхідна напруга (рекомендована)</td><td>7-12В</td></tr>\r\n\t<tr><td>Вхідна напруга (максимальна)</td><td>6-20В</td></tr>\r\n\t<tr><td>Цифрові Входи/Виходи</td><td>54 (з котрих 15 можуть також працювати як входи ШІМ)</td></tr>\r\n\t<tr><td>Аналогові входи</td><td>16</td></tr>\r\n\t<tr><td>Постійний струм через вхід/вихід</td><td>40 мА</td></tr>\r\n\t<tr><td>Постійний струм для 3.3В виводу</td><td>50 мА</td></tr>\r\n\t<tr><td>Флеш-пам’ять</td><td>256 КБ (з котрих 8 КБ використовуються для завантажувача програм)</td></tr>\r\n\t<tr><td>ОЗП</td><td>8 КБ</td></tr>\r\n\t<tr><td>Енергонезалежна пам’ять\t</td><td>4 КБ</td></tr>\r\n\t<tr><td>Тактова частота</td><td>16 МГц</td></tr>","mega_extra":"Характеристики","mega_extra_desc":"\r\n\t<div class=\"spoiler-body collapse\">\r\n\t<h4>Живлення</h4>\r\n\t<p>\r\n\tArduino Mega може отримувати живлення як через підключення по USB, так і від зовнішнього джерела живлення. Джерело живлення вибирається автоматично.\r\n\t</p>\r\n\t<p>\r\n\tЗовнішнє живлення (не USB) може подаватися через перетворювач напруги AC/DC (блок живлення) або акумуляторною батареєю. Перетворювач напруги підключається за допомогою роз’єму 2.1 мм з позитивним полюсом на центральному контакті. Дроти від батареї підключаються до виводів Gnd і Vin.\r\n\t</p>\r\n\t<p>\r\n\t\tПлатформа може працювати при зовнішньому живленні від 6 В до 20 В. При напрузі живлення нижче 7 В, вивід 5V може видавати менше 5 В, при цьому платформа може працювати нестабільно. При використанні напруги вище 12 В регулятор напруги може перегрітися і пошкодити плату. Рекомендований діапазон від 7 В до 12 В.\r\n\t</p>\r\n\t<p>\r\n\t\tВиводи живлення:\r\n\t\t<ul>\r\n\t\t\t<li><strong>VIN.</strong> Вхід використовується для подачі живлення від зовнішнього джерела (за відсутності 5 В від роз’єму USB або іншого регульованого джерела живлення). Подача напруги живлення відбувається через даний вивід. Якщо харчування подається на роз'єм 2.1мм, то VIN можна використовувати для отримання живлення.</li>\r\n\t\t\t<li><strong>5V.</strong> Регульоване джерело напруги, що використовується для живлення мікроконтролера і компонентів на платі. Живлення може подаватися від виведення VIN через регулятор напруги, або від роз’єму USB, або іншого регульованого джерела напруги 5 В.</li>\r\n\t\t\t<li><strong>3V3.</strong> Напруга на виводі 3.3 В генерується мікросхемою FTDI на платформі. Максимальне споживання струму 50 мА.</li>\r\n\t\t\t<li><strong>GND.</strong> Виводи заземлення.</li>\r\n\t\t</ul>\r\n\t</p>\r\n\t<h4>Пам’ять</h4>\r\n\t<p>\r\n\tМікроконтролер ATmega2560 має 256 кБ флеш пам’яті для зберігання коду програми (з яких 4 кБ використовується для зберігання завантажувача), 8 кБ ОЗП (SRAM) і 4 Кб EEPROM (читання і запис виконується за допомогою бібліотеки EEPROM).\r\n\t</p>\r\n\t<h4>Входи і виходи</h4>\r\n\t<p>\r\n\tКожен з 54 цифрових виводів Uno може бути налаштований як вхід або вихід, використовуючи функції pinMode (), digitalWrite (), і digitalRead (),. Виводи працюють при напрузі 5 В. Кожен вивід має навантажувальний резистор (за замовчуванням відключений) 20-50 кОм і може пропускати до 40 мА. Деякі виводи мають особливі функції:\r\n\t\t<ul>\r\n\t\t\t<li><strong>Послідовна шина: 0 (RX) і 1 (TX); Послідовна шина 1: 19 (RX) і 18 (TX); Послідовна шина 2: 17 (RX) і 16 (TX); Послідовна шина 3: 15 (RX) і 14 (TX); Виводи використовуються для отримання (RX) і передачі (TX) даних TTL. Виводи 0 та 1 підключені до відповідних ніжок мікросхеми послідовної шини ATmega8U2.</li>\r\n\t\t\t<li><strong>Зовнішнє переривання: 2 (переривання 0), 3 (переривання 1), 18 (переривання 5), 19 (переривання 4), 20 (переривання 3), та 21 (переривання 2). Ці виводи можуть бути налаштовані на виклик переривання або на молодшому значенні, або на передньому чи задньому фронті, або при зміні значення. Детальна інформація знаходиться в описі функції attachInterrupt().</li>\r\n\t\t\t<li><strong>ШІМ: 2 до 13, та 44-46. Будь-який з виводів забезпечує ШІМ з роздільною здатністю 8 біт за допомогою функції analogWrite ().</li>\r\n\t\t\t<li><strong>SPI: 50 (SS), 51 (MOSI), 52 (MISO), 53 (SCK). За допомогою даних виводів здійснюється зв’язок SPI, для чого використовується бібліотека SPI. Також виводи SPI можуть бути виведені до блоку ICSP, котрий сумісний с платформами Uno, Duemilanove и Diecimila.</li>\r\n\t\t\t<li><strong>LED: 13. Вбудований світлодіод, підключений до цифрового виводу 13. Якщо значення на виході має високий потенціал, то світлодіод горить.</li>\r\n\t\t\t<li><strong>I2C: 20 (SDA) та 21 (SCL). За допомогою виводів здійснюється зв’язок I2C (TWI). Для створення якого використовується бібліотека Wire (інформація на сайті Wiring). Розміщення виводів на платформі Mega не відповідає розміщенню Duemilanove або Diecimila.</li>\r\n\t\t</ul>\r\n\t\t<p>\r\n\t\tНа платформі Mega2560 є 16 аналогових входів, кожен з роздільною здатністю 10 біт (тобто може приймати 1024 різних значення). За замовчанням виводи мають діапазон вимірювання до 5 В щодо землі, проте є можливість змінити верхню межу за допомогою виведення AREF і функції analogReference ().\r\n\t\t</p>\r\n\t\t<p>\r\n\t\tДодаткова пара виводів платформи:\r\n\t\t\t<ul>\r\n\t\t\t\t<li><strong>AREF.</strong>Опорна напруга для аналогових входів. Використовується з функцією analogReference ().</li>\r\n\t\t\t\t<li><strong>Reset.</strong> Низький рівень сигналу на виводі перезавантажує мікроконтролер. Зазвичай застосовується для підключення кнопки перезавантаження на платі розширення, що закриває доступ до кнопки на самій платі Arduino.</li>\r\n\t\t\t</ul>\r\n\t\t</p>\r\n\t\t<h4>Зв’язок</h4>\r\n\t\t<p>\r\n\t\tНа платформі Arduino Mega2560 встановлено кілька пристроїв для здійснення зв’язку з комп’ютером, іншими пристроями Arduino або мікроконтролерами. ATmega2560 підтримують послідовний інтерфейс UART для TTL. Встановлена на платі мікросхема ATmega8U2 направляє один з інтерфейсів через USB, надаючи віртуальний COM порт програмам на комп’ютері (на Windows для підключення потрібно файл ArduinoUNO.inf, системи OSX и Linux автоматично розпізнають COM порт). Утиліта моніторингу послідовної шини (Serial Monitor) середовища розробки Arduino дозволяє посилати і отримувати текстові дані при підключенні до платформи. Світлодіоди RX і TX на платформі будуть мерехтіти при передачі даних через мікросхему ATmega8U2 або USB підключення (але не при використанні послідовної передачі через виводи 0 і 1).\r\n\t\t</p>\r\n\t\t<p>\r\n\t\tБібліотекою SoftwareSerial можливо створити послідовну передачу даних через будь-який з цифрових виводів Mega2560.\r\n\t\t</p>\r\n\t\t<p>\r\n\t\tATmega2560 підтримує інтерфейси I2C (TWI) і SPI. В Arduino включена бібліотека Wire для зручності використання шини I2C. Більш детальна інформація знаходиться на сайті Wiring. Для зв’язку по SPI, використовується бібліотека SPI.\r\n\t\t</p>\r\n\t\t<h4>Програмування</h4>\r\n\t\t<p>\r\n\t\tПлатформа програмується за допомогою середовища розробки Arduino. Детальна інформація знаходиться в довіднику та інструкціях.\r\n\t\t</p>\r\n\t\t<p>\r\n\t\tМікроконтролер ATmega2560 поставляється з записаним завантажувачем, що полегшує завантаження нових програм без використання зовнішніх програматорів. Зв’язок здійснюється оригінальним протоколом STK500.\r\n\t\t</p>\r\n\t\t<p>\r\n\t\tЄ можливість не використовувати завантажувач і запрограмувати мікроконтролер через виводи ICSP (внутрішньосхемне програмування). Детальна інформація знаходиться у цій інструкції.\r\n\t\t</p>\r\n\t\t<p>\r\n\t\tКонтролер ATmega8U2 має власний DFU завантажувач, який може бути активований замиканням джампера на звороті плати (поруч з картою Італії) і перезавантаженням контролера. Для запису нової прошивки можливо використовувати Atmel's FLIP (під Windows) або DFU програматор (на Mac OS X або Linux). Також можна переписати програму зовнішнім програматором, використовуючи ISP вхід.\r\n\t\t</p>\r\n\t\t<h4>Автоматичне (програмне) перезавантаження</h4>\r\n\t\t<p>\r\n\t\tMega розроблена таким чином, щоб перед записом нового коду перезавантаження здійснювалася самою програмою Arduino на комп’ютері, а не натисканням кнопки на платформі. Одна з ліній ATmega8U2, керуючих потоком даних (DTR), підключена до виводу перезавантаження мікроконтролеру ATmega2560 через  конденсатор 100 нФ. Активація даної лінії, тобто подача сигналу низького рівня, перезавантажує мікроконтролер. Програма Arduino, використовуючи цю функцію, завантажує код одним натисканням кнопки Upload в самому середовищі програмування. Подача сигналу низького рівня по лінії DTR скоординована з початком запису коду, що скорочує таймаут завантажувача.\r\n\t\t</p>\r\n\t\t<p>\r\n\t\tФункція має ще одне застосування. Перезавантаження Mega2560 відбувається кожного разу при підключенні до програми Arduino на комп’ютері з ОС Mac X або Linux (через USB). Наступні пів секунди після перезавантаження працює завантажувач. Під час програмування відбувається затримка декількох перших байтів коду, щоб уникнути отримання платформою некоректних даних (всіх, окрім коду нової програми). Якщо виконується разове налагодження скетчу, записаного в платформу, або введення будь-яких інших даних при першому запуску, необхідно переконатися, що програма на комп’ютері очікує протягом секунди перед передачею даних.\r\n\t\t</p>\r\n\t\t<p>\r\n\t\tНа Mega2560 є можливість відключити лінію автоматичного перезавантаження розривом відповідної лінії. Контакти мікросхем з обох кінців лінії можуть бути з’єднані з метою відновлення. Лінія маркована «RESET-EN». Вимкнення автоматичного перезавантаження також можливо підключивши резистор 110 Ом між джерелом 5 В і даною лінією.\r\n\t\t</p>\r\n\t\t<h4>Струмовий захист роз’єму USB</h4>\r\n\t\t<p>\r\n\t\tВ Arduino Mega2560 вбудовано запобіжник (який спрацьовує автоматично), що захищає порт USB комп’ютера від струмів короткого замикання і надструмів. Хоча практично всі комп’ютери мають подібний захист, тим не менш, цей запобіжник забезпечує додатковий бар’єр. Запобіжник автоматично перериває обмін даними при проходженні струму більше 500 мА через USB порт.\r\n\t\t</p>\r\n\t\t<h4>Фізичні характеристики та сумісність з платами розширення</h4>\r\n\t\t<p>\r\n\t\tДовжина і ширина друкованої плати Mega2560 складають 10.2 і 5.3 см відповідно. Роз’єм USB і силовий роз’єм виходять за межі даних розмірів. Три отвори в платі дозволяють закріпити її на поверхні. Відстань між цифровими виводами 7 і 8 дорівнює 0,4 см, хоча між іншими виводами воно становить 0,25 см.\r\n\t\t</p>\r\n\t\t<p>\r\n\t\tArduino Mega2560 сумісна з усіма платами розширення, розробленими для платформ Uno, Duemilanove або Diecimila. Розміщення виводів 0-13(а також AREF та GND), аналогових входів 0-5, силового роз’єму, ICSP роз’єм, порту послідовної передачі UART (виводи 0 та 1) та зовнішнього переривання 0 та 1 (виводи 2 та 3) на Mega відповідають розміщенню на вищезазначених платформах. Зв’язок SPI може виконуватись через роз’єм ICSP, як на платформі Duemilanove/Diecimila, так і на Mega2560. Однак розміщення виводів (20 та 21), зв’язку I2C на платформі Mega, не відповідає розміщенню тих самих виводів (аналогові виходи 4 та 5) на Duemilanove / Diecimila.\r\n\t\t</p>\r\n\t</div>","ide":"Cереда розробки Arduino","ide_info":"Загальні відомості","ide_info_desc":"\r\n\t<p>\r\n\t\t Середа разработки Arduino складається з вбудованого текстового редактора програмного коду, області повідомлень, вікна вивода тексту (консолі), панелі инструментів з кнопками часто використовуваних команд та декількох меню. Для завантаження програм і зв'язку середа розробки підключається до аппаратної частини Arduino.\r\n\t</p>\r\n\t<p>\r\n\t\t Програма, написана в середовищі Arduino, називається скетч. Скетч пишеться в текстовому редакторі, мающім инструменти вирізки/вставлення, пошуку/заміни тексту. В час збереження та экспорту проекта в області повідомлень з'являються інформаційні повідомленняю Вікно вивода тексту (консоль) показує повідомлення Arduino.\r\n\t</p>\r\n\t<ul>\r\n\t\t<li>компіляція коду Verify/Compile (перевірка програмного коду на помилки, компіляція);</li>\r\n\t\t<li>зупинення моніторинга Stop (зупинення моніторинга послідовної шини (Serial monitor));</li>\r\n\t\t<li>створення нового скетча New;</li>\r\n\t\t<li>відкрити файл скетча Open (відкриття меню доступа до усіх скетчів в блокноті);</li>\r\n\t\t<li>збереження скетча Save;</li>\r\n\t\t<li>загрузка скетча в контролер Upload to I/O Board (компілює программий код та завантажує його до пристрою Arduino.);</li>\r\n\t\t<li>открытие мониторинга последовательной шины (Serial monitor).</li>\r\n\t</ul>","ide_menu":"\r\n\t<p style=> 'font-weight: bold;'>\r\n\t\t Додадкові команди сгруповані в п'ять меню: File, Edit, Sketch, Tools, Help.\r\n\t</p>\r\n\t<h4>Підменю Edit:</h4>\r\n\t<ul>\r\n\t\t<li>Copy for Discourse (копіює до буферу код скетча для публікації на форумі);</li>\r\n\t\t<li>Copy as HTML (копіює до буферу код скетча як HTML код, для розміження на веб-сторінках);</li>\r\n\t</ul>\r\n\t<h4>Підменю Sketch:</h4>\r\n\t<ul>\r\n\t\t<li>Verify/Compile (перевірка на помилки);</li>\r\n\t\t<li>Import Library (додає бібліотеку до скетчу);</li>\r\n\t\t<li>Show Sketch Folder (відкриває директорію, де знаходиться скетч);</li>\r\n\t\t<li>Add File... (додає файл в скетч);</li>\r\n\t</ul>\r\n\t<h4>Підменю Tools:</h4>\r\n\t<ul>\r\n\t\t<li>Auto Format (опція оптимізує код);</li>\r\n\t\t<li>Board (вибір платформи);</li>\r\n\t\t<li>Serial Port (вибір порту);</li>\r\n\t</ul>","ide_extra":"Додаткова інформація","ide_extra_desc":"\r\n\t<h3>Загрузка скетча в Arduino</h3>\r\n\t<p>\r\n\t\t До завантаження скетча треба завдати параметри в меню Tools > Board та Tools > Serial Port. Платформы описываются далее по тексту. В ОС Mac последовательный порт может обозначаться как dev/tty.usbserial-1B1 (для платы USB) или /dev/tty.USA19QW1b1P1.1 (для платы последовательной шины, подключенной через адаптер Keyspan USB-to-Serial). В ОС Windows порты могут обозначаться как COM1 или COM2 (для платы последовательной шины) или COM4, COM5, COM7 и выше (для платы USB). Определение порта USB производится в поле Последовательной шины USB Диспетчера устройств Windows. В ОС Linux порты могут обозначаться как /dev/ttyUSB0, /dev/ttyUSB1.\r\n\t</p>\r\n\t<p>\r\n\t\t После выбора порта и платформы необходимо нажать кнопку загрузки на панели инструментов или выбрать пункт меню File > Upload to I/O Board. Современные платформы Arduino перезагружаются автоматически перед загрузкой. На старых платформах необходимо нажать кнопку перезагрузки. На большинстве плат во время процесса будут мигать светодиоды RX и TX. Среда разработки Arduino выведет сообщение об окончании загрузки или об ошибках.\r\n\t</p>\r\n\t<p>\r\n\t\t При загрузке скетча используется Загрузчик (Bootloader) Arduino, небольшая программа, загружаемая в микроконтроллер на плате. Она позволяет загружать программный код без использования дополнительных аппаратных средств. Загрузчик (Bootloader) активен в течении нескольких секунд при перезагрузке платформы и при загрузке любого из скетчей в микроконтроллер. Работа Загрузчика (Bootloader) распознается по миганию светодиода (13 пин) (напр.: при перезагрузке платы).\r\n\t</p>\r\n\t<h3>Платформы</h3>\r\n\t<p>\r\n\t\t Выбор платформы влияет на: параметры (напр.: скорость ЦП и скорость передачи данных), используемые при компиляции и загрузке скетчей и на настройки записи загрузчика (Bootloader) микроконтреллера. Некоторые характеристики платформ различаются только по последнему параметру (загрузка Bootloader), таким образом, даже при удачной загрузке с соответствующим выбором может потребоваться проверка различия перед записью загрузчика (Bootloader).\r\n\t</p>","browse":"Відкрити...","upload":"Завантажити","start":"Розпочати","send":"Відправити","registration":"Реєстрація","led_desc_1":"В даному експерименті здійснюється управління набором світлодіодів. Управління здійснюється через цифрові виводи плати Arduino. Діоди підключені через струмообмежуючі резистори і мають загальне заземлення.","led_desc_2":"Програмний код складається з функцій setup і loop. Перша виконується один раз при включенні плати. В даному випадку в ній виконується встановлення виводів з 2 по 5 в режим виходу з допомогою виклику pinMode, параметрами якого є номер виводу і його режим. Друга функція loop виконується в нескінченному циклі весь інший час роботи плати. В даному випадку проводиться зміна яскравості діодів, які підключені до виводів 2-5. Для зміни яскравості викликається функція analogWrite, яка подає на вивід, зазначений в своєму першому параметрі, напруга, вказана у другому. Напруга змінюється в діапазоні 0-5В, але функція приймає не значення вольтажу безпосередньо, а число від 0 до 255, що відповідає напрузі на проміжку 0-5В. Зміна напруги виконується за допомогою широтно-імпульсної модуляції. Так само в програмі використовується виклик delay, який призупиняє роботу плати на вказану кількість часу (мс). Це потрібно для того, щоб робота виконувалася досить повільно, щоб можна було помітити зміну яскравості.","led_desc_3":"У цьому прикладі в циклі проводиться послідовне включення і виключення кожного діода з затримкою в 700мс.","led_desc_4":"Мерехтіння світлодіодів","led_desc_5":"У цьому прикладі у функції loop виконується почергове включення всіх діодів в першому циклі і їх послідовно виключенні в другому. Ці цикли чергуються.","led_desc_6":"Плавна зміна яскравості","led_desc_7":"В цьому прикладі, по черзі для кожного діода виробляється плавну зміну яскравості від нуля до максимуму і назад. Зміна яскравості проводиться у вкладених циклах.","led_desc_8":"Почергове включення","led_desc_9":"Симуляція дефектного світлодіода","led_desc_10":"В даному експерименті, програмно перевіряється справність світлодіода за допомогою аналогового порту","distance_title":"Ультразвуковий датчик відстані","distance_desc":"В даному експерименті проводиться читання показань ультразвукового датчика відстані. Датчик має три виводи: живлення, землі і сигнальний. Сигнальний вивід підключений на цифровий вивід плати, дані надходять в послідовному коді.","distance_desc_1":"В даному прикладі передача показників сенсора відстані на комп’ютер виконується через послідовний інтерфейс. Для роботи з ним використовується клас Serial, через який і відбувається вся взаємодія з інтерфейсом. Програмний код складається з функцій setup і loop. Перша виконується один раз при включенні плати. В даному випадку в ній виконується ініціалізація послідовного інтерфейсу за допомогою виклику begin, параметром якого служить частота передачі даних, також проводиться установка режимів для виводів датчика функцією pinMode, параметрами якої є номер виводу і режим. Також перед описом функції setup оголошуються змінні, що зберігають номера виводів, до яких буде підключений датчик відстані. Друга функція – loop, виконується в нескінченному циклі весь інший час роботи плати. Робота з датчиком відстані проводиться в два етапи, які постійно змінюють один одного: запит на вимір і читання показників. Так як датчик є ультразвуковим, показники, які повертаються їм, являють собою час, за яке ультразвуковий сигнал пройшов до об’єкта і назад. Зважаючи на це, після читання показань слід перетворити значення, щоб обчислити відстань. Для запиту на датчик протягом більше 10 мкс подається логічна одиниця. Перед і після неї передається логічний нуль. Це потрібно для того, щоб упевнитися, що датчик правильно зчитав команду. Дані операції проводяться за допомогою викликів digitalWrite, параметрами якого є номер виходу і значення (LOW або HIGH).","distance_desc_1-1":"Між викликами проводиться затримка за допомогою функції delayMicroseconds. Для читання показників датчика зчитується тривалість вхідного сигналу. Це робиться за допомогою виклику функції pulseIn, параметрами якої є номер входу і сигнал, тривалість якого слід дізнатися (логічний 0 або 1). Ця функція повертає тривалість сигналу в мкс. Отримане значення заноситься в змінну duration. Після отримання цього значення, за допомогою функцій microsecondsToCentimeters і microsecondsToInches проводиться арифметичне перетворення значення часу в відстань в см і дюймах відповідно. По завершенню цих операцій здійснюється пересилка отриманої інформації через серійний інтерфейс (Serial) за допомогою виклику print.","distance_desc_2":"Вимірювання дистанції","distance_desc_3":"Датчик відстані з сервоприводом","distance_desc_4":"В даному експерименті датчик відстані повертається за допомогою сервоприводу. Це дозволяє вимірювати дистанцію до різних об’єктів. На стенді на різній відстані від датчика розташовані перегородки. Користувачеві пропонується проводити повороти двигуна з подальшим зняттям показань датчика відстані. Положення двигуна задається викликом write, параметром якого є кут повороту. В даному випадку значення кутів зберігаються в масиві і по черзі задаються двигуну. Команда на вимірювання відстані подається датчику за допомогою імпульсу тривалістю 10мкс. Для цього послідовно проводиться запис значень (0 і 1) за допомогою виклику DigitalWrite в відповідний вивід. Після вимірювання відстані проводиться читання показань датчика (час проходу ультразвукового сигналу) за допомогою виклику pulseIn. Відображення даних користувачеві проводиться через послідовний інтерфейс за допомогою функції print.","servo_desc_1":"В даному експерименті здійснюється управління сервоприводу. Управління виконується послідовним кодом через цифровий вивід. Сервопривод має три виводи: живлення, земля і сигнальний.","servo_desc_2":"В першу чергу слід відзначити, що в програмі підключена бібліотека Servo.h, що відповідає за управління сервоприводом. Вона надає можливість користуватися класом Servo, через який і здійснюється управління. Можна побачити, як на початку програми створюється об’єкт цього класу. Програмний код складається з функцій setup і loop. Перша виконується один раз при включенні плати. У ній виконується установка керуючого виходу для сервоприводу на вивід 9 за допомогою виклику методу attach об’єкта myservo. Друга функція loop виконується в нескінченному циклі весь інший час роботи плати. У даній функції викликаються команди управління сервоприводом, що задають його позицію в градусах (write). Слід зазначити, що діапазон роботи сервоприводів може відрізнятися, в залежності від привода і не тільки дорівнює 0-180. Команда delay використовується для припинення роботи плати на вказану кількість мілісекунд. Це необхідно тому що швидкість роботи сервопривода механічно обмежена, і він не здатний змінювати позицію настільки швидко, на скільки контролер здатний робити запити.","servo_example_1":"Поворот на дві позиції","servo_desc_3":"В цьому прикладі сервоприводу по черзі задаються 2 позиції. Між цим проводиться затримка в 2с, щоб двигун встиг зробити поворот до отримання наступної команди.","servo_example_2":"Плавне обертання","servo_desc_4":"В цьому прикладі проводиться плавний поворот привода. Для цього в циклі кожні 15мс викликається функція зміни позиції привода з різницею в 1 градус.","display_desc_1":"В даному експерименті здійснюється управління ЖК дисплеєм (LCD) і ЖК дисплеєм з активною матрицею (LCD TFT). Управління зображенням дисплея проводиться через цифрові виводи по протоколу послідовної передачі даних I2C.","display_desc_2":"В першу чергу слід відзначити, що в даній програмі підключені бібліотеки LiquidCrystal_I2C.h (що відповідає за управління ЖК-дисплеєм) і Wire.h (реалізує I2C протокол). Бібліотеки надають можливість користуватися класом LiquidCrystal_I2C, через який і здійснюється управління. Можна побачити, як на початку програми створюється об’єкт цього класу. В даному випадку параметри відповідають вбудованому в екран контролера і змінювати їх не рекомендується. Програмний код складається з функцій setup і loop. Перша виконується один раз при включенні плати. В даному випадку в ній виробляється установка параметрів роботи ЖК-дисплея за допомогою виклику begin c параметрами, які дають зрозуміти кількість стовпців і рядків символів. Для включення/виключення вбудованої підсвічування дисплея використовуються функції backlight/noBacklight. Друга функція loop виконується в нескінченному циклі весь інший час роботи плати. В даному випадку в ній виконується установка курсору в початок другого рядка (нумерація проводиться з нуля) за допомогою виклику setCursor і друк часу роботи плати в секундах. Функція print викликається для виведення на екран зазначеного набору символів. Виклик clear дозволяє очистити вміст екрану, а функція delay призупиняє роботу плати на вказаний в мілісекундах час.","display_example_1":"Hello, world!","display_desc_3":"В даному приклад в першу строку екрану друкується повідомлення «Hello, world!», а після 1 секунди в другу строку виводиться «I am display». Пілся ще 1 секунди екран стає пустим. Дії повторюються циклічно.","display_example_2":"Рухомий рядок","display_desc_4":"В даному прикладі реалізован рядок, що рухається. У кожній ітерації циклу проводиться зсув початкової позиції курсора, з якої на наступний ітерації буде проводитися відображення тексту.","infoFirst_desc":"На Ваш вибір надаються такі експерименти:","infoTitle":"Керівництво користувача","infoFirst":"1. Оберіть експеримент","infoSecond":"2. Ознайомтесь з ним","infoSecond_desc":"На сторінці з експериментом доступні:","infoSchema":"Схема експерименту","infoDescription":"Опис сценаріїв експерименту","infoSamples":"Приклади програмних кодів експерименту","infoThird":"3. Виконайте експеримент","infoThird_desc":"На сторінці с експериментом ви можете скористатись прикладом коду або написати свій.","infoFourth":"4. Слідкуйте за результатом","infoFourth_desc":"В час виконання експерименту ви можете слідкувати за результатами сервера.","example":"Приклад коду","name":"ім'я","sname":"прізвище","stud":"студент","personal":"особисте використання","register":"Зареєструватись","emailMessage":"Дякую за реєстрації в нашій системі для подтвердження реєстрації перейдіть за цим посиланням: ","startTime":"Почав","endTime":"Закінче","theme":"Тема","documentation":"документація","apiDesc":"RELDES API обеспечивает доступ к ресурсам (сущностям данных) с помощью URI. Для использвания API RELDES, приложение отправляет HTTP запрос и анализирует ответ. Формат ответа JSON. API предоставляет стандартные методы HTTP GET, PUT, POST и DELETE. Вы можете использовать любой язык разработки для доступа к API с использованием запроса HTTP.","apimethods":"Методы API:","stat":"Статистика","expStatuses":"Состояние экспериментов","mailer":"Оповещания","usage":"Использование экспериментов","queue":"Очередь","apiDesc1":" Для использвания нашего API вам необходимо пройти регистрацию, пройдя которую вы получите ваш API KEY, вам\r\n            необходимо будет его включить в параметры запроса как: key=YourAPIkey.\r\n            Также наше API использует HTTP Basic Auth, поэтому при отправке запроса вы должны установить в заголовке запроса\r\n            строку: \"Authorization: Basic \"+ преобразовать строку \"user:password\" в base64.","apiDesc2":"Статус эксперимента","apiDesc3":"Занять эксперимент","apiDesc4":"Возвращает текущее состояние эксперимента.","apiDesc5":"Пример запроса","apiDesc6":"где 1ый параметр может варироваться от 1 до 4, и означать номер эксперимента","apiDesc7":"Пример ответа","apiDesc8":"user_id - id пользователя в системе который сейчас работает над экспериментом.","apiDesc9":"Где","apiDesc10":"status  - текущий статус эксперимента 1 - занят, 0 - свободен","apiDesc11":"end     - время окончания эксперимента для пользователя с текущим user_id","apiDesc12":"Позволяет занять эксперимент","apiDesc13":"message - сообщение в котором может быть несколько ответов:","apiDesc14":"этот пользователь уже стоит в очереди на данный эксперимент,\r\n        \"success\" - пользователь успешно зарегестрирован в очереди","apiDesc15":"status  - будет установлен в false если пользователь будет в очереди, true если он эксперимент был свободен и он его сразу занял","apiDesc16":"Время эксперимента","apiDesc17":"Возвращает перечень данных о старте, окончании , ожидании эксперимента","apiDesc18":" время ожидания в очереди, если отрицательное значит текущий пользователь уже занял эксперимент столько секунд назад","apiDesc19":"1 если пользователь выполняет эксперимент, 0 если стоит в очереди","apiDesc20":"время старта эксперимента","apiDesc21":"время окончания эксперимента","apiDesc22":"Очередь эксперимента","apiDesc23":"Возвращает перечень всех пользователей в очереди на данном эксперименте","apiDesc24":"Очереди экспериментов","apiDesc25":"Возвращает перечень всех очередей на всех экспериментах","apiDesc26":"id эксперимента","apiDesc27":"пользователя который выполняет эксперимент","expUploadCode":"Загрузить код","apiDesc28":"Загружает код на плату.","apiDesc29":"Параметры:","apiDesc30":"код для загрузки","wireless":"Кібербезпека","clean":"Пустий код","copy":"Копiювати","virtual_model":"Віртуальна модель","vritual_model_error":"Виртуальная модель на данный момент не поддерживается на мобильных устройствах","description":"Опис","run":"Виконання эксперименту","tpc":"Типовий програмний код","rp":"Реальний проект","dote":"Опис експерименту","cote":"Компоненти експерименту","solar_1":"Експеримент дозволяє вивчити принципи отримання та накопичення сонячної енергії. Також експеримент демонструє типову схему організації процесу накопичення енергії в акумуляторах.","solar_2":"В ході експерименту можна простежити зміну напруги, що виробляється сонячною панеллю при зміні інтенсивності освітлення. Для проведення експерименту включіть освітлення і проаналізуйте зміни на графіку.","solar_3":"Arduino Nano V3 (5V)","solar_4":"Сонячна панель (6В, 250мА)","solar_5":"Резистивний дільник  (1/2)","solar_6":"Контролер заряду (TP4056)","solar_7":"Акумулятор (3.7V, 1100мА)","solar_8":"Ввiмкнути/вимкнути свiтло","solar_9":"Напруга сонячної станції(V)","solar_10":"Сонячна панель","solar_11":"Контролер заряду","solar_12":"Інвертор","solar_13":"Акумулятори","illum_1":"Експеримент дозволяє вивчити основи роботи драйвера навантажень і принципу створення різнокольорових (RGB) світлодіодних систем освітлення, а також управління RGB світлодіодною стрічкою.","illum_2":"Arduino NANO має функціональну можливість на окремих виводах генерувати ШІМ (широтно-імпульсна модуляція) сигнал, який передається на входи драйвера навантажень L298N. Модуль L298N виступає в ролі RGB контролера і дає можливість управляти чотирма каналами навантаження постійного струму в залежності від вхідного ШІМ сигналу. Рівень вихідного постійного струму на каналах RGB стрічки пропорційний вхідному каналу","illum_3":"Драйвер навантажень L298 (5-35V, 2A)","illum_4":"RGB LED лента","illum_5":"Блок живлення постійного струму 5V, 1А and 12V, 4А","illum_6":"Вибір кольору","illum_7":"Вибір настрою","illum_8":"Зміна кольору","illum_9":"Виберіть потрібний колір світла на стрічці та натисніть «вибрати».","illum_10":"RGB колір","illum_11":"Освітлення можна встановити не тільки за кольором, але і за настроєм.\r\nВиберіть потрібний настрій і оцініть колір освітлення.","illum_12":"Виберіть настрій","illum_13":"Захоплення","illum_14":"Розслабтесь","illum_15":"Смуток","illum_16":"Увімкніть вимикач і оцініть результат при різних швидкостях.","illum_17":"Виконати сценарій з випадковими кольорами","illum_18":"RGB контролер","illum_19":"Схема з'єднання компонентів","climate_1":"Цей експеримент дозволяє вивчити метод кліматичного контролю на основі даних датчиків температури та вологості. Також реалізована можливість контролю якості повітря, використовуючи датчик визначення хімічних домішок у повітрі.","climate_2":"Датчик DHT11 (цифровий датчик температури (0-50 ° C) і вологістi (20-90%))","climate_3":"Датчик якості повітря MQ135 (Він призначений для визначення вмісту та кількості шкідливих та небезпечних газів у повітрі, таких як: NH3, NOx, алкоголь, бензин, дим, CO2 тощо. Він має цифровий (компаратор) та аналоговий вихід)","climate_4":"Кліматичні показники","climate_5":"Клімат-контроль","climate_6":"Температура на датчику","climate_7":"Вологість повітря на датчику","climate_8":"Якість повітря","climate_9":"Вологість ґрунту","climate_10":"Датчик вологості та температури Xiaomi","climate_11":"Датчик температури та вологості повітря (EVR_ST814)","climate_12":"ALQ-CO2 - Датчик якості повітря та вуглекислого газу","climate_13":"Датчик вологості / температури - EVR_ST814","access_1":"Експеримент дозволяє вивчити принципи створення систем контролю доступу до різних приміщень за допомогою комбінованого блокування.","access_2":"Ідентифікатором доступу є RFID-карта або брелок і зчитувач RFID RC522.\r\nRFID-зчитувач RC522 читає радіотеги, які знаходяться в межах зчитувача, постійно.","access_3":"RFID зчитувач RC522","access_4":"Servo SG90","access_5":"Модуль RFID проводить опитування з частотою 13,56 МГц і взаємодіє з контролером Arduino NANO v3 за допомогою інтерфейсу SPI.\r\nКоли одна з клавіш (картка або брелок) переміщується до зчитувача, ключ зчитується та порівнюється з базою даних користувачів з авторизованим доступом у контролері. Користувачам, які не мають дозволу, відмовляють. Як привід використовується сервопривод SG90.","access_6":"Вхідні двері","access_7":"Комплект електричних замків","access_8":"RFID ключі","access_9":"Електричний замок","access_10":"Електричний привід блокування","safety_1":"Arduino NANO має можливість генерувати сигнал PWM (Pulse Wide Modulation) на деяких штирях, який передається на входи драйвера навантаження L298N.\r\nМодуль L298N працює як контролер RGB і дає можливість керувати чотирма каналами навантаження постійного струму, в залежності від вхідного сигналу ШІМ. Рівень вихідного постійного струму на каналах стрічки RGB пропорційний вхідному каналу. Багатоколірна (RGB) світлодіодна стрічка (залежно від типу стрічки) має 4 входи (ЧЕРВЕНИЙ, ЗЕЛЕНИЙ, СВІТИЙ, + 12 В). Залежно від рівня постійного струму яскравість необхідних кольорів встановлюється на світлодіодах.\r\n* Драйвер навантаження L298N має можливість керувати навантаженнями струмом 2А. Зверніть увагу на характеристики світлодіодної стрічки.","safety_2":"Сигналізація","safety_3":"Виберіть режим роботи сигналізації","safety_4":"статус","safety_5":"Вікно","safety_6":"Електричний привід для вікон","safety_7":"PIR датчики","zone_1":"Експеримент дозволяє вивчити принципи створення систем безпеки на основі лазерів. Це дає можливість реалізації невидимих контрольованих бар'єрів для конкретних зон.","zone_2":"Експеримент був створений для вивчення функціонування та побудови систем управління периметром на основі джерела лазерного передавача та приймача. Ці системи дозволяють керувати певною областю за допомогою дуже тонкого лазера з великою робочою дистанцією. У таких системах часто використовують лазерні відбивачі.","zone_3":"Модуль лазера","zone_4":"Датчик світла","zone_5":"Увімкніть керування периметром та імітуйте перетин периметра, відкривши гаражні двері. Перегляньте результат увімкнення світлового сигналу у вікні експерименту.","zone_6":"Увімкнення / вимкнення керування периметром","zone_7":"Перетинання периметра","zone_8":"Infrared perimeter example","presence_1":"Експеримент дозволяє вивчити принципи роботи систем моніторингу присутності та систем безпеки шляхом зміни режиму роботи підсистеми. Можливість контролю руху в декількох областях реалізована.","presence_2":"PIR-датчик (пасивний інфрачервоний датчик, часто використовується в системах сигналізації)","presence_3":"Міжкімнатні двері","vent_1":"Експеримент демонструє принципи побудови системи вентиляції з регулюванням швидкості потоку повітря та нагріванням повітря для обігріву приміщень.","vent_2":"Arduino Nano генерує широкоімпульсний сигнал для драйвера навантаження L298, тим самим контролюючи швидкість вентилятора.\r\nТакож Arduino Nano управляє елементом Peltier за допомогою модуля реле для нагріву повітря. Датчик DHT22 контролює температуру і вологість в приміщенні.","vent_3":"L298 Драйвер управління навантаженням","vent_4":"Реле 5В","vent_5":"Елемент Пельтьє","vent_6":"Датчик температури і вологості DHT22","vent_7":"Для проведення експерименту перетягніть повзунок у потрібне положення, тим самим регулюючи швидкість вентилятора у вентиляційній системі.\r\nУвімкніть нагрівання повітря та проаналізуйте результати на графіку.\r\nКонтролюйте швидкість вентилятора та аналізуйте результати на графіку.","vent_8":"Увімкніть \\ вимкніть опалення","vent_9":"Рекуператор","vent_10":"Блок рекуператору","vent_11":"Внутрішня конструкція рекуператора","vent_12":"Повітряний опалювальний прилад","light_1":"Експеримент дає можливість вивчити основи роботи диммера на прикладі управління білою світлодіодною смужкою. Диммер дозволяє контролювати електричну потужність і тим самим контролювати рівень освітленості. Експеримент також дає можливість відтворити алгоритм автоматичного управління при необхідних умовах.","light_2":"Arduino Nano отримує числове значення для необхідного рівня освітленості і генерує сигнал ШІМ (імпульсна широка модуляція) для драйвера навантаження. Водій навантаження керує напругою на світлодіодах. Таким чином, рівень освітленості контролюється. Водій навантаження виконує функцію затемнення. Диммер, залежно від типу, може керувати альтернативною та прямою напругою.","light_3":"LED стрічка","light_4":"Контроль рівня світла","light_5":"Встановлення освітленості","light_6":"Перетягніть повзунок, щоб змінити рівень освітлення (від 0 до 100%) та проаналізуйте дані з датчика світла.","light_7":"Встановіть час доби і оцініть рівень освітленості.","light_8":"Діммер напруги змінного струму","light_9":"Діммер напруги постійного струму (промисловий)","light_10":"Диммерований диммер для світлодіодів","light_11":"LED стрічка (Біла)","cyber_1":"Експеримент дозволяє вивчити принцип роботи бездротових wi-fi датчиків та дослідити їх безпеку.","cyber_2":"Експеримент демонструє можливість використання бездротових датчиків Wi-Fi для моніторингу індикаторів системи Smart House, а також результати порушення з'єднання Wi-Fi через деаутентифікацію.\r\nПоказано можливості застосування мобільних та хмарних технологій для ефективного зберігання, візуалізації даних та моніторингу стану системи.","cyber_3":"Датчик DHT11 (цифровий датчик температури (0-50 ° C) і вологість (20-90%))","cyber_4":"Датчик якості повітря MQ135 (Він призначений для визначення вмісту та кількості шкідливих та небезпечних газів у повітрі, таких як: NH3, NOx, алкоголь, бензин, дим, СО2 тощо. Він має цифровий (компаратор) та аналоговий вихід )","cyber_5":"Деавторизація - це атака, яка надсилає пакети для відключення одного або декількох клієнтів, які зараз підключені до певної точки доступу. У цьому експерименті використовується примусове відключення клієнта (захоплення рукостискань WPA / WPA2).\r\nНатисніть кнопку ATTACK, спостерігайте за збоєм в отриманні даних від датчика.","cyber_6":"Атака","cyber_7":"Стан з'єднання","cyber_8":"Деактивація","cyber_9":"Мобільні технології","rpi_sd":"Raspberry Pi - одноплатний комп'ютер розміром з банківську карту, спочатку розроблений як бюджетна система для навчання інформатиці, що згодом одержав набагато більш широке застосування і популярність. Перші версії були створені в 2011 році. Побудований на основі процесора архітектури ARM.\r\nRaspberry Pi працює в основному на операційних системах, заснованих на Linux ядрі, таких як:","pi_ul_li1":"Raspbian (модифікація Debian)","pi_ul_li2":"Pidora (модифікація Fedora)","pi_ul_li3":"Arch Linux ARM","pi_ul_li4":"Kali Linux","pi_install_desc":"Існує два способи встановлення ОС Raspbian на Raspberry Pi:","pi_install_desc_li1":"завантаження пакета NOOBS з офіційного сайту на карту пам’яті MicroSD та подальше встановлення;","pi_install_desc_li2":"монтування файлу-образу ОС Raspbian на карту пам’яті MicroSD. В цьому випадку можна буде приступати до роботи одразу після включення Raspberry Pi.","pi_install_v1":"Приклад встановлення ОС Raspbian за допомогою пакета NOOBS","pi_install_v1_desc_1":"Необхідно завантажити пакет з офіційного сайту https://www.raspberrypi.org/downloads/noobs/ . Слід обрати NOOBS «Offline and network install» для встановлення без мережі Інтернет чи NOOBS LITE «Network install only» для встановлення з мережею Інтернет.","pi_install_v1_desc_2":"Перед тим як записувати файли NOOBS на карту пам’яті microSD, її слід відформатувати у файлову систему FAT32.\r\nДалі слід розпакувати архів NOOBS на карту пам’яті microSD.\r\nНаступний крок – підключення периферії до Raspberry Pi: USB-клавіатури, USB-миші, монітору (через HDMI), а також необхідно встановити карту пам’яті microSD у відповідний слот. В останню чергу підключається живлення MicroUSB.\r\nВ окні що відобразиться слід обрати ОС Raspbian (перша опція). Друга опція пропонує розбивку розділів карти пам’яті вручну, третя опція – завантаження безпосередньо у пакет Scratch – програму для створення комп’ютерної графіки та анимацій.\r\nНеобхідно натиснути «Install» та підтвердити запис даних на карту пам’яті MicroSD. Слід дочекатися завершення процесу встановлення та перезавантаження. У вікні Configuration Tool (налаштування можна змінити пізніше) слід обрати опцію «Enable boot to Desktop» та підтвердити вибір, що дозволить зробити LXDE інтерфейсом за замовчуванням при завантаженні. Далі слід натиснути «Done» та погодитися на перезавантаження. Після чого все буде готово до роботи.","pi_install_v2":"Приклад встановлення ОС Raspbian за допомогою монтування файлу–образу","pi_install_v2_desc_1":"Спочатку необхідно завантажити ОС з офіційного сайту: https://www.raspberrypi.org/downloads/raspbian/. Рекомендовано обрати «Raspbian Stretch With Desktop».","pi_install_v2_desc_2":"Також необхідно встановити на комп’ютер утиліту Win32DiskImager (https://sourceforge.net/projects/win32diskimager/) та за її допомогою записати файл-образ ОС Raspbian на карту пам’яті microSD:","pi_install_v2_desc2_li1":"необхідно розпакувати архів з файлом-образом на комп’ютері","pi_install_v2_desc2_li2":"слід відформатувати карту пам’яті стандартним засобом ОС Windows","pi_install_v2_desc2_li3":"далі необхідно у програмі Win32DiskImager обрати файл-образ ОС Raspbian (наприклад: «2017-09-07-raspbian-stretch.img»)","pi_install_v2_desc2_li4":"у розділі «Device» слід обрати ім’я карти пам’яті microSD. Слід бути уважним, якщо помилитись можна нанести шкоду жорсткому диску","pi_install_v2_desc2_li5":"нарешті слід обрати «Write» та дочекатися завершення процесу запису. Приблизний час запису становить 5–10 хвилин","pi_install_v2_desc3":"Далі необхідно здійснити підключення периферії до Raspberry Pi: USB-клавіатури, USB-миші, монітору (через HDMI), а також необхідно встановити карту пам’яті microSD у відповідний слот. В останню чергу підключається живлення MicroUSB.","pi_install_v2_desc3_li1":"Відбудеться завантаження ОС Raspbian та все буде готово до роботи.","pi_install_v2_desc3_li2":"Якщо використовується Unix-подібні ОС:","pi_install_v2_desc3_li3":"cлід від форматувати карту пам’яті microSD у FAT 32/ext2","pi_install_v2_desc3_li4":"виконати команду: sudo dd bs=4m if=/home/user/raspbian.img of=/dev/disk1;","pi_install_v2_desc3_li5":"Відбудеться завантаження ОС Raspbian та все буде готово до роботи.\r\nВажливо запам’ятати, що запуск Raspberry Pi відбувається одразу після підключення MicroUSB, та що вимикати Raspberry Pi слід наступним чином:","pi_install_v2_desc3_li6":"завершити всі дії","pi_install_v2_desc3_li7":"натиснути на лого Raspberry Pі у верхньому лівому куті","pi_install_v2_desc3_li8":"обрати опцію «Shutdown» та у новому вікні підтвердити – «Shutdown»","pi_install_v2_desc3_li9":"Тільки після того як Raspberry Pі буде виключено, можна від’єднати шнур MicroUSB та змінювати склад периферії, підключеної до Raspberry Pі.","fr":"Перший запуск ОС Raspbian","fr_desc_1":"Якщо було ввімкнено завантаження у графічне середовище, введення паролю користувача не потрібне, але якщо пароль було змінено, може знадобитися його введення.\r\nУ випадку консольного режиму необхідно ввести логін та пароль («pi» та «raspberry», відповідно). Щоб запустити графічне середовище, необхідно виконати команду «startx».\r\nУ верхній частині екрану знаходиться панель задач, панель швидкого доступу та кнопка меню.\r\nНа панелі швидкого запуску знаходяться:","fr_desc_1_li1":"браузер","fr_desc_1_li2":"Провідник","fr_desc_1_li3":"утиліта Terminal","fr_desc_1_li4":"програми пакету Wolfram","fr_desc_2":"Натиснувши на кнопку меню (лого Raspberry Pi) можна переглянути програми встановлені в системі.\r\nВ меню містяться такі розділи:","fr_desc_3_li1":"Programming: містить програми та засоби для програмування (Python IDE, Geany, BlueJ, тощо)","fr_desc_3_li2":"Office: містить «офісні» програми (пакет OpenOffice)","fr_desc_3_li3":"Internet: містить програми та засоби для роботи в мережі Інтернет","fr_desc_3_li4":"Games: містить ігри (MineCraft)","fr_desc_3_li5":"Accessories: містить додаткові супутні програми (Archiver, калькулятор)","fr_desc_3_li6":"Sound & Video: містить відео- та аудіо–плеєри (VLC Player)","fr_desc_3_li7":"System Tools: містить системні програми (Midnight Commander)","fr_desc_3_li8":"Help: довідка","fr_desc_3_li9":"Preferences: налаштування системи","fr_desc_3_li10":"Run: виконати дію","fr_desc_3_li11":"Shutdown: перехід до вікна вимкнення плати","fr_desc_4":"В основному, для виконання більшості дій у Raspbian (як у будь–якій Unix-подібній ОС) використовується утиліта Terminal. Для її запуску слід натиснути відповідну піктограму.","fr_desc_5":"В процесі роботи може знадобитися змінити конфігурацію системи, змінити пароль користувача, увімкнути камеру, тощо. Все це можна зробити за допомогою команди sudo raspi-config","fr_desc_5_li":"Докладніше про пункти меню:","fr_desc_5_li1":"Change User Password –зміна пароля користувача","fr_desc_5_li2":"Hostname – ім’я комп’ютера в мережі","fr_desc_5_li3":"Boot options – налаштування завантаження системи","fr_desc_5_li4":"Localisation Options – вибір мови та регіональних налаштувань","fr_desc_5_li5":"Interfacing Options – налаштування інтерфейсів (камера, SSH, VNC, SPI, I2C, Serial, 1-Wire, GPIO)","fr_desc_5_li6":"Overclock – збільшення частоти процесору","fr_desc_5_li7":"Advanced Options – додаткові параметри","fr_desc_5_li8":"Update – оновлення програми raspi-config","fr_desc_5_li9":"About raspi-config – інформація про програму","fr_desc_6":"Завершивши налаштування, слід обрати Finish. ОС запросить дозвіл на перезавантаження. Слід погодитися та дочекатися закінчення перезавантаження.\r\nПри зміні налаштувань системи слід бути уважним, помилка може призвести до небажаних наслідків.","fr_desc_7":"Налаштування мережі Інтернет","fr_desc_8":"У випадку підключення до мережі, в якій налаштовано DHCP-сервер та автоматичний розподіл адрес (наприклад, домашня мережа), додатково нічого не потрібно робити.\r\nЯкщо DHCP відсутній, параметри мережі можна задати за допомогою консолі. Для цього необхідно запустити термінал, де слід відкрити файл налаштувань мережевих інтерфейсів за допомогою команди: sudo nano /etc/network/interfaces. До файлу треба додати наступне:\r\niface <інтерфейс> inet static\r\naddress <ip-адреса>\r\nnetmask <маска підмережі>\r\ngateway <адреса шлюзу>\r\ndns-nameservers <адреси DNS-серверів, розділенні пробілом>\r\nauto <інтерфейс>,\r\nде інтерфейс ‒ мережевий інтерфейс, підключений до Raspberry Pі (найчастіше це eth0);\r\nip-адреса ‒ адреса, яку необхідно присвоїти;\r\nмаска підмережі ‒ маска;\r\nадреса шлюзу ‒ ip-адреса комп’ютеру, що служить в мережі шлюзом.\r\nДалі необхідно вийти зі збереженням змін, для чого слід натиснути Ctrl+X, підтвердити збереження натисненням клавіші Y, а потім Enter для підтвердження перезапису файлу. Після змін файлу треба перезавантажити Raspberry Pi, виконавши команду sudo reboot.\r\nДля перевірки налаштувань мережі слід виконати команду ifconfig","fr_desc_9":"Для роботи з проксі-сервером необхідно певні строки до файлів /etc/environment (загальносистемні налаштування проксі) та /etc/apt/apt.conf (налаштування пакетного менеджера apt-get).\r\nДо файлу /etc/environment слід дописати:\r\nexport http_proxy=«http://host:port», а до файлу /etc/apt/apt.conf: Acquire::http::proxy «http://host:port»; .\r\nПісля виконання даних дій, можна буде користуватися мережевими функціями, в тому числі і менеджером apt-get.","fr_desc_10":"Підключення Arduino із завантаженим скетчем","fr_desc_11":"Для того щоб підключити Arduino до Raspberry Pi потрібно","fr_desc_12":"Взяти скетч (програму) з лабораторної роботи №1 та підключеними датчиками до Arduino. Запустити скетч та залишити працювати.","fr_desc_13":"Витягнути Arduino USB-дріт з комп’ютера","fr_desc_14":"Вставити Arduino USB-дріт у працюючий Raspberry Pi","fr_desc_15":"Надати повний доступ до порту, що буде використовуватися Arduino. Для цього у терміналі написати:\r\nchmod 777 /dev/ttyACM0","oh_title":"Інтеграція підсистем Розумного будинку на платформі OpenHAB","oh_text":"OpenHAB (Open Home Automation Bus) – створений на Java open source проект з реалізації технології «smart house», розповсюджується під ліцензією GPLv3, та для організації роботи web-інтерфейсу використовується Jetty.\r\nЦя відкрита платформа здатна виконувати такі функції як вмикання та вимикання освітлення, керування розетками, тощо.\r\nOpenHAB надає засоби для організації роботи різних систем, обладнання та інтерфейсів домашньої автоматизації. При цьому OpenHAB не залежить від протоколів і обладнання, надаючи окремий рівень абстракції, що дозволяє взаємодіяти з різними типами пристроїв і програмного забезпечення. Для визначення керуючої логіки використовуються скрипти, написані на спеціальній предметно-орієнтованій мові програмування, розробленій за допомогою Eclipse –Xtext.\r\nОсновним сервісом OpenHAB є шина подій. Модулі, які не вимагають відстеження стану, використовують цю шину для обміну інформацією про події з іншими модулями.\r\nІснує два основних типи подій:\r\n1. Команди, які ініціюють будь-яку дію чи зміна стану певного елемента або пристрою.\r\n2. Оновлення статусу, які повідомляють про зміну стану певного елемента або пристрою.\r\nПрив'язки протоколів, що забезпечують зв'язок з реальними пристроями, повинні спілкуватися між собою саме через шину подій. Це гарантує існування зв'язку між модулями.\r\nВ openHAB використовується дуже потужна мова виразів, за допомогою якої створюються визначення сценаріїв. Сценарій або скрипт – це блок коду, який визначається користувачем і може викликатися і використовуватися в різних місцях. Скрипти розміщуються в папці openhab/configurations/scripts. В робочому середовищі є демонстраційний файл demo.script.\r\nСкрипти також можуть знаходитися всередині файлу правил, в папці openhab/configurations/rules: вони використовуються для визначення блоку виконання правила. Кожне правило складається з двох частин: в одній містяться перемикачі дій, в інших скриптах – для їх виконання.\r\nДля ефективного використання скриптів OpenHAB надає доступ:","oh_li1":"до всіх елементів (отримати доступ можна звернувшись по імені);","oh_li2":"до всіх статусів та команд;","oh_li3":"до стандартних дій до виконання різних операцій","oh_text2":"Скрипт ідентифікується назвою (у файлу demo.script – ім'я скрипта demo). Кожен скрипт завжди повертає значення, що є результатом останнього виразу, який міститься в ньому.\r\nСкрипти можуть  викликатися:","oh_li4":"з правил;","oh_li5":"з XMPP-консолі;","oh_li6":"з записів в календарі Google.","oh_text3":"Встановлення та налаштування OpenHAB на Raspberry Pi","oh_text4":"Для встановлення OpenHAB на Raspberry Pi слід виконати послідовність дій та команд (за допомогою терміналу), що описані нижче.","oh_text4_li1":"Завантажити ключ: wget –qO - ‘https://bintray.com/user/downloadSubjectPublicKey?username=\r\nopenhab’ | sudo apt-key add –","oh_text4_li2":"Встановити репозиторій OpenHAB: echo “deb http://dl.bintray.com/openhab/apt-repo stable main” | sudo tee /etc/apt/sources.list.d/openhab.list","oh_text4_li3":"Оновити системні файли:\r\nsudo apt-get update","oh_text4_li4":"Встановити OpenHAB:\r\nsudo apt-get install openhab-runtime","oh_text4_li5":"Додати користувача до групи: sudo usermod –aG openhab pi","oh_text4_li6":"Запустити OpenHAB:\r\nsudo systemctl enable openhab","oh_text4_li7":"Встановити доповнення для роботи з GPIO:\r\nsudo apt-get install openhab-addon-io-gpio\r\nsudo apt-get install openhab-addon-binding-gpio","oh_text4_li8":"Встановити доповнення для роботи з портами:\r\nsudo apt-get install openhab-addons-binding-serial","oh_text4_li9":"Задати ім’я користувача та назву групи:\r\nsudo nano /etc/default/openhab\r\nsudo nano /usr/lib/systemd/system/openhab.service","oh_text4_li10":"Перевантажити systemd:\r\nsudo systemctl daemon-reload","oh_text4_li11":"Додати порт який використовуватиметься з Arduino:\r\nsudo nano /usr/share/openhab/bin/openhab.sh\r\nВ розділі «JAVA_ARGS_DEFAULT» додати в кінець","oh_text4_li12":"Перевантажити OpenHAB:\r\nsudo service openhab restart","oh_text4_li13":"Написати код для отримання даних від Arduino:\r\nsudo nano /etc/openhab/configurations/items/home.items","oh_text4_li14":"Створити інтерфейс для відображення даних:\r\nsudo nano /etc/openhab/configurations/sitemaps/home.sitemap","oh_text4_li15":" Знайти процес Java та запам’ятати його номер:\r\ntop","oh_text4_li16":"Зупинити процес Java. Наприклад, номер Java процесу – 3234, тоді:\r\nkill 3234","oh_text4_li17":"Перейменувати файл openhab_default.cfg у openhab.cfg в каталозі /etc/openhab/configurations/","oh_text4_li18":"Створити правило OpenHAB для керування датчиками:\r\nsudo nano etc/openhab/configurations/rules/home.rules","oh_text4_li19":"Підключити Arduino із завантаженим скетчем;","oh_text4_li20":"Надати повний доступ до порту, що буде використовуватися Arduino:\r\nchmod 777 /dev/ttyACM0","oh_text4_li21":"Перейти до каталогу openHab:\r\ncd /usr/share/openhab/bin","oh_text4_li22":"Запустити файл .sh:\r\nsudo ./openhab.sh","oh_text4_li23":"Перейти за адресою: RaspberryPi-IP:8080/openhab.app?sitemap=home","rs_title1":"Рекомендаційна система (PC) - ","rs_text1":"це сервіс, який був створений на кафедрі програмних засобів Національного університету «Запорізька політехніка», як частина лабораторії RELDES. Сервіс було розроблено з метою допомогти розробнику вбудованих систем у виборі апаратно-програмних платформ в залежності від вимог розробника до шуканої платформи.","rs_text2":"Великий вибір серед найпопулярніших платформ","rs_text3":"База даних налічує в собі понад 40 платформ таких виробників як; Arduino, Raspberry Pi, Texas Instrument, STMicrocontroller, Intel, Netduino, Iskra, BeagleBone","rs_title2":"Як це працює","rs_text4":"Рекомендаційна система побудована за принципом систем заснованих на знаннях. Це той випадок, коли розробник сам описує свої потреби, а система, використовуючи базу даних (сформовану на основі знань про платформи з різних джерел), шукає платформи, які відповідають його потребі.\r\nКритерії за якими виконується пошук платформ:","rs_tab1_text1":"Розробник","rs_tab1_text2":"рівень знань","rs_tab2_text1":"Апаратні критерії","rs_tab2_text2":"кількість аналогових входів;\r\nкількість цифрових входів;\r\nживлення;\r\nсімейство процесорів.","rs_tab3_text1":"Програмні критерії","rs_tab3_text2":"мова програмування","rs_tab4_text1":"Додаткові","rs_tab4_text2":"ціна,\r\nформ-фактор","rs_title3":"Етапи роботи з сервісом","rs_pic1":"<img src=\"/images/rs_manufacturer_ukr.png\"/ width=\"150\" hight=\"150\" alt=\"KnowlageBase\">","rs_pic2":"<img src=\"/images/rs_platforms_ukr.png\"/ width=\"150\" hight=\"150\" alt=\"Platforms\">"},"auth":{"failed":"These credentials do not match our records.","throttle":"Too many login attempts. Please try again in :seconds seconds."},"experiments":{"description":"Опис","run":"Виконання эксперименту","tpc":"Типовий програмний код","tts":"Час до старту","tte":"Час до закiнчення","queue_qty":"Кiлькiсть людей в черзi"},"pagination":{"previous":"&laquo; Previous","next":"Next &raquo;"},"passwords":{"reset":"Your password has been reset!","sent":"We have emailed your password reset link!","throttled":"Please wait before retrying.","token":"This password reset token is invalid.","user":"We can't find a user with that email address."},"validation":{"accepted":"The :attribute must be accepted.","active_url":"The :attribute is not a valid URL.","after":"The :attribute must be a date after :date.","after_or_equal":"The :attribute must be a date after or equal to :date.","alpha":"The :attribute may only contain letters.","alpha_dash":"The :attribute may only contain letters, numbers, dashes and underscores.","alpha_num":"The :attribute may only contain letters and numbers.","array":"The :attribute must be an array.","before":"The :attribute must be a date before :date.","before_or_equal":"The :attribute must be a date before or equal to :date.","between":{"numeric":"The :attribute must be between :min and :max.","file":"The :attribute must be between :min and :max kilobytes.","string":"The :attribute must be between :min and :max characters.","array":"The :attribute must have between :min and :max items."},"boolean":"The :attribute field must be true or false.","confirmed":"The :attribute confirmation does not match.","date":"The :attribute is not a valid date.","date_equals":"The :attribute must be a date equal to :date.","date_format":"The :attribute does not match the format :format.","different":"The :attribute and :other must be different.","digits":"The :attribute must be :digits digits.","digits_between":"The :attribute must be between :min and :max digits.","dimensions":"The :attribute has invalid image dimensions.","distinct":"The :attribute field has a duplicate value.","email":"The :attribute must be a valid email address.","ends_with":"The :attribute must end with one of the following: :values.","exists":"The selected :attribute is invalid.","file":"The :attribute must be a file.","filled":"The :attribute field must have a value.","gt":{"numeric":"The :attribute must be greater than :value.","file":"The :attribute must be greater than :value kilobytes.","string":"The :attribute must be greater than :value characters.","array":"The :attribute must have more than :value items."},"gte":{"numeric":"The :attribute must be greater than or equal :value.","file":"The :attribute must be greater than or equal :value kilobytes.","string":"The :attribute must be greater than or equal :value characters.","array":"The :attribute must have :value items or more."},"image":"The :attribute must be an image.","in":"The selected :attribute is invalid.","in_array":"The :attribute field does not exist in :other.","integer":"The :attribute must be an integer.","ip":"The :attribute must be a valid IP address.","ipv4":"The :attribute must be a valid IPv4 address.","ipv6":"The :attribute must be a valid IPv6 address.","json":"The :attribute must be a valid JSON string.","lt":{"numeric":"The :attribute must be less than :value.","file":"The :attribute must be less than :value kilobytes.","string":"The :attribute must be less than :value characters.","array":"The :attribute must have less than :value items."},"lte":{"numeric":"The :attribute must be less than or equal :value.","file":"The :attribute must be less than or equal :value kilobytes.","string":"The :attribute must be less than or equal :value characters.","array":"The :attribute must not have more than :value items."},"max":{"numeric":"The :attribute may not be greater than :max.","file":"The :attribute may not be greater than :max kilobytes.","string":"The :attribute may not be greater than :max characters.","array":"The :attribute may not have more than :max items."},"mimes":"The :attribute must be a file of type: :values.","mimetypes":"The :attribute must be a file of type: :values.","min":{"numeric":"The :attribute must be at least :min.","file":"The :attribute must be at least :min kilobytes.","string":"The :attribute must be at least :min characters.","array":"The :attribute must have at least :min items."},"not_in":"The selected :attribute is invalid.","not_regex":"The :attribute format is invalid.","numeric":"The :attribute must be a number.","password":"The password is incorrect.","present":"The :attribute field must be present.","regex":"The :attribute format is invalid.","required":"The :attribute field is required.","required_if":"The :attribute field is required when :other is :value.","required_unless":"The :attribute field is required unless :other is in :values.","required_with":"The :attribute field is required when :values is present.","required_with_all":"The :attribute field is required when :values are present.","required_without":"The :attribute field is required when :values is not present.","required_without_all":"The :attribute field is required when none of :values are present.","same":"The :attribute and :other must match.","size":{"numeric":"The :attribute must be :size.","file":"The :attribute must be :size kilobytes.","string":"The :attribute must be :size characters.","array":"The :attribute must contain :size items."},"starts_with":"The :attribute must start with one of the following: :values.","string":"The :attribute must be a string.","timezone":"The :attribute must be a valid zone.","unique":"The :attribute has already been taken.","uploaded":"The :attribute failed to upload.","url":"The :attribute format is invalid.","uuid":"The :attribute must be a valid UUID.","custom":{"attribute-name":{"rule-name":"custom-message"}},"attributes":[]}},"vendor":{"adminlte/ar/adminlte":{"full_name":"الاسم الثلاثي","email":"البريد الإلكتروني","password":"كلمة السر","retype_password":"أعد إدخال كلمة السر","remember_me":"ذكرني","register":"تسجيل جديد","register_a_new_membership":"تسجيل عضوية جديدة","i_forgot_my_password":"نسيت كلمة السر؟","i_already_have_a_membership":"هذا الحساب لديه عضوية سابقة","sign_in":"تسجيل الدخول","log_out":"تسجيل خروج","toggle_navigation":"القائمة الجانبية","login_message":"يجب تسجيل الدخول","register_message":"تم تسجيل العضوية الجديدة ","password_reset_message":"تم إعادة تعيين كلمة المرور","reset_password":"إعادة تعيين كلمة السر","send_password_reset_link":"إرسال رابط إعادة تعيين كلمة السر"},"adminlte/ca/adminlte":{"full_name":"Nom complet","email":"Email","password":"Contrasenya","retype_password":"Confirmar la contrasenya","remember_me":"Recordar-me","register":"Registrar-se","register_a_new_membership":"Crear un nou compte","i_forgot_my_password":"He oblidat la meva contrasenya","i_already_have_a_membership":"Ja tinc un compte","sign_in":"Accedir","log_out":"Sortir","toggle_navigation":"Commutar la navegació","login_message":"Autenticar-se per a iniciar sessió","register_message":"Crear un nou compte","password_reset_message":"Restablir la contrasenya","reset_password":"Restablir la contrasenya","send_password_reset_link":"Enviar enllaç de restabliment de contrasenya"},"adminlte/de/adminlte":{"full_name":"Vollständiger Name","email":"E-Mail","password":"Passwort","retype_password":"Passwort bestätigen","remember_me":"Angemeldet bleiben","register":"Registrieren","register_a_new_membership":"Ein neues Konto registrieren","i_forgot_my_password":"Ich habe mein Passwort vergessen","i_already_have_a_membership":"Ich bin bereits registriert","sign_in":"Anmelden","log_out":"Abmelden","toggle_navigation":"Navigation umschalten","login_message":"Bitte melden Sie sich an, um auf den geschützten Bereich zuzugreifen","register_message":"Bitte füllen Sie das Formular aus, um ein neues Konto zu registrieren","password_reset_message":"Bitte geben Sie Ihre E-Mail Adresse ein, um Ihr Passwort zurückzusetzen","reset_password":"Passwort zurücksetzen","send_password_reset_link":"Link zur Passwortwiederherstellung senden","verify_message":"Ihr Account muss noch bestätigt werden","verify_email_sent":"Es wurde ein neuer Bestätigungslink an Ihre E-Mail Adresse gesendet.","verify_check_your_email":"Bevor Sie fortfahren, überprüfen Sie bitte Ihre E-Mail auf einen Bestätigungslink.","verify_if_not_recieved":"Wenn Sie die E-Mail nicht empfangen haben","verify_request_another":"klicken Sie hier, um eine neue E-Mail anzufordern"},"adminlte/de/menu":{"main_navigation":"HAUPTMENÜ","blog":"Blog","pages":"Seiten","account_settings":"KONTOEINSTELLUNGEN","profile":"Profil","change_password":"Passwort ändern","multilevel":"Multi Level","level_one":"Level 1","level_two":"Level 2","level_three":"Level 3","labels":"Beschriftungen","important":"Wichtig","warning":"Warnung","information":"Information"},"adminlte/en/adminlte":{"full_name":"Full name","email":"Email","password":"Password","retype_password":"Retype password","remember_me":"Remember Me","register":"Register","register_a_new_membership":"Register a new membership","i_forgot_my_password":"I forgot my password","i_already_have_a_membership":"I already have a membership","sign_in":"Sign In","log_out":"Log Out","toggle_navigation":"Toggle navigation","login_message":"Sign in to start your session","register_message":"Register a new membership","password_reset_message":"Reset Password","reset_password":"Reset Password","send_password_reset_link":"Send Password Reset Link","verify_message":"Your account needs a verification","verify_email_sent":"A fresh verification link has been sent to your email address.","verify_check_your_email":"Before proceeding, please check your email for a verification link.","verify_if_not_recieved":"If you did not receive the email","verify_request_another":"click here to request another","confirm_password_message":"Please, confirm your password to continue."},"adminlte/en/menu":{"main_navigation":"MAIN NAVIGATION","blog":"Blog","pages":"Pages","account_settings":"ACCOUNT SETTINGS","profile":"Profile","change_password":"Change Password","multilevel":"Multi Level","level_one":"Level 1","level_two":"Level 2","level_three":"Level 3","labels":"LABELS","important":"Important","warning":"Warning","information":"Information"},"adminlte/es/adminlte":{"full_name":"Nombre completo","email":"Email","password":"Contraseña","retype_password":"Confirmar la contraseña","remember_me":"Recordarme","register":"Registrarse","register_a_new_membership":"Crear una nueva cuenta","i_forgot_my_password":"Olvidé mi contraseña","i_already_have_a_membership":"Ya tengo una cuenta","sign_in":"Acceder","log_out":"Salir","toggle_navigation":"Alternar barra de navegación","login_message":"Autenticarse para iniciar sesión","register_message":"Crear una nueva cuenta","password_reset_message":"Restablecer la contraseña","reset_password":"Restablecer la contraseña","send_password_reset_link":"Enviar enlace para restablecer la contraseña","verify_message":"Tu cuenta necesita una verificación","verify_email_sent":"Se ha enviado un nuevo enlace de verificación a su correo electrónico.","verify_check_your_email":"Antes de continuar, busque en su correo electrónico un enlace de verificación.","verify_if_not_recieved":"Si no has recibido el correo electrónico","verify_request_another":"haga clic aquí para solicitar otro","confirm_password_message":"Por favor, confirme su contraseña para continuar."},"adminlte/es/menu":{"main_navigation":"MENU PRINCIPAL","blog":"Blog","pages":"Páginas","account_settings":"AJUSTES DE LA CUENTA","profile":"Perfil","change_password":"Cambiar Contraseña","multilevel":"Multi Nivel","level_one":"Nivel 1","level_two":"Nivel 2","level_three":"Nivel 3","labels":"ETIQUETAS","important":"Importante","warning":"Advertencia","information":"Información"},"adminlte/fa/adminlte":{"full_name":"نام","email":"ایمیل","password":"رمز عبور","retype_password":"تکرار رمز عبور","remember_me":"مرا به یاد داشته باش","register":"ثبت نام","register_a_new_membership":"ایجاد یک عضویت جدید","i_forgot_my_password":"رمز عبور را فراموش کرده ام","i_already_have_a_membership":"قبلا ثبت نام کرده ام","sign_in":"ورود","log_out":"خروج","toggle_navigation":"نمایش/مخفی کردن منو","login_message":"وارد شوید","register_message":"ثبت نام","password_reset_message":"بازنشانی رمز عبور","reset_password":"بازنشانی رمز عبور","send_password_reset_link":"ارسال لینک بازنشانی رمز عبور"},"adminlte/fr/adminlte":{"full_name":"Nom","email":"Email","password":"Mot de passe","retype_password":"Entrez à nouveau le mot de passe","remember_me":"Se souvenir de moi","register":"Enregistrement","register_a_new_membership":"Enregistrer un nouveau membre","i_forgot_my_password":"J'ai oublié mon mot de passe","i_already_have_a_membership":"J'ai déjà un compte","sign_in":"Connexion","log_out":"Déconnexion","toggle_navigation":"Basculer la navigation","login_message":"Connectez-vous pour commencer une session","register_message":"Enregistrement d'un nouveau membre","password_reset_message":"Réinitialisation du mot de passe","reset_password":"Réinitialisation du mot de passe","send_password_reset_link":"Envoi de la réinitialisation du mot de passe"},"adminlte/hr/adminlte":{"full_name":"Ime","email":"Email","password":"Lozinka","retype_password":"Ponovljena lozinka","remember_me":"Zapamti me","register":"Novi korisnik","register_a_new_membership":"Registracija","i_forgot_my_password":"Zaboravljena zaporka","i_already_have_a_membership":"Već imam korisnički račun","sign_in":"Prijava","log_out":"Odjava","toggle_navigation":"Pregled navigacije","login_message":"Prijava","register_message":"Registracija","password_reset_message":"Nova lozinka","reset_password":"Nova lozinka","send_password_reset_link":"Pošalji novi zahtjev lozinke"},"adminlte/hu/adminlte":{"full_name":"Teljes név","email":"Email","password":"Jelszó","retype_password":"Jelszó újra","remember_me":"Emlékezz rám","register":"Regisztráció","register_a_new_membership":"Regisztrálás új tagként","i_forgot_my_password":"Elfelejtetem a jelszavam","i_already_have_a_membership":"Már tag vagyok","sign_in":"Belépés","log_out":"Kilépés","toggle_navigation":"Lenyíló navigáció","login_message":"Belépés a munkamenet elkezdéséhez","register_message":"Regisztrálás új tagként","password_reset_message":"Jelszó visszaállítása","reset_password":"Jelszó visszaállítása","send_password_reset_link":"Jelszó visszaállítás link küldése"},"adminlte/it/adminlte":{"full_name":"Nome completo","email":"Email","password":"Password","retype_password":"Ripeti password","remember_me":"Ricordami","register":"Registrazione","register_a_new_membership":"Registra un nuovo abbonamento","i_forgot_my_password":"Ho dimenticato la password","i_already_have_a_membership":"Ho già un abbonamento","sign_in":"Accedi","log_out":"Logout","toggle_navigation":"Attiva la navigazione","login_message":"Accedi per iniziare la tua sessione","register_message":"Registra un nuovo abbonamento","password_reset_message":"Resetta la password","reset_password":"Resetta la password","send_password_reset_link":"Invia link di reset della password"},"adminlte/ja/adminlte":{"full_name":"氏名","email":"メールアドレス","password":"パスワード","retype_password":"もう一度入力","remember_me":"パスワードを記憶する","register":"登録する","register_a_new_membership":"アカウントを登録する","i_forgot_my_password":"パスワードを忘れた","i_already_have_a_membership":"すでにアカウントを持っている","sign_in":"ログイン","log_out":"ログアウト","toggle_navigation":"ナビゲーションを開閉","login_message":"ログインしてセッションを開始する","register_message":"アカウントを登録する","password_reset_message":"パスワードをリセットする","reset_password":"パスワードをリセットする","send_password_reset_link":"パスワードリセットリンクを送信する。","verify_message":"あなたのアカウントは認証が必要です。","verify_email_sent":"あなたのメールアドレスに認証用のリンクを送信しました。","verify_check_your_email":"続行する前に、認証用リンクについてメールを確認してください。","verify_if_not_recieved":"メールが届かない場合","verify_request_another":"ここをクリックしてもう一度送信する"},"adminlte/ja/menu":{"main_navigation":"メインメニュー","blog":"ブログ","pages":"ページ","account_settings":"アカウント設定","profile":"プロフィール","change_password":"パスワード変更","multilevel":"マルチ階層","level_one":"階層 1","level_two":"階層 2","level_three":"階層 3","labels":"ラベル","important":"重要","warning":"警告","information":"インフォメーション"},"adminlte/nl/adminlte":{"full_name":"Volledige naam","email":"E-mailadres","password":"Wachtwoord","retype_password":"Wachtwoord nogmaals invoeren","remember_me":"Ingelogd blijven","register":"Registreren","register_a_new_membership":"Registreer een nieuw lidmaatschap","i_forgot_my_password":"Ik ben mijn wachtwoord vergeten","i_already_have_a_membership":"Ik heb al een lidmaatschap","sign_in":"Inloggen","log_out":"Uitloggen","toggle_navigation":"Schakel navigatie","login_message":"Log in om je sessie te starten","register_message":"Registreer een nieuw lidmaatschap","password_reset_message":"Wachtwoord herstellen","reset_password":"Wachtwoord herstellen","send_password_reset_link":"Verzend link voor wachtwoordherstel"},"adminlte/pl/adminlte":{"full_name":"Imię i nazwisko","email":"Email","password":"Hasło","retype_password":"Powtórz hasło","remember_me":"Zapamiętaj mnie","register":"Zarejestruj","register_a_new_membership":"Załóż nowe konto","i_forgot_my_password":"Zapomniałem hasła","i_already_have_a_membership":"Mam już konto","sign_in":"Zaloguj","log_out":"Wyloguj","toggle_navigation":"Przełącz nawigację","login_message":"Zaloguj się aby uzyskać dostęp do panelu","register_message":"Załóż nowe konto","password_reset_message":"Resetuj hasło","reset_password":"Resetuj hasło","send_password_reset_link":"Wyślij link do resetowania hasła"},"adminlte/pt-br/adminlte":{"full_name":"Nome completo","email":"Email","password":"Senha","retype_password":"Repita a senha","remember_me":"Lembrar-me","register":"Registrar","register_a_new_membership":"Registrar um novo membro","i_forgot_my_password":"Esqueci minha senha","i_already_have_a_membership":"Já sou um membro","sign_in":"Entrar","log_out":"Sair","toggle_navigation":"Trocar navegação","login_message":"Entre para iniciar uma nova sessão","register_message":"Registrar um novo membro","password_reset_message":"Recuperar senha","reset_password":"Recuperar senha","send_password_reset_link":"Enviar link de recuperação de senha"},"adminlte/pt-br/menu":{"main_navigation":"Navegação Principal","blog":"Blog","pages":"Página","account_settings":"Configurações da Conta","profile":"Perfil","change_password":"Mudar Senha","multilevel":"Multinível","level_one":"Nível 1","level_two":"Nível 2","level_three":"Nível 3","labels":"Etiquetas","Important":"Importante","Warning":"Aviso","Information":"Informação"},"adminlte/ru/adminlte":{"full_name":"Полное имя","email":"Почта","password":"Пароль","retype_password":"Подтверждение пароля","remember_me":"Запомнить меня","register":"Регистрация","register_a_new_membership":"Регистрация нового пользователя","i_forgot_my_password":"Восстановление пароля","i_already_have_a_membership":"Я уже зарегистрирован","sign_in":"Вход","log_out":"Выход","toggle_navigation":"Переключить навигацию","login_message":"Вход в систему","register_message":"Регистрация нового пользователя","password_reset_message":"Восстановление пароля","reset_password":"Восстановление пароля","send_password_reset_link":"Отправить ссылку для восстановления пароля"},"adminlte/ru/menu":{"main_navigation":"ГЛАВНОЕ МЕНЮ","blog":"Блог","pages":"Страницы","account_settings":"НАСТРОЙКИ ПРОФИЛЯ","profile":"Профиль","change_password":"Изменить пароль","multilevel":"Многоуровневое меню","level_one":"Уровень 1","level_two":"Уровень 2","level_three":"Уровень 3","labels":"Метки","important":"Важно","warning":"Внимание","information":"Информация"},"adminlte/tr/adminlte":{"full_name":"Ad ve Soyadı","email":"E-Posta Adresi","password":"Parola","retype_password":"Yeniden Parola","remember_me":"Beni Hatırla","register":"Kaydol","register_a_new_membership":"Yeni üye kaydı","i_forgot_my_password":"Parolamı unuttum","i_already_have_a_membership":"Zaten üye kaydım var","sign_in":"Giriş Yap","log_out":"Çıkış Yap","toggle_navigation":"Ana menüyü aç/kapa","login_message":"Oturumunuzu devam ettirmek için giriş yapmalısınız","register_message":"Yeni üye kaydı oluştur","password_reset_message":"Parola Sıfırlama","reset_password":"Parola Sıfırlama","send_password_reset_link":"Parola Sıfırlama Linki Gönder","verify_message":"Hesabınızın doğrulanmaya ihtiyacı var","verify_email_sent":"Hesap doğrulama linki E-posta adresinize gönderildi.","verify_check_your_email":"İşlemlere devam etmeden önce doğrulama linki için e-posta adresinizi kontrol edin.","verify_if_not_recieved":"Eğer doğrulama e-postası adresinize ulaşmadıysa","verify_request_another":"buraya tıklayarak yeni bir doğrulama linki talep edebilirsiniz","confirm_password_message":"Devam etmek için lütfen parolanızı doğrulayın."},"adminlte/tr/menu":{"main_navigation":"ANA MENÜ","blog":"Blog","pages":"Sayfalar","account_settings":"HESAP AYARLARI","profile":"Profil","change_password":"Parolanı değiştir","multilevel":"Çoklu Seviye","level_one":"Seviye 1","level_two":"Seviye 2","level_three":"Seviye 3","labels":"ETİKETLER","important":"Önemli","warning":"Uyarı","information":"Bilgi"},"adminlte/uk/adminlte":{"full_name":"Повне і'мя","email":"Пошта","password":"Пароль","retype_password":"Підтвердження пароля","remember_me":"Запам'ятати мене","register":"Реєстрація","register_a_new_membership":"Реєстрація нового користувача","i_forgot_my_password":"Відновлення пароля","i_already_have_a_membership":"Я вже зареєстрований","sign_in":"Вхід","log_out":"Вихід","toggle_navigation":"Переключити навігацію","login_message":"Вхід до системи","register_message":"Реєстрація нового користувача","password_reset_message":"Відновлення пароля","reset_password":"Відновлення пароля","send_password_reset_link":"Відправити посилання для відновлення пароля"},"adminlte/uk/menu":{"main_navigation":"ГОЛОВНЕ МЕНЮ","blog":"Блог","pages":"Сторінки","account_settings":"НАЛАШТУВАННЯ ПРОФІЛЮ","profile":"Профіль","change_password":"Змінити пароль","multilevel":"Багаторівневе меню","level_one":"Рівень 1","level_two":"Рівень 2","level_three":"Рівень 3","labels":"Мітки","important":"Важливо","warning":"Увага","information":"Інформація"},"adminlte/vi/adminlte":{"full_name":"Tên đầy đủ","email":"Email","password":"Mật khẩu","retype_password":"Nhập lại mật khẩu","remember_me":"Nhớ tôi","register":"Đăng ký","register_a_new_membership":"Đăng ký thành viên mới","i_forgot_my_password":"Tôi quên mật khẩu của tôi","i_already_have_a_membership":"Tôi đã là thành viên","sign_in":"Đăng nhập","log_out":"Đăng xuất","toggle_navigation":"Chuyển đổi điều hướng","login_message":"Đăng nhập để bắt đầu phiên của bạn","register_message":"Đăng ký thành viên mới","password_reset_message":"Đặt lại mật khẩu","reset_password":"Đặt lại mật khẩu","send_password_reset_link":"Gửi liên kết đặt lại mật khẩu"},"adminlte/vi/menu":{"main_navigation":"ĐIỀU HƯỚNG CHÍNH","blog":"Blog","pages":"Trang","account_settings":"CÀI ĐẶT TÀI KHOẢN","profile":"Hồ sơ","change_password":"Đổi mật khẩu","multilevel":"Đa cấp","level_one":"Cấp độ 1","level_two":"Cấp độ 2","level_three":"Cấp độ 3","labels":"NHÃN","Important":"Quan trọng","Warning":"Cảnh báo","Information":"Thông tin"},"adminlte/zh-CN/adminlte":{"full_name":"姓名","email":"邮箱","password":"密码","retype_password":"重输密码","remember_me":"记住我","register":"注册","register_a_new_membership":"注册新用户","i_forgot_my_password":"忘记密码","i_already_have_a_membership":"已经有账户","sign_in":"登录","log_out":"退出","toggle_navigation":"切换导航","login_message":"请先登录","register_message":"注册新用户","password_reset_message":"重置密码","reset_password":"重置密码","send_password_reset_link":"发送密码重置链接"},"adminlte/zh-CN/menu":{"main_navigation":"主导航","blog":"博客","pages":"页面","account_settings":"账户设置","profile":"用户信息","change_password":"修改密码","multilevel":"多级","level_one":"第一级","level_two":"第二级","level_three":"第三级","labels":"标签","important":"重要","warning":"警告","information":"信息"}}}
+
+/***/ }),
+
+/***/ "./node_modules/@kirschbaum-development/laravel-translations-loader/all.js?namespace=translation!./node_modules/@kirschbaum-development/laravel-translations-loader/all.js":
+/*!*********************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/@kirschbaum-development/laravel-translations-loader/all.js?namespace=translation!./node_modules/@kirschbaum-development/laravel-translations-loader/all.js ***!
+  \*********************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = {"en":{"translation":{"all":{"access":"Access control","access_1":"The experiment allows studying the principles of creating of access control systems to different rooms using a combination lock.","access_10":"Electric lock drive","access_2":"The access identifier is the RFID card or keychain and the RFID reader RC522. The RFID reader RC522 reads the radio tags, which are within the range of the reader, permanently.","access_3":"RFID reader RC522","access_4":"Servo SG90","access_5":"The RFID module does the polls with a frequency of 13.56 MHz and interacts with the Arduino NANO v3 controller using the SPI interface. When one of the keys (card or keychain) is moved to the reader, the key is read and compared with the database of users with authorized access in the controller. Users who do not have permission are denied. As the actuator, the servo drive SG90 is used.","access_6":"Entrance door","access_7":"Electric lock kit","access_8":"RFID keys","access_9":"Electric lock","apiDesc":"RELDES API provide access to resources (data entities) via URI paths. To use a RELDES API, your application will make an HTTP request and parse the response. The response format is JSON. API provides standard HTTP methods like GET, PUT, POST and DELETE. You can use any development language to access the API using HTTP request.","apiDesc1":"To use our API, you need to register by going that you will get your API the KEY, you will need to enable it in the query parameters such as: key = YourAPIkey. Also our API uses HTTP Basic Auth, so when you send a request, you must set the string in the request header: \"Authorization: Basic\" + convert the string \"user: password\" in base64.","apiDesc10":"status - current status of the experiment 1 - busy, 0 - free","apiDesc11":"end - the end of the experiment for the user with the current user_id","apiDesc12":"Lets take an experiment","apiDesc13":"message - a message which can be several answers:","apiDesc14":"This user is already in the queue for this experiment,          \"Success\" - the user has successfully registered in the queue","apiDesc15":"status - will be set to false if the user is in the queue, true if it was free to experiment, and he immediately took his","apiDesc16":"Experiment's time","apiDesc17":"Returns a list of data about the start, end, waiting for the experiment","apiDesc18":"While waiting in the queue if negative then the current user has already taken the experiment as seconds ago","apiDesc19":"1 if the user performs the experiment, 0 if there is a queue","apiDesc2":"Experiment's state","apiDesc20":"start of the experiment","apiDesc21":"the end of the experiment","apiDesc22":"Experiment's queue","apiDesc23":"It returns a list of all users in the queue for this experiment","apiDesc24":"Experiments's queues","apiDesc25":"It returns a list of all queues on all experiments","apiDesc26":"experiment's id","apiDesc27":"the user who performs the experiment","apiDesc28":"Loads the code","apiDesc29":"Parameters:","apiDesc3":"Occupy experiment","apiDesc30":"code for uploading","apiDesc4":"Returns the current status of the experiment.","apiDesc5":"Request example","apiDesc6":"where the first parameter may range between 1 and 4, and the mean number of the experiment","apiDesc7":"Response example","apiDesc8":"user_id - user on the system which is currently working on an experiment.","apiDesc9":"Where","apimethods":"API methods:","auth":"Authorization","browse":"Browse…","clean":"Empty code","climate":"Climate control","climate_1":"This experiment allows studying the method of climate control, based on data from temperature and humidity sensors. Also, the possibility of air quality control implemented, using of sensor for chemical impurities determining in the air.","climate_10":"Xiaomi humidity & temperature sensor","climate_11":"Everspring Temperature and Humidity Sensor (EVR_ST814)","climate_12":"ALQ-CO2 - Air quality and carbon dioxide sensor","climate_13":"Humidity / Temperature Sensor - EVR_ST814","climate_2":"DHT11 sensor (Digital Temperature Sensor (0-50 ° C) and Humidity (20-90%))","climate_3":"Air quality sensor MQ135 (It is designed to determine the content and quantity of harmful and dangerous gases in the air such as: NH3, NOx, alcohol, gasoline, smoke, CO2, etc.. It has a digital (comparator) and analog output)","climate_4":"Climate indicators","climate_5":"Climate control","climate_6":"Temperature on sensor","climate_7":"Air humidity on sensor","climate_8":"Air quality","climate_9":"Ground humidity","close":"Close","conf":"Configurable experiment","conf_desc":"Write your own code or use code templates","copy":"Copy","cote":"Components of the experiment","cross":"Cross-platform","cross_desc":"Use any device and operation system","cyber_1":"The experiment allows studying the principle of wireless wi-fi sensors operation and investigation their safety usage.","cyber_2":"The experiment demonstrates the possibility wireless wi-fi sensors usage for monitoring Smart House system indicators, as well as the results of a wi-fi connection violation due to deauthentication. The possibilities of mobile and cloud technologies application for efficient storage, visualization of data and monitoring of system status are shown.","cyber_3":"DHT11 sensor (Digital Temperature Sensor (0-50 ° C) and Humidity (20-90%))","cyber_4":"Air quality sensor MQ135 (It is designed to determine the content and quantity of harmful and dangerous gases in the air such as: NH3, NOx, alcohol, gasoline, smoke, CO2, etc.. It has a digital (comparator) and analog output)","cyber_5":"Deauthentication is an attack that sends packets to disconnect one or more clients currently connected to a specific access point. In this experiment, the forced client disconnection (capture handshakes WPA / WPA2) is used. Press the ATTACK button, observe a failure in receiving data from the sensor.","cyber_6":"Attack","cyber_7":"Connection status","cyber_8":"Deautentification","cyber_9":"Mobile technology","description":"Description","display":"Display","display_desc_1":"In this experiment user is allowed to control LCD and TFT LCD displays. Display has integrated controller and not accessed by Arduino directly. Communication is done vie I2C serial protocol.","display_desc_2":"Firstly LiquidCrystal_I2C.h and Wire.h libraries are included. Wire.h implements I2C protocol and LiquidCrystal_I2C.h implements communication with LCD via I2C. LiquidCrystal_I2C class object is created on the beginning of the code with parameters specific to given LCD controller. Changing those is not recommended. The code consists of setup and loop functions. Setup is called only once when board powers on. In this case in the function LCD parameters are set in begin call. Its parameters are numbers of rows and columns. backlight()/noBacklight() function is called to enable/disable LCD’s back light. Loop function is called continuously during all the work time of the board. Cursor position may is set by calling setCursor( column, row ) function. clear() function is called to remove all the symbols from LCD. delay( milliseconds ) function is called to delay activity of the board for stated time in milliseconds. Function print( string ) is called to print symbols starting from cursor position.","display_desc_3":"In this example string “Hello, world!” is printed into 1st line of the LCD. Second later string “I am display” is printed in the second line. One more second later LCD is cleared. These actions are repeating in the loop.","display_desc_4":"Text scrolling is implemented in this example. On each iteration of the loop cursor position is shifted and text is reprinted from this position.","display_example_1":"Hello, world!","display_example_2":"Scrolling text","distance":"Distance sensor","distance_desc":"In this experiment user works with sonic distance sensor. Sensor has 4 pins: vcc, ground, trigger and signal.","distance_desc_1":"User receives data from sensor through the serial interface. Serial class is used for that. The code consists of setup and loop functions. Setup is called only once when board powers on. In this function serial interface is initialized with baudrate of 9600 and sensor pins modes are set with pinMode call. Variables with sensor pins are declared before setup function. Loop function is called continuously during all the work time of the board. In this function all the work is done. Distance sensor has two modes: measuring and sending data. To set it in measuring mode pulse with 10 microseconds length must be sent to the sensor (trig pin). It is done by calling digitalWrite function. Its parameters are pin number and pin value. To form the pulse function called multiple times with LOW and HIGH values.","distance_desc_1-1":"Delays between calls are made with delayMicroseconds function. To read date from the sensor pulsing is called. This function’s arguments are pin number and expected value (HIGH or LOW). Returned value will represent travel time of sonic signal measured by the sensor. To convert that value to distance functions microsecondsToCentimeters and microsecondsToInches are used. Results are returned to user by print method of serial interface.","distance_desc_2":"Distance measurement","distance_desc_3":"Distance sensor with servo","distance_desc_4":"In this case sensor is attached to servo. It allows user to turn the sensor manually and measure distance to different objects. Servo position is set by write method of Servo object. Angle values are stored in the array. After servo position is set command to measure distance is called. To do so logical 1 pulse with duration of 10 microseconds is sent to the sensor with digitalWrite call. To read the measurements pulseIn is called. Results are sent to the user via serial interface by calling print method.","distance_title":"Sonic distance sensor","documentation":"documentation","dote":"Description of the experiment","emailMessage":"Thank you for registering in our system to confirm your registration click on the link:","endTime":"End","example":"Code example","exit":"Logout","expStatuses":"Experiment's statuses","expUploadCode":"Upload code","experiment":"Experiment","experiments":"Experiments","field":"Field of application","field_desc":"Decisions support in the design of moving objects control systems based on microcontrollers.","fr":"Starting Raspbian OS","fr_desc_1":"If you have enabled graphical uploading, you do not need to enter your user password, but if you have changed your password, you may need to enter it. In the case of console mode, login is required","fr_desc_10":"Connecting Arduino with Downloaded Sketch","fr_desc_11":"You need to connect an Arduino to a Raspberry Pi","fr_desc_12":"Get lab sketch # 1 and connected Arduino sensors. Run sketch and leave running.","fr_desc_13":"Pull Arduino USB Wire off Computer","fr_desc_14":"Insert Arduino USB Wire into Running Raspberry Pi","fr_desc_15":"Give full access to the port that the Arduino will use. To do this, write in the terminal: chmod 777 / dev / ttyACM0","fr_desc_1_li1":"Browser","fr_desc_1_li2":"Explorer","fr_desc_1_li3":"Terminal utility","fr_desc_1_li4":"Wolfram software","fr_desc_2":"By clicking on the menu button (Raspberry Pi logo) you can see the programs installed on the system The menu contains the following sections:","fr_desc_3_li1":"Programming: contains programs and tools (Python IDE, Geany, BlueJ, etc.)","fr_desc_3_li10":"Run: take action","fr_desc_3_li11":"Shutdown: Switch to Card Disconnect Window","fr_desc_3_li2":"Office: contains office applications (OpenOffice package)","fr_desc_3_li3":"Internet: contains applications and tools to work online","fr_desc_3_li4":"Games: contains games (MineCraft)","fr_desc_3_li5":"Accessories: contains additional related programs (Archiver, calculator)","fr_desc_3_li6":"Sound & Video: contains video and audio players (VLC Player)","fr_desc_3_li7":"System Tools: contains system programs (Midnight Commander)","fr_desc_3_li8":"Help: Help","fr_desc_3_li9":"Preferences: System Settings","fr_desc_4":"Basically, most of Raspbian's actions (like any Unix-like OS) use the Terminal utility. To start it, click the appropriate icon.","fr_desc_5":"You may need to change the system configuration, change the user password, turn on the camera, etc while working. All this can be done using the sudo raspi-config command","fr_desc_5_li":"Learn more about menu items:","fr_desc_5_li1":"Change User Password","fr_desc_5_li2":"Hostname is the name of the computer on the network","fr_desc_5_li3":"Boot options - boot settings","fr_desc_5_li4":"Localization Options - Select Language and Regional Settings","fr_desc_5_li5":"Interfacing Options - Interface Settings (Camera, SSH, VNC, SPI, I2C, Serial, 1-Wire, GPIO)","fr_desc_5_li6":"CPU Overclock","fr_desc_5_li7":"Advanced Options","fr_desc_5_li8":"Update - raspi-config","fr_desc_5_li9":"About raspi-config - application information","fr_desc_6":"When done, Finish should be selected. The OS will ask for permission to restart. You should agree and wait for the restart to finish. When changing the system settings, care must be taken that the error may lead to undesirable consequences.","fr_desc_7":"Setting up the Internet","fr_desc_8":"You do not need to do anything else if you are connected to a network that has a DHCP server and automatic address sharing (such as a home network). If DHCP is missing, the network settings can be set using the console. To do this, run the terminal where you want to open the network interface configuration file using the command: sudo nano / etc / network / interfaces. The following should be added to the file: iface <interface> inet static address <ip address> netmask <subnet mask> gateway <gateway address> dns-nameservers <whitespace DNS addresses> auto <interface>, where the interface is a network interface connected to Raspberry Pi (most often eth0); ip address - the address to be assigned; subnet mask - mask; gateway address - The ip address of a computer that serves as the gateway to the network. Then you need to exit saving the changes by pressing Ctrl + X, confirm saving by pressing Y, and then Enter to confirm the file overwriting. After changing the file, you must restart the Raspberry Pi by running the sudo reboot command. To check the network settings, run the ifconfig command","fr_desc_9":"To work with a proxy server, some time is required for the files / etc / environment (system-wide proxy settings) and /etc/apt/apt.conf (apt-get batch manager settings). The following should be added to the / etc / environment file: export http_proxy = \"http: // host: port\", and to the file /etc/apt/apt.conf: Acquire :: http :: proxy \"http: // host: port\"; . After performing these actions, you will be able to use the network functions, including the apt-get manager.","functional":"Functional capabilities","functional_desc":"The laboratory provides users with information on software and hardware solutions for further implementation; allows them to obtain skills in embedded systems programming.","ide":"Arduino Development Environment","ide_extra":"More information","ide_extra_desc":"<h3>Sketchbook</h3> <p> The Arduino environment uses the concept of a sketchbook: a standard place to store your programs (or sketches). The sketches in your sketchbook can be opened from the File > Sketchbook menu or from the Open button on the toolbar. The first time you run the Arduino software, it will automatically create a directory for your sketchbook. You can view or change the location of the sketchbook location from with the Preferences dialog. </p> <h3>Tabs, Multiple Files, and Compilation</h3> <p> Allows you to manage sketches with more than one file (each of which appears in its own tab). These can be normal Arduino code files (no extension), C files (.c extension), C++ files (.cpp), or header files (.h). </p> <h3>Uploading</h3> <p> Before uploading your sketch, you need to select the correct items from the Tools > Board and Tools > Serial Port menus. The boards are described below. On the Mac, the serial port is probably something like /dev/tty.usbmodem241 (for an Uno or Mega2560 or Leonardo) or /dev/tty.usbserial-1B1 (for a Duemilanove or earlier USB board), or /dev/tty.USA19QW1b1P1.1 (for a serial board connected with a Keyspan USB-to-Serial adapter). On Windows, it's probably COM1 or COM2 (for a serial board) or COM4, COM5, COM7, or higher (for a USB board) - to find out, you look for USB serial device in the ports section of the Windows Device Manager. On Linux, it should be /dev/ttyUSB0, /dev/ttyUSB1 or similar. </p> <p> Once you've selected the correct serial port and board, press the upload button in the toolbar or select the Upload item from the File menu. Current Arduino boards will reset automatically and begin the upload. With older boards (pre-Diecimila) that lack auto-reset, you'll need to press the reset button on the board just before starting the upload. On most boards, you'll see the RX and TX LEDs blink as the sketch is uploaded. The Arduino environment will display a message when the upload is complete, or show an error. </p> <p> When you upload a sketch, you're using the Arduino bootloader, a small program that has been loaded on to the microcontroller on your board. It allows you to upload code without using any additional hardware. The bootloader is active for a few seconds when the board resets; then it starts whichever sketch was most recently uploaded to the microcontroller. The bootloader will blink the on-board (pin 13) LED when it starts (i.e. when the board resets). </p> <h3>Libraries</h3> <p> Libraries provide extra functionality for use in sketches, e.g. working with hardware or manipulating data. To use a library in a sketch, select it from the Sketch > Import Library menu. This will insert one or more #include statements at the top of the sketch and compile the library with your sketch. Because libraries are uploaded to the board with your sketch, they increase the amount of space it takes up. If a sketch no longer needs a library, simply delete its #include statements from the top of your code. </p> <p> There is a list of libraries in the reference. Some libraries are included with the Arduino software. Others can be downloaded from a variety of sources. Starting with version 1.0.5 of the IDE, you do can import a library from a zip file and use it in an open sketch. </p> <h3>Third-Party Hardware</h3> <p> Support for third-party hardware can be added to the hardware directory of your sketchbook directory. Platforms installed there may include board definitions (which appear in the board menu), core libraries, bootloaders, and programmer definitions. To install, create the hardware directory, then unzip the third-party platform into its own sub-directory. (Don't use \"arduino\" as the sub-directory name or you'll override the built-in Arduino platform.) To uninstall, simply delete its directory. </p> <h3>Serial Monitor</h3> <p> Displays serial data being sent from the Arduino board (USB or serial board). To send data to the board, enter text and click on the \"send\" button or press enter. Choose the baud rate from the drop-down that matches the rate passed to Serial.begin in your sketch. Note that on Mac or Linux, the Arduino board will reset (rerun your sketch from the beginning) when you connect with the serial monitor. </p> <p> You can also talk to the board from Processing, Flash, MaxMSP, etc (see the interfacing page for details). </p> <h3>Preferences</h3> <p> Some preferences can be set in the preferences dialog (found under the Arduino menu on the Mac, or File on Windows and Linux). The rest can be found in the preferences file, whose location is shown in the preference dialog. </p> <h3>Language Support</h3> <p> The Arduino 1.0.1 software environment has been translated into 30+ different languages. By default, the IDE loads in the language selected by your operating system. (Note: on Windows and possibly Linux, this is determined by the locale setting which controls currency and date formats, not by the language the operating system is displayed in.) </p> <p> If you would like to change the language manually, start the Arduino software and open the Preferences window. Next to the Editor Language there is a dropdown menu of currently supported languages. Select your preferred language from the menu, and restart the software to use the selected language. If your preferred language is not supported, the IDE will default to English. </p> <p> You can return Arduino to its default setting of selecting its language based on your operating system by selecting System Default from the Editor Language drop-down. This setting will take effect when you restart the Arduino software. Similarly, after changing your operating system's settings, you must restart the Arduino software to update it to the new default language. </p> <h3>Boards</h3> <p> The board selection has two effects: it sets the parameters (e.g. CPU speed and baud rate) used when compiling and uploading sketches; and sets and the file and fuse settings used by the burn bootloader command. Some of the board definitions differ only in the latter, so even if you've been uploading successfully with a particular selection you'll want to check it before burning the bootloader. </p>","ide_info":"Overview","ide_info_desc":"<p> The Arduino development environment contains a text editor for writing code, a message area, a text console, a toolbar with buttons for common functions, and a series of menus. It connects to the Arduino hardware to upload programs and communicate with them. </p> <p> Software written using Arduino are called sketches. These sketches are written in the text editor. Sketches are saved with the file extension .ino. It has features for cutting/pasting and for searching/replacing text. The message area gives feedback while saving and exporting and also displays errors. The console displays text output by the Arduino environment including complete error messages and other information. The bottom righthand corner of the window displays the current board and serial port. The toolbar buttons allow you to verify and upload programs, create, open, and save sketches, and open the serial monitor: </p> <ul> <li>Verify – Checks your code for errors;</li> <li>Upload – Compiles your code and uploads it to the Arduino I/O board. See uploading below for details;</li> <li>New – Creates a new sketch;</li> <li>Open – Presents a menu of all the sketches in your sketchbook. Clicking one will open it within the current window;</li> <li>Save – Saves your sketch;</li> <li>Serial Monitor – Opens the serial monitor.</li> </ul>","ide_menu":"<p style='font-weight: bold;'> Additional commands are found within the five menus: File, Edit, Sketch, Tools, Help. The menus are context sensitive which means only those items relevant to the work currently being carried out are available. </p> <h4>Edit:</h4> <ul> <li>Copy for Forum (copies the code of your sketch to the clipboard in a form suitable for posting to the forum, complete with syntax coloring);</li> <li>Copy as HTML (copies the code of your sketch to the clipboard as HTML, suitable for embedding in web pages);</li> </ul> <h4>Sketch:</h4> <ul> <li>Verify/Compile (checks your sketch for errors);</li> <li>Show Sketch Folder (opens the current sketch folder);</li> <li>Add File... (adds a source file to the sketch (it will be copied from its current location). The new file appears in a new tab in the sketch window. Files can be removed from the sketch using the tab menu);</li> <li>Import Library (adds a library to your sketch by inserting #include statements at the start of your code. For more details, see libraries below. Additionally, with version 1.0.5 and later of the IDE, you can import a library from a .zip file).</li> </ul> <h4>Tools:</h4> <ul> <li>Auto Format (this formats your code nicely: i.e. indents it so that opening and closing curly braces line up, and that the statements inside curly braces are indented more);</li> <li>Archive Sketch (archives a copy of the current sketch in .zip format. The archive is placed in the same directory as the sketch);</li> <li>Board (select the board that you're using. See below for descriptions of the various boards);</li> <li>Serial Port (this menu contains all the serial devices (real or virtual) on your machine. It should automatically refresh every time you open the top-level tools menu);</li> <li>Programmer (for selecting a harware programmer when programming a board or chip and not using the onboard USB-serial connection. Normally you won't need this, but if you're burning a bootloader to a new microcontroller, you will use this);</li> <li>Burn Bootloader (the items in this menu allow you to burn a bootloader onto the microcontroller on an Arduino board. This is not required for normal use of an Arduino board but is useful if you purchase a new ATmega microcontroller (which normally come without a bootloader). Ensure that you've selected the correct board from the Boards menu before burning the bootloader).</li> </ul>","illum_1":"The experiment give possibility to study the basics of the loads driver functioning and the principle of multicolored (RGB) LED lighting systems creating, as well as RGB LED tape control","illum_10":"RGB color","illum_11":"Lighting can be set not only by color, but also by mood. Choose the mood you want and evaluate the color of the lighting.","illum_12":"Choose your mood","illum_13":"Delight","illum_14":"Relax","illum_15":"Sorrow","illum_16":"Turn on the switch and evaluate the result at different speeds.","illum_17":"Execute scenario with random colors","illum_18":"RGB controller","illum_19":"The circuit of components connection","illum_2":"Arduino NANO has the ability to generate a PWM (Pulse Wide Modulation) signal on some pins, which is transmitted to the inputs of the L298N load driver. The L298N module acts as RGB controller and gives possibility to control four DC load channels, depending on the PWM input signal. The level of output DC on the channels of RGB tape is proportional to the input channel. The multi-colored (RGB) LED tape (depending on the type of tape) has 4 inputs (RED, GREEN, BLUE, + 12V). Depending on the level of DC, the brightness of the required color sets on the LEDs. * The L298N load driver has the ability to control loads with a current of 2A. Pay attention to the characteristics of the LED tape.","illum_3":"Loads driver L298 (5-35V, 2A)","illum_4":"RGB LED tape","illum_5":"DC Power Supply 5V, 1А and 12V, 4А","illum_6":"Color selection","illum_7":"Selection of mood","illum_8":"Color change","illum_9":"Select the desired color of the light on the tape and click \"choose\".","illumination":"Illumination control","infoDescription":"Description of the experiment scenarios","infoFirst":"1. Select experiment","infoFirst_desc":"List of available experiments:","infoFourth":"4. See results","infoFourth_desc":"During the experiment performance, you can see the results received from the server.","infoSamples":"Examples of the experiment program codes","infoSchema":"Scheme of the experiment","infoSecond":"2. Read about it","infoSecond_desc":"Each experiment page contains:","infoThird":"3. Run the sample code","infoThird_desc":"On the page with the experiment you can use ready examples of program codes or write your own.","infoTitle":"User manual","led":"LED","led_desc_1":"This experiment allows users to control LEDs with Arduino board. LEDs are connected to digital pins of the board. Resistors are used to restrict the current flowing through the diodes. Diodes have common ground.","led_desc_10":"In this experiment, checked the serviceability LEDs with an analog port","led_desc_2":"The code consists of setup and loop functions. Setup is called only once when board powers on. In this case in the function pins from 2 to 5 are set up in output mode. Function pinMode is used for that. Its firs argument is pin number and second is pin mode. Loop function is called continuously during all the work time of the board. In this function all the work is done. To control diodes’ brightness analogWrite call is used. Its arguments are pin number and voltage value. Voltage range is 0-5V. Voltage value is not used directly as parameter of analogWrite, value ranged from 0 to 255 is used instead. Each value in this range is corresponded to voltage from 0 to 5V. It is done by so called pulse width modulation (PWM). To make it possible for user to see diodes brightness change function delay is called. It stops board’s work for amount of time (in ms) stated as argument of the function.","led_desc_3":"In this example diodes are light up and down one by one with delay of 700ms.","led_desc_4":"Running lights","led_desc_5":"In this example all LEDs are light up by for loop. Second for loops dims LEDs down. The loops are repeating.","led_desc_6":"Brightness change","led_desc_7":"In this example brightness of each LED is changed smoothly by changing voltage from 0 to 5V in for loop.","led_desc_8":"Sequential lights","led_desc_9":"Simalation defective LEDs","light_1":"The experiment gives possibility to study the basics of dimmer’s operation using the example of control of a white LED strip. The dimmer allows you to control the electrical power and thus control the level of illumination. The experiment also makes it possible to reproduce the automatic control algorithm under the necessary conditions.","light_10":"Remotely controlled dimmer for LEDs","light_11":"LED tape (White)","light_2":"Arduino Nano receives a numerical value for the required level of illumination and generates a PWM (Pulse Wide Modulation) signal for the load driver. The load driver controls voltage on the LEDs. Thus, the illumination level is controlled. The load driver performs the dimmer function. The dimmer, depending on the type, can control the alternative and direct voltage.","light_3":"LED tape","light_4":"Light level control","light_5":"Setting the illumination","light_6":"Drag the slider to change the light level (from 0 to 100%) and analyze the data from the light sensor.","light_7":"Set the time of day and estimate the level of illumination.","light_8":"AC Voltage Dimmer","light_9":"DC Voltage Dimmer (industrial)","lighting":"Lighting control","log_in":"Log in","login":"login","mailer":"Mailer","mega_extra":"Specification","mega_extra_desc":"<div class=\"spoiler-body collapse\"> <h4>Power</h4> <p> The Arduino Mega can be powered via the USB connection or with an external power supply. The power source is selected automatically. </p> <p> External (non-USB) power can come either from an AC-to-DC adapter (wall-wart) or battery. The adapter can be connected by plugging a 2.1mm center-positive plug into the board's power jack. Leads from a battery can be inserted in the Gnd and Vin pin headers of the POWER connector. </p> <p> The board can operate on an external supply of 6 to 20 volts. If supplied with less than 7V, however, the 5V pin may supply less than five volts and the board may be unstable. If using more than 12V, the voltage regulator may overheat and damage the board. The recommended range is 7 to 12 volts. </p> <p> The power pins are as follows: <ul> <li><strong>VIN.</strong> The input voltage to the Arduino board when it's using an external power source (as opposed to 5 volts from the USB connection or other regulated power source). You can supply voltage through this pin, or, if supplying voltage via the power jack, access it through this pin.</li> <li><strong>5V.</strong> This pin outputs a regulated 5V from the regulator on the board. The board can be supplied with power either from the DC power jack (7 - 12V), the USB connector (5V), or the VIN pin of the board (7-12V). Supplying voltage via the 5V or 3.3V pins bypasses the regulator, and can damage your board. We don't advise it.</li> <li><strong>3V3.</strong> A 3.3 volt supply generated by the on-board regulator. Maximum current draw is 50 mA.</li> <li><strong>GND.</strong> Ground pins.</li> <li><strong>IOREF.</strong> This pin on the Arduino board provides the voltage reference with which the microcontroller operates. A properly configured shield can read the IOREF pin voltage and select the appropriate power source or enable voltage translators on the outputs for working with the 5V or 3.3V.</li> </ul> </p> <h4>Memory</h4> <p> The ATmega2560 has 256 KB of flash memory for storing code (of which 8 KB is used for the bootloader), 8 KB of SRAM and 4 KB of EEPROM (which can be read and written with the EEPROM library). </p> <h4>Input and Output</h4> <p> Each of the 54 digital pins on the Mega can be used as an input or output, using pinMode(), digitalWrite(), and digitalRead() functions. They operate at 5 volts. Each pin can provide or receive a maximum of 40 mA and has an internal pull-up resistor (disconnected by default) of 20-50 kOhms. In addition, some pins have specialized functions: <ul> <li><strong>Serial: 0 (RX) and 1 (TX); Serial 1: 19 (RX) and 18 (TX); Serial 2: 17 (RX) and 16 (TX); Serial 3: 15 (RX) and 14 (TX).</strong> Used to receive (RX) and transmit (TX) TTL serial data. Pins 0 and 1 are also connected to the corresponding pins of the ATmega16U2 USB-to-TTL Serial chip.</li> <li><strong>External Interrupts: 2 (interrupt 0), 3 (interrupt 1), 18 (interrupt 5), 19 (interrupt 4), 20 (interrupt 3), and 21 (interrupt 2).</strong> These pins can be configured to trigger an interrupt on a low value, a rising or falling edge, or a change in value. See the attachInterrupt() function for details.</li> <li><strong>PWM: 2 to 13 and 44 to 46.</strong> Provide 8-bit PWM output with the analogWrite() function.</li> <li><strong>SPI: 50 (MISO), 51 (MOSI), 52 (SCK), 53 (SS).</strong> These pins support SPI communication using the SPI library. The SPI pins are also broken out on the ICSP header, which is physically compatible with the Uno, Duemilanove and Diecimila.</li> <li><strong>LED: 13.</strong> There is a built-in LED connected to digital pin 13. When the pin is HIGH value, the LED is on, when the pin is LOW, it's off.</li> <li><strong>TWI: 20 (SDA) and 21 (SCL).</strong> Support TWI communication using the Wire library. Note that these pins are not in the same location as the TWI pins on the Duemilanove or Diecimila.</li> </ul> <p> The Mega2560 has 16 analog inputs, each of which provide 10 bits of resolution (i.e. 1024 different values). By default they measure from ground to 5 volts, though is it possible to change the upper end of their range using the AREF pin and analogReference() function. </p> <p> There are a couple of other pins on the board: <ul> <li><strong>AREF.</strong> Reference voltage for the analog inputs. Used with analogReference().</li> <li><strong>Reset.</strong> Bring this line LOW to reset the microcontroller. Typically used to add a reset button to shields which block the one on the board.</li> </ul> </p> <h4>Communication</h4> <p> The Arduino Mega2560 has a number of facilities for communicating with a computer, another Arduino, or other microcontrollers. The ATmega2560 provides four hardware UARTs for TTL (5V) serial communication. An ATmega16U2 (ATmega 8U2 on the revision 1 and revision 2 boards) on the board channels one of these over USB and provides a virtual com port to software on the computer (Windows machines will need a .inf file, but OSX and Linux machines will recognize the board as a COM port automatically. The Arduino software includes a serial monitor which allows simple textual data to be sent to and from the board. The RX and TX LEDs on the board will flash when data is being transmitted via the ATmega8U2/ATmega16U2 chip and USB connection to the computer (but not for serial communication on pins 0 and 1). </p> <p> A SoftwareSerial library allows for serial communication on any of the Mega2560's digital pins. </p> <p> The ATmega2560 also supports TWI and SPI communication. The Arduino software includes a Wire library to simplify use of the TWI bus; see the documentation for details. For SPI communication, use the SPI library. </p> <h4>Programming</h4> <p> The Arduino Mega can be programmed with the Arduino software (download). For details, see the reference and tutorials. </p> <p> The ATmega2560 on the Arduino Mega comes preburned with a bootloader that allows you to upload new code to it without the use of an external hardware programmer. It communicates using the original STK500 protocol. </p> <p> You can also bypass the bootloader and program the microcontroller through the ICSP (In-Circuit Serial Programming) header using Arduino ISP or similar. </p> <p> The ATmega16U2 (or 8U2 in the rev1 and rev2 boards) firmware source code is available in the Arduino repository. The ATmega16U2/8U2 is loaded with a DFU bootloader. You can then use Atmel's FLIP software (Windows) or the DFU programmer (Mac OS X and Linux) to load a new firmware. Or you can use the ISP header with an external programmer (overwriting the DFU bootloader). See this user-contributed tutorial for more information. </p> <h4>Automatic (Software) Reset</h4> <p> Rather then requiring a physical press of the reset button before an upload, the Arduino Mega2560 is designed in a way that allows it to be reset by software running on a connected computer. One of the hardware flow control lines (DTR) of the ATmega8U2 is connected to the reset line of the ATmega2560 via a 100 nanofarad capacitor. When this line is asserted (taken low), the reset line drops long enough to reset the chip. The Arduino software uses this capability to allow you to upload code by simply pressing the upload button in the Arduino environment. This means that the bootloader can have a shorter timeout, as the lowering of DTR can be well-coordinated with the start of the upload. </p> <p> This setup has other implications. When the Mega2560 is connected to either a computer running Mac OS X or Linux, it resets each time a connection is made to it from software (via USB). For the following half-second or so, the bootloader is running on the Mega2560. While it is programmed to ignore malformed data (i.e. anything besides an upload of new code), it will intercept the first few bytes of data sent to the board after a connection is opened. If a sketch running on the board receives one-time configuration or other data when it first starts, make sure that the software with which it communicates waits a second after opening the connection and before sending this data. </p> <p> The Mega2560 contains a trace that can be cut to disable the auto-reset. The pads on either side of the trace can be soldered together to re-enable it. It's labeled \"RESET-EN\". You may also be able to disable the auto-reset by connecting a 110 ohm resistor from 5V to the reset line; see this forum thread for details. </p> <h4>USB Overcurrent Protection</h4> <p> The Arduino Mega2560 has a resettable polyfuse that protects your computer's USB ports from shorts and overcurrent. Although most computers provide their own internal protection, the fuse provides an extra layer of protection. If more than 500 mA is applied to the USB port, the fuse will automatically break the connection until the short or overload is removed. </p> <h4>Physical Characteristics and Shield Compatibility</h4> <p> The maximum length and width of the Mega2560 PCB are 4 and 2.1 inches respectively, with the USB connector and power jack extending beyond the former dimension. Three screw holes allow the board to be attached to a surface or case. Note that the distance between digital pins 7 and 8 is 160 mil (0.16\"), not an even multiple of the 100 mil spacing of the other pins. </p> <p> The Mega2560 is designed to be compatible with most shields designed for the Uno, Diecimila or Duemilanove. Digital pins 0 to 13 (and the adjacent AREF and GND pins), analog inputs 0 to 5, the power header, and ICSP header are all in equivalent locations. Further the main UART (serial port) is located on the same pins (0 and 1), as are external interrupts 0 and 1 (pins 2 and 3 respectively). SPI is available through the ICSP header on both the Mega2560 and Duemilanove / Diecimila. Please note that I2C is not located on the same pins on the Mega (20 and 21) as the Duemilanove / Diecimila (analog inputs 4 and 5). </p> </div>","mega_info":"Overview","mega_info_desc":"The Arduino Mega 2560 is a microcontroller board based on the ATmega2560 (<a target='_blank' href='http://www.atmel.com/Images/Atmel-2549-8-bit-AVR-Microcontroller-ATmega640-1280-1281-2560-2561_datasheet.pdf'>datasheet, pdf</a>). It has 54 digital input/output pins (of which 15 can be used as PWM outputs), 16 analog inputs, 4 UARTs (hardware serial ports), a 16 MHz crystal oscillator, a USB connection, a power jack, an ICSP header, and a reset button. It contains everything needed to support the microcontroller; simply connect it to a computer with a USB cable or power it with a AC-to-DC adapter or battery to get started. The Mega is compatible with most shields designed for the Arduino Duemilanove or Diecimila.","mega_summary":"<tr><td>Microcontroller</td><td>ATmega2560</td></tr> <tr><td>Operating Voltage</td><td>5V</td></tr> <tr><td>Input Voltage (recommended)</td><td>7-12V</td></tr> <tr><td>Input Voltage (limits)</td><td>6-20V</td></tr> <tr><td>Digital I/O Pins</td><td>54 (of which 15 provide PWM output)</td></tr> <tr><td>Analog Input Pins</td><td>16</td></tr> <tr><td>DC Current per I/O Pin</td><td>40 mA</td></tr> <tr><td>DC Current for 3.3V Pin</td><td>50 mA</td></tr> <tr><td>Flash Memory</td><td>256 KB of which 8 KB used by bootloader</td></tr> <tr><td>SRAM</td><td>8 KB</td></tr> <tr><td>EEPROM</td><td>4 KB</td></tr> <tr><td>Clock Speed</td><td>16 MHz</td></tr>","name":"first name","oh_li1":"to all items (access can be contacted by name);","oh_li2":"to all statuses and teams;","oh_li3":"to standard actions to perform various operations.","oh_li4":"from the rules;","oh_li5":"from the XMPP console;","oh_li6":"from the entries in the Google Calendar.","oh_text":"OpenHAB (Open Home Automation Bus) - a Java-based open source smart house implementation project, distributed under the GPLv3 license, and Jetty is used to organize the work of the web-interface. This open platform is capable of performing functions such as turning on and off the light, controlling sockets, and so on. OpenHAB provides tools for organizing the work of various systems, equipment and home automation interfaces. At the same time OpenHAB does not depend on protocols and equipment, providing a separate level of abstraction, which allows you to interact with different types of devices and software. To determine the control logic used scripts, written in a special subject-oriented programming language, developed with the help of Eclipse -Xtext. The main OpenHAB service is the event bus. Modules that do not require state tracking use this bus to share event information with other modules. There are two main types of events: 1. Commands that initiate any action or change the state of a particular item or device. 2. Status updates that report changes in the state of a particular item or device. Binding protocols that communicate with real devices should communicate with each other precisely through the event bus. This ensures communication between the modules. OpenHAB uses a very powerful expression language, which defines scenarios. A script or script is a code block defined by the user and can be called and used in different places. Scripts are placed in the openhab / configurations / scripts folder. The demo.script demo file is in the workspace. Scripts may also be inside a rule file in the openhab / configurations / rules folder: they are used to define the rule execution block. Each rule consists of two parts: one contains action switches, in other scripts - for their execution. For efficient use of scripts OpenHAB provides access:","oh_text2":"The script is identified by the name (in the demo.script file, the name of the demo script). Each script always returns the value that is the result of the last expression contained therein. Scripts may be called:","oh_text3":"Installation and configuration OpenHAB on Raspberry Pi","oh_text4":"To install OpenHAB on Raspberry Pi, you must perform a sequence of actions and commands (using a terminal) as described below.","oh_text4_li1":"Download key: wget -qO - 'https://bintray.com/user/downloadSubjectPublicKey?username= openhab '| sudo apt-key add -","oh_text4_li10":"Overload systemd: sudo systemctl daemon-reload","oh_text4_li11":"Add port to be used with Arduino: sudo nano /usr/share/openhab/bin/openhab.sh In the section \"JAVA_ARGS_DEFAULT\" add to the end","oh_text4_li12":"Overload OpenHAB: sudo service openhab restart","oh_text4_li13":"Write code to receive data from Arduino: sudo nano /etc/openhab/configurations/items/home.items","oh_text4_li14":"Create interface for displaying data: sudo nano /etc/openhab/configurations/sitemaps/home.sitemap","oh_text4_li15":"Find the Java process and remember its number: top","oh_text4_li16":"Stop the Java process. For example, the Java process number is 3234, then: kill 3234","oh_text4_li17":"Rename the openhab_default.cfg file at openhab.cfg in /etc/openhab/configurations/","oh_text4_li18":"Create OpenHAB rule for sensor control: sudo nano etc / openhab / configurations / rules / home.rules","oh_text4_li19":"Connect Arduino with a loaded sketch;","oh_text4_li2":"Install the OpenHAB Repository: echo \"deb http://dl.bintray.com/openhab/apt-repo stable main\" | sudo tee /etc/apt/sources.list.d/openhab.list","oh_text4_li20":"Provide full access to the port to be used by Arduino: chmod 777 /dev/ttyACM0","oh_text4_li21":"Go to the openHab directory: cd /usr/share/openhab/bin","oh_text4_li22":"Run the .sh file: sudo ./openhab.sh","oh_text4_li23":"Go to: RaspberryPi-IP: 8080/openhab.app?sitemap = home","oh_text4_li3":"Update system files: sudo apt-get update","oh_text4_li4":"Install OpenHAB: sudo apt-get install openhab-runtime","oh_text4_li5":"Add a user to the group: sudo usermod -a g openhab pi","oh_text4_li6":"Run OpenHAB: sudo systemctl enable openhab","oh_text4_li7":"Install the add-on for GPIO: sudo apt-get install openhab-addon-io-gpio sudo apt-get install openhab-addon-binding-gpio","oh_text4_li8":"Install add-ons for working with ports: sudo apt-get install openhab-addons-binding-serial","oh_text4_li9":"Specify a user name and group name : sudo nano /etc/default/openhab sudo nano /usr/lib/systemd/system/openhab.service","oh_title":"Integration of Smart House subsystems based on OpenHAB platform","passwd":"password","passwd_repeat":"repeat password","personal":"personal use","pi_install_desc":"There are two ways to install Raspbian on Raspberry Pi:","pi_install_desc_li1":"Download NOOBS from the official site to your MicroSD memory card and install;","pi_install_desc_li2":"Mounting a Raspbian OS file on a MicroSD memory card. In this case, it will be possible to start working immediately after the Raspberry Pi is turned on.","pi_install_v1":"An example of installing Raspbian OS using NOOBS","pi_install_v1_desc_1":"You must download the package from the official site https://www.raspberrypi.org/downloads/noobs/. You must select NOOBS 'Offline and network install' for installation without the Internet or NOOBS LITE 'Network install only' for installation with the Internet.","pi_install_v1_desc_2":"Before formatting NOOBS files to a microSD card, it must be formatted in the FAT32 file system. Next, unzip the NOOBS archive to your microSD memory card. The next step is to connect the peripherals to the Raspberry Pi: USB keyboard, USB mouse, monitor (via HDMI), and you must insert the microSD card into the appropriate slot. Last but not least, the MicroUSB power is plugged in. In the window that appears, select Raspbian OS (first option). The second option is to split sections of the memory card manually, the third option is to download directly to Scratch, a program for creating computer graphics and animations. You need to click “Install” and confirm the recording to the MicroSD memory card. The installation and reboot process must be completed. In the Configuration Tool window (you can change the settings later), select the \"Enable boot to Desktop\" option and confirm the selection, which will make LXDE the default boot interface. Next, click Done and agree to restart. You will then be ready to go.","pi_install_v2":"An example of installing Raspbian using file-image mounting","pi_install_v2_desc2_li1":"you need to unzip the image file on your computer","pi_install_v2_desc2_li2":"You should format your memory card with a standard Windows tool","pi_install_v2_desc2_li3":"Next, in Win32DiskImager you must select a Raspbian OS file (for example: \"2017-09-07-raspbian-stretch.img\")","pi_install_v2_desc2_li4":"In the Device section, select the name of the microSD memory card. You should be careful if you make a mistake, you can harm the hard disk","pi_install_v2_desc2_li5":"Finally select Write 'and wait for the writing process to complete. The approximate recording time is 5-10 minutes","pi_install_v2_desc3":"You must then connect the peripherals to the Raspberry Pi: USB keyboard, USB mouse, monitor (via HDMI), and insert the microSD card into the appropriate slot. Last but not least, the MicroUSB power is plugged in.","pi_install_v2_desc3_li1":"Raspbian OS will be downloaded and ready to go.","pi_install_v2_desc3_li2":"If using Unix-like OS:","pi_install_v2_desc3_li3":"should format microSD memory card in FAT 32 / ext2","pi_install_v2_desc3_li4":"Execute command: sudo dd bs = 4m if = / home / user / raspbian.img of = / dev / disk1;","pi_install_v2_desc3_li5":"Raspbian OS will be downloaded and ready to go. It is important to remember that the Raspberry Pi starts immediately after connecting MicroUSB, and that the Raspberry Pi should be switched off as follows:","pi_install_v2_desc3_li6":"Complete all actions","pi_install_v2_desc3_li7":"Click on Raspberry Pi logo in the upper left corner","pi_install_v2_desc3_li8":"Select Shutdown and in the new window confirm - Shutdown","pi_install_v2_desc3_li9":"Only after the Raspberry Pi is disconnected can you disconnect the MicroUSB cord and change the composition of the peripherals connected to the Raspberry Pi.","pi_install_v2_desc_1":"You must first download the OS from the official site: https://www.raspberrypi.org/downloads/raspbian/. We recommend choosing \"Raspbian Stretch With Desktop\".","pi_install_v2_desc_2":"You also need to install Win32DiskImager (https://sourceforge.net/projects/win32diskimager/) on your computer and use it to write a Raspbian OS file to your microSD:","pi_ul_li1":"Raspbian (Debian modification)","pi_ul_li2":"Pidora (Fedora mofification)","pi_ul_li3":"Arch Linux ARM","pi_ul_li4":"Kali Linux","platforms":"Platforms","presence":"Presence control","presence_1":"The experiment allows studying the principles of presence monitoring systems and security systems operation by changing the mode of operation of the subsystem. The possibility of motion control in several areas has been realized.","presence_2":"PIR sensor (passive infrared sensor, often used in alarm systems)","presence_3":"Interior door","queue":"Queue","recommendation":"Recommendation system","recommendation_over":"Overview","recommendation_select":"Platform selection","register":"Register","registration":"Registration","reldes":"Remote laboratory","reldes_desc":"RELDES (REmote Laboratory of Embedded Systems Design) – developed at Software Tools department of Zaporizhzhya National Technical University, Ukraine. Provides remote access to Arduino based experimental equipment.","rp":"Real project","rpi_sd":"The Raspberry Pi is a bank card-sized single-board computer, originally designed as a budget system for computer science education, which has subsequently become much more widely used and popular. The first versions were created in 2011. Built on an ARM architecture processor. The Raspberry Pi works mainly on Linux-based operating systems such as:","rs_pic1":"<img src=\"/images/rs_manufacturer_ukr.png\"/ width=\"150\" hight=\"150\" alt=\"KnowlageBase\">","rs_pic2":"<img src=\"/images/rs_platforms_ukr.png\"/ width=\"150\" hight=\"150\" alt=\"Platforms\">","rs_tab1_text1":"Developer","rs_tab1_text2":"knowledge level","rs_tab2_text1":"Hardware criterias","rs_tab2_text2":"analog input; digital input; power; processor family.","rs_tab3_text1":"Software criterias","rs_tab3_text2":"language","rs_tab4_text1":"Additional","rs_tab4_text2":"price; form-factor.","rs_text1":"is a service created at the Software Department of the Zaporozhzhia Polytechnic National University within the RELDES laboratory. The service was designed to help embedded system designers choose hardware-software platforms, depending on the developer's requirements for the platform they are looking for.","rs_text2":"Great choice among the most popular platforms","rs_text3":"The database includes more than 40 platforms produced by the different companies, such as: Arduino, Raspberry Pi, Texas Instrument, STMicrocontroller, Intel, Netduino, Iskra, BeagleBone","rs_text4":"The recommendation system is built based on the principle of knowledge-based systems. This is a case where the developer describes his needs himself, and the system, using a database (formed on the basis of knowledge about platforms from different sources), looks for platforms that meet his needs. Platform search criteria:","rs_title1":"Recommendation System (RS) -","rs_title2":"How is it works?","rs_title3":"STAGES OF WORKING WITH THE SERVICE","run":"Run","safety_1":"Arduino NANO has the ability to generate a PWM (Pulse Wide Modulation) signal on some pins, which is transmitted to the inputs of the L298N load driver. The L298N module acts as RGB controller and gives possibility to control four DC load channels, depending on the PWM input signal. The level of output DC on the channels of RGB tape is proportional to the input channel. The multi-colored (RGB) LED tape (depending on the type of tape) has 4 inputs (RED, GREEN, BLUE, + 12V). Depending on the level of DC, the brightness of the required color sets on the LEDs. * The L298N load driver has the ability to control loads with a current of 2A. Pay attention to the characteristics of the LED tape.","safety_2":"Signaling","safety_3":"Select alarm operation mode","safety_4":"status","safety_5":"Window","safety_6":"Electric drive for windows","safety_7":"PIR sensors","security":"Safety control","send":"Send","servo":"Servo","servo_desc_1":"In this experiment user is allowed to control servo. It is controlled through digital pin. Servo got 3 pins: vcc, ground and control pin.","servo_desc_2":"Program is using Servo.h library, which contains Servo class implementation. It is used to communicate with motor. Servo object is created on the beginning of the code. The code consists of setup and loop functions. Setup is called only once when board powers on. In this function servo is attached to pin 9 by calling attach metod of Servo object. Loop function is called continuously during all the work time of the board. In this function all the work is done. To set position of the servo method write is used. Angle is passed to the method as parameter. Function delay is halt board’s work for desirable time in milliseconds. It is necessary to give the servo time to perform turn before next command is given. Not all servos got turning range of 0-180 degrees. It may vary depending on model.","servo_desc_3":"Servo continuously receives commands to turn between two positions. Two seconds delay is made to give servo time to turn.","servo_desc_4":"In this case smooth turns are performed. To achieve that servo changes position by one degree each 15 milliseconds in for loop.","servo_example_1":"Two position turns","servo_example_2":"Smooth turns","sh":"Smart House & IoT","simpl":"Accessibility","simpl_desc":"Use our hardware instead of spending money","slide1":"Registration","slide1_button":"Sign up today","slide1_desc":"To get access to remote experiments it is necessary to be registered.","slide2":"Students' project","slide2_desc":"Project of master and post-graduate students of Software Tools Department of Zaporizhzhya National Technical University.","slide3":"Embedded systems","slide3_desc":"Embedded systems today rules the world. Use the laboratory for rapid prototyping of embedded system.","sname":"second name","solar_1":"The experiment allows studying the principles of solar energy obtaining and accumulating. Also, the experiment demonstrates the typical scheme for organizing of the process of energy accumulation in batteries.","solar_10":"Solar panel","solar_11":"Solar charge controller","solar_12":"Inverter","solar_13":"Accumulators","solar_2":"During the experiment, it is possible to trace the change of the voltage produced by the solar panel when the illumination intensity is changed. For the holding of the experiment, turn on the lighting and analyze the changes on the graph.","solar_3":"Arduino Nano V3 (5V)","solar_4":"Solar panel (6V, 250mA)","solar_5":"Resistive divider (1/2)","solar_6":"Charge Controller (TP4056)","solar_7":"Accumulator (3.7V, 1100mA)","solar_8":"Turn on/off light","solar_9":"Solar station voltage(V)","solar_station":"Solar station","start":"Start","startTime":"Start","stat":"Statistics","stud":"student","target":"Target audience","target_desc":"Students, teachers and developers in the field of embedded systems design.","theme":"Theme","titlename":"RELDES","to_top":"Back to top","tpc":"Typical program code","univer":"ZNTU","uno_extra":"Specification","uno_extra_desc":"<div class=\"spoiler-body collapse\"> <h4>Power</h4> <p> The Arduino Uno can be powered via the USB connection or with an external power supply. The power source is selected automatically. </p> <p> External (non-USB) power can come either from an AC-to-DC adapter (wall-wart) or battery. The adapter can be connected by plugging a 2.1mm center-positive plug into the board's power jack. Leads from a battery can be inserted in the Gnd and Vin pin headers of the POWER connector. </p> <p> The board can operate on an external supply of 6 to 20 volts. If supplied with less than 7V, however, the 5V pin may supply less than five volts and the board may be unstable. If using more than 12V, the voltage regulator may overheat and damage the board. The recommended range is 7 to 12 volts. </p> <p> The power pins are as follows: <ul> <li><strong>VIN.</strong> The input voltage to the Arduino board when it's using an external power source (as opposed to 5 volts from the USB connection or other regulated power source). You can supply voltage through this pin, or, if supplying voltage via the power jack, access it through this pin.</li> <li><strong>5V.</strong> This pin outputs a regulated 5V from the regulator on the board. The board can be supplied with power either from the DC power jack (7 - 12V), the USB connector (5V), or the VIN pin of the board (7-12V). Supplying voltage via the 5V or 3.3V pins bypasses the regulator, and can damage your board. We don't advise it.</li> <li><strong>3V3.</strong> A 3.3 volt supply generated by the on-board regulator. Maximum current draw is 50 mA.</li> <li><strong>GND.</strong> Ground pins.</li> <li><strong>IOREF.</strong> This pin on the Arduino board provides the voltage reference with which the microcontroller operates. A properly configured shield can read the IOREF pin voltage and select the appropriate power source or enable voltage translators on the outputs for working with the 5V or 3.3V.</li> </ul> </p> <h4>Memory</h4> <p> The ATmega328 has 32 KB (with 0.5 KB used for the bootloader). It also has 2 KB of SRAM and 1 KB of EEPROM (which can be read and written with the EEPROM library). </p> <h4>Input and Output</h4> <p> Each of the 14 digital pins on the Uno can be used as an input or output, using pinMode(), digitalWrite(), and digitalRead() functions. They operate at 5 volts. Each pin can provide or receive a maximum of 40 mA and has an internal pull-up resistor (disconnected by default) of 20-50 kOhms. In addition, some pins have specialized functions: <ul> <li><strong>Serial: 0 (RX) and 1 (TX).</strong> Used to receive (RX) and transmit (TX) TTL serial data. These pins are connected to the corresponding pins of the ATmega8U2 USB-to-TTL Serial chip.</li> <li><strong>External Interrupts: 2 and 3.</strong> These pins can be configured to trigger an interrupt on a low value, a rising or falling edge, or a change in value. See the attachInterrupt() function for details.</li> <li><strong>PWM: 3, 5, 6, 9, 10, and 11.</strong> Provide 8-bit PWM output with the analogWrite() function.</li> <li><strong>SPI: 10 (SS), 11 (MOSI), 12 (MISO), 13 (SCK).</strong> These pins support SPI communication using the SPI library.</li> <li><strong>LED: 13.</strong> There is a built-in LED connected to digital pin 13. When the pin is HIGH value, the LED is on, when the pin is LOW, it's off.</li> <li><strong>TWI: A4 or SDA pin and A5 or SCL pin.</strong> Support TWI communication using the Wire library.</li> </ul> <p> The Uno has 6 analog inputs, labeled A0 through A5, each of which provide 10 bits of resolution (i.e. 1024 different values). By default they measure from ground to 5 volts, though is it possible to change the upper end of their range using the AREF pin and the analogReference() function. </p> <p> There are a couple of other pins on the board: <ul> <li><strong>AREF.</strong> Reference voltage for the analog inputs. Used with analogReference().</li> <li><strong>Reset.</strong> Bring this line LOW to reset the microcontroller. Typically used to add a reset button to shields which block the one on the board.</li> </ul> </p> <h4>Communication</h4> <p> The Arduino Uno has a number of facilities for communicating with a computer, another Arduino, or other microcontrollers. The ATmega328 provides UART TTL (5V) serial communication, which is available on digital pins 0 (RX) and 1 (TX). An ATmega16U2 on the board channels this serial communication over USB and appears as a virtual com port to software on the computer. The '16U2 firmware uses the standard USB COM drivers, and no external driver is needed. However, on Windows, a .inf file is required. The Arduino software includes a serial monitor which allows simple textual data to be sent to and from the Arduino board. The RX and TX LEDs on the board will flash when data is being transmitted via the USB-to-serial chip and USB connection to the computer (but not for serial communication on pins 0 and 1). </p> <p> A SoftwareSerial library allows for serial communication on any of the Uno's digital pins. </p> <p> The ATmega328 also supports I2C (TWI) and SPI communication. The Arduino software includes a Wire library to simplify use of the I2C bus; see the documentation for details. For SPI communication, use the SPI library. </p> <h4>Programming</h4> <p> The Arduino Uno can be programmed with the Arduino software (download). Select Arduino Uno from the Tools > Board menu (according to the microcontroller on your board). For details, see the reference and tutorials. </p> <p> The ATmega328 on the Arduino Uno comes preburned with a bootloader that allows you to upload new code to it without the use of an external hardware programmer. It communicates using the original STK500 protocol. </p> <p> You can also bypass the bootloader and program the microcontroller through the ICSP (In-Circuit Serial Programming) header using Arduino ISP or similar. </p> <p> The ATmega16U2 (or 8U2 in the rev1 and rev2 boards) firmware source code is available . The ATmega16U2/8U2 is loaded with a DFU bootloader. You can then use Atmel's FLIP software (Windows) or the DFU programmer (Mac OS X and Linux) to load a new firmware. Or you can use the ISP header with an external programmer (overwriting the DFU bootloader). See this user-contributed tutorial for more information. </p> <h4>Automatic (Software) Reset</h4> <p> Rather than requiring a physical press of the reset button before an upload, the Arduino Uno is designed in a way that allows it to be reset by software running on a connected computer. One of the hardware flow control lines (DTR) of the ATmega8U2/16U2 is connected to the reset line of the ATmega328 via a 100 nanofarad capacitor. When this line is asserted (taken low), the reset line drops long enough to reset the chip. The Arduino software uses this capability to allow you to upload code by simply pressing the upload button in the Arduino environment. This means that the bootloader can have a shorter timeout, as the lowering of DTR can be well-coordinated with the start of the upload. </p> <p> This setup has other implications. When the Uno is connected to either a computer running Mac OS X or Linux, it resets each time a connection is made to it from software (via USB). For the following half-second or so, the bootloader is running on the Uno. While it is programmed to ignore malformed data (i.e. anything besides an upload of new code), it will intercept the first few bytes of data sent to the board after a connection is opened. If a sketch running on the board receives one-time configuration or other data when it first starts, make sure that the software with which it communicates waits a second after opening the connection and before sending this data. </p> <p> The Uno contains a trace that can be cut to disable the auto-reset. The pads on either side of the trace can be soldered together to re-enable it. It's labeled \"RESET-EN\". You may also be able to disable the auto-reset by connecting a 110 ohm resistor from 5V to the reset line. </p> <h4>USB Overcurrent Protection</h4> <p> The Arduino Uno has a resettable polyfuse that protects your computer's USB ports from shorts and overcurrent. Although most computers provide their own internal protection, the fuse provides an extra layer of protection. If more than 500 mA is applied to the USB port, the fuse will automatically break the connection until the short or overload is removed. </p> <h4>Physical Characteristics</h4> <p> The maximum length and width of the Uno PCB are 2.7 and 2.1 inches respectively, with the USB connector and power jack extending beyond the former dimension. Four screw holes allow the board to be attached to a surface or case. Note that the distance between digital pins 7 and 8 is 160 mil (0.16\"), not an even multiple of the 100 mil spacing of the other pins. </p> </div>","uno_info":"Overview","uno_info_desc":"The Arduino Uno is a microcontroller board based on the ATmega328 (<a target='_blank' href='http://www.atmel.com/Images/doc8161.pdf'>datasheet, pdf</a>). It has 14 digital input/output pins (of which 6 can be used as PWM outputs), 6 analog inputs, a 16 MHz ceramic resonator, a USB connection, a power jack, an ICSP header, and a reset button. It contains everything needed to support the microcontroller; simply connect it to a computer with a USB cable or power it with a AC-to-DC adapter or battery to get started.","uno_summary":"<tr><td>Microcontroller</td><td>ATmega328</td></tr> <tr><td>Operating Voltage</td><td>5V</td></tr> <tr><td>Input Voltage (recommended)</td><td>7-12V</td></tr> <tr><td>Input Voltage (limits)</td><td>6-20V</td></tr> <tr><td>Digital I/O Pins</td><td>14 (of which 6 provide PWM output)</td></tr> <tr><td>Analog Input Pins</td><td>6</td></tr> <tr><td>DC Current per I/O Pin</td><td>40 mA</td></tr> <tr><td>DC Current for 3.3V Pin</td><td>50 mA</td></tr> <tr><td>Flash Memory</td><td>32 KB of which 0.5 KB used by bootloader</td></tr> <tr><td>SRAM</td><td>2 KB</td></tr> <tr><td>EEPROM</td><td>1 KB</td></tr> <tr><td>Clock Speed</td><td>16 MHz</td></tr>","upload":"Upload","usage":"Using experiments","vent_1":"The experiment demonstrates the principles of ventilation system constructing with air flow speed controlling and air heating for heating the rooms.","vent_10":"Recuperator unit","vent_11":"Inside recuperator construction","vent_12":"Air heating unit","vent_2":"Arduino Nano generates a wide-pulse signal for the L298 load driver thereby controlling the fan speed. Also, Arduino Nano controls the Peltier element by the means of relay module for air heating. DHT22 sensor controls the temperature and humidity in the room.","vent_3":"L298 Load Management Driver","vent_4":"Relay 5V","vent_5":"Element of Peltier","vent_6":"Temperature and humidity sensor DHT22","vent_7":"To conduct the experiment, drag the slider to the desired position, thereby adjusting the speed of the fan in the ventilation system. Turn on the air heating and analyze the results on the graph. Control the fan speed and analyze the results on the graph.","vent_8":"Turn on\\off heating","vent_9":"Recuperator","ventilation":"Ventilation","virtual_model":"Virtual model","vritual_model_error":"Currently virtual model not supported on mobile devices","wireless":"Cyber-security","zone":"Zone control","zone_1":"The experiment allows studying the principles of security systems creation based on lasers. It gives possibilities of realization of invisible controlled barriers for specific zones.","zone_2":"The experiment was created for studying the operation and construction of perimeter control systems based on the source of the laser transmitter and receiver. These systems allow to control a certain area using a very thin laser with a long working distance. Laser reflectors are often used in such systems.","zone_3":"Laser Module","zone_4":"Light Sensor","zone_5":"Turn on perimeter control and simulate the crossing of the perimeter by opening the garage door. Review the result of turning on the light alarm in the experiment window.","zone_6":"Turn on/off perimeter control","zone_7":"Crossing the perimeter","zone_8":"Infrared perimeter example"},"auth":{"failed":"These credentials do not match our records.","throttle":"Too many login attempts. Please try again in :seconds seconds."},"experiments":{"description":"Description","tpc":"Typical program code","run":"Run","tts":"Time to start","tte":"Time to end","queue_qty":"Queue length"},"menu":{"swed":"SWED","arduino":"Arduino","arduino-ide":"Arduino IDE","raspberry-pi":"Raspberry PI","oh":"OpenHAB","experients":"Experiments","distance-sensor":"Distance sensor","servo":"Servo","LED":"Distance sensor","display":"Display"},"pagination":{"previous":"&laquo; Previous","next":"Next &raquo;"},"passwords":{"reset":"Your password has been reset!","sent":"We have emailed your password reset link!","throttled":"Please wait before retrying.","token":"This password reset token is invalid.","user":"We can't find a user with that email address."},"validation":{"accepted":"The :attribute must be accepted.","active_url":"The :attribute is not a valid URL.","after":"The :attribute must be a date after :date.","after_or_equal":"The :attribute must be a date after or equal to :date.","alpha":"The :attribute may only contain letters.","alpha_dash":"The :attribute may only contain letters, numbers, dashes and underscores.","alpha_num":"The :attribute may only contain letters and numbers.","array":"The :attribute must be an array.","before":"The :attribute must be a date before :date.","before_or_equal":"The :attribute must be a date before or equal to :date.","between":{"numeric":"The :attribute must be between :min and :max.","file":"The :attribute must be between :min and :max kilobytes.","string":"The :attribute must be between :min and :max characters.","array":"The :attribute must have between :min and :max items."},"boolean":"The :attribute field must be true or false.","confirmed":"The :attribute confirmation does not match.","date":"The :attribute is not a valid date.","date_equals":"The :attribute must be a date equal to :date.","date_format":"The :attribute does not match the format :format.","different":"The :attribute and :other must be different.","digits":"The :attribute must be :digits digits.","digits_between":"The :attribute must be between :min and :max digits.","dimensions":"The :attribute has invalid image dimensions.","distinct":"The :attribute field has a duplicate value.","email":"The :attribute must be a valid email address.","ends_with":"The :attribute must end with one of the following: :values.","exists":"The selected :attribute is invalid.","file":"The :attribute must be a file.","filled":"The :attribute field must have a value.","gt":{"numeric":"The :attribute must be greater than :value.","file":"The :attribute must be greater than :value kilobytes.","string":"The :attribute must be greater than :value characters.","array":"The :attribute must have more than :value items."},"gte":{"numeric":"The :attribute must be greater than or equal :value.","file":"The :attribute must be greater than or equal :value kilobytes.","string":"The :attribute must be greater than or equal :value characters.","array":"The :attribute must have :value items or more."},"image":"The :attribute must be an image.","in":"The selected :attribute is invalid.","in_array":"The :attribute field does not exist in :other.","integer":"The :attribute must be an integer.","ip":"The :attribute must be a valid IP address.","ipv4":"The :attribute must be a valid IPv4 address.","ipv6":"The :attribute must be a valid IPv6 address.","json":"The :attribute must be a valid JSON string.","lt":{"numeric":"The :attribute must be less than :value.","file":"The :attribute must be less than :value kilobytes.","string":"The :attribute must be less than :value characters.","array":"The :attribute must have less than :value items."},"lte":{"numeric":"The :attribute must be less than or equal :value.","file":"The :attribute must be less than or equal :value kilobytes.","string":"The :attribute must be less than or equal :value characters.","array":"The :attribute must not have more than :value items."},"max":{"numeric":"The :attribute may not be greater than :max.","file":"The :attribute may not be greater than :max kilobytes.","string":"The :attribute may not be greater than :max characters.","array":"The :attribute may not have more than :max items."},"mimes":"The :attribute must be a file of type: :values.","mimetypes":"The :attribute must be a file of type: :values.","min":{"numeric":"The :attribute must be at least :min.","file":"The :attribute must be at least :min kilobytes.","string":"The :attribute must be at least :min characters.","array":"The :attribute must have at least :min items."},"not_in":"The selected :attribute is invalid.","not_regex":"The :attribute format is invalid.","numeric":"The :attribute must be a number.","password":"The password is incorrect.","present":"The :attribute field must be present.","regex":"The :attribute format is invalid.","required":"The :attribute field is required.","required_if":"The :attribute field is required when :other is :value.","required_unless":"The :attribute field is required unless :other is in :values.","required_with":"The :attribute field is required when :values is present.","required_with_all":"The :attribute field is required when :values are present.","required_without":"The :attribute field is required when :values is not present.","required_without_all":"The :attribute field is required when none of :values are present.","same":"The :attribute and :other must match.","size":{"numeric":"The :attribute must be :size.","file":"The :attribute must be :size kilobytes.","string":"The :attribute must be :size characters.","array":"The :attribute must contain :size items."},"starts_with":"The :attribute must start with one of the following: :values.","string":"The :attribute must be a string.","timezone":"The :attribute must be a valid zone.","unique":"The :attribute has already been taken.","uploaded":"The :attribute failed to upload.","url":"The :attribute format is invalid.","uuid":"The :attribute must be a valid UUID.","custom":{"attribute-name":{"rule-name":"custom-message"}},"attributes":[]}}},"ua":{"translation":{"all":{"titlename":"RELDES","experiments":"Експерименти","experiment":"Експеримент","led":"Cвітлодіоди","servo":"Сервопривод","distance":"Датчик відстанні","display":"Дісплей","platforms":"Платформи","recommendation":"Рекомендаційна система","recommendation_over":"Опис","recommendation_select":"Вибір платформи","sh":"Розумний будинок та Інтернет речей","solar_station":"Сонячна станція","lighting":"Контроль освітленості","climate":"Клімат-контроль","access":"Контроль доступу","security":"Контроль безпеки","zone":"Контроль зони","presence":"Контроль присутності","ventilation":"Вентиляція","illumination":"Керування освітленням","slide1":"Реєстрація","slide1_desc":"Для отримання доступу до експериментів необхідно пройти реєстрацію.","slide1_button":"Зареєструйтеся сьогодні","slide2":"Студентський проект.","slide2_desc":"Проект магістрів та аспірантів кафедри Програмних засобів Національного Університету «Запорізька Політехніка» (Zaporizhzhia National Polytechnic University).","slide3":"Вбудовані системи","slide3_desc":"Вбудовані системи сьогодні правлять світом. Використовуйте віддалену лабораторію для швидкого прототипування вбудованої системи.","cross":"Кросплатформність","cross_desc":"Використовуйте будь-який пристрій та операційну систему","conf":"Конфігурований експеримент","conf_desc":"Створюйте свій програмний код або використовуйте шаблони","simpl":"Простота доступу","simpl_desc":"Використовуйте наше обладнання – заощаджуйте гроші","reldes":"Віддалена лабораторія","reldes_desc":"RELDES (REmote Laboratory for Design of Embedded Systems) ‑ віддалена лабораторія проектування вбудованих систем, розроблена на кафедрі програмних засобів Національного Університету «Запорізька Політехніка» (Zaporizhzhia National Polytechnic University). Надає віддалений доступ до експериментального обладнання на основі платформ Arduino.","field":"Область застосування","field_desc":"Підтримка прийняття проектних рішень при проектуванні вбудованих систем управління рухомими об'єктами на основі мікроконтролерів.","target":"Цільова аудиторія","target_desc":"Студенти, викладачі та розробники в галузі проектування вбудованих систем.","functional":"Функціональні можливості","functional_desc":"Лабораторія надає користувачам інформацію про програмні та апаратні компоненти для подальшого впровадження в реальних проектах, дозволяє отримати навички програмування вбудованих систем.","univer":"НУ «Запорізька політехніка»","to_top":"До початку","log_in":"Вхід","exit":"Вихід","login":"логін","passwd":"пароль","passwd_repeat":"повторіть пароль","auth":"Авторизація","close":"Закрити","uno_info":"Загальні відомості","uno_info_desc":"Arduino Uno побудовано на базі мікроконтролера ATmega328 (<a target=> '_blank' href=> 'http://www.atmel.com/Images/doc8161.pdf'>технічний опис, pdf</a>). Платформа має 14 цифрових входів/виходів (з котрих 6 можуть також працювати як входи ШІМ), 6 аналогових входів, кварцовий генератор 16 МГц, роз’єм USB та ICSP, силовий роз’єм, та кнопку перезавантаження. Для роботи необхідно підключити платформу до комп’ютеру за допомогою кабелю USB, або підключити живлення за допомогою адаптера AC/DC або батарей","uno_summary":"\r\n\t<tr><td>Мікроконтролер</td><td>ATmega328</td></tr>\r\n\t<tr><td>Робоча напруга</td><td>5В</td></tr>\r\n\t<tr><td>Вхідна напруга (рекомендована)</td><td>7-12В</td></tr>\r\n\t<tr><td>Вхідна напруга (максимальна)</td><td>6-20В</td></tr>\r\n\t<tr><td>Цифрові Входи/Виходи</td><td>14 (з котрих 6 можуть також працювати як входи ШІМ)</td></tr>\r\n\t<tr><td>Аналогові входи</td><td>6</td></tr>\r\n\t<tr><td>Постійний струм через вхід/вихід</td><td>40 мА</td></tr>\r\n\t<tr><td>Постійний струм для 3.3В виводу</td><td>50 мА</td></tr>\r\n\t<tr><td>Флеш-пам’ять</td><td>32 КБ (з котрих 0.5 КБ використовуються для завантажувача програм)</td></tr>\r\n\t<tr><td>ОЗП</td><td>2 КБ</td></tr>\r\n\t<tr><td>Енергонезалежна пам’ять</td><td>1 КБ</td></tr>\r\n\t<tr><td>Тактова частота</td><td>16 МГц</td></tr>","uno_extra":"Характеристики","uno_extra_desc":"\r\n\t<div class=\"spoiler-body collapse\">\r\n\t<h4>Живлення</h4>\r\n\t<p>\r\n\t\tArduino Uno може отримувати живлення як через підключення по USB, так і від зовнішнього джерела живлення. Джерело живлення вибирається автоматично.\r\n\t</p>\r\n\t<p>\r\n\t\tЗовнішнє живлення (не USB) може подаватися через перетворювач напруги AC/DC (блок живлення) або акумуляторною батареєю. Перетворювач напруги підключається за допомогою роз’єму 2.1 мм з позитивним полюсом на центральному контакті. Дроти від батареї підключаються до виводів Gnd і Vin.\r\n\t</p>\r\n\t<p>\r\n\t\tПлатформа може працювати при зовнішньому живленні від 6 В до 20 В. При напрузі живлення нижче 7 В, вивід 5V може видавати менше 5 В, при цьому платформа може працювати нестабільно. При використанні напруги вище 12 В регулятор напруги може перегрітися і пошкодити плату. Рекомендований діапазон від 7 В до 12 В.\r\n\t</p>\r\n\t<p>\r\n\t\tВиводи живлення:\r\n\t\t<ul>\r\n\t\t\t<li><strong>VIN.</strong> Вхід використовується для подачі живлення від зовнішнього джерела (за відсутності 5 В від роз’єму USB або іншого регульованого джерела живлення). Подача напруги живлення відбувається через даний вивід. Якщо харчування подається на роз'єм 2.1мм, то VIN можна використовувати для отримання живлення.</li>\r\n\t\t\t<li><strong>5V.</strong> Регульоване джерело напруги, що використовується для живлення мікроконтролера і компонентів на платі. Живлення може подаватися від виведення VIN через регулятор напруги, або від роз’єму USB, або іншого регульованого джерела напруги 5 В.</li>\r\n\t\t\t<li><strong>3V3.</strong> Напруга на виводі 3.3 В генерується мікросхемою FTDI на платформі. Максимальне споживання струму 50 мА.</li>\r\n\t\t\t<li><strong>GND.</strong> Виводи заземлення.</li>\r\n\t\t</ul>\r\n\t</p>\r\n\t<h4>Пам’ять</h4>\r\n\t<p>\r\n\t\tМікроконтролер ATmega328 має 32 кБ флеш пам’яті, з яких 0.5 кБ використовується для зберігання завантажувача, а також 2 кБ ОЗП (SRAM) і 1 Кб EEPROM (читання і запис виконується за допомогою бібліотеки EEPROM).\r\n\t</p>\r\n\t<h4>Входи і виходи</h4>\r\n\t<p>\r\n\t\tКожен з 14 цифрових виводів Uno може бути налаштований як вхід або вихід, використовуючи функції pinMode (), digitalWrite (), і digitalRead (),. Виводи працюють при напрузі 5 В. Кожен вивід має навантажувальний резистор (за замовчуванням відключений) 20-50 кОм і може пропускати до 40 мА. Деякі виводи мають особливі функції:\r\n\t\t<ul>\r\n\t\t\t<li><strong>Послідовна шина: 0 (RX) і 1 (TX).</strong> Виводи використовуються для отримання (RX) і передачі (TX) даних TTL. Дані виводи підключені до відповідних ніжок мікросхеми послідовної шини ATmega8U2 USB-to-TTL.</li>\r\n\t\t\t<li><strong>Зовнішнє переривання: 2 і 3.</strong> Дані виводи можуть бути налаштовані на виклик переривання або на молодшому значенні, або на передньому чи задньому фронті, або при зміні значення. Детальна інформація знаходиться в описі функції attachInterrupt ().</li>\r\n\t\t\t<li><strong>ШІМ: 3, 5, 6, 9, 10, і 11.</strong> Будь-який з виводів забезпечує ШІМ з роздільною здатністю 8 біт за допомогою функції analogWrite ().</li>\r\n\t\t\t<li><strong>SPI: 10 (SS), 11 (MOSI), 12 (MISO), 13 (SCK).</strong> За допомогою даних виводів здійснюється зв’язок SPI, для чого використовується бібліотека SPI.</li>\r\n\t\t\t<li><strong>LED: 13.</strong>Вбудований світлодіод, підключений до цифрового виводу 13. Якщо значення на виході має високий потенціал, то світлодіод горить.</li>\r\n\t\t\t<li><strong>I2C: 4 (SDA) та 5 (SCL).</strong> За допомогою виводів здійснюється зв’язок I2C (TWI), для створення якого використовується бібліотека Wire.</li>\r\n\t\t</ul>\r\n\t\t<p>\r\n\t\t\tНа платформі Uno встановлені 6 аналогових входів (позначених як A0 .. A5), кожен з роздільною здатністю 10 біт (тобто може приймати 1024 різних значення). За замовчанням виводи мають діапазон вимірювання до 5 В щодо землі, проте є можливість змінити верхню межу за допомогою виведення AREF і функції analogReference ().\r\n\t\t</p>\r\n\t\t<p>\r\n\t\t\t Додаткова пара виводів платформи:\r\n\t\t\t<ul>\r\n\t\t\t\t<li><strong>AREF.</strong> Опорна напруга для аналогових входів. Використовується з функцією analogReference ().</li>\r\n\t\t\t\t<li><strong>Reset.</strong> Низький рівень сигналу на виводі перезавантажує мікроконтролер. Зазвичай застосовується для підключення кнопки перезавантаження на платі розширення, що закриває доступ до кнопки на самій платі Arduino.</li>\r\n\t\t\t</ul>\r\n\t\t</p>\r\n\t\t<h4>Зв’язок</h4>\r\n\t\t<p>\r\n\t\tНа платформі Arduino Uno встановлено кілька пристроїв для здійснення зв’язку з комп’ютером, іншими пристроями Arduino або мікроконтролерами. ATmega328 підтримують послідовний інтерфейс UART TTL (5 В), який здійснюється виводами 0 (RX) і 1 (TX).\r\n\t\tВстановлена на платі мікросхема ATmega8U2 направляє даний інтерфейс через USB; програми на стороні комп’ютера \"спілкуються\" з платою через віртуальний COM порт. Прошивка ATmega8U2 використовує стандартні драйвера USB COM, ніяких сторонніх драйверів не потрібно, але на Windows для підключення потрібно файл ArduinoUNO.inf. Моніторинг послідовної шини (Serial Monitor) програми Arduino дозволяє посилати і отримувати текстові дані при підключенні до платформи. Світлодіоди RX і TX на платформі будуть мерехтіти при передачі даних через мікросхему FTDI або USB підключення (але не при використанні послідовної передачі через виводи 0 і 1).\r\n\t\t</p>\r\n\t\t<p>\r\n\t\tБібліотекою SoftwareSerial можливо створити послідовну передачу даних через будь-який з цифрових виводів Uno.\r\n\t\t</p>\r\n\t\t<p>\r\n\t\tATmega328 підтримує інтерфейси I2C (TWI) і SPI. В Arduino включена бібліотека Wire для зручності використання шини I2C.\r\n\t\t</p>\r\n\t\t<h4>Програмування</h4>\r\n\t\t<p>\r\n\t\tПлатформа програмується за допомогою ПЗ Arduino. Детальна інформація знаходиться в довіднику та інструкціях.\r\n\t\t</p>\r\n\t\t<p>\r\n\t\t\t Микроконтроллер ATmega328 поставляется с записанным загрузчиком, облегчающим запись новых программ без использования внешних программаторов. Связь осуществляется оригинальным протоколом STK500.\r\n\t\t</p>\r\n\t\t<p>\r\n\t\t\tЄ можливість не використовувати завантажувач і запрограмувати мікроконтролер через виводи ICSP (внутрішньосхемне програмування).\r\n\t\t</p>\r\n\t\t<p>\r\n\t\tКод прошивки для контролера ATmega8U2 є у вільному доступі в мережі Інтернет. Контролер ATmega8U2 має власний DFU завантажувач, який може бути активований замиканням джампера на звороті плати (поруч з картою Італії) і перезавантаженням контролера. Для запису нової прошивки можливо використовувати Atmel's FLIP (під Windows) або DFU програматор (на Mac OS X або Linux). Також можна переписати програму зовнішнім програматором, використовуючи ISP вхід.\r\n\t\t</p>\r\n\t\t<h4>Автоматичне (програмне) перезавантаження</h4>\r\n\t\t<p>\r\n\t\tUno розроблена таким чином, щоб перед записом нового коду перезавантаження здійснювалася самою програмою Arduino на комп’ютері, а не натисканням кнопки на платформі. Одна з ліній DTR мікросхеми ATmega8U2, керуючих потоком даних (DTR), підключена до виводу перезавантаження мікроконтролеру ATmega328 через 100 нФ конденсатор. Активація даної лінії, тобто подача сигналу низького рівня, перезавантажує мікроконтролер. Програма Arduino, використовуючи цю функцію, завантажує код одним натисканням кнопки Upload в самому середовищі програмування. Подача сигналу низького рівня по лінії DTR скоординована з початком запису коду, що скорочує таймаут завантажувача.\r\n\t\t</p>\r\n\t\t<p>\r\n\t\tФункція має ще одне застосування. Перезавантаження Uno відбувається кожного разу при підключенні до програми Arduino на комп’ютері з ОС Mac X або Linux (через USB). Наступні пів секунди після перезавантаження працює завантажувач. Під час програмування відбувається затримка декількох перших байтів коду, щоб уникнути отримання платформою некоректних даних (всіх, окрім коду нової програми). Якщо виконується разове налагодження скетчу, записаного в платформу, або введення будь-яких інших даних при першому запуску, необхідно переконатися, що програма на комп’ютері очікує протягом секунди перед передачею даних.\r\n\t\t</p>\r\n\t\t<p>\r\n\t\tНа Uno є можливість відключити лінію автоматичного перезавантаження розривом відповідної лінії. Контакти мікросхем з обох кінців лінії можуть бути з’єднані з метою відновлення. Лінія маркована «RESET-EN». Вимкнення автоматичного перезавантаження також можливо підключивши резистор 110 Ом між джерелом 5 В і даною лінією.\r\n\t\t</p>\r\n\t\t<h4>Струмовий захист роз’єму USB</h4>\r\n\t\t<p>\r\n\t\tВ Arduino Uno вбудований запобіжник (який спрацьовує автоматично), що захищає порт USB комп’ютера від струмів короткого замикання і надструмів. Хоча практично всі комп’ютери мають подібний захист, тим не менш, цей запобіжник забезпечує додатковий бар’єр. Запобіжник спрацьовує при проходженні струму більше 500 мА через USB порт і розмикає ланцюг до тих пір поки нормальні значення струмів НЕ будуть відновлено.\r\n\t\t</p>\r\n\t\t<h4>Фізичні характеристики</h4>\r\n\t\t<p>\r\n\t\tДовжина і ширина друкованої плати Uno складають 6.9 і 5.3 см відповідно. Роз’єм USB і силовий роз’єм виходять за межі даних розмірів. Чотири отвори в платі дозволяють закріпити її на поверхні. Відстань між цифровими виводами 7 і 8 дорівнює 0,4 см, хоча між іншими виводами воно становить 0,25 см.\r\n\t\t</p>\r\n\t</div>","mega_info":"Загальні відомості","mega_info_desc":"Arduino Mega побудована на мікроконтролері ATmega2560 (<a target=> '_blank' href=> 'http://www.atmel.com/Images/Atmel-2549-8-bit-AVR-Microcontroller-ATmega640-1280-1281-2560-2561_datasheet.pdf'>технічний опис, pdf</a>). Плата має 54 цифрових входів/виходів (15 з яких можуть використовуватися як виходи ШІМ), 16 аналогових входів, 4 послідовних порту UART, кварцовий генератор 16 МГц, USB та ICSP роз’єм, роз’єм живлення і кнопка перезавантаження. Для роботи необхідно підключити платформу до комп’ютера за допомогою кабелю USB або подати живлення за допомогою адаптера AC/DC, або акумуляторною батареєю. Arduino Mega 2560 сумісна з усіма платами розширення, розробленими для платформ Uno або Duemilanove.","mega_summary":"\r\n\t<tr><td>Мікроконтролер</td><td>ATmega2560</td></tr>\r\n\t<tr><td>Робоча напруга</td><td>5В</td></tr>\r\n\t<tr><td>Вхідна напруга (рекомендована)</td><td>7-12В</td></tr>\r\n\t<tr><td>Вхідна напруга (максимальна)</td><td>6-20В</td></tr>\r\n\t<tr><td>Цифрові Входи/Виходи</td><td>54 (з котрих 15 можуть також працювати як входи ШІМ)</td></tr>\r\n\t<tr><td>Аналогові входи</td><td>16</td></tr>\r\n\t<tr><td>Постійний струм через вхід/вихід</td><td>40 мА</td></tr>\r\n\t<tr><td>Постійний струм для 3.3В виводу</td><td>50 мА</td></tr>\r\n\t<tr><td>Флеш-пам’ять</td><td>256 КБ (з котрих 8 КБ використовуються для завантажувача програм)</td></tr>\r\n\t<tr><td>ОЗП</td><td>8 КБ</td></tr>\r\n\t<tr><td>Енергонезалежна пам’ять\t</td><td>4 КБ</td></tr>\r\n\t<tr><td>Тактова частота</td><td>16 МГц</td></tr>","mega_extra":"Характеристики","mega_extra_desc":"\r\n\t<div class=\"spoiler-body collapse\">\r\n\t<h4>Живлення</h4>\r\n\t<p>\r\n\tArduino Mega може отримувати живлення як через підключення по USB, так і від зовнішнього джерела живлення. Джерело живлення вибирається автоматично.\r\n\t</p>\r\n\t<p>\r\n\tЗовнішнє живлення (не USB) може подаватися через перетворювач напруги AC/DC (блок живлення) або акумуляторною батареєю. Перетворювач напруги підключається за допомогою роз’єму 2.1 мм з позитивним полюсом на центральному контакті. Дроти від батареї підключаються до виводів Gnd і Vin.\r\n\t</p>\r\n\t<p>\r\n\t\tПлатформа може працювати при зовнішньому живленні від 6 В до 20 В. При напрузі живлення нижче 7 В, вивід 5V може видавати менше 5 В, при цьому платформа може працювати нестабільно. При використанні напруги вище 12 В регулятор напруги може перегрітися і пошкодити плату. Рекомендований діапазон від 7 В до 12 В.\r\n\t</p>\r\n\t<p>\r\n\t\tВиводи живлення:\r\n\t\t<ul>\r\n\t\t\t<li><strong>VIN.</strong> Вхід використовується для подачі живлення від зовнішнього джерела (за відсутності 5 В від роз’єму USB або іншого регульованого джерела живлення). Подача напруги живлення відбувається через даний вивід. Якщо харчування подається на роз'єм 2.1мм, то VIN можна використовувати для отримання живлення.</li>\r\n\t\t\t<li><strong>5V.</strong> Регульоване джерело напруги, що використовується для живлення мікроконтролера і компонентів на платі. Живлення може подаватися від виведення VIN через регулятор напруги, або від роз’єму USB, або іншого регульованого джерела напруги 5 В.</li>\r\n\t\t\t<li><strong>3V3.</strong> Напруга на виводі 3.3 В генерується мікросхемою FTDI на платформі. Максимальне споживання струму 50 мА.</li>\r\n\t\t\t<li><strong>GND.</strong> Виводи заземлення.</li>\r\n\t\t</ul>\r\n\t</p>\r\n\t<h4>Пам’ять</h4>\r\n\t<p>\r\n\tМікроконтролер ATmega2560 має 256 кБ флеш пам’яті для зберігання коду програми (з яких 4 кБ використовується для зберігання завантажувача), 8 кБ ОЗП (SRAM) і 4 Кб EEPROM (читання і запис виконується за допомогою бібліотеки EEPROM).\r\n\t</p>\r\n\t<h4>Входи і виходи</h4>\r\n\t<p>\r\n\tКожен з 54 цифрових виводів Uno може бути налаштований як вхід або вихід, використовуючи функції pinMode (), digitalWrite (), і digitalRead (),. Виводи працюють при напрузі 5 В. Кожен вивід має навантажувальний резистор (за замовчуванням відключений) 20-50 кОм і може пропускати до 40 мА. Деякі виводи мають особливі функції:\r\n\t\t<ul>\r\n\t\t\t<li><strong>Послідовна шина: 0 (RX) і 1 (TX); Послідовна шина 1: 19 (RX) і 18 (TX); Послідовна шина 2: 17 (RX) і 16 (TX); Послідовна шина 3: 15 (RX) і 14 (TX); Виводи використовуються для отримання (RX) і передачі (TX) даних TTL. Виводи 0 та 1 підключені до відповідних ніжок мікросхеми послідовної шини ATmega8U2.</li>\r\n\t\t\t<li><strong>Зовнішнє переривання: 2 (переривання 0), 3 (переривання 1), 18 (переривання 5), 19 (переривання 4), 20 (переривання 3), та 21 (переривання 2). Ці виводи можуть бути налаштовані на виклик переривання або на молодшому значенні, або на передньому чи задньому фронті, або при зміні значення. Детальна інформація знаходиться в описі функції attachInterrupt().</li>\r\n\t\t\t<li><strong>ШІМ: 2 до 13, та 44-46. Будь-який з виводів забезпечує ШІМ з роздільною здатністю 8 біт за допомогою функції analogWrite ().</li>\r\n\t\t\t<li><strong>SPI: 50 (SS), 51 (MOSI), 52 (MISO), 53 (SCK). За допомогою даних виводів здійснюється зв’язок SPI, для чого використовується бібліотека SPI. Також виводи SPI можуть бути виведені до блоку ICSP, котрий сумісний с платформами Uno, Duemilanove и Diecimila.</li>\r\n\t\t\t<li><strong>LED: 13. Вбудований світлодіод, підключений до цифрового виводу 13. Якщо значення на виході має високий потенціал, то світлодіод горить.</li>\r\n\t\t\t<li><strong>I2C: 20 (SDA) та 21 (SCL). За допомогою виводів здійснюється зв’язок I2C (TWI). Для створення якого використовується бібліотека Wire (інформація на сайті Wiring). Розміщення виводів на платформі Mega не відповідає розміщенню Duemilanove або Diecimila.</li>\r\n\t\t</ul>\r\n\t\t<p>\r\n\t\tНа платформі Mega2560 є 16 аналогових входів, кожен з роздільною здатністю 10 біт (тобто може приймати 1024 різних значення). За замовчанням виводи мають діапазон вимірювання до 5 В щодо землі, проте є можливість змінити верхню межу за допомогою виведення AREF і функції analogReference ().\r\n\t\t</p>\r\n\t\t<p>\r\n\t\tДодаткова пара виводів платформи:\r\n\t\t\t<ul>\r\n\t\t\t\t<li><strong>AREF.</strong>Опорна напруга для аналогових входів. Використовується з функцією analogReference ().</li>\r\n\t\t\t\t<li><strong>Reset.</strong> Низький рівень сигналу на виводі перезавантажує мікроконтролер. Зазвичай застосовується для підключення кнопки перезавантаження на платі розширення, що закриває доступ до кнопки на самій платі Arduino.</li>\r\n\t\t\t</ul>\r\n\t\t</p>\r\n\t\t<h4>Зв’язок</h4>\r\n\t\t<p>\r\n\t\tНа платформі Arduino Mega2560 встановлено кілька пристроїв для здійснення зв’язку з комп’ютером, іншими пристроями Arduino або мікроконтролерами. ATmega2560 підтримують послідовний інтерфейс UART для TTL. Встановлена на платі мікросхема ATmega8U2 направляє один з інтерфейсів через USB, надаючи віртуальний COM порт програмам на комп’ютері (на Windows для підключення потрібно файл ArduinoUNO.inf, системи OSX и Linux автоматично розпізнають COM порт). Утиліта моніторингу послідовної шини (Serial Monitor) середовища розробки Arduino дозволяє посилати і отримувати текстові дані при підключенні до платформи. Світлодіоди RX і TX на платформі будуть мерехтіти при передачі даних через мікросхему ATmega8U2 або USB підключення (але не при використанні послідовної передачі через виводи 0 і 1).\r\n\t\t</p>\r\n\t\t<p>\r\n\t\tБібліотекою SoftwareSerial можливо створити послідовну передачу даних через будь-який з цифрових виводів Mega2560.\r\n\t\t</p>\r\n\t\t<p>\r\n\t\tATmega2560 підтримує інтерфейси I2C (TWI) і SPI. В Arduino включена бібліотека Wire для зручності використання шини I2C. Більш детальна інформація знаходиться на сайті Wiring. Для зв’язку по SPI, використовується бібліотека SPI.\r\n\t\t</p>\r\n\t\t<h4>Програмування</h4>\r\n\t\t<p>\r\n\t\tПлатформа програмується за допомогою середовища розробки Arduino. Детальна інформація знаходиться в довіднику та інструкціях.\r\n\t\t</p>\r\n\t\t<p>\r\n\t\tМікроконтролер ATmega2560 поставляється з записаним завантажувачем, що полегшує завантаження нових програм без використання зовнішніх програматорів. Зв’язок здійснюється оригінальним протоколом STK500.\r\n\t\t</p>\r\n\t\t<p>\r\n\t\tЄ можливість не використовувати завантажувач і запрограмувати мікроконтролер через виводи ICSP (внутрішньосхемне програмування). Детальна інформація знаходиться у цій інструкції.\r\n\t\t</p>\r\n\t\t<p>\r\n\t\tКонтролер ATmega8U2 має власний DFU завантажувач, який може бути активований замиканням джампера на звороті плати (поруч з картою Італії) і перезавантаженням контролера. Для запису нової прошивки можливо використовувати Atmel's FLIP (під Windows) або DFU програматор (на Mac OS X або Linux). Також можна переписати програму зовнішнім програматором, використовуючи ISP вхід.\r\n\t\t</p>\r\n\t\t<h4>Автоматичне (програмне) перезавантаження</h4>\r\n\t\t<p>\r\n\t\tMega розроблена таким чином, щоб перед записом нового коду перезавантаження здійснювалася самою програмою Arduino на комп’ютері, а не натисканням кнопки на платформі. Одна з ліній ATmega8U2, керуючих потоком даних (DTR), підключена до виводу перезавантаження мікроконтролеру ATmega2560 через  конденсатор 100 нФ. Активація даної лінії, тобто подача сигналу низького рівня, перезавантажує мікроконтролер. Програма Arduino, використовуючи цю функцію, завантажує код одним натисканням кнопки Upload в самому середовищі програмування. Подача сигналу низького рівня по лінії DTR скоординована з початком запису коду, що скорочує таймаут завантажувача.\r\n\t\t</p>\r\n\t\t<p>\r\n\t\tФункція має ще одне застосування. Перезавантаження Mega2560 відбувається кожного разу при підключенні до програми Arduino на комп’ютері з ОС Mac X або Linux (через USB). Наступні пів секунди після перезавантаження працює завантажувач. Під час програмування відбувається затримка декількох перших байтів коду, щоб уникнути отримання платформою некоректних даних (всіх, окрім коду нової програми). Якщо виконується разове налагодження скетчу, записаного в платформу, або введення будь-яких інших даних при першому запуску, необхідно переконатися, що програма на комп’ютері очікує протягом секунди перед передачею даних.\r\n\t\t</p>\r\n\t\t<p>\r\n\t\tНа Mega2560 є можливість відключити лінію автоматичного перезавантаження розривом відповідної лінії. Контакти мікросхем з обох кінців лінії можуть бути з’єднані з метою відновлення. Лінія маркована «RESET-EN». Вимкнення автоматичного перезавантаження також можливо підключивши резистор 110 Ом між джерелом 5 В і даною лінією.\r\n\t\t</p>\r\n\t\t<h4>Струмовий захист роз’єму USB</h4>\r\n\t\t<p>\r\n\t\tВ Arduino Mega2560 вбудовано запобіжник (який спрацьовує автоматично), що захищає порт USB комп’ютера від струмів короткого замикання і надструмів. Хоча практично всі комп’ютери мають подібний захист, тим не менш, цей запобіжник забезпечує додатковий бар’єр. Запобіжник автоматично перериває обмін даними при проходженні струму більше 500 мА через USB порт.\r\n\t\t</p>\r\n\t\t<h4>Фізичні характеристики та сумісність з платами розширення</h4>\r\n\t\t<p>\r\n\t\tДовжина і ширина друкованої плати Mega2560 складають 10.2 і 5.3 см відповідно. Роз’єм USB і силовий роз’єм виходять за межі даних розмірів. Три отвори в платі дозволяють закріпити її на поверхні. Відстань між цифровими виводами 7 і 8 дорівнює 0,4 см, хоча між іншими виводами воно становить 0,25 см.\r\n\t\t</p>\r\n\t\t<p>\r\n\t\tArduino Mega2560 сумісна з усіма платами розширення, розробленими для платформ Uno, Duemilanove або Diecimila. Розміщення виводів 0-13(а також AREF та GND), аналогових входів 0-5, силового роз’єму, ICSP роз’єм, порту послідовної передачі UART (виводи 0 та 1) та зовнішнього переривання 0 та 1 (виводи 2 та 3) на Mega відповідають розміщенню на вищезазначених платформах. Зв’язок SPI може виконуватись через роз’єм ICSP, як на платформі Duemilanove/Diecimila, так і на Mega2560. Однак розміщення виводів (20 та 21), зв’язку I2C на платформі Mega, не відповідає розміщенню тих самих виводів (аналогові виходи 4 та 5) на Duemilanove / Diecimila.\r\n\t\t</p>\r\n\t</div>","ide":"Cереда розробки Arduino","ide_info":"Загальні відомості","ide_info_desc":"\r\n\t<p>\r\n\t\t Середа разработки Arduino складається з вбудованого текстового редактора програмного коду, області повідомлень, вікна вивода тексту (консолі), панелі инструментів з кнопками часто використовуваних команд та декількох меню. Для завантаження програм і зв'язку середа розробки підключається до аппаратної частини Arduino.\r\n\t</p>\r\n\t<p>\r\n\t\t Програма, написана в середовищі Arduino, називається скетч. Скетч пишеться в текстовому редакторі, мающім инструменти вирізки/вставлення, пошуку/заміни тексту. В час збереження та экспорту проекта в області повідомлень з'являються інформаційні повідомленняю Вікно вивода тексту (консоль) показує повідомлення Arduino.\r\n\t</p>\r\n\t<ul>\r\n\t\t<li>компіляція коду Verify/Compile (перевірка програмного коду на помилки, компіляція);</li>\r\n\t\t<li>зупинення моніторинга Stop (зупинення моніторинга послідовної шини (Serial monitor));</li>\r\n\t\t<li>створення нового скетча New;</li>\r\n\t\t<li>відкрити файл скетча Open (відкриття меню доступа до усіх скетчів в блокноті);</li>\r\n\t\t<li>збереження скетча Save;</li>\r\n\t\t<li>загрузка скетча в контролер Upload to I/O Board (компілює программий код та завантажує його до пристрою Arduino.);</li>\r\n\t\t<li>открытие мониторинга последовательной шины (Serial monitor).</li>\r\n\t</ul>","ide_menu":"\r\n\t<p style=> 'font-weight: bold;'>\r\n\t\t Додадкові команди сгруповані в п'ять меню: File, Edit, Sketch, Tools, Help.\r\n\t</p>\r\n\t<h4>Підменю Edit:</h4>\r\n\t<ul>\r\n\t\t<li>Copy for Discourse (копіює до буферу код скетча для публікації на форумі);</li>\r\n\t\t<li>Copy as HTML (копіює до буферу код скетча як HTML код, для розміження на веб-сторінках);</li>\r\n\t</ul>\r\n\t<h4>Підменю Sketch:</h4>\r\n\t<ul>\r\n\t\t<li>Verify/Compile (перевірка на помилки);</li>\r\n\t\t<li>Import Library (додає бібліотеку до скетчу);</li>\r\n\t\t<li>Show Sketch Folder (відкриває директорію, де знаходиться скетч);</li>\r\n\t\t<li>Add File... (додає файл в скетч);</li>\r\n\t</ul>\r\n\t<h4>Підменю Tools:</h4>\r\n\t<ul>\r\n\t\t<li>Auto Format (опція оптимізує код);</li>\r\n\t\t<li>Board (вибір платформи);</li>\r\n\t\t<li>Serial Port (вибір порту);</li>\r\n\t</ul>","ide_extra":"Додаткова інформація","ide_extra_desc":"\r\n\t<h3>Загрузка скетча в Arduino</h3>\r\n\t<p>\r\n\t\t До завантаження скетча треба завдати параметри в меню Tools > Board та Tools > Serial Port. Платформы описываются далее по тексту. В ОС Mac последовательный порт может обозначаться как dev/tty.usbserial-1B1 (для платы USB) или /dev/tty.USA19QW1b1P1.1 (для платы последовательной шины, подключенной через адаптер Keyspan USB-to-Serial). В ОС Windows порты могут обозначаться как COM1 или COM2 (для платы последовательной шины) или COM4, COM5, COM7 и выше (для платы USB). Определение порта USB производится в поле Последовательной шины USB Диспетчера устройств Windows. В ОС Linux порты могут обозначаться как /dev/ttyUSB0, /dev/ttyUSB1.\r\n\t</p>\r\n\t<p>\r\n\t\t После выбора порта и платформы необходимо нажать кнопку загрузки на панели инструментов или выбрать пункт меню File > Upload to I/O Board. Современные платформы Arduino перезагружаются автоматически перед загрузкой. На старых платформах необходимо нажать кнопку перезагрузки. На большинстве плат во время процесса будут мигать светодиоды RX и TX. Среда разработки Arduino выведет сообщение об окончании загрузки или об ошибках.\r\n\t</p>\r\n\t<p>\r\n\t\t При загрузке скетча используется Загрузчик (Bootloader) Arduino, небольшая программа, загружаемая в микроконтроллер на плате. Она позволяет загружать программный код без использования дополнительных аппаратных средств. Загрузчик (Bootloader) активен в течении нескольких секунд при перезагрузке платформы и при загрузке любого из скетчей в микроконтроллер. Работа Загрузчика (Bootloader) распознается по миганию светодиода (13 пин) (напр.: при перезагрузке платы).\r\n\t</p>\r\n\t<h3>Платформы</h3>\r\n\t<p>\r\n\t\t Выбор платформы влияет на: параметры (напр.: скорость ЦП и скорость передачи данных), используемые при компиляции и загрузке скетчей и на настройки записи загрузчика (Bootloader) микроконтреллера. Некоторые характеристики платформ различаются только по последнему параметру (загрузка Bootloader), таким образом, даже при удачной загрузке с соответствующим выбором может потребоваться проверка различия перед записью загрузчика (Bootloader).\r\n\t</p>","browse":"Відкрити...","upload":"Завантажити","start":"Розпочати","send":"Відправити","registration":"Реєстрація","led_desc_1":"В даному експерименті здійснюється управління набором світлодіодів. Управління здійснюється через цифрові виводи плати Arduino. Діоди підключені через струмообмежуючі резистори і мають загальне заземлення.","led_desc_2":"Програмний код складається з функцій setup і loop. Перша виконується один раз при включенні плати. В даному випадку в ній виконується встановлення виводів з 2 по 5 в режим виходу з допомогою виклику pinMode, параметрами якого є номер виводу і його режим. Друга функція loop виконується в нескінченному циклі весь інший час роботи плати. В даному випадку проводиться зміна яскравості діодів, які підключені до виводів 2-5. Для зміни яскравості викликається функція analogWrite, яка подає на вивід, зазначений в своєму першому параметрі, напруга, вказана у другому. Напруга змінюється в діапазоні 0-5В, але функція приймає не значення вольтажу безпосередньо, а число від 0 до 255, що відповідає напрузі на проміжку 0-5В. Зміна напруги виконується за допомогою широтно-імпульсної модуляції. Так само в програмі використовується виклик delay, який призупиняє роботу плати на вказану кількість часу (мс). Це потрібно для того, щоб робота виконувалася досить повільно, щоб можна було помітити зміну яскравості.","led_desc_3":"У цьому прикладі в циклі проводиться послідовне включення і виключення кожного діода з затримкою в 700мс.","led_desc_4":"Мерехтіння світлодіодів","led_desc_5":"У цьому прикладі у функції loop виконується почергове включення всіх діодів в першому циклі і їх послідовно виключенні в другому. Ці цикли чергуються.","led_desc_6":"Плавна зміна яскравості","led_desc_7":"В цьому прикладі, по черзі для кожного діода виробляється плавну зміну яскравості від нуля до максимуму і назад. Зміна яскравості проводиться у вкладених циклах.","led_desc_8":"Почергове включення","led_desc_9":"Симуляція дефектного світлодіода","led_desc_10":"В даному експерименті, програмно перевіряється справність світлодіода за допомогою аналогового порту","distance_title":"Ультразвуковий датчик відстані","distance_desc":"В даному експерименті проводиться читання показань ультразвукового датчика відстані. Датчик має три виводи: живлення, землі і сигнальний. Сигнальний вивід підключений на цифровий вивід плати, дані надходять в послідовному коді.","distance_desc_1":"В даному прикладі передача показників сенсора відстані на комп’ютер виконується через послідовний інтерфейс. Для роботи з ним використовується клас Serial, через який і відбувається вся взаємодія з інтерфейсом. Програмний код складається з функцій setup і loop. Перша виконується один раз при включенні плати. В даному випадку в ній виконується ініціалізація послідовного інтерфейсу за допомогою виклику begin, параметром якого служить частота передачі даних, також проводиться установка режимів для виводів датчика функцією pinMode, параметрами якої є номер виводу і режим. Також перед описом функції setup оголошуються змінні, що зберігають номера виводів, до яких буде підключений датчик відстані. Друга функція – loop, виконується в нескінченному циклі весь інший час роботи плати. Робота з датчиком відстані проводиться в два етапи, які постійно змінюють один одного: запит на вимір і читання показників. Так як датчик є ультразвуковим, показники, які повертаються їм, являють собою час, за яке ультразвуковий сигнал пройшов до об’єкта і назад. Зважаючи на це, після читання показань слід перетворити значення, щоб обчислити відстань. Для запиту на датчик протягом більше 10 мкс подається логічна одиниця. Перед і після неї передається логічний нуль. Це потрібно для того, щоб упевнитися, що датчик правильно зчитав команду. Дані операції проводяться за допомогою викликів digitalWrite, параметрами якого є номер виходу і значення (LOW або HIGH).","distance_desc_1-1":"Між викликами проводиться затримка за допомогою функції delayMicroseconds. Для читання показників датчика зчитується тривалість вхідного сигналу. Це робиться за допомогою виклику функції pulseIn, параметрами якої є номер входу і сигнал, тривалість якого слід дізнатися (логічний 0 або 1). Ця функція повертає тривалість сигналу в мкс. Отримане значення заноситься в змінну duration. Після отримання цього значення, за допомогою функцій microsecondsToCentimeters і microsecondsToInches проводиться арифметичне перетворення значення часу в відстань в см і дюймах відповідно. По завершенню цих операцій здійснюється пересилка отриманої інформації через серійний інтерфейс (Serial) за допомогою виклику print.","distance_desc_2":"Вимірювання дистанції","distance_desc_3":"Датчик відстані з сервоприводом","distance_desc_4":"В даному експерименті датчик відстані повертається за допомогою сервоприводу. Це дозволяє вимірювати дистанцію до різних об’єктів. На стенді на різній відстані від датчика розташовані перегородки. Користувачеві пропонується проводити повороти двигуна з подальшим зняттям показань датчика відстані. Положення двигуна задається викликом write, параметром якого є кут повороту. В даному випадку значення кутів зберігаються в масиві і по черзі задаються двигуну. Команда на вимірювання відстані подається датчику за допомогою імпульсу тривалістю 10мкс. Для цього послідовно проводиться запис значень (0 і 1) за допомогою виклику DigitalWrite в відповідний вивід. Після вимірювання відстані проводиться читання показань датчика (час проходу ультразвукового сигналу) за допомогою виклику pulseIn. Відображення даних користувачеві проводиться через послідовний інтерфейс за допомогою функції print.","servo_desc_1":"В даному експерименті здійснюється управління сервоприводу. Управління виконується послідовним кодом через цифровий вивід. Сервопривод має три виводи: живлення, земля і сигнальний.","servo_desc_2":"В першу чергу слід відзначити, що в програмі підключена бібліотека Servo.h, що відповідає за управління сервоприводом. Вона надає можливість користуватися класом Servo, через який і здійснюється управління. Можна побачити, як на початку програми створюється об’єкт цього класу. Програмний код складається з функцій setup і loop. Перша виконується один раз при включенні плати. У ній виконується установка керуючого виходу для сервоприводу на вивід 9 за допомогою виклику методу attach об’єкта myservo. Друга функція loop виконується в нескінченному циклі весь інший час роботи плати. У даній функції викликаються команди управління сервоприводом, що задають його позицію в градусах (write). Слід зазначити, що діапазон роботи сервоприводів може відрізнятися, в залежності від привода і не тільки дорівнює 0-180. Команда delay використовується для припинення роботи плати на вказану кількість мілісекунд. Це необхідно тому що швидкість роботи сервопривода механічно обмежена, і він не здатний змінювати позицію настільки швидко, на скільки контролер здатний робити запити.","servo_example_1":"Поворот на дві позиції","servo_desc_3":"В цьому прикладі сервоприводу по черзі задаються 2 позиції. Між цим проводиться затримка в 2с, щоб двигун встиг зробити поворот до отримання наступної команди.","servo_example_2":"Плавне обертання","servo_desc_4":"В цьому прикладі проводиться плавний поворот привода. Для цього в циклі кожні 15мс викликається функція зміни позиції привода з різницею в 1 градус.","display_desc_1":"В даному експерименті здійснюється управління ЖК дисплеєм (LCD) і ЖК дисплеєм з активною матрицею (LCD TFT). Управління зображенням дисплея проводиться через цифрові виводи по протоколу послідовної передачі даних I2C.","display_desc_2":"В першу чергу слід відзначити, що в даній програмі підключені бібліотеки LiquidCrystal_I2C.h (що відповідає за управління ЖК-дисплеєм) і Wire.h (реалізує I2C протокол). Бібліотеки надають можливість користуватися класом LiquidCrystal_I2C, через який і здійснюється управління. Можна побачити, як на початку програми створюється об’єкт цього класу. В даному випадку параметри відповідають вбудованому в екран контролера і змінювати їх не рекомендується. Програмний код складається з функцій setup і loop. Перша виконується один раз при включенні плати. В даному випадку в ній виробляється установка параметрів роботи ЖК-дисплея за допомогою виклику begin c параметрами, які дають зрозуміти кількість стовпців і рядків символів. Для включення/виключення вбудованої підсвічування дисплея використовуються функції backlight/noBacklight. Друга функція loop виконується в нескінченному циклі весь інший час роботи плати. В даному випадку в ній виконується установка курсору в початок другого рядка (нумерація проводиться з нуля) за допомогою виклику setCursor і друк часу роботи плати в секундах. Функція print викликається для виведення на екран зазначеного набору символів. Виклик clear дозволяє очистити вміст екрану, а функція delay призупиняє роботу плати на вказаний в мілісекундах час.","display_example_1":"Hello, world!","display_desc_3":"В даному приклад в першу строку екрану друкується повідомлення «Hello, world!», а після 1 секунди в другу строку виводиться «I am display». Пілся ще 1 секунди екран стає пустим. Дії повторюються циклічно.","display_example_2":"Рухомий рядок","display_desc_4":"В даному прикладі реалізован рядок, що рухається. У кожній ітерації циклу проводиться зсув початкової позиції курсора, з якої на наступний ітерації буде проводитися відображення тексту.","infoFirst_desc":"На Ваш вибір надаються такі експерименти:","infoTitle":"Керівництво користувача","infoFirst":"1. Оберіть експеримент","infoSecond":"2. Ознайомтесь з ним","infoSecond_desc":"На сторінці з експериментом доступні:","infoSchema":"Схема експерименту","infoDescription":"Опис сценаріїв експерименту","infoSamples":"Приклади програмних кодів експерименту","infoThird":"3. Виконайте експеримент","infoThird_desc":"На сторінці с експериментом ви можете скористатись прикладом коду або написати свій.","infoFourth":"4. Слідкуйте за результатом","infoFourth_desc":"В час виконання експерименту ви можете слідкувати за результатами сервера.","example":"Приклад коду","name":"ім'я","sname":"прізвище","stud":"студент","personal":"особисте використання","register":"Зареєструватись","emailMessage":"Дякую за реєстрації в нашій системі для подтвердження реєстрації перейдіть за цим посиланням: ","startTime":"Почав","endTime":"Закінче","theme":"Тема","documentation":"документація","apiDesc":"RELDES API обеспечивает доступ к ресурсам (сущностям данных) с помощью URI. Для использвания API RELDES, приложение отправляет HTTP запрос и анализирует ответ. Формат ответа JSON. API предоставляет стандартные методы HTTP GET, PUT, POST и DELETE. Вы можете использовать любой язык разработки для доступа к API с использованием запроса HTTP.","apimethods":"Методы API:","stat":"Статистика","expStatuses":"Состояние экспериментов","mailer":"Оповещания","usage":"Использование экспериментов","queue":"Очередь","apiDesc1":" Для использвания нашего API вам необходимо пройти регистрацию, пройдя которую вы получите ваш API KEY, вам\r\n            необходимо будет его включить в параметры запроса как: key=YourAPIkey.\r\n            Также наше API использует HTTP Basic Auth, поэтому при отправке запроса вы должны установить в заголовке запроса\r\n            строку: \"Authorization: Basic \"+ преобразовать строку \"user:password\" в base64.","apiDesc2":"Статус эксперимента","apiDesc3":"Занять эксперимент","apiDesc4":"Возвращает текущее состояние эксперимента.","apiDesc5":"Пример запроса","apiDesc6":"где 1ый параметр может варироваться от 1 до 4, и означать номер эксперимента","apiDesc7":"Пример ответа","apiDesc8":"user_id - id пользователя в системе который сейчас работает над экспериментом.","apiDesc9":"Где","apiDesc10":"status  - текущий статус эксперимента 1 - занят, 0 - свободен","apiDesc11":"end     - время окончания эксперимента для пользователя с текущим user_id","apiDesc12":"Позволяет занять эксперимент","apiDesc13":"message - сообщение в котором может быть несколько ответов:","apiDesc14":"этот пользователь уже стоит в очереди на данный эксперимент,\r\n        \"success\" - пользователь успешно зарегестрирован в очереди","apiDesc15":"status  - будет установлен в false если пользователь будет в очереди, true если он эксперимент был свободен и он его сразу занял","apiDesc16":"Время эксперимента","apiDesc17":"Возвращает перечень данных о старте, окончании , ожидании эксперимента","apiDesc18":" время ожидания в очереди, если отрицательное значит текущий пользователь уже занял эксперимент столько секунд назад","apiDesc19":"1 если пользователь выполняет эксперимент, 0 если стоит в очереди","apiDesc20":"время старта эксперимента","apiDesc21":"время окончания эксперимента","apiDesc22":"Очередь эксперимента","apiDesc23":"Возвращает перечень всех пользователей в очереди на данном эксперименте","apiDesc24":"Очереди экспериментов","apiDesc25":"Возвращает перечень всех очередей на всех экспериментах","apiDesc26":"id эксперимента","apiDesc27":"пользователя который выполняет эксперимент","expUploadCode":"Загрузить код","apiDesc28":"Загружает код на плату.","apiDesc29":"Параметры:","apiDesc30":"код для загрузки","wireless":"Кібербезпека","clean":"Пустий код","copy":"Копiювати","virtual_model":"Віртуальна модель","vritual_model_error":"Виртуальная модель на данный момент не поддерживается на мобильных устройствах","description":"Опис","run":"Виконання эксперименту","tpc":"Типовий програмний код","rp":"Реальний проект","dote":"Опис експерименту","cote":"Компоненти експерименту","solar_1":"Експеримент дозволяє вивчити принципи отримання та накопичення сонячної енергії. Також експеримент демонструє типову схему організації процесу накопичення енергії в акумуляторах.","solar_2":"В ході експерименту можна простежити зміну напруги, що виробляється сонячною панеллю при зміні інтенсивності освітлення. Для проведення експерименту включіть освітлення і проаналізуйте зміни на графіку.","solar_3":"Arduino Nano V3 (5V)","solar_4":"Сонячна панель (6В, 250мА)","solar_5":"Резистивний дільник  (1/2)","solar_6":"Контролер заряду (TP4056)","solar_7":"Акумулятор (3.7V, 1100мА)","solar_8":"Ввiмкнути/вимкнути свiтло","solar_9":"Напруга сонячної станції(V)","solar_10":"Сонячна панель","solar_11":"Контролер заряду","solar_12":"Інвертор","solar_13":"Акумулятори","illum_1":"Експеримент дозволяє вивчити основи роботи драйвера навантажень і принципу створення різнокольорових (RGB) світлодіодних систем освітлення, а також управління RGB світлодіодною стрічкою.","illum_2":"Arduino NANO має функціональну можливість на окремих виводах генерувати ШІМ (широтно-імпульсна модуляція) сигнал, який передається на входи драйвера навантажень L298N. Модуль L298N виступає в ролі RGB контролера і дає можливість управляти чотирма каналами навантаження постійного струму в залежності від вхідного ШІМ сигналу. Рівень вихідного постійного струму на каналах RGB стрічки пропорційний вхідному каналу","illum_3":"Драйвер навантажень L298 (5-35V, 2A)","illum_4":"RGB LED лента","illum_5":"Блок живлення постійного струму 5V, 1А and 12V, 4А","illum_6":"Вибір кольору","illum_7":"Вибір настрою","illum_8":"Зміна кольору","illum_9":"Виберіть потрібний колір світла на стрічці та натисніть «вибрати».","illum_10":"RGB колір","illum_11":"Освітлення можна встановити не тільки за кольором, але і за настроєм.\r\nВиберіть потрібний настрій і оцініть колір освітлення.","illum_12":"Виберіть настрій","illum_13":"Захоплення","illum_14":"Розслабтесь","illum_15":"Смуток","illum_16":"Увімкніть вимикач і оцініть результат при різних швидкостях.","illum_17":"Виконати сценарій з випадковими кольорами","illum_18":"RGB контролер","illum_19":"Схема з'єднання компонентів","climate_1":"Цей експеримент дозволяє вивчити метод кліматичного контролю на основі даних датчиків температури та вологості. Також реалізована можливість контролю якості повітря, використовуючи датчик визначення хімічних домішок у повітрі.","climate_2":"Датчик DHT11 (цифровий датчик температури (0-50 ° C) і вологістi (20-90%))","climate_3":"Датчик якості повітря MQ135 (Він призначений для визначення вмісту та кількості шкідливих та небезпечних газів у повітрі, таких як: NH3, NOx, алкоголь, бензин, дим, CO2 тощо. Він має цифровий (компаратор) та аналоговий вихід)","climate_4":"Кліматичні показники","climate_5":"Клімат-контроль","climate_6":"Температура на датчику","climate_7":"Вологість повітря на датчику","climate_8":"Якість повітря","climate_9":"Вологість ґрунту","climate_10":"Датчик вологості та температури Xiaomi","climate_11":"Датчик температури та вологості повітря (EVR_ST814)","climate_12":"ALQ-CO2 - Датчик якості повітря та вуглекислого газу","climate_13":"Датчик вологості / температури - EVR_ST814","access_1":"Експеримент дозволяє вивчити принципи створення систем контролю доступу до різних приміщень за допомогою комбінованого блокування.","access_2":"Ідентифікатором доступу є RFID-карта або брелок і зчитувач RFID RC522.\r\nRFID-зчитувач RC522 читає радіотеги, які знаходяться в межах зчитувача, постійно.","access_3":"RFID зчитувач RC522","access_4":"Servo SG90","access_5":"Модуль RFID проводить опитування з частотою 13,56 МГц і взаємодіє з контролером Arduino NANO v3 за допомогою інтерфейсу SPI.\r\nКоли одна з клавіш (картка або брелок) переміщується до зчитувача, ключ зчитується та порівнюється з базою даних користувачів з авторизованим доступом у контролері. Користувачам, які не мають дозволу, відмовляють. Як привід використовується сервопривод SG90.","access_6":"Вхідні двері","access_7":"Комплект електричних замків","access_8":"RFID ключі","access_9":"Електричний замок","access_10":"Електричний привід блокування","safety_1":"Arduino NANO має можливість генерувати сигнал PWM (Pulse Wide Modulation) на деяких штирях, який передається на входи драйвера навантаження L298N.\r\nМодуль L298N працює як контролер RGB і дає можливість керувати чотирма каналами навантаження постійного струму, в залежності від вхідного сигналу ШІМ. Рівень вихідного постійного струму на каналах стрічки RGB пропорційний вхідному каналу. Багатоколірна (RGB) світлодіодна стрічка (залежно від типу стрічки) має 4 входи (ЧЕРВЕНИЙ, ЗЕЛЕНИЙ, СВІТИЙ, + 12 В). Залежно від рівня постійного струму яскравість необхідних кольорів встановлюється на світлодіодах.\r\n* Драйвер навантаження L298N має можливість керувати навантаженнями струмом 2А. Зверніть увагу на характеристики світлодіодної стрічки.","safety_2":"Сигналізація","safety_3":"Виберіть режим роботи сигналізації","safety_4":"статус","safety_5":"Вікно","safety_6":"Електричний привід для вікон","safety_7":"PIR датчики","zone_1":"Експеримент дозволяє вивчити принципи створення систем безпеки на основі лазерів. Це дає можливість реалізації невидимих контрольованих бар'єрів для конкретних зон.","zone_2":"Експеримент був створений для вивчення функціонування та побудови систем управління периметром на основі джерела лазерного передавача та приймача. Ці системи дозволяють керувати певною областю за допомогою дуже тонкого лазера з великою робочою дистанцією. У таких системах часто використовують лазерні відбивачі.","zone_3":"Модуль лазера","zone_4":"Датчик світла","zone_5":"Увімкніть керування периметром та імітуйте перетин периметра, відкривши гаражні двері. Перегляньте результат увімкнення світлового сигналу у вікні експерименту.","zone_6":"Увімкнення / вимкнення керування периметром","zone_7":"Перетинання периметра","zone_8":"Infrared perimeter example","presence_1":"Експеримент дозволяє вивчити принципи роботи систем моніторингу присутності та систем безпеки шляхом зміни режиму роботи підсистеми. Можливість контролю руху в декількох областях реалізована.","presence_2":"PIR-датчик (пасивний інфрачервоний датчик, часто використовується в системах сигналізації)","presence_3":"Міжкімнатні двері","vent_1":"Експеримент демонструє принципи побудови системи вентиляції з регулюванням швидкості потоку повітря та нагріванням повітря для обігріву приміщень.","vent_2":"Arduino Nano генерує широкоімпульсний сигнал для драйвера навантаження L298, тим самим контролюючи швидкість вентилятора.\r\nТакож Arduino Nano управляє елементом Peltier за допомогою модуля реле для нагріву повітря. Датчик DHT22 контролює температуру і вологість в приміщенні.","vent_3":"L298 Драйвер управління навантаженням","vent_4":"Реле 5В","vent_5":"Елемент Пельтьє","vent_6":"Датчик температури і вологості DHT22","vent_7":"Для проведення експерименту перетягніть повзунок у потрібне положення, тим самим регулюючи швидкість вентилятора у вентиляційній системі.\r\nУвімкніть нагрівання повітря та проаналізуйте результати на графіку.\r\nКонтролюйте швидкість вентилятора та аналізуйте результати на графіку.","vent_8":"Увімкніть \\ вимкніть опалення","vent_9":"Рекуператор","vent_10":"Блок рекуператору","vent_11":"Внутрішня конструкція рекуператора","vent_12":"Повітряний опалювальний прилад","light_1":"Експеримент дає можливість вивчити основи роботи диммера на прикладі управління білою світлодіодною смужкою. Диммер дозволяє контролювати електричну потужність і тим самим контролювати рівень освітленості. Експеримент також дає можливість відтворити алгоритм автоматичного управління при необхідних умовах.","light_2":"Arduino Nano отримує числове значення для необхідного рівня освітленості і генерує сигнал ШІМ (імпульсна широка модуляція) для драйвера навантаження. Водій навантаження керує напругою на світлодіодах. Таким чином, рівень освітленості контролюється. Водій навантаження виконує функцію затемнення. Диммер, залежно від типу, може керувати альтернативною та прямою напругою.","light_3":"LED стрічка","light_4":"Контроль рівня світла","light_5":"Встановлення освітленості","light_6":"Перетягніть повзунок, щоб змінити рівень освітлення (від 0 до 100%) та проаналізуйте дані з датчика світла.","light_7":"Встановіть час доби і оцініть рівень освітленості.","light_8":"Діммер напруги змінного струму","light_9":"Діммер напруги постійного струму (промисловий)","light_10":"Диммерований диммер для світлодіодів","light_11":"LED стрічка (Біла)","cyber_1":"Експеримент дозволяє вивчити принцип роботи бездротових wi-fi датчиків та дослідити їх безпеку.","cyber_2":"Експеримент демонструє можливість використання бездротових датчиків Wi-Fi для моніторингу індикаторів системи Smart House, а також результати порушення з'єднання Wi-Fi через деаутентифікацію.\r\nПоказано можливості застосування мобільних та хмарних технологій для ефективного зберігання, візуалізації даних та моніторингу стану системи.","cyber_3":"Датчик DHT11 (цифровий датчик температури (0-50 ° C) і вологість (20-90%))","cyber_4":"Датчик якості повітря MQ135 (Він призначений для визначення вмісту та кількості шкідливих та небезпечних газів у повітрі, таких як: NH3, NOx, алкоголь, бензин, дим, СО2 тощо. Він має цифровий (компаратор) та аналоговий вихід )","cyber_5":"Деавторизація - це атака, яка надсилає пакети для відключення одного або декількох клієнтів, які зараз підключені до певної точки доступу. У цьому експерименті використовується примусове відключення клієнта (захоплення рукостискань WPA / WPA2).\r\nНатисніть кнопку ATTACK, спостерігайте за збоєм в отриманні даних від датчика.","cyber_6":"Атака","cyber_7":"Стан з'єднання","cyber_8":"Деактивація","cyber_9":"Мобільні технології","rpi_sd":"Raspberry Pi - одноплатний комп'ютер розміром з банківську карту, спочатку розроблений як бюджетна система для навчання інформатиці, що згодом одержав набагато більш широке застосування і популярність. Перші версії були створені в 2011 році. Побудований на основі процесора архітектури ARM.\r\nRaspberry Pi працює в основному на операційних системах, заснованих на Linux ядрі, таких як:","pi_ul_li1":"Raspbian (модифікація Debian)","pi_ul_li2":"Pidora (модифікація Fedora)","pi_ul_li3":"Arch Linux ARM","pi_ul_li4":"Kali Linux","pi_install_desc":"Існує два способи встановлення ОС Raspbian на Raspberry Pi:","pi_install_desc_li1":"завантаження пакета NOOBS з офіційного сайту на карту пам’яті MicroSD та подальше встановлення;","pi_install_desc_li2":"монтування файлу-образу ОС Raspbian на карту пам’яті MicroSD. В цьому випадку можна буде приступати до роботи одразу після включення Raspberry Pi.","pi_install_v1":"Приклад встановлення ОС Raspbian за допомогою пакета NOOBS","pi_install_v1_desc_1":"Необхідно завантажити пакет з офіційного сайту https://www.raspberrypi.org/downloads/noobs/ . Слід обрати NOOBS «Offline and network install» для встановлення без мережі Інтернет чи NOOBS LITE «Network install only» для встановлення з мережею Інтернет.","pi_install_v1_desc_2":"Перед тим як записувати файли NOOBS на карту пам’яті microSD, її слід відформатувати у файлову систему FAT32.\r\nДалі слід розпакувати архів NOOBS на карту пам’яті microSD.\r\nНаступний крок – підключення периферії до Raspberry Pi: USB-клавіатури, USB-миші, монітору (через HDMI), а також необхідно встановити карту пам’яті microSD у відповідний слот. В останню чергу підключається живлення MicroUSB.\r\nВ окні що відобразиться слід обрати ОС Raspbian (перша опція). Друга опція пропонує розбивку розділів карти пам’яті вручну, третя опція – завантаження безпосередньо у пакет Scratch – програму для створення комп’ютерної графіки та анимацій.\r\nНеобхідно натиснути «Install» та підтвердити запис даних на карту пам’яті MicroSD. Слід дочекатися завершення процесу встановлення та перезавантаження. У вікні Configuration Tool (налаштування можна змінити пізніше) слід обрати опцію «Enable boot to Desktop» та підтвердити вибір, що дозволить зробити LXDE інтерфейсом за замовчуванням при завантаженні. Далі слід натиснути «Done» та погодитися на перезавантаження. Після чого все буде готово до роботи.","pi_install_v2":"Приклад встановлення ОС Raspbian за допомогою монтування файлу–образу","pi_install_v2_desc_1":"Спочатку необхідно завантажити ОС з офіційного сайту: https://www.raspberrypi.org/downloads/raspbian/. Рекомендовано обрати «Raspbian Stretch With Desktop».","pi_install_v2_desc_2":"Також необхідно встановити на комп’ютер утиліту Win32DiskImager (https://sourceforge.net/projects/win32diskimager/) та за її допомогою записати файл-образ ОС Raspbian на карту пам’яті microSD:","pi_install_v2_desc2_li1":"необхідно розпакувати архів з файлом-образом на комп’ютері","pi_install_v2_desc2_li2":"слід відформатувати карту пам’яті стандартним засобом ОС Windows","pi_install_v2_desc2_li3":"далі необхідно у програмі Win32DiskImager обрати файл-образ ОС Raspbian (наприклад: «2017-09-07-raspbian-stretch.img»)","pi_install_v2_desc2_li4":"у розділі «Device» слід обрати ім’я карти пам’яті microSD. Слід бути уважним, якщо помилитись можна нанести шкоду жорсткому диску","pi_install_v2_desc2_li5":"нарешті слід обрати «Write» та дочекатися завершення процесу запису. Приблизний час запису становить 5–10 хвилин","pi_install_v2_desc3":"Далі необхідно здійснити підключення периферії до Raspberry Pi: USB-клавіатури, USB-миші, монітору (через HDMI), а також необхідно встановити карту пам’яті microSD у відповідний слот. В останню чергу підключається живлення MicroUSB.","pi_install_v2_desc3_li1":"Відбудеться завантаження ОС Raspbian та все буде готово до роботи.","pi_install_v2_desc3_li2":"Якщо використовується Unix-подібні ОС:","pi_install_v2_desc3_li3":"cлід від форматувати карту пам’яті microSD у FAT 32/ext2","pi_install_v2_desc3_li4":"виконати команду: sudo dd bs=4m if=/home/user/raspbian.img of=/dev/disk1;","pi_install_v2_desc3_li5":"Відбудеться завантаження ОС Raspbian та все буде готово до роботи.\r\nВажливо запам’ятати, що запуск Raspberry Pi відбувається одразу після підключення MicroUSB, та що вимикати Raspberry Pi слід наступним чином:","pi_install_v2_desc3_li6":"завершити всі дії","pi_install_v2_desc3_li7":"натиснути на лого Raspberry Pі у верхньому лівому куті","pi_install_v2_desc3_li8":"обрати опцію «Shutdown» та у новому вікні підтвердити – «Shutdown»","pi_install_v2_desc3_li9":"Тільки після того як Raspberry Pі буде виключено, можна від’єднати шнур MicroUSB та змінювати склад периферії, підключеної до Raspberry Pі.","fr":"Перший запуск ОС Raspbian","fr_desc_1":"Якщо було ввімкнено завантаження у графічне середовище, введення паролю користувача не потрібне, але якщо пароль було змінено, може знадобитися його введення.\r\nУ випадку консольного режиму необхідно ввести логін та пароль («pi» та «raspberry», відповідно). Щоб запустити графічне середовище, необхідно виконати команду «startx».\r\nУ верхній частині екрану знаходиться панель задач, панель швидкого доступу та кнопка меню.\r\nНа панелі швидкого запуску знаходяться:","fr_desc_1_li1":"браузер","fr_desc_1_li2":"Провідник","fr_desc_1_li3":"утиліта Terminal","fr_desc_1_li4":"програми пакету Wolfram","fr_desc_2":"Натиснувши на кнопку меню (лого Raspberry Pi) можна переглянути програми встановлені в системі.\r\nВ меню містяться такі розділи:","fr_desc_3_li1":"Programming: містить програми та засоби для програмування (Python IDE, Geany, BlueJ, тощо)","fr_desc_3_li2":"Office: містить «офісні» програми (пакет OpenOffice)","fr_desc_3_li3":"Internet: містить програми та засоби для роботи в мережі Інтернет","fr_desc_3_li4":"Games: містить ігри (MineCraft)","fr_desc_3_li5":"Accessories: містить додаткові супутні програми (Archiver, калькулятор)","fr_desc_3_li6":"Sound & Video: містить відео- та аудіо–плеєри (VLC Player)","fr_desc_3_li7":"System Tools: містить системні програми (Midnight Commander)","fr_desc_3_li8":"Help: довідка","fr_desc_3_li9":"Preferences: налаштування системи","fr_desc_3_li10":"Run: виконати дію","fr_desc_3_li11":"Shutdown: перехід до вікна вимкнення плати","fr_desc_4":"В основному, для виконання більшості дій у Raspbian (як у будь–якій Unix-подібній ОС) використовується утиліта Terminal. Для її запуску слід натиснути відповідну піктограму.","fr_desc_5":"В процесі роботи може знадобитися змінити конфігурацію системи, змінити пароль користувача, увімкнути камеру, тощо. Все це можна зробити за допомогою команди sudo raspi-config","fr_desc_5_li":"Докладніше про пункти меню:","fr_desc_5_li1":"Change User Password –зміна пароля користувача","fr_desc_5_li2":"Hostname – ім’я комп’ютера в мережі","fr_desc_5_li3":"Boot options – налаштування завантаження системи","fr_desc_5_li4":"Localisation Options – вибір мови та регіональних налаштувань","fr_desc_5_li5":"Interfacing Options – налаштування інтерфейсів (камера, SSH, VNC, SPI, I2C, Serial, 1-Wire, GPIO)","fr_desc_5_li6":"Overclock – збільшення частоти процесору","fr_desc_5_li7":"Advanced Options – додаткові параметри","fr_desc_5_li8":"Update – оновлення програми raspi-config","fr_desc_5_li9":"About raspi-config – інформація про програму","fr_desc_6":"Завершивши налаштування, слід обрати Finish. ОС запросить дозвіл на перезавантаження. Слід погодитися та дочекатися закінчення перезавантаження.\r\nПри зміні налаштувань системи слід бути уважним, помилка може призвести до небажаних наслідків.","fr_desc_7":"Налаштування мережі Інтернет","fr_desc_8":"У випадку підключення до мережі, в якій налаштовано DHCP-сервер та автоматичний розподіл адрес (наприклад, домашня мережа), додатково нічого не потрібно робити.\r\nЯкщо DHCP відсутній, параметри мережі можна задати за допомогою консолі. Для цього необхідно запустити термінал, де слід відкрити файл налаштувань мережевих інтерфейсів за допомогою команди: sudo nano /etc/network/interfaces. До файлу треба додати наступне:\r\niface <інтерфейс> inet static\r\naddress <ip-адреса>\r\nnetmask <маска підмережі>\r\ngateway <адреса шлюзу>\r\ndns-nameservers <адреси DNS-серверів, розділенні пробілом>\r\nauto <інтерфейс>,\r\nде інтерфейс ‒ мережевий інтерфейс, підключений до Raspberry Pі (найчастіше це eth0);\r\nip-адреса ‒ адреса, яку необхідно присвоїти;\r\nмаска підмережі ‒ маска;\r\nадреса шлюзу ‒ ip-адреса комп’ютеру, що служить в мережі шлюзом.\r\nДалі необхідно вийти зі збереженням змін, для чого слід натиснути Ctrl+X, підтвердити збереження натисненням клавіші Y, а потім Enter для підтвердження перезапису файлу. Після змін файлу треба перезавантажити Raspberry Pi, виконавши команду sudo reboot.\r\nДля перевірки налаштувань мережі слід виконати команду ifconfig","fr_desc_9":"Для роботи з проксі-сервером необхідно певні строки до файлів /etc/environment (загальносистемні налаштування проксі) та /etc/apt/apt.conf (налаштування пакетного менеджера apt-get).\r\nДо файлу /etc/environment слід дописати:\r\nexport http_proxy=«http://host:port», а до файлу /etc/apt/apt.conf: Acquire::http::proxy «http://host:port»; .\r\nПісля виконання даних дій, можна буде користуватися мережевими функціями, в тому числі і менеджером apt-get.","fr_desc_10":"Підключення Arduino із завантаженим скетчем","fr_desc_11":"Для того щоб підключити Arduino до Raspberry Pi потрібно","fr_desc_12":"Взяти скетч (програму) з лабораторної роботи №1 та підключеними датчиками до Arduino. Запустити скетч та залишити працювати.","fr_desc_13":"Витягнути Arduino USB-дріт з комп’ютера","fr_desc_14":"Вставити Arduino USB-дріт у працюючий Raspberry Pi","fr_desc_15":"Надати повний доступ до порту, що буде використовуватися Arduino. Для цього у терміналі написати:\r\nchmod 777 /dev/ttyACM0","oh_title":"Інтеграція підсистем Розумного будинку на платформі OpenHAB","oh_text":"OpenHAB (Open Home Automation Bus) – створений на Java open source проект з реалізації технології «smart house», розповсюджується під ліцензією GPLv3, та для організації роботи web-інтерфейсу використовується Jetty.\r\nЦя відкрита платформа здатна виконувати такі функції як вмикання та вимикання освітлення, керування розетками, тощо.\r\nOpenHAB надає засоби для організації роботи різних систем, обладнання та інтерфейсів домашньої автоматизації. При цьому OpenHAB не залежить від протоколів і обладнання, надаючи окремий рівень абстракції, що дозволяє взаємодіяти з різними типами пристроїв і програмного забезпечення. Для визначення керуючої логіки використовуються скрипти, написані на спеціальній предметно-орієнтованій мові програмування, розробленій за допомогою Eclipse –Xtext.\r\nОсновним сервісом OpenHAB є шина подій. Модулі, які не вимагають відстеження стану, використовують цю шину для обміну інформацією про події з іншими модулями.\r\nІснує два основних типи подій:\r\n1. Команди, які ініціюють будь-яку дію чи зміна стану певного елемента або пристрою.\r\n2. Оновлення статусу, які повідомляють про зміну стану певного елемента або пристрою.\r\nПрив'язки протоколів, що забезпечують зв'язок з реальними пристроями, повинні спілкуватися між собою саме через шину подій. Це гарантує існування зв'язку між модулями.\r\nВ openHAB використовується дуже потужна мова виразів, за допомогою якої створюються визначення сценаріїв. Сценарій або скрипт – це блок коду, який визначається користувачем і може викликатися і використовуватися в різних місцях. Скрипти розміщуються в папці openhab/configurations/scripts. В робочому середовищі є демонстраційний файл demo.script.\r\nСкрипти також можуть знаходитися всередині файлу правил, в папці openhab/configurations/rules: вони використовуються для визначення блоку виконання правила. Кожне правило складається з двох частин: в одній містяться перемикачі дій, в інших скриптах – для їх виконання.\r\nДля ефективного використання скриптів OpenHAB надає доступ:","oh_li1":"до всіх елементів (отримати доступ можна звернувшись по імені);","oh_li2":"до всіх статусів та команд;","oh_li3":"до стандартних дій до виконання різних операцій","oh_text2":"Скрипт ідентифікується назвою (у файлу demo.script – ім'я скрипта demo). Кожен скрипт завжди повертає значення, що є результатом останнього виразу, який міститься в ньому.\r\nСкрипти можуть  викликатися:","oh_li4":"з правил;","oh_li5":"з XMPP-консолі;","oh_li6":"з записів в календарі Google.","oh_text3":"Встановлення та налаштування OpenHAB на Raspberry Pi","oh_text4":"Для встановлення OpenHAB на Raspberry Pi слід виконати послідовність дій та команд (за допомогою терміналу), що описані нижче.","oh_text4_li1":"Завантажити ключ: wget –qO - ‘https://bintray.com/user/downloadSubjectPublicKey?username=\r\nopenhab’ | sudo apt-key add –","oh_text4_li2":"Встановити репозиторій OpenHAB: echo “deb http://dl.bintray.com/openhab/apt-repo stable main” | sudo tee /etc/apt/sources.list.d/openhab.list","oh_text4_li3":"Оновити системні файли:\r\nsudo apt-get update","oh_text4_li4":"Встановити OpenHAB:\r\nsudo apt-get install openhab-runtime","oh_text4_li5":"Додати користувача до групи: sudo usermod –aG openhab pi","oh_text4_li6":"Запустити OpenHAB:\r\nsudo systemctl enable openhab","oh_text4_li7":"Встановити доповнення для роботи з GPIO:\r\nsudo apt-get install openhab-addon-io-gpio\r\nsudo apt-get install openhab-addon-binding-gpio","oh_text4_li8":"Встановити доповнення для роботи з портами:\r\nsudo apt-get install openhab-addons-binding-serial","oh_text4_li9":"Задати ім’я користувача та назву групи:\r\nsudo nano /etc/default/openhab\r\nsudo nano /usr/lib/systemd/system/openhab.service","oh_text4_li10":"Перевантажити systemd:\r\nsudo systemctl daemon-reload","oh_text4_li11":"Додати порт який використовуватиметься з Arduino:\r\nsudo nano /usr/share/openhab/bin/openhab.sh\r\nВ розділі «JAVA_ARGS_DEFAULT» додати в кінець","oh_text4_li12":"Перевантажити OpenHAB:\r\nsudo service openhab restart","oh_text4_li13":"Написати код для отримання даних від Arduino:\r\nsudo nano /etc/openhab/configurations/items/home.items","oh_text4_li14":"Створити інтерфейс для відображення даних:\r\nsudo nano /etc/openhab/configurations/sitemaps/home.sitemap","oh_text4_li15":" Знайти процес Java та запам’ятати його номер:\r\ntop","oh_text4_li16":"Зупинити процес Java. Наприклад, номер Java процесу – 3234, тоді:\r\nkill 3234","oh_text4_li17":"Перейменувати файл openhab_default.cfg у openhab.cfg в каталозі /etc/openhab/configurations/","oh_text4_li18":"Створити правило OpenHAB для керування датчиками:\r\nsudo nano etc/openhab/configurations/rules/home.rules","oh_text4_li19":"Підключити Arduino із завантаженим скетчем;","oh_text4_li20":"Надати повний доступ до порту, що буде використовуватися Arduino:\r\nchmod 777 /dev/ttyACM0","oh_text4_li21":"Перейти до каталогу openHab:\r\ncd /usr/share/openhab/bin","oh_text4_li22":"Запустити файл .sh:\r\nsudo ./openhab.sh","oh_text4_li23":"Перейти за адресою: RaspberryPi-IP:8080/openhab.app?sitemap=home","rs_title1":"Рекомендаційна система (PC) - ","rs_text1":"це сервіс, який був створений на кафедрі програмних засобів Національного університету «Запорізька політехніка», як частина лабораторії RELDES. Сервіс було розроблено з метою допомогти розробнику вбудованих систем у виборі апаратно-програмних платформ в залежності від вимог розробника до шуканої платформи.","rs_text2":"Великий вибір серед найпопулярніших платформ","rs_text3":"База даних налічує в собі понад 40 платформ таких виробників як; Arduino, Raspberry Pi, Texas Instrument, STMicrocontroller, Intel, Netduino, Iskra, BeagleBone","rs_title2":"Як це працює","rs_text4":"Рекомендаційна система побудована за принципом систем заснованих на знаннях. Це той випадок, коли розробник сам описує свої потреби, а система, використовуючи базу даних (сформовану на основі знань про платформи з різних джерел), шукає платформи, які відповідають його потребі.\r\nКритерії за якими виконується пошук платформ:","rs_tab1_text1":"Розробник","rs_tab1_text2":"рівень знань","rs_tab2_text1":"Апаратні критерії","rs_tab2_text2":"кількість аналогових входів;\r\nкількість цифрових входів;\r\nживлення;\r\nсімейство процесорів.","rs_tab3_text1":"Програмні критерії","rs_tab3_text2":"мова програмування","rs_tab4_text1":"Додаткові","rs_tab4_text2":"ціна,\r\nформ-фактор","rs_title3":"Етапи роботи з сервісом","rs_pic1":"<img src=\"/images/rs_manufacturer_ukr.png\"/ width=\"150\" hight=\"150\" alt=\"KnowlageBase\">","rs_pic2":"<img src=\"/images/rs_platforms_ukr.png\"/ width=\"150\" hight=\"150\" alt=\"Platforms\">"},"auth":{"failed":"These credentials do not match our records.","throttle":"Too many login attempts. Please try again in :seconds seconds."},"experiments":{"description":"Опис","run":"Виконання эксперименту","tpc":"Типовий програмний код","tts":"Час до старту","tte":"Час до закiнчення","queue_qty":"Кiлькiсть людей в черзi"},"pagination":{"previous":"&laquo; Previous","next":"Next &raquo;"},"passwords":{"reset":"Your password has been reset!","sent":"We have emailed your password reset link!","throttled":"Please wait before retrying.","token":"This password reset token is invalid.","user":"We can't find a user with that email address."},"validation":{"accepted":"The :attribute must be accepted.","active_url":"The :attribute is not a valid URL.","after":"The :attribute must be a date after :date.","after_or_equal":"The :attribute must be a date after or equal to :date.","alpha":"The :attribute may only contain letters.","alpha_dash":"The :attribute may only contain letters, numbers, dashes and underscores.","alpha_num":"The :attribute may only contain letters and numbers.","array":"The :attribute must be an array.","before":"The :attribute must be a date before :date.","before_or_equal":"The :attribute must be a date before or equal to :date.","between":{"numeric":"The :attribute must be between :min and :max.","file":"The :attribute must be between :min and :max kilobytes.","string":"The :attribute must be between :min and :max characters.","array":"The :attribute must have between :min and :max items."},"boolean":"The :attribute field must be true or false.","confirmed":"The :attribute confirmation does not match.","date":"The :attribute is not a valid date.","date_equals":"The :attribute must be a date equal to :date.","date_format":"The :attribute does not match the format :format.","different":"The :attribute and :other must be different.","digits":"The :attribute must be :digits digits.","digits_between":"The :attribute must be between :min and :max digits.","dimensions":"The :attribute has invalid image dimensions.","distinct":"The :attribute field has a duplicate value.","email":"The :attribute must be a valid email address.","ends_with":"The :attribute must end with one of the following: :values.","exists":"The selected :attribute is invalid.","file":"The :attribute must be a file.","filled":"The :attribute field must have a value.","gt":{"numeric":"The :attribute must be greater than :value.","file":"The :attribute must be greater than :value kilobytes.","string":"The :attribute must be greater than :value characters.","array":"The :attribute must have more than :value items."},"gte":{"numeric":"The :attribute must be greater than or equal :value.","file":"The :attribute must be greater than or equal :value kilobytes.","string":"The :attribute must be greater than or equal :value characters.","array":"The :attribute must have :value items or more."},"image":"The :attribute must be an image.","in":"The selected :attribute is invalid.","in_array":"The :attribute field does not exist in :other.","integer":"The :attribute must be an integer.","ip":"The :attribute must be a valid IP address.","ipv4":"The :attribute must be a valid IPv4 address.","ipv6":"The :attribute must be a valid IPv6 address.","json":"The :attribute must be a valid JSON string.","lt":{"numeric":"The :attribute must be less than :value.","file":"The :attribute must be less than :value kilobytes.","string":"The :attribute must be less than :value characters.","array":"The :attribute must have less than :value items."},"lte":{"numeric":"The :attribute must be less than or equal :value.","file":"The :attribute must be less than or equal :value kilobytes.","string":"The :attribute must be less than or equal :value characters.","array":"The :attribute must not have more than :value items."},"max":{"numeric":"The :attribute may not be greater than :max.","file":"The :attribute may not be greater than :max kilobytes.","string":"The :attribute may not be greater than :max characters.","array":"The :attribute may not have more than :max items."},"mimes":"The :attribute must be a file of type: :values.","mimetypes":"The :attribute must be a file of type: :values.","min":{"numeric":"The :attribute must be at least :min.","file":"The :attribute must be at least :min kilobytes.","string":"The :attribute must be at least :min characters.","array":"The :attribute must have at least :min items."},"not_in":"The selected :attribute is invalid.","not_regex":"The :attribute format is invalid.","numeric":"The :attribute must be a number.","password":"The password is incorrect.","present":"The :attribute field must be present.","regex":"The :attribute format is invalid.","required":"The :attribute field is required.","required_if":"The :attribute field is required when :other is :value.","required_unless":"The :attribute field is required unless :other is in :values.","required_with":"The :attribute field is required when :values is present.","required_with_all":"The :attribute field is required when :values are present.","required_without":"The :attribute field is required when :values is not present.","required_without_all":"The :attribute field is required when none of :values are present.","same":"The :attribute and :other must match.","size":{"numeric":"The :attribute must be :size.","file":"The :attribute must be :size kilobytes.","string":"The :attribute must be :size characters.","array":"The :attribute must contain :size items."},"starts_with":"The :attribute must start with one of the following: :values.","string":"The :attribute must be a string.","timezone":"The :attribute must be a valid zone.","unique":"The :attribute has already been taken.","uploaded":"The :attribute failed to upload.","url":"The :attribute format is invalid.","uuid":"The :attribute must be a valid UUID.","custom":{"attribute-name":{"rule-name":"custom-message"}},"attributes":[]}}},"vendor":{"translation":{"adminlte/ar/adminlte":{"full_name":"الاسم الثلاثي","email":"البريد الإلكتروني","password":"كلمة السر","retype_password":"أعد إدخال كلمة السر","remember_me":"ذكرني","register":"تسجيل جديد","register_a_new_membership":"تسجيل عضوية جديدة","i_forgot_my_password":"نسيت كلمة السر؟","i_already_have_a_membership":"هذا الحساب لديه عضوية سابقة","sign_in":"تسجيل الدخول","log_out":"تسجيل خروج","toggle_navigation":"القائمة الجانبية","login_message":"يجب تسجيل الدخول","register_message":"تم تسجيل العضوية الجديدة ","password_reset_message":"تم إعادة تعيين كلمة المرور","reset_password":"إعادة تعيين كلمة السر","send_password_reset_link":"إرسال رابط إعادة تعيين كلمة السر"},"adminlte/ca/adminlte":{"full_name":"Nom complet","email":"Email","password":"Contrasenya","retype_password":"Confirmar la contrasenya","remember_me":"Recordar-me","register":"Registrar-se","register_a_new_membership":"Crear un nou compte","i_forgot_my_password":"He oblidat la meva contrasenya","i_already_have_a_membership":"Ja tinc un compte","sign_in":"Accedir","log_out":"Sortir","toggle_navigation":"Commutar la navegació","login_message":"Autenticar-se per a iniciar sessió","register_message":"Crear un nou compte","password_reset_message":"Restablir la contrasenya","reset_password":"Restablir la contrasenya","send_password_reset_link":"Enviar enllaç de restabliment de contrasenya"},"adminlte/de/adminlte":{"full_name":"Vollständiger Name","email":"E-Mail","password":"Passwort","retype_password":"Passwort bestätigen","remember_me":"Angemeldet bleiben","register":"Registrieren","register_a_new_membership":"Ein neues Konto registrieren","i_forgot_my_password":"Ich habe mein Passwort vergessen","i_already_have_a_membership":"Ich bin bereits registriert","sign_in":"Anmelden","log_out":"Abmelden","toggle_navigation":"Navigation umschalten","login_message":"Bitte melden Sie sich an, um auf den geschützten Bereich zuzugreifen","register_message":"Bitte füllen Sie das Formular aus, um ein neues Konto zu registrieren","password_reset_message":"Bitte geben Sie Ihre E-Mail Adresse ein, um Ihr Passwort zurückzusetzen","reset_password":"Passwort zurücksetzen","send_password_reset_link":"Link zur Passwortwiederherstellung senden","verify_message":"Ihr Account muss noch bestätigt werden","verify_email_sent":"Es wurde ein neuer Bestätigungslink an Ihre E-Mail Adresse gesendet.","verify_check_your_email":"Bevor Sie fortfahren, überprüfen Sie bitte Ihre E-Mail auf einen Bestätigungslink.","verify_if_not_recieved":"Wenn Sie die E-Mail nicht empfangen haben","verify_request_another":"klicken Sie hier, um eine neue E-Mail anzufordern"},"adminlte/de/menu":{"main_navigation":"HAUPTMENÜ","blog":"Blog","pages":"Seiten","account_settings":"KONTOEINSTELLUNGEN","profile":"Profil","change_password":"Passwort ändern","multilevel":"Multi Level","level_one":"Level 1","level_two":"Level 2","level_three":"Level 3","labels":"Beschriftungen","important":"Wichtig","warning":"Warnung","information":"Information"},"adminlte/en/adminlte":{"full_name":"Full name","email":"Email","password":"Password","retype_password":"Retype password","remember_me":"Remember Me","register":"Register","register_a_new_membership":"Register a new membership","i_forgot_my_password":"I forgot my password","i_already_have_a_membership":"I already have a membership","sign_in":"Sign In","log_out":"Log Out","toggle_navigation":"Toggle navigation","login_message":"Sign in to start your session","register_message":"Register a new membership","password_reset_message":"Reset Password","reset_password":"Reset Password","send_password_reset_link":"Send Password Reset Link","verify_message":"Your account needs a verification","verify_email_sent":"A fresh verification link has been sent to your email address.","verify_check_your_email":"Before proceeding, please check your email for a verification link.","verify_if_not_recieved":"If you did not receive the email","verify_request_another":"click here to request another","confirm_password_message":"Please, confirm your password to continue."},"adminlte/en/menu":{"main_navigation":"MAIN NAVIGATION","blog":"Blog","pages":"Pages","account_settings":"ACCOUNT SETTINGS","profile":"Profile","change_password":"Change Password","multilevel":"Multi Level","level_one":"Level 1","level_two":"Level 2","level_three":"Level 3","labels":"LABELS","important":"Important","warning":"Warning","information":"Information"},"adminlte/es/adminlte":{"full_name":"Nombre completo","email":"Email","password":"Contraseña","retype_password":"Confirmar la contraseña","remember_me":"Recordarme","register":"Registrarse","register_a_new_membership":"Crear una nueva cuenta","i_forgot_my_password":"Olvidé mi contraseña","i_already_have_a_membership":"Ya tengo una cuenta","sign_in":"Acceder","log_out":"Salir","toggle_navigation":"Alternar barra de navegación","login_message":"Autenticarse para iniciar sesión","register_message":"Crear una nueva cuenta","password_reset_message":"Restablecer la contraseña","reset_password":"Restablecer la contraseña","send_password_reset_link":"Enviar enlace para restablecer la contraseña","verify_message":"Tu cuenta necesita una verificación","verify_email_sent":"Se ha enviado un nuevo enlace de verificación a su correo electrónico.","verify_check_your_email":"Antes de continuar, busque en su correo electrónico un enlace de verificación.","verify_if_not_recieved":"Si no has recibido el correo electrónico","verify_request_another":"haga clic aquí para solicitar otro","confirm_password_message":"Por favor, confirme su contraseña para continuar."},"adminlte/es/menu":{"main_navigation":"MENU PRINCIPAL","blog":"Blog","pages":"Páginas","account_settings":"AJUSTES DE LA CUENTA","profile":"Perfil","change_password":"Cambiar Contraseña","multilevel":"Multi Nivel","level_one":"Nivel 1","level_two":"Nivel 2","level_three":"Nivel 3","labels":"ETIQUETAS","important":"Importante","warning":"Advertencia","information":"Información"},"adminlte/fa/adminlte":{"full_name":"نام","email":"ایمیل","password":"رمز عبور","retype_password":"تکرار رمز عبور","remember_me":"مرا به یاد داشته باش","register":"ثبت نام","register_a_new_membership":"ایجاد یک عضویت جدید","i_forgot_my_password":"رمز عبور را فراموش کرده ام","i_already_have_a_membership":"قبلا ثبت نام کرده ام","sign_in":"ورود","log_out":"خروج","toggle_navigation":"نمایش/مخفی کردن منو","login_message":"وارد شوید","register_message":"ثبت نام","password_reset_message":"بازنشانی رمز عبور","reset_password":"بازنشانی رمز عبور","send_password_reset_link":"ارسال لینک بازنشانی رمز عبور"},"adminlte/fr/adminlte":{"full_name":"Nom","email":"Email","password":"Mot de passe","retype_password":"Entrez à nouveau le mot de passe","remember_me":"Se souvenir de moi","register":"Enregistrement","register_a_new_membership":"Enregistrer un nouveau membre","i_forgot_my_password":"J'ai oublié mon mot de passe","i_already_have_a_membership":"J'ai déjà un compte","sign_in":"Connexion","log_out":"Déconnexion","toggle_navigation":"Basculer la navigation","login_message":"Connectez-vous pour commencer une session","register_message":"Enregistrement d'un nouveau membre","password_reset_message":"Réinitialisation du mot de passe","reset_password":"Réinitialisation du mot de passe","send_password_reset_link":"Envoi de la réinitialisation du mot de passe"},"adminlte/hr/adminlte":{"full_name":"Ime","email":"Email","password":"Lozinka","retype_password":"Ponovljena lozinka","remember_me":"Zapamti me","register":"Novi korisnik","register_a_new_membership":"Registracija","i_forgot_my_password":"Zaboravljena zaporka","i_already_have_a_membership":"Već imam korisnički račun","sign_in":"Prijava","log_out":"Odjava","toggle_navigation":"Pregled navigacije","login_message":"Prijava","register_message":"Registracija","password_reset_message":"Nova lozinka","reset_password":"Nova lozinka","send_password_reset_link":"Pošalji novi zahtjev lozinke"},"adminlte/hu/adminlte":{"full_name":"Teljes név","email":"Email","password":"Jelszó","retype_password":"Jelszó újra","remember_me":"Emlékezz rám","register":"Regisztráció","register_a_new_membership":"Regisztrálás új tagként","i_forgot_my_password":"Elfelejtetem a jelszavam","i_already_have_a_membership":"Már tag vagyok","sign_in":"Belépés","log_out":"Kilépés","toggle_navigation":"Lenyíló navigáció","login_message":"Belépés a munkamenet elkezdéséhez","register_message":"Regisztrálás új tagként","password_reset_message":"Jelszó visszaállítása","reset_password":"Jelszó visszaállítása","send_password_reset_link":"Jelszó visszaállítás link küldése"},"adminlte/it/adminlte":{"full_name":"Nome completo","email":"Email","password":"Password","retype_password":"Ripeti password","remember_me":"Ricordami","register":"Registrazione","register_a_new_membership":"Registra un nuovo abbonamento","i_forgot_my_password":"Ho dimenticato la password","i_already_have_a_membership":"Ho già un abbonamento","sign_in":"Accedi","log_out":"Logout","toggle_navigation":"Attiva la navigazione","login_message":"Accedi per iniziare la tua sessione","register_message":"Registra un nuovo abbonamento","password_reset_message":"Resetta la password","reset_password":"Resetta la password","send_password_reset_link":"Invia link di reset della password"},"adminlte/ja/adminlte":{"full_name":"氏名","email":"メールアドレス","password":"パスワード","retype_password":"もう一度入力","remember_me":"パスワードを記憶する","register":"登録する","register_a_new_membership":"アカウントを登録する","i_forgot_my_password":"パスワードを忘れた","i_already_have_a_membership":"すでにアカウントを持っている","sign_in":"ログイン","log_out":"ログアウト","toggle_navigation":"ナビゲーションを開閉","login_message":"ログインしてセッションを開始する","register_message":"アカウントを登録する","password_reset_message":"パスワードをリセットする","reset_password":"パスワードをリセットする","send_password_reset_link":"パスワードリセットリンクを送信する。","verify_message":"あなたのアカウントは認証が必要です。","verify_email_sent":"あなたのメールアドレスに認証用のリンクを送信しました。","verify_check_your_email":"続行する前に、認証用リンクについてメールを確認してください。","verify_if_not_recieved":"メールが届かない場合","verify_request_another":"ここをクリックしてもう一度送信する"},"adminlte/ja/menu":{"main_navigation":"メインメニュー","blog":"ブログ","pages":"ページ","account_settings":"アカウント設定","profile":"プロフィール","change_password":"パスワード変更","multilevel":"マルチ階層","level_one":"階層 1","level_two":"階層 2","level_three":"階層 3","labels":"ラベル","important":"重要","warning":"警告","information":"インフォメーション"},"adminlte/nl/adminlte":{"full_name":"Volledige naam","email":"E-mailadres","password":"Wachtwoord","retype_password":"Wachtwoord nogmaals invoeren","remember_me":"Ingelogd blijven","register":"Registreren","register_a_new_membership":"Registreer een nieuw lidmaatschap","i_forgot_my_password":"Ik ben mijn wachtwoord vergeten","i_already_have_a_membership":"Ik heb al een lidmaatschap","sign_in":"Inloggen","log_out":"Uitloggen","toggle_navigation":"Schakel navigatie","login_message":"Log in om je sessie te starten","register_message":"Registreer een nieuw lidmaatschap","password_reset_message":"Wachtwoord herstellen","reset_password":"Wachtwoord herstellen","send_password_reset_link":"Verzend link voor wachtwoordherstel"},"adminlte/pl/adminlte":{"full_name":"Imię i nazwisko","email":"Email","password":"Hasło","retype_password":"Powtórz hasło","remember_me":"Zapamiętaj mnie","register":"Zarejestruj","register_a_new_membership":"Załóż nowe konto","i_forgot_my_password":"Zapomniałem hasła","i_already_have_a_membership":"Mam już konto","sign_in":"Zaloguj","log_out":"Wyloguj","toggle_navigation":"Przełącz nawigację","login_message":"Zaloguj się aby uzyskać dostęp do panelu","register_message":"Załóż nowe konto","password_reset_message":"Resetuj hasło","reset_password":"Resetuj hasło","send_password_reset_link":"Wyślij link do resetowania hasła"},"adminlte/pt-br/adminlte":{"full_name":"Nome completo","email":"Email","password":"Senha","retype_password":"Repita a senha","remember_me":"Lembrar-me","register":"Registrar","register_a_new_membership":"Registrar um novo membro","i_forgot_my_password":"Esqueci minha senha","i_already_have_a_membership":"Já sou um membro","sign_in":"Entrar","log_out":"Sair","toggle_navigation":"Trocar navegação","login_message":"Entre para iniciar uma nova sessão","register_message":"Registrar um novo membro","password_reset_message":"Recuperar senha","reset_password":"Recuperar senha","send_password_reset_link":"Enviar link de recuperação de senha"},"adminlte/pt-br/menu":{"main_navigation":"Navegação Principal","blog":"Blog","pages":"Página","account_settings":"Configurações da Conta","profile":"Perfil","change_password":"Mudar Senha","multilevel":"Multinível","level_one":"Nível 1","level_two":"Nível 2","level_three":"Nível 3","labels":"Etiquetas","Important":"Importante","Warning":"Aviso","Information":"Informação"},"adminlte/ru/adminlte":{"full_name":"Полное имя","email":"Почта","password":"Пароль","retype_password":"Подтверждение пароля","remember_me":"Запомнить меня","register":"Регистрация","register_a_new_membership":"Регистрация нового пользователя","i_forgot_my_password":"Восстановление пароля","i_already_have_a_membership":"Я уже зарегистрирован","sign_in":"Вход","log_out":"Выход","toggle_navigation":"Переключить навигацию","login_message":"Вход в систему","register_message":"Регистрация нового пользователя","password_reset_message":"Восстановление пароля","reset_password":"Восстановление пароля","send_password_reset_link":"Отправить ссылку для восстановления пароля"},"adminlte/ru/menu":{"main_navigation":"ГЛАВНОЕ МЕНЮ","blog":"Блог","pages":"Страницы","account_settings":"НАСТРОЙКИ ПРОФИЛЯ","profile":"Профиль","change_password":"Изменить пароль","multilevel":"Многоуровневое меню","level_one":"Уровень 1","level_two":"Уровень 2","level_three":"Уровень 3","labels":"Метки","important":"Важно","warning":"Внимание","information":"Информация"},"adminlte/tr/adminlte":{"full_name":"Ad ve Soyadı","email":"E-Posta Adresi","password":"Parola","retype_password":"Yeniden Parola","remember_me":"Beni Hatırla","register":"Kaydol","register_a_new_membership":"Yeni üye kaydı","i_forgot_my_password":"Parolamı unuttum","i_already_have_a_membership":"Zaten üye kaydım var","sign_in":"Giriş Yap","log_out":"Çıkış Yap","toggle_navigation":"Ana menüyü aç/kapa","login_message":"Oturumunuzu devam ettirmek için giriş yapmalısınız","register_message":"Yeni üye kaydı oluştur","password_reset_message":"Parola Sıfırlama","reset_password":"Parola Sıfırlama","send_password_reset_link":"Parola Sıfırlama Linki Gönder","verify_message":"Hesabınızın doğrulanmaya ihtiyacı var","verify_email_sent":"Hesap doğrulama linki E-posta adresinize gönderildi.","verify_check_your_email":"İşlemlere devam etmeden önce doğrulama linki için e-posta adresinizi kontrol edin.","verify_if_not_recieved":"Eğer doğrulama e-postası adresinize ulaşmadıysa","verify_request_another":"buraya tıklayarak yeni bir doğrulama linki talep edebilirsiniz","confirm_password_message":"Devam etmek için lütfen parolanızı doğrulayın."},"adminlte/tr/menu":{"main_navigation":"ANA MENÜ","blog":"Blog","pages":"Sayfalar","account_settings":"HESAP AYARLARI","profile":"Profil","change_password":"Parolanı değiştir","multilevel":"Çoklu Seviye","level_one":"Seviye 1","level_two":"Seviye 2","level_three":"Seviye 3","labels":"ETİKETLER","important":"Önemli","warning":"Uyarı","information":"Bilgi"},"adminlte/uk/adminlte":{"full_name":"Повне і'мя","email":"Пошта","password":"Пароль","retype_password":"Підтвердження пароля","remember_me":"Запам'ятати мене","register":"Реєстрація","register_a_new_membership":"Реєстрація нового користувача","i_forgot_my_password":"Відновлення пароля","i_already_have_a_membership":"Я вже зареєстрований","sign_in":"Вхід","log_out":"Вихід","toggle_navigation":"Переключити навігацію","login_message":"Вхід до системи","register_message":"Реєстрація нового користувача","password_reset_message":"Відновлення пароля","reset_password":"Відновлення пароля","send_password_reset_link":"Відправити посилання для відновлення пароля"},"adminlte/uk/menu":{"main_navigation":"ГОЛОВНЕ МЕНЮ","blog":"Блог","pages":"Сторінки","account_settings":"НАЛАШТУВАННЯ ПРОФІЛЮ","profile":"Профіль","change_password":"Змінити пароль","multilevel":"Багаторівневе меню","level_one":"Рівень 1","level_two":"Рівень 2","level_three":"Рівень 3","labels":"Мітки","important":"Важливо","warning":"Увага","information":"Інформація"},"adminlte/vi/adminlte":{"full_name":"Tên đầy đủ","email":"Email","password":"Mật khẩu","retype_password":"Nhập lại mật khẩu","remember_me":"Nhớ tôi","register":"Đăng ký","register_a_new_membership":"Đăng ký thành viên mới","i_forgot_my_password":"Tôi quên mật khẩu của tôi","i_already_have_a_membership":"Tôi đã là thành viên","sign_in":"Đăng nhập","log_out":"Đăng xuất","toggle_navigation":"Chuyển đổi điều hướng","login_message":"Đăng nhập để bắt đầu phiên của bạn","register_message":"Đăng ký thành viên mới","password_reset_message":"Đặt lại mật khẩu","reset_password":"Đặt lại mật khẩu","send_password_reset_link":"Gửi liên kết đặt lại mật khẩu"},"adminlte/vi/menu":{"main_navigation":"ĐIỀU HƯỚNG CHÍNH","blog":"Blog","pages":"Trang","account_settings":"CÀI ĐẶT TÀI KHOẢN","profile":"Hồ sơ","change_password":"Đổi mật khẩu","multilevel":"Đa cấp","level_one":"Cấp độ 1","level_two":"Cấp độ 2","level_three":"Cấp độ 3","labels":"NHÃN","Important":"Quan trọng","Warning":"Cảnh báo","Information":"Thông tin"},"adminlte/zh-CN/adminlte":{"full_name":"姓名","email":"邮箱","password":"密码","retype_password":"重输密码","remember_me":"记住我","register":"注册","register_a_new_membership":"注册新用户","i_forgot_my_password":"忘记密码","i_already_have_a_membership":"已经有账户","sign_in":"登录","log_out":"退出","toggle_navigation":"切换导航","login_message":"请先登录","register_message":"注册新用户","password_reset_message":"重置密码","reset_password":"重置密码","send_password_reset_link":"发送密码重置链接"},"adminlte/zh-CN/menu":{"main_navigation":"主导航","blog":"博客","pages":"页面","account_settings":"账户设置","profile":"用户信息","change_password":"修改密码","multilevel":"多级","level_one":"第一级","level_two":"第二级","level_three":"第三级","labels":"标签","important":"重要","warning":"警告","information":"信息"}}}}
 
 /***/ }),
 
@@ -6348,6 +6912,2612 @@ module.exports = {
 
 })));
 //# sourceMappingURL=bootstrap.js.map
+
+
+/***/ }),
+
+/***/ "./node_modules/html-parse-stringify2/index.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/html-parse-stringify2/index.js ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = {
+    parse: __webpack_require__(/*! ./lib/parse */ "./node_modules/html-parse-stringify2/lib/parse.js"),
+    stringify: __webpack_require__(/*! ./lib/stringify */ "./node_modules/html-parse-stringify2/lib/stringify.js")
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/html-parse-stringify2/lib/parse-tag.js":
+/*!*************************************************************!*\
+  !*** ./node_modules/html-parse-stringify2/lib/parse-tag.js ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var attrRE = /([\w-]+)|=|(['"])([.\s\S]*?)\2/g;
+var voidElements = __webpack_require__(/*! void-elements */ "./node_modules/void-elements/index.js");
+
+module.exports = function (tag) {
+    var i = 0;
+    var key;
+    var expectingValueAfterEquals = true;
+    var res = {
+        type: 'tag',
+        name: '',
+        voidElement: false,
+        attrs: {},
+        children: []
+    };
+
+    tag.replace(attrRE, function (match) {
+        if (match === '=') {
+            expectingValueAfterEquals = true;
+            i++;
+            return;
+        }
+
+        if (!expectingValueAfterEquals) {
+            if (key) {
+                res.attrs[key] = key; // boolean attribute
+            }
+            key=match;
+        } else {
+            if (i === 0) {
+                if (voidElements[match] || tag.charAt(tag.length - 2) === '/') {
+                    res.voidElement = true;
+                }
+                res.name = match;
+            } else {
+                res.attrs[key] = match.replace(/^['"]|['"]$/g, '');
+                key=undefined;
+            }
+        }
+        i++;
+        expectingValueAfterEquals = false;
+    });
+
+    return res;
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/html-parse-stringify2/lib/parse.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/html-parse-stringify2/lib/parse.js ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/*jshint -W030 */
+var tagRE = /(?:<!--[\S\s]*?-->|<(?:"[^"]*"['"]*|'[^']*'['"]*|[^'">])+>)/g;
+var parseTag = __webpack_require__(/*! ./parse-tag */ "./node_modules/html-parse-stringify2/lib/parse-tag.js");
+// re-used obj for quick lookups of components
+var empty = Object.create ? Object.create(null) : {};
+// common logic for pushing a child node onto a list
+function pushTextNode(list, html, level, start, ignoreWhitespace) {
+    // calculate correct end of the content slice in case there's
+    // no tag after the text node.
+    var end = html.indexOf('<', start);
+    var content = html.slice(start, end === -1 ? undefined : end);
+    // if a node is nothing but whitespace, collapse it as the spec states:
+    // https://www.w3.org/TR/html4/struct/text.html#h-9.1
+    if (/^\s*$/.test(content)) {
+        content = ' ';
+    }
+    // don't add whitespace-only text nodes if they would be trailing text nodes
+    // or if they would be leading whitespace-only text nodes:
+    //  * end > -1 indicates this is not a trailing text node
+    //  * leading node is when level is -1 and list has length 0
+    if ((!ignoreWhitespace && end > -1 && level + list.length >= 0) || content !== ' ') {
+        list.push({
+            type: 'text',
+            content: content
+        });
+    }
+}
+
+module.exports = function parse(html, options) {
+    options || (options = {});
+    options.components || (options.components = empty);
+    var result = [];
+    var current;
+    var level = -1;
+    var arr = [];
+    var byTag = {};
+    var inComponent = false;
+
+    html.replace(tagRE, function (tag, index) {
+        if (inComponent) {
+            if (tag !== ('</' + current.name + '>')) {
+                return;
+            } else {
+                inComponent = false;
+            }
+        }
+
+        var isOpen = tag.charAt(1) !== '/';
+        var isComment = tag.indexOf('<!--') === 0;
+        var start = index + tag.length;
+        var nextChar = html.charAt(start);
+        var parent;
+
+        if (isOpen && !isComment) {
+            level++;
+
+            current = parseTag(tag);
+            if (current.type === 'tag' && options.components[current.name]) {
+                current.type = 'component';
+                inComponent = true;
+            }
+
+            if (!current.voidElement && !inComponent && nextChar && nextChar !== '<') {
+                pushTextNode(current.children, html, level, start, options.ignoreWhitespace);
+            }
+
+            byTag[current.tagName] = current;
+
+            // if we're at root, push new base node
+            if (level === 0) {
+                result.push(current);
+            }
+
+            parent = arr[level - 1];
+
+            if (parent) {
+                parent.children.push(current);
+            }
+
+            arr[level] = current;
+        }
+
+        if (isComment || !isOpen || current.voidElement) {
+            if (!isComment) {
+                level--;
+            }
+            if (!inComponent && nextChar !== '<' && nextChar) {
+                // trailing text node
+                // if we're at the root, push a base text node. otherwise add as
+                // a child to the current node.
+                parent = level === -1 ? result : arr[level].children;
+                pushTextNode(parent, html, level, start, options.ignoreWhitespace);
+            }
+        }
+    });
+
+    // If the "html" passed isn't actually html, add it as a text node.
+    if (!result.length && html.length) {
+        pushTextNode(result, html, 0, 0, options.ignoreWhitespace);
+    }
+
+    return result;
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/html-parse-stringify2/lib/stringify.js":
+/*!*************************************************************!*\
+  !*** ./node_modules/html-parse-stringify2/lib/stringify.js ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function attrString(attrs) {
+    var buff = [];
+    for (var key in attrs) {
+        buff.push(key + '="' + attrs[key] + '"');
+    }
+    if (!buff.length) {
+        return '';
+    }
+    return ' ' + buff.join(' ');
+}
+
+function stringify(buff, doc) {
+    switch (doc.type) {
+    case 'text':
+        return buff + doc.content;
+    case 'tag':
+        buff += '<' + doc.name + (doc.attrs ? attrString(doc.attrs) : '') + (doc.voidElement ? '/>' : '>');
+        if (doc.voidElement) {
+            return buff;
+        }
+        return buff + doc.children.reduce(stringify, '') + '</' + doc.name + '>';
+    }
+}
+
+module.exports = function (doc) {
+    return doc.reduce(function (token, rootEl) {
+        return token + stringify('', rootEl);
+    }, '');
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/i18next/dist/esm/i18next.js":
+/*!**************************************************!*\
+  !*** ./node_modules/i18next/dist/esm/i18next.js ***!
+  \**************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/typeof */ "./node_modules/@babel/runtime/helpers/esm/typeof.js");
+/* harmony import */ var _babel_runtime_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectSpread */ "./node_modules/@babel/runtime/helpers/esm/objectSpread.js");
+/* harmony import */ var _babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var _babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
+/* harmony import */ var _babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var _babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var _babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime/helpers/esm/assertThisInitialized.js");
+/* harmony import */ var _babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @babel/runtime/helpers/esm/inherits */ "./node_modules/@babel/runtime/helpers/esm/inherits.js");
+
+
+
+
+
+
+
+
+
+var consoleLogger = {
+  type: 'logger',
+  log: function log(args) {
+    this.output('log', args);
+  },
+  warn: function warn(args) {
+    this.output('warn', args);
+  },
+  error: function error(args) {
+    this.output('error', args);
+  },
+  output: function output(type, args) {
+    if (console && console[type]) console[type].apply(console, args);
+  }
+};
+
+var Logger = function () {
+  function Logger(concreteLogger) {
+    var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+
+    Object(_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Logger);
+
+    this.init(concreteLogger, options);
+  }
+
+  Object(_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_3__["default"])(Logger, [{
+    key: "init",
+    value: function init(concreteLogger) {
+      var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+      this.prefix = options.prefix || 'i18next:';
+      this.logger = concreteLogger || consoleLogger;
+      this.options = options;
+      this.debug = options.debug;
+    }
+  }, {
+    key: "setDebug",
+    value: function setDebug(bool) {
+      this.debug = bool;
+    }
+  }, {
+    key: "log",
+    value: function log() {
+      for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+        args[_key] = arguments[_key];
+      }
+
+      return this.forward(args, 'log', '', true);
+    }
+  }, {
+    key: "warn",
+    value: function warn() {
+      for (var _len2 = arguments.length, args = new Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {
+        args[_key2] = arguments[_key2];
+      }
+
+      return this.forward(args, 'warn', '', true);
+    }
+  }, {
+    key: "error",
+    value: function error() {
+      for (var _len3 = arguments.length, args = new Array(_len3), _key3 = 0; _key3 < _len3; _key3++) {
+        args[_key3] = arguments[_key3];
+      }
+
+      return this.forward(args, 'error', '');
+    }
+  }, {
+    key: "deprecate",
+    value: function deprecate() {
+      for (var _len4 = arguments.length, args = new Array(_len4), _key4 = 0; _key4 < _len4; _key4++) {
+        args[_key4] = arguments[_key4];
+      }
+
+      return this.forward(args, 'warn', 'WARNING DEPRECATED: ', true);
+    }
+  }, {
+    key: "forward",
+    value: function forward(args, lvl, prefix, debugOnly) {
+      if (debugOnly && !this.debug) return null;
+      if (typeof args[0] === 'string') args[0] = "".concat(prefix).concat(this.prefix, " ").concat(args[0]);
+      return this.logger[lvl](args);
+    }
+  }, {
+    key: "create",
+    value: function create(moduleName) {
+      return new Logger(this.logger, Object(_babel_runtime_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_1__["default"])({}, {
+        prefix: "".concat(this.prefix, ":").concat(moduleName, ":")
+      }, this.options));
+    }
+  }]);
+
+  return Logger;
+}();
+
+var baseLogger = new Logger();
+
+var EventEmitter = function () {
+  function EventEmitter() {
+    Object(_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_2__["default"])(this, EventEmitter);
+
+    this.observers = {};
+  }
+
+  Object(_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_3__["default"])(EventEmitter, [{
+    key: "on",
+    value: function on(events, listener) {
+      var _this = this;
+
+      events.split(' ').forEach(function (event) {
+        _this.observers[event] = _this.observers[event] || [];
+
+        _this.observers[event].push(listener);
+      });
+      return this;
+    }
+  }, {
+    key: "off",
+    value: function off(event, listener) {
+      if (!this.observers[event]) return;
+
+      if (!listener) {
+        delete this.observers[event];
+        return;
+      }
+
+      this.observers[event] = this.observers[event].filter(function (l) {
+        return l !== listener;
+      });
+    }
+  }, {
+    key: "emit",
+    value: function emit(event) {
+      for (var _len = arguments.length, args = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
+        args[_key - 1] = arguments[_key];
+      }
+
+      if (this.observers[event]) {
+        var cloned = [].concat(this.observers[event]);
+        cloned.forEach(function (observer) {
+          observer.apply(void 0, args);
+        });
+      }
+
+      if (this.observers['*']) {
+        var _cloned = [].concat(this.observers['*']);
+
+        _cloned.forEach(function (observer) {
+          observer.apply(observer, [event].concat(args));
+        });
+      }
+    }
+  }]);
+
+  return EventEmitter;
+}();
+
+function defer() {
+  var res;
+  var rej;
+  var promise = new Promise(function (resolve, reject) {
+    res = resolve;
+    rej = reject;
+  });
+  promise.resolve = res;
+  promise.reject = rej;
+  return promise;
+}
+function makeString(object) {
+  if (object == null) return '';
+  return '' + object;
+}
+function copy(a, s, t) {
+  a.forEach(function (m) {
+    if (s[m]) t[m] = s[m];
+  });
+}
+
+function getLastOfPath(object, path, Empty) {
+  function cleanKey(key) {
+    return key && key.indexOf('###') > -1 ? key.replace(/###/g, '.') : key;
+  }
+
+  function canNotTraverseDeeper() {
+    return !object || typeof object === 'string';
+  }
+
+  var stack = typeof path !== 'string' ? [].concat(path) : path.split('.');
+
+  while (stack.length > 1) {
+    if (canNotTraverseDeeper()) return {};
+    var key = cleanKey(stack.shift());
+    if (!object[key] && Empty) object[key] = new Empty();
+
+    if (Object.prototype.hasOwnProperty.call(object, key)) {
+      object = object[key];
+    } else {
+      object = {};
+    }
+  }
+
+  if (canNotTraverseDeeper()) return {};
+  return {
+    obj: object,
+    k: cleanKey(stack.shift())
+  };
+}
+
+function setPath(object, path, newValue) {
+  var _getLastOfPath = getLastOfPath(object, path, Object),
+      obj = _getLastOfPath.obj,
+      k = _getLastOfPath.k;
+
+  obj[k] = newValue;
+}
+function pushPath(object, path, newValue, concat) {
+  var _getLastOfPath2 = getLastOfPath(object, path, Object),
+      obj = _getLastOfPath2.obj,
+      k = _getLastOfPath2.k;
+
+  obj[k] = obj[k] || [];
+  if (concat) obj[k] = obj[k].concat(newValue);
+  if (!concat) obj[k].push(newValue);
+}
+function getPath(object, path) {
+  var _getLastOfPath3 = getLastOfPath(object, path),
+      obj = _getLastOfPath3.obj,
+      k = _getLastOfPath3.k;
+
+  if (!obj) return undefined;
+  return obj[k];
+}
+function getPathWithDefaults(data, defaultData, key) {
+  var value = getPath(data, key);
+
+  if (value !== undefined) {
+    return value;
+  }
+
+  return getPath(defaultData, key);
+}
+function deepExtend(target, source, overwrite) {
+  for (var prop in source) {
+    if (prop !== '__proto__' && prop !== 'constructor') {
+      if (prop in target) {
+        if (typeof target[prop] === 'string' || target[prop] instanceof String || typeof source[prop] === 'string' || source[prop] instanceof String) {
+          if (overwrite) target[prop] = source[prop];
+        } else {
+          deepExtend(target[prop], source[prop], overwrite);
+        }
+      } else {
+        target[prop] = source[prop];
+      }
+    }
+  }
+
+  return target;
+}
+function regexEscape(str) {
+  return str.replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, '\\$&');
+}
+var _entityMap = {
+  '&': '&amp;',
+  '<': '&lt;',
+  '>': '&gt;',
+  '"': '&quot;',
+  "'": '&#39;',
+  '/': '&#x2F;'
+};
+function escape(data) {
+  if (typeof data === 'string') {
+    return data.replace(/[&<>"'\/]/g, function (s) {
+      return _entityMap[s];
+    });
+  }
+
+  return data;
+}
+var isIE10 = typeof window !== 'undefined' && window.navigator && window.navigator.userAgent && window.navigator.userAgent.indexOf('MSIE') > -1;
+
+function deepFind(obj, path) {
+  var keySeparator = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : '.';
+  if (!obj) return undefined;
+  if (obj[path]) return obj[path];
+  var paths = path.split(keySeparator);
+  var current = obj;
+
+  for (var i = 0; i < paths.length; ++i) {
+    if (typeof current[paths[i]] === 'string' && i + 1 < paths.length) {
+      return undefined;
+    }
+
+    if (current[paths[i]] === undefined) {
+      var j = 2;
+      var p = paths.slice(i, i + j).join(keySeparator);
+      var mix = current[p];
+
+      while (mix === undefined && paths.length > i + j) {
+        j++;
+        p = paths.slice(i, i + j).join(keySeparator);
+        mix = current[p];
+      }
+
+      if (mix === undefined) return undefined;
+      if (typeof mix === 'string') return mix;
+      if (p && typeof mix[p] === 'string') return mix[p];
+      var joinedPath = paths.slice(i + j).join(keySeparator);
+      if (joinedPath) return deepFind(mix, joinedPath, keySeparator);
+      return undefined;
+    }
+
+    current = current[paths[i]];
+  }
+
+  return current;
+}
+
+var ResourceStore = function (_EventEmitter) {
+  Object(_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_7__["default"])(ResourceStore, _EventEmitter);
+
+  function ResourceStore(data) {
+    var _this;
+
+    var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {
+      ns: ['translation'],
+      defaultNS: 'translation'
+    };
+
+    Object(_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_2__["default"])(this, ResourceStore);
+
+    _this = Object(_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4__["default"])(this, Object(_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__["default"])(ResourceStore).call(this));
+
+    if (isIE10) {
+      EventEmitter.call(Object(_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_6__["default"])(_this));
+    }
+
+    _this.data = data || {};
+    _this.options = options;
+
+    if (_this.options.keySeparator === undefined) {
+      _this.options.keySeparator = '.';
+    }
+
+    if (_this.options.ignoreJSONStructure === undefined) {
+      _this.options.ignoreJSONStructure = true;
+    }
+
+    return _this;
+  }
+
+  Object(_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_3__["default"])(ResourceStore, [{
+    key: "addNamespaces",
+    value: function addNamespaces(ns) {
+      if (this.options.ns.indexOf(ns) < 0) {
+        this.options.ns.push(ns);
+      }
+    }
+  }, {
+    key: "removeNamespaces",
+    value: function removeNamespaces(ns) {
+      var index = this.options.ns.indexOf(ns);
+
+      if (index > -1) {
+        this.options.ns.splice(index, 1);
+      }
+    }
+  }, {
+    key: "getResource",
+    value: function getResource(lng, ns, key) {
+      var options = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : {};
+      var keySeparator = options.keySeparator !== undefined ? options.keySeparator : this.options.keySeparator;
+      var ignoreJSONStructure = options.ignoreJSONStructure !== undefined ? options.ignoreJSONStructure : this.options.ignoreJSONStructure;
+      var path = [lng, ns];
+      if (key && typeof key !== 'string') path = path.concat(key);
+      if (key && typeof key === 'string') path = path.concat(keySeparator ? key.split(keySeparator) : key);
+
+      if (lng.indexOf('.') > -1) {
+        path = lng.split('.');
+      }
+
+      var result = getPath(this.data, path);
+      if (result || !ignoreJSONStructure || typeof key !== 'string') return result;
+      return deepFind(this.data && this.data[lng] && this.data[lng][ns], key, keySeparator);
+    }
+  }, {
+    key: "addResource",
+    value: function addResource(lng, ns, key, value) {
+      var options = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : {
+        silent: false
+      };
+      var keySeparator = this.options.keySeparator;
+      if (keySeparator === undefined) keySeparator = '.';
+      var path = [lng, ns];
+      if (key) path = path.concat(keySeparator ? key.split(keySeparator) : key);
+
+      if (lng.indexOf('.') > -1) {
+        path = lng.split('.');
+        value = ns;
+        ns = path[1];
+      }
+
+      this.addNamespaces(ns);
+      setPath(this.data, path, value);
+      if (!options.silent) this.emit('added', lng, ns, key, value);
+    }
+  }, {
+    key: "addResources",
+    value: function addResources(lng, ns, resources) {
+      var options = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : {
+        silent: false
+      };
+
+      for (var m in resources) {
+        if (typeof resources[m] === 'string' || Object.prototype.toString.apply(resources[m]) === '[object Array]') this.addResource(lng, ns, m, resources[m], {
+          silent: true
+        });
+      }
+
+      if (!options.silent) this.emit('added', lng, ns, resources);
+    }
+  }, {
+    key: "addResourceBundle",
+    value: function addResourceBundle(lng, ns, resources, deep, overwrite) {
+      var options = arguments.length > 5 && arguments[5] !== undefined ? arguments[5] : {
+        silent: false
+      };
+      var path = [lng, ns];
+
+      if (lng.indexOf('.') > -1) {
+        path = lng.split('.');
+        deep = resources;
+        resources = ns;
+        ns = path[1];
+      }
+
+      this.addNamespaces(ns);
+      var pack = getPath(this.data, path) || {};
+
+      if (deep) {
+        deepExtend(pack, resources, overwrite);
+      } else {
+        pack = Object(_babel_runtime_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_1__["default"])({}, pack, resources);
+      }
+
+      setPath(this.data, path, pack);
+      if (!options.silent) this.emit('added', lng, ns, resources);
+    }
+  }, {
+    key: "removeResourceBundle",
+    value: function removeResourceBundle(lng, ns) {
+      if (this.hasResourceBundle(lng, ns)) {
+        delete this.data[lng][ns];
+      }
+
+      this.removeNamespaces(ns);
+      this.emit('removed', lng, ns);
+    }
+  }, {
+    key: "hasResourceBundle",
+    value: function hasResourceBundle(lng, ns) {
+      return this.getResource(lng, ns) !== undefined;
+    }
+  }, {
+    key: "getResourceBundle",
+    value: function getResourceBundle(lng, ns) {
+      if (!ns) ns = this.options.defaultNS;
+      if (this.options.compatibilityAPI === 'v1') return Object(_babel_runtime_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_1__["default"])({}, {}, this.getResource(lng, ns));
+      return this.getResource(lng, ns);
+    }
+  }, {
+    key: "getDataByLanguage",
+    value: function getDataByLanguage(lng) {
+      return this.data[lng];
+    }
+  }, {
+    key: "toJSON",
+    value: function toJSON() {
+      return this.data;
+    }
+  }]);
+
+  return ResourceStore;
+}(EventEmitter);
+
+var postProcessor = {
+  processors: {},
+  addPostProcessor: function addPostProcessor(module) {
+    this.processors[module.name] = module;
+  },
+  handle: function handle(processors, value, key, options, translator) {
+    var _this = this;
+
+    processors.forEach(function (processor) {
+      if (_this.processors[processor]) value = _this.processors[processor].process(value, key, options, translator);
+    });
+    return value;
+  }
+};
+
+var checkedLoadedFor = {};
+
+var Translator = function (_EventEmitter) {
+  Object(_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_7__["default"])(Translator, _EventEmitter);
+
+  function Translator(services) {
+    var _this;
+
+    var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+
+    Object(_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Translator);
+
+    _this = Object(_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4__["default"])(this, Object(_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__["default"])(Translator).call(this));
+
+    if (isIE10) {
+      EventEmitter.call(Object(_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_6__["default"])(_this));
+    }
+
+    copy(['resourceStore', 'languageUtils', 'pluralResolver', 'interpolator', 'backendConnector', 'i18nFormat', 'utils'], services, Object(_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_6__["default"])(_this));
+    _this.options = options;
+
+    if (_this.options.keySeparator === undefined) {
+      _this.options.keySeparator = '.';
+    }
+
+    _this.logger = baseLogger.create('translator');
+    return _this;
+  }
+
+  Object(_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_3__["default"])(Translator, [{
+    key: "changeLanguage",
+    value: function changeLanguage(lng) {
+      if (lng) this.language = lng;
+    }
+  }, {
+    key: "exists",
+    value: function exists(key) {
+      var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {
+        interpolation: {}
+      };
+      var resolved = this.resolve(key, options);
+      return resolved && resolved.res !== undefined;
+    }
+  }, {
+    key: "extractFromKey",
+    value: function extractFromKey(key, options) {
+      var nsSeparator = options.nsSeparator !== undefined ? options.nsSeparator : this.options.nsSeparator;
+      if (nsSeparator === undefined) nsSeparator = ':';
+      var keySeparator = options.keySeparator !== undefined ? options.keySeparator : this.options.keySeparator;
+      var namespaces = options.ns || this.options.defaultNS;
+
+      if (nsSeparator && key.indexOf(nsSeparator) > -1) {
+        var m = key.match(this.interpolator.nestingRegexp);
+
+        if (m && m.length > 0) {
+          return {
+            key: key,
+            namespaces: namespaces
+          };
+        }
+
+        var parts = key.split(nsSeparator);
+        if (nsSeparator !== keySeparator || nsSeparator === keySeparator && this.options.ns.indexOf(parts[0]) > -1) namespaces = parts.shift();
+        key = parts.join(keySeparator);
+      }
+
+      if (typeof namespaces === 'string') namespaces = [namespaces];
+      return {
+        key: key,
+        namespaces: namespaces
+      };
+    }
+  }, {
+    key: "translate",
+    value: function translate(keys, options, lastKey) {
+      var _this2 = this;
+
+      if (Object(_babel_runtime_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_0__["default"])(options) !== 'object' && this.options.overloadTranslationOptionHandler) {
+        options = this.options.overloadTranslationOptionHandler(arguments);
+      }
+
+      if (!options) options = {};
+      if (keys === undefined || keys === null) return '';
+      if (!Array.isArray(keys)) keys = [String(keys)];
+      var keySeparator = options.keySeparator !== undefined ? options.keySeparator : this.options.keySeparator;
+
+      var _this$extractFromKey = this.extractFromKey(keys[keys.length - 1], options),
+          key = _this$extractFromKey.key,
+          namespaces = _this$extractFromKey.namespaces;
+
+      var namespace = namespaces[namespaces.length - 1];
+      var lng = options.lng || this.language;
+      var appendNamespaceToCIMode = options.appendNamespaceToCIMode || this.options.appendNamespaceToCIMode;
+
+      if (lng && lng.toLowerCase() === 'cimode') {
+        if (appendNamespaceToCIMode) {
+          var nsSeparator = options.nsSeparator || this.options.nsSeparator;
+          return namespace + nsSeparator + key;
+        }
+
+        return key;
+      }
+
+      var resolved = this.resolve(keys, options);
+      var res = resolved && resolved.res;
+      var resUsedKey = resolved && resolved.usedKey || key;
+      var resExactUsedKey = resolved && resolved.exactUsedKey || key;
+      var resType = Object.prototype.toString.apply(res);
+      var noObject = ['[object Number]', '[object Function]', '[object RegExp]'];
+      var joinArrays = options.joinArrays !== undefined ? options.joinArrays : this.options.joinArrays;
+      var handleAsObjectInI18nFormat = !this.i18nFormat || this.i18nFormat.handleAsObject;
+      var handleAsObject = typeof res !== 'string' && typeof res !== 'boolean' && typeof res !== 'number';
+
+      if (handleAsObjectInI18nFormat && res && handleAsObject && noObject.indexOf(resType) < 0 && !(typeof joinArrays === 'string' && resType === '[object Array]')) {
+        if (!options.returnObjects && !this.options.returnObjects) {
+          this.logger.warn('accessing an object - but returnObjects options is not enabled!');
+          return this.options.returnedObjectHandler ? this.options.returnedObjectHandler(resUsedKey, res, options) : "key '".concat(key, " (").concat(this.language, ")' returned an object instead of string.");
+        }
+
+        if (keySeparator) {
+          var resTypeIsArray = resType === '[object Array]';
+          var copy = resTypeIsArray ? [] : {};
+          var newKeyToUse = resTypeIsArray ? resExactUsedKey : resUsedKey;
+
+          for (var m in res) {
+            if (Object.prototype.hasOwnProperty.call(res, m)) {
+              var deepKey = "".concat(newKeyToUse).concat(keySeparator).concat(m);
+              copy[m] = this.translate(deepKey, Object(_babel_runtime_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_1__["default"])({}, options, {
+                joinArrays: false,
+                ns: namespaces
+              }));
+              if (copy[m] === deepKey) copy[m] = res[m];
+            }
+          }
+
+          res = copy;
+        }
+      } else if (handleAsObjectInI18nFormat && typeof joinArrays === 'string' && resType === '[object Array]') {
+        res = res.join(joinArrays);
+        if (res) res = this.extendTranslation(res, keys, options, lastKey);
+      } else {
+        var usedDefault = false;
+        var usedKey = false;
+        var needsPluralHandling = options.count !== undefined && typeof options.count !== 'string';
+        var hasDefaultValue = Translator.hasDefaultValue(options);
+        var defaultValueSuffix = needsPluralHandling ? this.pluralResolver.getSuffix(lng, options.count) : '';
+        var defaultValue = options["defaultValue".concat(defaultValueSuffix)] || options.defaultValue;
+
+        if (!this.isValidLookup(res) && hasDefaultValue) {
+          usedDefault = true;
+          res = defaultValue;
+        }
+
+        if (!this.isValidLookup(res)) {
+          usedKey = true;
+          res = key;
+        }
+
+        var updateMissing = hasDefaultValue && defaultValue !== res && this.options.updateMissing;
+
+        if (usedKey || usedDefault || updateMissing) {
+          this.logger.log(updateMissing ? 'updateKey' : 'missingKey', lng, namespace, key, updateMissing ? defaultValue : res);
+
+          if (keySeparator) {
+            var fk = this.resolve(key, Object(_babel_runtime_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_1__["default"])({}, options, {
+              keySeparator: false
+            }));
+            if (fk && fk.res) this.logger.warn('Seems the loaded translations were in flat JSON format instead of nested. Either set keySeparator: false on init or make sure your translations are published in nested format.');
+          }
+
+          var lngs = [];
+          var fallbackLngs = this.languageUtils.getFallbackCodes(this.options.fallbackLng, options.lng || this.language);
+
+          if (this.options.saveMissingTo === 'fallback' && fallbackLngs && fallbackLngs[0]) {
+            for (var i = 0; i < fallbackLngs.length; i++) {
+              lngs.push(fallbackLngs[i]);
+            }
+          } else if (this.options.saveMissingTo === 'all') {
+            lngs = this.languageUtils.toResolveHierarchy(options.lng || this.language);
+          } else {
+            lngs.push(options.lng || this.language);
+          }
+
+          var send = function send(l, k, fallbackValue) {
+            if (_this2.options.missingKeyHandler) {
+              _this2.options.missingKeyHandler(l, namespace, k, updateMissing ? fallbackValue : res, updateMissing, options);
+            } else if (_this2.backendConnector && _this2.backendConnector.saveMissing) {
+              _this2.backendConnector.saveMissing(l, namespace, k, updateMissing ? fallbackValue : res, updateMissing, options);
+            }
+
+            _this2.emit('missingKey', l, namespace, k, res);
+          };
+
+          if (this.options.saveMissing) {
+            if (this.options.saveMissingPlurals && needsPluralHandling) {
+              lngs.forEach(function (language) {
+                _this2.pluralResolver.getSuffixes(language).forEach(function (suffix) {
+                  send([language], key + suffix, options["defaultValue".concat(suffix)] || defaultValue);
+                });
+              });
+            } else {
+              send(lngs, key, defaultValue);
+            }
+          }
+        }
+
+        res = this.extendTranslation(res, keys, options, resolved, lastKey);
+        if (usedKey && res === key && this.options.appendNamespaceToMissingKey) res = "".concat(namespace, ":").concat(key);
+        if (usedKey && this.options.parseMissingKeyHandler) res = this.options.parseMissingKeyHandler(res);
+      }
+
+      return res;
+    }
+  }, {
+    key: "extendTranslation",
+    value: function extendTranslation(res, key, options, resolved, lastKey) {
+      var _this3 = this;
+
+      if (this.i18nFormat && this.i18nFormat.parse) {
+        res = this.i18nFormat.parse(res, options, resolved.usedLng, resolved.usedNS, resolved.usedKey, {
+          resolved: resolved
+        });
+      } else if (!options.skipInterpolation) {
+        if (options.interpolation) this.interpolator.init(Object(_babel_runtime_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_1__["default"])({}, options, {
+          interpolation: Object(_babel_runtime_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_1__["default"])({}, this.options.interpolation, options.interpolation)
+        }));
+        var skipOnVariables = options.interpolation && options.interpolation.skipOnVariables || this.options.interpolation.skipOnVariables;
+        var nestBef;
+
+        if (skipOnVariables) {
+          var nb = res.match(this.interpolator.nestingRegexp);
+          nestBef = nb && nb.length;
+        }
+
+        var data = options.replace && typeof options.replace !== 'string' ? options.replace : options;
+        if (this.options.interpolation.defaultVariables) data = Object(_babel_runtime_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_1__["default"])({}, this.options.interpolation.defaultVariables, data);
+        res = this.interpolator.interpolate(res, data, options.lng || this.language, options);
+
+        if (skipOnVariables) {
+          var na = res.match(this.interpolator.nestingRegexp);
+          var nestAft = na && na.length;
+          if (nestBef < nestAft) options.nest = false;
+        }
+
+        if (options.nest !== false) res = this.interpolator.nest(res, function () {
+          for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+            args[_key] = arguments[_key];
+          }
+
+          if (lastKey && lastKey[0] === args[0] && !options.context) {
+            _this3.logger.warn("It seems you are nesting recursively key: ".concat(args[0], " in key: ").concat(key[0]));
+
+            return null;
+          }
+
+          return _this3.translate.apply(_this3, args.concat([key]));
+        }, options);
+        if (options.interpolation) this.interpolator.reset();
+      }
+
+      var postProcess = options.postProcess || this.options.postProcess;
+      var postProcessorNames = typeof postProcess === 'string' ? [postProcess] : postProcess;
+
+      if (res !== undefined && res !== null && postProcessorNames && postProcessorNames.length && options.applyPostProcessor !== false) {
+        res = postProcessor.handle(postProcessorNames, res, key, this.options && this.options.postProcessPassResolved ? Object(_babel_runtime_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_1__["default"])({
+          i18nResolved: resolved
+        }, options) : options, this);
+      }
+
+      return res;
+    }
+  }, {
+    key: "resolve",
+    value: function resolve(keys) {
+      var _this4 = this;
+
+      var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+      var found;
+      var usedKey;
+      var exactUsedKey;
+      var usedLng;
+      var usedNS;
+      if (typeof keys === 'string') keys = [keys];
+      keys.forEach(function (k) {
+        if (_this4.isValidLookup(found)) return;
+
+        var extracted = _this4.extractFromKey(k, options);
+
+        var key = extracted.key;
+        usedKey = key;
+        var namespaces = extracted.namespaces;
+        if (_this4.options.fallbackNS) namespaces = namespaces.concat(_this4.options.fallbackNS);
+        var needsPluralHandling = options.count !== undefined && typeof options.count !== 'string';
+        var needsContextHandling = options.context !== undefined && typeof options.context === 'string' && options.context !== '';
+        var codes = options.lngs ? options.lngs : _this4.languageUtils.toResolveHierarchy(options.lng || _this4.language, options.fallbackLng);
+        namespaces.forEach(function (ns) {
+          if (_this4.isValidLookup(found)) return;
+          usedNS = ns;
+
+          if (!checkedLoadedFor["".concat(codes[0], "-").concat(ns)] && _this4.utils && _this4.utils.hasLoadedNamespace && !_this4.utils.hasLoadedNamespace(usedNS)) {
+            checkedLoadedFor["".concat(codes[0], "-").concat(ns)] = true;
+
+            _this4.logger.warn("key \"".concat(usedKey, "\" for languages \"").concat(codes.join(', '), "\" won't get resolved as namespace \"").concat(usedNS, "\" was not yet loaded"), 'This means something IS WRONG in your setup. You access the t function before i18next.init / i18next.loadNamespace / i18next.changeLanguage was done. Wait for the callback or Promise to resolve before accessing it!!!');
+          }
+
+          codes.forEach(function (code) {
+            if (_this4.isValidLookup(found)) return;
+            usedLng = code;
+            var finalKey = key;
+            var finalKeys = [finalKey];
+
+            if (_this4.i18nFormat && _this4.i18nFormat.addLookupKeys) {
+              _this4.i18nFormat.addLookupKeys(finalKeys, key, code, ns, options);
+            } else {
+              var pluralSuffix;
+              if (needsPluralHandling) pluralSuffix = _this4.pluralResolver.getSuffix(code, options.count);
+              if (needsPluralHandling && needsContextHandling) finalKeys.push(finalKey + pluralSuffix);
+              if (needsContextHandling) finalKeys.push(finalKey += "".concat(_this4.options.contextSeparator).concat(options.context));
+              if (needsPluralHandling) finalKeys.push(finalKey += pluralSuffix);
+            }
+
+            var possibleKey;
+
+            while (possibleKey = finalKeys.pop()) {
+              if (!_this4.isValidLookup(found)) {
+                exactUsedKey = possibleKey;
+                found = _this4.getResource(code, ns, possibleKey, options);
+              }
+            }
+          });
+        });
+      });
+      return {
+        res: found,
+        usedKey: usedKey,
+        exactUsedKey: exactUsedKey,
+        usedLng: usedLng,
+        usedNS: usedNS
+      };
+    }
+  }, {
+    key: "isValidLookup",
+    value: function isValidLookup(res) {
+      return res !== undefined && !(!this.options.returnNull && res === null) && !(!this.options.returnEmptyString && res === '');
+    }
+  }, {
+    key: "getResource",
+    value: function getResource(code, ns, key) {
+      var options = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : {};
+      if (this.i18nFormat && this.i18nFormat.getResource) return this.i18nFormat.getResource(code, ns, key, options);
+      return this.resourceStore.getResource(code, ns, key, options);
+    }
+  }], [{
+    key: "hasDefaultValue",
+    value: function hasDefaultValue(options) {
+      var prefix = 'defaultValue';
+
+      for (var option in options) {
+        if (Object.prototype.hasOwnProperty.call(options, option) && prefix === option.substring(0, prefix.length) && undefined !== options[option]) {
+          return true;
+        }
+      }
+
+      return false;
+    }
+  }]);
+
+  return Translator;
+}(EventEmitter);
+
+function capitalize(string) {
+  return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
+var LanguageUtil = function () {
+  function LanguageUtil(options) {
+    Object(_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_2__["default"])(this, LanguageUtil);
+
+    this.options = options;
+    this.whitelist = this.options.supportedLngs || false;
+    this.supportedLngs = this.options.supportedLngs || false;
+    this.logger = baseLogger.create('languageUtils');
+  }
+
+  Object(_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_3__["default"])(LanguageUtil, [{
+    key: "getScriptPartFromCode",
+    value: function getScriptPartFromCode(code) {
+      if (!code || code.indexOf('-') < 0) return null;
+      var p = code.split('-');
+      if (p.length === 2) return null;
+      p.pop();
+      if (p[p.length - 1].toLowerCase() === 'x') return null;
+      return this.formatLanguageCode(p.join('-'));
+    }
+  }, {
+    key: "getLanguagePartFromCode",
+    value: function getLanguagePartFromCode(code) {
+      if (!code || code.indexOf('-') < 0) return code;
+      var p = code.split('-');
+      return this.formatLanguageCode(p[0]);
+    }
+  }, {
+    key: "formatLanguageCode",
+    value: function formatLanguageCode(code) {
+      if (typeof code === 'string' && code.indexOf('-') > -1) {
+        var specialCases = ['hans', 'hant', 'latn', 'cyrl', 'cans', 'mong', 'arab'];
+        var p = code.split('-');
+
+        if (this.options.lowerCaseLng) {
+          p = p.map(function (part) {
+            return part.toLowerCase();
+          });
+        } else if (p.length === 2) {
+          p[0] = p[0].toLowerCase();
+          p[1] = p[1].toUpperCase();
+          if (specialCases.indexOf(p[1].toLowerCase()) > -1) p[1] = capitalize(p[1].toLowerCase());
+        } else if (p.length === 3) {
+          p[0] = p[0].toLowerCase();
+          if (p[1].length === 2) p[1] = p[1].toUpperCase();
+          if (p[0] !== 'sgn' && p[2].length === 2) p[2] = p[2].toUpperCase();
+          if (specialCases.indexOf(p[1].toLowerCase()) > -1) p[1] = capitalize(p[1].toLowerCase());
+          if (specialCases.indexOf(p[2].toLowerCase()) > -1) p[2] = capitalize(p[2].toLowerCase());
+        }
+
+        return p.join('-');
+      }
+
+      return this.options.cleanCode || this.options.lowerCaseLng ? code.toLowerCase() : code;
+    }
+  }, {
+    key: "isWhitelisted",
+    value: function isWhitelisted(code) {
+      this.logger.deprecate('languageUtils.isWhitelisted', 'function "isWhitelisted" will be renamed to "isSupportedCode" in the next major - please make sure to rename it\'s usage asap.');
+      return this.isSupportedCode(code);
+    }
+  }, {
+    key: "isSupportedCode",
+    value: function isSupportedCode(code) {
+      if (this.options.load === 'languageOnly' || this.options.nonExplicitSupportedLngs) {
+        code = this.getLanguagePartFromCode(code);
+      }
+
+      return !this.supportedLngs || !this.supportedLngs.length || this.supportedLngs.indexOf(code) > -1;
+    }
+  }, {
+    key: "getBestMatchFromCodes",
+    value: function getBestMatchFromCodes(codes) {
+      var _this = this;
+
+      if (!codes) return null;
+      var found;
+      codes.forEach(function (code) {
+        if (found) return;
+
+        var cleanedLng = _this.formatLanguageCode(code);
+
+        if (!_this.options.supportedLngs || _this.isSupportedCode(cleanedLng)) found = cleanedLng;
+      });
+
+      if (!found && this.options.supportedLngs) {
+        codes.forEach(function (code) {
+          if (found) return;
+
+          var lngOnly = _this.getLanguagePartFromCode(code);
+
+          if (_this.isSupportedCode(lngOnly)) return found = lngOnly;
+          found = _this.options.supportedLngs.find(function (supportedLng) {
+            if (supportedLng.indexOf(lngOnly) === 0) return supportedLng;
+          });
+        });
+      }
+
+      if (!found) found = this.getFallbackCodes(this.options.fallbackLng)[0];
+      return found;
+    }
+  }, {
+    key: "getFallbackCodes",
+    value: function getFallbackCodes(fallbacks, code) {
+      if (!fallbacks) return [];
+      if (typeof fallbacks === 'function') fallbacks = fallbacks(code);
+      if (typeof fallbacks === 'string') fallbacks = [fallbacks];
+      if (Object.prototype.toString.apply(fallbacks) === '[object Array]') return fallbacks;
+      if (!code) return fallbacks["default"] || [];
+      var found = fallbacks[code];
+      if (!found) found = fallbacks[this.getScriptPartFromCode(code)];
+      if (!found) found = fallbacks[this.formatLanguageCode(code)];
+      if (!found) found = fallbacks[this.getLanguagePartFromCode(code)];
+      if (!found) found = fallbacks["default"];
+      return found || [];
+    }
+  }, {
+    key: "toResolveHierarchy",
+    value: function toResolveHierarchy(code, fallbackCode) {
+      var _this2 = this;
+
+      var fallbackCodes = this.getFallbackCodes(fallbackCode || this.options.fallbackLng || [], code);
+      var codes = [];
+
+      var addCode = function addCode(c) {
+        if (!c) return;
+
+        if (_this2.isSupportedCode(c)) {
+          codes.push(c);
+        } else {
+          _this2.logger.warn("rejecting language code not found in supportedLngs: ".concat(c));
+        }
+      };
+
+      if (typeof code === 'string' && code.indexOf('-') > -1) {
+        if (this.options.load !== 'languageOnly') addCode(this.formatLanguageCode(code));
+        if (this.options.load !== 'languageOnly' && this.options.load !== 'currentOnly') addCode(this.getScriptPartFromCode(code));
+        if (this.options.load !== 'currentOnly') addCode(this.getLanguagePartFromCode(code));
+      } else if (typeof code === 'string') {
+        addCode(this.formatLanguageCode(code));
+      }
+
+      fallbackCodes.forEach(function (fc) {
+        if (codes.indexOf(fc) < 0) addCode(_this2.formatLanguageCode(fc));
+      });
+      return codes;
+    }
+  }]);
+
+  return LanguageUtil;
+}();
+
+var sets = [{
+  lngs: ['ach', 'ak', 'am', 'arn', 'br', 'fil', 'gun', 'ln', 'mfe', 'mg', 'mi', 'oc', 'pt', 'pt-BR', 'tg', 'tl', 'ti', 'tr', 'uz', 'wa'],
+  nr: [1, 2],
+  fc: 1
+}, {
+  lngs: ['af', 'an', 'ast', 'az', 'bg', 'bn', 'ca', 'da', 'de', 'dev', 'el', 'en', 'eo', 'es', 'et', 'eu', 'fi', 'fo', 'fur', 'fy', 'gl', 'gu', 'ha', 'hi', 'hu', 'hy', 'ia', 'it', 'kn', 'ku', 'lb', 'mai', 'ml', 'mn', 'mr', 'nah', 'nap', 'nb', 'ne', 'nl', 'nn', 'no', 'nso', 'pa', 'pap', 'pms', 'ps', 'pt-PT', 'rm', 'sco', 'se', 'si', 'so', 'son', 'sq', 'sv', 'sw', 'ta', 'te', 'tk', 'ur', 'yo'],
+  nr: [1, 2],
+  fc: 2
+}, {
+  lngs: ['ay', 'bo', 'cgg', 'fa', 'ht', 'id', 'ja', 'jbo', 'ka', 'kk', 'km', 'ko', 'ky', 'lo', 'ms', 'sah', 'su', 'th', 'tt', 'ug', 'vi', 'wo', 'zh'],
+  nr: [1],
+  fc: 3
+}, {
+  lngs: ['be', 'bs', 'cnr', 'dz', 'hr', 'ru', 'sr', 'uk'],
+  nr: [1, 2, 5],
+  fc: 4
+}, {
+  lngs: ['ar'],
+  nr: [0, 1, 2, 3, 11, 100],
+  fc: 5
+}, {
+  lngs: ['cs', 'sk'],
+  nr: [1, 2, 5],
+  fc: 6
+}, {
+  lngs: ['csb', 'pl'],
+  nr: [1, 2, 5],
+  fc: 7
+}, {
+  lngs: ['cy'],
+  nr: [1, 2, 3, 8],
+  fc: 8
+}, {
+  lngs: ['fr'],
+  nr: [1, 2],
+  fc: 9
+}, {
+  lngs: ['ga'],
+  nr: [1, 2, 3, 7, 11],
+  fc: 10
+}, {
+  lngs: ['gd'],
+  nr: [1, 2, 3, 20],
+  fc: 11
+}, {
+  lngs: ['is'],
+  nr: [1, 2],
+  fc: 12
+}, {
+  lngs: ['jv'],
+  nr: [0, 1],
+  fc: 13
+}, {
+  lngs: ['kw'],
+  nr: [1, 2, 3, 4],
+  fc: 14
+}, {
+  lngs: ['lt'],
+  nr: [1, 2, 10],
+  fc: 15
+}, {
+  lngs: ['lv'],
+  nr: [1, 2, 0],
+  fc: 16
+}, {
+  lngs: ['mk'],
+  nr: [1, 2],
+  fc: 17
+}, {
+  lngs: ['mnk'],
+  nr: [0, 1, 2],
+  fc: 18
+}, {
+  lngs: ['mt'],
+  nr: [1, 2, 11, 20],
+  fc: 19
+}, {
+  lngs: ['or'],
+  nr: [2, 1],
+  fc: 2
+}, {
+  lngs: ['ro'],
+  nr: [1, 2, 20],
+  fc: 20
+}, {
+  lngs: ['sl'],
+  nr: [5, 1, 2, 3],
+  fc: 21
+}, {
+  lngs: ['he', 'iw'],
+  nr: [1, 2, 20, 21],
+  fc: 22
+}];
+var _rulesPluralsTypes = {
+  1: function _(n) {
+    return Number(n > 1);
+  },
+  2: function _(n) {
+    return Number(n != 1);
+  },
+  3: function _(n) {
+    return 0;
+  },
+  4: function _(n) {
+    return Number(n % 10 == 1 && n % 100 != 11 ? 0 : n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 10 || n % 100 >= 20) ? 1 : 2);
+  },
+  5: function _(n) {
+    return Number(n == 0 ? 0 : n == 1 ? 1 : n == 2 ? 2 : n % 100 >= 3 && n % 100 <= 10 ? 3 : n % 100 >= 11 ? 4 : 5);
+  },
+  6: function _(n) {
+    return Number(n == 1 ? 0 : n >= 2 && n <= 4 ? 1 : 2);
+  },
+  7: function _(n) {
+    return Number(n == 1 ? 0 : n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 10 || n % 100 >= 20) ? 1 : 2);
+  },
+  8: function _(n) {
+    return Number(n == 1 ? 0 : n == 2 ? 1 : n != 8 && n != 11 ? 2 : 3);
+  },
+  9: function _(n) {
+    return Number(n >= 2);
+  },
+  10: function _(n) {
+    return Number(n == 1 ? 0 : n == 2 ? 1 : n < 7 ? 2 : n < 11 ? 3 : 4);
+  },
+  11: function _(n) {
+    return Number(n == 1 || n == 11 ? 0 : n == 2 || n == 12 ? 1 : n > 2 && n < 20 ? 2 : 3);
+  },
+  12: function _(n) {
+    return Number(n % 10 != 1 || n % 100 == 11);
+  },
+  13: function _(n) {
+    return Number(n !== 0);
+  },
+  14: function _(n) {
+    return Number(n == 1 ? 0 : n == 2 ? 1 : n == 3 ? 2 : 3);
+  },
+  15: function _(n) {
+    return Number(n % 10 == 1 && n % 100 != 11 ? 0 : n % 10 >= 2 && (n % 100 < 10 || n % 100 >= 20) ? 1 : 2);
+  },
+  16: function _(n) {
+    return Number(n % 10 == 1 && n % 100 != 11 ? 0 : n !== 0 ? 1 : 2);
+  },
+  17: function _(n) {
+    return Number(n == 1 || n % 10 == 1 && n % 100 != 11 ? 0 : 1);
+  },
+  18: function _(n) {
+    return Number(n == 0 ? 0 : n == 1 ? 1 : 2);
+  },
+  19: function _(n) {
+    return Number(n == 1 ? 0 : n == 0 || n % 100 > 1 && n % 100 < 11 ? 1 : n % 100 > 10 && n % 100 < 20 ? 2 : 3);
+  },
+  20: function _(n) {
+    return Number(n == 1 ? 0 : n == 0 || n % 100 > 0 && n % 100 < 20 ? 1 : 2);
+  },
+  21: function _(n) {
+    return Number(n % 100 == 1 ? 1 : n % 100 == 2 ? 2 : n % 100 == 3 || n % 100 == 4 ? 3 : 0);
+  },
+  22: function _(n) {
+    return Number(n == 1 ? 0 : n == 2 ? 1 : (n < 0 || n > 10) && n % 10 == 0 ? 2 : 3);
+  }
+};
+
+function createRules() {
+  var rules = {};
+  sets.forEach(function (set) {
+    set.lngs.forEach(function (l) {
+      rules[l] = {
+        numbers: set.nr,
+        plurals: _rulesPluralsTypes[set.fc]
+      };
+    });
+  });
+  return rules;
+}
+
+var PluralResolver = function () {
+  function PluralResolver(languageUtils) {
+    var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+
+    Object(_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_2__["default"])(this, PluralResolver);
+
+    this.languageUtils = languageUtils;
+    this.options = options;
+    this.logger = baseLogger.create('pluralResolver');
+    this.rules = createRules();
+  }
+
+  Object(_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_3__["default"])(PluralResolver, [{
+    key: "addRule",
+    value: function addRule(lng, obj) {
+      this.rules[lng] = obj;
+    }
+  }, {
+    key: "getRule",
+    value: function getRule(code) {
+      return this.rules[code] || this.rules[this.languageUtils.getLanguagePartFromCode(code)];
+    }
+  }, {
+    key: "needsPlural",
+    value: function needsPlural(code) {
+      var rule = this.getRule(code);
+      return rule && rule.numbers.length > 1;
+    }
+  }, {
+    key: "getPluralFormsOfKey",
+    value: function getPluralFormsOfKey(code, key) {
+      return this.getSuffixes(code).map(function (suffix) {
+        return key + suffix;
+      });
+    }
+  }, {
+    key: "getSuffixes",
+    value: function getSuffixes(code) {
+      var _this = this;
+
+      var rule = this.getRule(code);
+
+      if (!rule) {
+        return [];
+      }
+
+      return rule.numbers.map(function (number) {
+        return _this.getSuffix(code, number);
+      });
+    }
+  }, {
+    key: "getSuffix",
+    value: function getSuffix(code, count) {
+      var _this2 = this;
+
+      var rule = this.getRule(code);
+
+      if (rule) {
+        var idx = rule.noAbs ? rule.plurals(count) : rule.plurals(Math.abs(count));
+        var suffix = rule.numbers[idx];
+
+        if (this.options.simplifyPluralSuffix && rule.numbers.length === 2 && rule.numbers[0] === 1) {
+          if (suffix === 2) {
+            suffix = 'plural';
+          } else if (suffix === 1) {
+            suffix = '';
+          }
+        }
+
+        var returnSuffix = function returnSuffix() {
+          return _this2.options.prepend && suffix.toString() ? _this2.options.prepend + suffix.toString() : suffix.toString();
+        };
+
+        if (this.options.compatibilityJSON === 'v1') {
+          if (suffix === 1) return '';
+          if (typeof suffix === 'number') return "_plural_".concat(suffix.toString());
+          return returnSuffix();
+        } else if (this.options.compatibilityJSON === 'v2') {
+          return returnSuffix();
+        } else if (this.options.simplifyPluralSuffix && rule.numbers.length === 2 && rule.numbers[0] === 1) {
+          return returnSuffix();
+        }
+
+        return this.options.prepend && idx.toString() ? this.options.prepend + idx.toString() : idx.toString();
+      }
+
+      this.logger.warn("no plural rule found for: ".concat(code));
+      return '';
+    }
+  }]);
+
+  return PluralResolver;
+}();
+
+var Interpolator = function () {
+  function Interpolator() {
+    var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+
+    Object(_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Interpolator);
+
+    this.logger = baseLogger.create('interpolator');
+    this.options = options;
+
+    this.format = options.interpolation && options.interpolation.format || function (value) {
+      return value;
+    };
+
+    this.init(options);
+  }
+
+  Object(_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_3__["default"])(Interpolator, [{
+    key: "init",
+    value: function init() {
+      var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+      if (!options.interpolation) options.interpolation = {
+        escapeValue: true
+      };
+      var iOpts = options.interpolation;
+      this.escape = iOpts.escape !== undefined ? iOpts.escape : escape;
+      this.escapeValue = iOpts.escapeValue !== undefined ? iOpts.escapeValue : true;
+      this.useRawValueToEscape = iOpts.useRawValueToEscape !== undefined ? iOpts.useRawValueToEscape : false;
+      this.prefix = iOpts.prefix ? regexEscape(iOpts.prefix) : iOpts.prefixEscaped || '{{';
+      this.suffix = iOpts.suffix ? regexEscape(iOpts.suffix) : iOpts.suffixEscaped || '}}';
+      this.formatSeparator = iOpts.formatSeparator ? iOpts.formatSeparator : iOpts.formatSeparator || ',';
+      this.unescapePrefix = iOpts.unescapeSuffix ? '' : iOpts.unescapePrefix || '-';
+      this.unescapeSuffix = this.unescapePrefix ? '' : iOpts.unescapeSuffix || '';
+      this.nestingPrefix = iOpts.nestingPrefix ? regexEscape(iOpts.nestingPrefix) : iOpts.nestingPrefixEscaped || regexEscape('$t(');
+      this.nestingSuffix = iOpts.nestingSuffix ? regexEscape(iOpts.nestingSuffix) : iOpts.nestingSuffixEscaped || regexEscape(')');
+      this.nestingOptionsSeparator = iOpts.nestingOptionsSeparator ? iOpts.nestingOptionsSeparator : iOpts.nestingOptionsSeparator || ',';
+      this.maxReplaces = iOpts.maxReplaces ? iOpts.maxReplaces : 1000;
+      this.alwaysFormat = iOpts.alwaysFormat !== undefined ? iOpts.alwaysFormat : false;
+      this.resetRegExp();
+    }
+  }, {
+    key: "reset",
+    value: function reset() {
+      if (this.options) this.init(this.options);
+    }
+  }, {
+    key: "resetRegExp",
+    value: function resetRegExp() {
+      var regexpStr = "".concat(this.prefix, "(.+?)").concat(this.suffix);
+      this.regexp = new RegExp(regexpStr, 'g');
+      var regexpUnescapeStr = "".concat(this.prefix).concat(this.unescapePrefix, "(.+?)").concat(this.unescapeSuffix).concat(this.suffix);
+      this.regexpUnescape = new RegExp(regexpUnescapeStr, 'g');
+      var nestingRegexpStr = "".concat(this.nestingPrefix, "(.+?)").concat(this.nestingSuffix);
+      this.nestingRegexp = new RegExp(nestingRegexpStr, 'g');
+    }
+  }, {
+    key: "interpolate",
+    value: function interpolate(str, data, lng, options) {
+      var _this = this;
+
+      var match;
+      var value;
+      var replaces;
+      var defaultData = this.options && this.options.interpolation && this.options.interpolation.defaultVariables || {};
+
+      function regexSafe(val) {
+        return val.replace(/\$/g, '$$$$');
+      }
+
+      var handleFormat = function handleFormat(key) {
+        if (key.indexOf(_this.formatSeparator) < 0) {
+          var path = getPathWithDefaults(data, defaultData, key);
+          return _this.alwaysFormat ? _this.format(path, undefined, lng, Object(_babel_runtime_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_1__["default"])({}, options, data, {
+            interpolationkey: key
+          })) : path;
+        }
+
+        var p = key.split(_this.formatSeparator);
+        var k = p.shift().trim();
+        var f = p.join(_this.formatSeparator).trim();
+        return _this.format(getPathWithDefaults(data, defaultData, k), f, lng, Object(_babel_runtime_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_1__["default"])({}, options, data, {
+          interpolationkey: k
+        }));
+      };
+
+      this.resetRegExp();
+      var missingInterpolationHandler = options && options.missingInterpolationHandler || this.options.missingInterpolationHandler;
+      var skipOnVariables = options && options.interpolation && options.interpolation.skipOnVariables || this.options.interpolation.skipOnVariables;
+      var todos = [{
+        regex: this.regexpUnescape,
+        safeValue: function safeValue(val) {
+          return regexSafe(val);
+        }
+      }, {
+        regex: this.regexp,
+        safeValue: function safeValue(val) {
+          return _this.escapeValue ? regexSafe(_this.escape(val)) : regexSafe(val);
+        }
+      }];
+      todos.forEach(function (todo) {
+        replaces = 0;
+
+        while (match = todo.regex.exec(str)) {
+          value = handleFormat(match[1].trim());
+
+          if (value === undefined) {
+            if (typeof missingInterpolationHandler === 'function') {
+              var temp = missingInterpolationHandler(str, match, options);
+              value = typeof temp === 'string' ? temp : '';
+            } else if (skipOnVariables) {
+              value = match[0];
+              continue;
+            } else {
+              _this.logger.warn("missed to pass in variable ".concat(match[1], " for interpolating ").concat(str));
+
+              value = '';
+            }
+          } else if (typeof value !== 'string' && !_this.useRawValueToEscape) {
+            value = makeString(value);
+          }
+
+          var safeValue = todo.safeValue(value);
+          str = str.replace(match[0], safeValue);
+
+          if (skipOnVariables) {
+            todo.regex.lastIndex += safeValue.length;
+            todo.regex.lastIndex -= match[0].length;
+          } else {
+            todo.regex.lastIndex = 0;
+          }
+
+          replaces++;
+
+          if (replaces >= _this.maxReplaces) {
+            break;
+          }
+        }
+      });
+      return str;
+    }
+  }, {
+    key: "nest",
+    value: function nest(str, fc) {
+      var _this2 = this;
+
+      var options = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
+      var match;
+      var value;
+
+      var clonedOptions = Object(_babel_runtime_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_1__["default"])({}, options);
+
+      clonedOptions.applyPostProcessor = false;
+      delete clonedOptions.defaultValue;
+
+      function handleHasOptions(key, inheritedOptions) {
+        var sep = this.nestingOptionsSeparator;
+        if (key.indexOf(sep) < 0) return key;
+        var c = key.split(new RegExp("".concat(sep, "[ ]*{")));
+        var optionsString = "{".concat(c[1]);
+        key = c[0];
+        optionsString = this.interpolate(optionsString, clonedOptions);
+        optionsString = optionsString.replace(/'/g, '"');
+
+        try {
+          clonedOptions = JSON.parse(optionsString);
+          if (inheritedOptions) clonedOptions = Object(_babel_runtime_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_1__["default"])({}, inheritedOptions, clonedOptions);
+        } catch (e) {
+          this.logger.warn("failed parsing options string in nesting for key ".concat(key), e);
+          return "".concat(key).concat(sep).concat(optionsString);
+        }
+
+        delete clonedOptions.defaultValue;
+        return key;
+      }
+
+      while (match = this.nestingRegexp.exec(str)) {
+        var formatters = [];
+        var doReduce = false;
+
+        if (match[0].indexOf(this.formatSeparator) !== -1 && !/{.*}/.test(match[1])) {
+          var r = match[1].split(this.formatSeparator).map(function (elem) {
+            return elem.trim();
+          });
+          match[1] = r.shift();
+          formatters = r;
+          doReduce = true;
+        }
+
+        value = fc(handleHasOptions.call(this, match[1].trim(), clonedOptions), clonedOptions);
+        if (value && match[0] === str && typeof value !== 'string') return value;
+        if (typeof value !== 'string') value = makeString(value);
+
+        if (!value) {
+          this.logger.warn("missed to resolve ".concat(match[1], " for nesting ").concat(str));
+          value = '';
+        }
+
+        if (doReduce) {
+          value = formatters.reduce(function (v, f) {
+            return _this2.format(v, f, options.lng, Object(_babel_runtime_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_1__["default"])({}, options, {
+              interpolationkey: match[1].trim()
+            }));
+          }, value.trim());
+        }
+
+        str = str.replace(match[0], value);
+        this.regexp.lastIndex = 0;
+      }
+
+      return str;
+    }
+  }]);
+
+  return Interpolator;
+}();
+
+function remove(arr, what) {
+  var found = arr.indexOf(what);
+
+  while (found !== -1) {
+    arr.splice(found, 1);
+    found = arr.indexOf(what);
+  }
+}
+
+var Connector = function (_EventEmitter) {
+  Object(_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_7__["default"])(Connector, _EventEmitter);
+
+  function Connector(backend, store, services) {
+    var _this;
+
+    var options = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : {};
+
+    Object(_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Connector);
+
+    _this = Object(_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4__["default"])(this, Object(_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__["default"])(Connector).call(this));
+
+    if (isIE10) {
+      EventEmitter.call(Object(_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_6__["default"])(_this));
+    }
+
+    _this.backend = backend;
+    _this.store = store;
+    _this.services = services;
+    _this.languageUtils = services.languageUtils;
+    _this.options = options;
+    _this.logger = baseLogger.create('backendConnector');
+    _this.state = {};
+    _this.queue = [];
+
+    if (_this.backend && _this.backend.init) {
+      _this.backend.init(services, options.backend, options);
+    }
+
+    return _this;
+  }
+
+  Object(_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_3__["default"])(Connector, [{
+    key: "queueLoad",
+    value: function queueLoad(languages, namespaces, options, callback) {
+      var _this2 = this;
+
+      var toLoad = [];
+      var pending = [];
+      var toLoadLanguages = [];
+      var toLoadNamespaces = [];
+      languages.forEach(function (lng) {
+        var hasAllNamespaces = true;
+        namespaces.forEach(function (ns) {
+          var name = "".concat(lng, "|").concat(ns);
+
+          if (!options.reload && _this2.store.hasResourceBundle(lng, ns)) {
+            _this2.state[name] = 2;
+          } else if (_this2.state[name] < 0) ; else if (_this2.state[name] === 1) {
+            if (pending.indexOf(name) < 0) pending.push(name);
+          } else {
+            _this2.state[name] = 1;
+            hasAllNamespaces = false;
+            if (pending.indexOf(name) < 0) pending.push(name);
+            if (toLoad.indexOf(name) < 0) toLoad.push(name);
+            if (toLoadNamespaces.indexOf(ns) < 0) toLoadNamespaces.push(ns);
+          }
+        });
+        if (!hasAllNamespaces) toLoadLanguages.push(lng);
+      });
+
+      if (toLoad.length || pending.length) {
+        this.queue.push({
+          pending: pending,
+          loaded: {},
+          errors: [],
+          callback: callback
+        });
+      }
+
+      return {
+        toLoad: toLoad,
+        pending: pending,
+        toLoadLanguages: toLoadLanguages,
+        toLoadNamespaces: toLoadNamespaces
+      };
+    }
+  }, {
+    key: "loaded",
+    value: function loaded(name, err, data) {
+      var s = name.split('|');
+      var lng = s[0];
+      var ns = s[1];
+      if (err) this.emit('failedLoading', lng, ns, err);
+
+      if (data) {
+        this.store.addResourceBundle(lng, ns, data);
+      }
+
+      this.state[name] = err ? -1 : 2;
+      var loaded = {};
+      this.queue.forEach(function (q) {
+        pushPath(q.loaded, [lng], ns);
+        remove(q.pending, name);
+        if (err) q.errors.push(err);
+
+        if (q.pending.length === 0 && !q.done) {
+          Object.keys(q.loaded).forEach(function (l) {
+            if (!loaded[l]) loaded[l] = [];
+
+            if (q.loaded[l].length) {
+              q.loaded[l].forEach(function (ns) {
+                if (loaded[l].indexOf(ns) < 0) loaded[l].push(ns);
+              });
+            }
+          });
+          q.done = true;
+
+          if (q.errors.length) {
+            q.callback(q.errors);
+          } else {
+            q.callback();
+          }
+        }
+      });
+      this.emit('loaded', loaded);
+      this.queue = this.queue.filter(function (q) {
+        return !q.done;
+      });
+    }
+  }, {
+    key: "read",
+    value: function read(lng, ns, fcName) {
+      var _this3 = this;
+
+      var tried = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : 0;
+      var wait = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : 350;
+      var callback = arguments.length > 5 ? arguments[5] : undefined;
+      if (!lng.length) return callback(null, {});
+      return this.backend[fcName](lng, ns, function (err, data) {
+        if (err && data && tried < 5) {
+          setTimeout(function () {
+            _this3.read.call(_this3, lng, ns, fcName, tried + 1, wait * 2, callback);
+          }, wait);
+          return;
+        }
+
+        callback(err, data);
+      });
+    }
+  }, {
+    key: "prepareLoading",
+    value: function prepareLoading(languages, namespaces) {
+      var _this4 = this;
+
+      var options = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
+      var callback = arguments.length > 3 ? arguments[3] : undefined;
+
+      if (!this.backend) {
+        this.logger.warn('No backend was added via i18next.use. Will not load resources.');
+        return callback && callback();
+      }
+
+      if (typeof languages === 'string') languages = this.languageUtils.toResolveHierarchy(languages);
+      if (typeof namespaces === 'string') namespaces = [namespaces];
+      var toLoad = this.queueLoad(languages, namespaces, options, callback);
+
+      if (!toLoad.toLoad.length) {
+        if (!toLoad.pending.length) callback();
+        return null;
+      }
+
+      toLoad.toLoad.forEach(function (name) {
+        _this4.loadOne(name);
+      });
+    }
+  }, {
+    key: "load",
+    value: function load(languages, namespaces, callback) {
+      this.prepareLoading(languages, namespaces, {}, callback);
+    }
+  }, {
+    key: "reload",
+    value: function reload(languages, namespaces, callback) {
+      this.prepareLoading(languages, namespaces, {
+        reload: true
+      }, callback);
+    }
+  }, {
+    key: "loadOne",
+    value: function loadOne(name) {
+      var _this5 = this;
+
+      var prefix = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : '';
+      var s = name.split('|');
+      var lng = s[0];
+      var ns = s[1];
+      this.read(lng, ns, 'read', undefined, undefined, function (err, data) {
+        if (err) _this5.logger.warn("".concat(prefix, "loading namespace ").concat(ns, " for language ").concat(lng, " failed"), err);
+        if (!err && data) _this5.logger.log("".concat(prefix, "loaded namespace ").concat(ns, " for language ").concat(lng), data);
+
+        _this5.loaded(name, err, data);
+      });
+    }
+  }, {
+    key: "saveMissing",
+    value: function saveMissing(languages, namespace, key, fallbackValue, isUpdate) {
+      var options = arguments.length > 5 && arguments[5] !== undefined ? arguments[5] : {};
+
+      if (this.services.utils && this.services.utils.hasLoadedNamespace && !this.services.utils.hasLoadedNamespace(namespace)) {
+        this.logger.warn("did not save key \"".concat(key, "\" as the namespace \"").concat(namespace, "\" was not yet loaded"), 'This means something IS WRONG in your setup. You access the t function before i18next.init / i18next.loadNamespace / i18next.changeLanguage was done. Wait for the callback or Promise to resolve before accessing it!!!');
+        return;
+      }
+
+      if (key === undefined || key === null || key === '') return;
+
+      if (this.backend && this.backend.create) {
+        this.backend.create(languages, namespace, key, fallbackValue, null, Object(_babel_runtime_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_1__["default"])({}, options, {
+          isUpdate: isUpdate
+        }));
+      }
+
+      if (!languages || !languages[0]) return;
+      this.store.addResource(languages[0], namespace, key, fallbackValue);
+    }
+  }]);
+
+  return Connector;
+}(EventEmitter);
+
+function get() {
+  return {
+    debug: false,
+    initImmediate: true,
+    ns: ['translation'],
+    defaultNS: ['translation'],
+    fallbackLng: ['dev'],
+    fallbackNS: false,
+    whitelist: false,
+    nonExplicitWhitelist: false,
+    supportedLngs: false,
+    nonExplicitSupportedLngs: false,
+    load: 'all',
+    preload: false,
+    simplifyPluralSuffix: true,
+    keySeparator: '.',
+    nsSeparator: ':',
+    pluralSeparator: '_',
+    contextSeparator: '_',
+    partialBundledLanguages: false,
+    saveMissing: false,
+    updateMissing: false,
+    saveMissingTo: 'fallback',
+    saveMissingPlurals: true,
+    missingKeyHandler: false,
+    missingInterpolationHandler: false,
+    postProcess: false,
+    postProcessPassResolved: false,
+    returnNull: true,
+    returnEmptyString: true,
+    returnObjects: false,
+    joinArrays: false,
+    returnedObjectHandler: false,
+    parseMissingKeyHandler: false,
+    appendNamespaceToMissingKey: false,
+    appendNamespaceToCIMode: false,
+    overloadTranslationOptionHandler: function handle(args) {
+      var ret = {};
+      if (Object(_babel_runtime_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_0__["default"])(args[1]) === 'object') ret = args[1];
+      if (typeof args[1] === 'string') ret.defaultValue = args[1];
+      if (typeof args[2] === 'string') ret.tDescription = args[2];
+
+      if (Object(_babel_runtime_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_0__["default"])(args[2]) === 'object' || Object(_babel_runtime_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_0__["default"])(args[3]) === 'object') {
+        var options = args[3] || args[2];
+        Object.keys(options).forEach(function (key) {
+          ret[key] = options[key];
+        });
+      }
+
+      return ret;
+    },
+    interpolation: {
+      escapeValue: true,
+      format: function format(value, _format, lng, options) {
+        return value;
+      },
+      prefix: '{{',
+      suffix: '}}',
+      formatSeparator: ',',
+      unescapePrefix: '-',
+      nestingPrefix: '$t(',
+      nestingSuffix: ')',
+      nestingOptionsSeparator: ',',
+      maxReplaces: 1000,
+      skipOnVariables: false
+    }
+  };
+}
+function transformOptions(options) {
+  if (typeof options.ns === 'string') options.ns = [options.ns];
+  if (typeof options.fallbackLng === 'string') options.fallbackLng = [options.fallbackLng];
+  if (typeof options.fallbackNS === 'string') options.fallbackNS = [options.fallbackNS];
+
+  if (options.whitelist) {
+    if (options.whitelist && options.whitelist.indexOf('cimode') < 0) {
+      options.whitelist = options.whitelist.concat(['cimode']);
+    }
+
+    options.supportedLngs = options.whitelist;
+  }
+
+  if (options.nonExplicitWhitelist) {
+    options.nonExplicitSupportedLngs = options.nonExplicitWhitelist;
+  }
+
+  if (options.supportedLngs && options.supportedLngs.indexOf('cimode') < 0) {
+    options.supportedLngs = options.supportedLngs.concat(['cimode']);
+  }
+
+  return options;
+}
+
+function noop() {}
+
+var I18n = function (_EventEmitter) {
+  Object(_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_7__["default"])(I18n, _EventEmitter);
+
+  function I18n() {
+    var _this;
+
+    var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+    var callback = arguments.length > 1 ? arguments[1] : undefined;
+
+    Object(_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_2__["default"])(this, I18n);
+
+    _this = Object(_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4__["default"])(this, Object(_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__["default"])(I18n).call(this));
+
+    if (isIE10) {
+      EventEmitter.call(Object(_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_6__["default"])(_this));
+    }
+
+    _this.options = transformOptions(options);
+    _this.services = {};
+    _this.logger = baseLogger;
+    _this.modules = {
+      external: []
+    };
+
+    if (callback && !_this.isInitialized && !options.isClone) {
+      if (!_this.options.initImmediate) {
+        _this.init(options, callback);
+
+        return Object(_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4__["default"])(_this, Object(_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_6__["default"])(_this));
+      }
+
+      setTimeout(function () {
+        _this.init(options, callback);
+      }, 0);
+    }
+
+    return _this;
+  }
+
+  Object(_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_3__["default"])(I18n, [{
+    key: "init",
+    value: function init() {
+      var _this2 = this;
+
+      var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+      var callback = arguments.length > 1 ? arguments[1] : undefined;
+
+      if (typeof options === 'function') {
+        callback = options;
+        options = {};
+      }
+
+      if (options.whitelist && !options.supportedLngs) {
+        this.logger.deprecate('whitelist', 'option "whitelist" will be renamed to "supportedLngs" in the next major - please make sure to rename this option asap.');
+      }
+
+      if (options.nonExplicitWhitelist && !options.nonExplicitSupportedLngs) {
+        this.logger.deprecate('whitelist', 'options "nonExplicitWhitelist" will be renamed to "nonExplicitSupportedLngs" in the next major - please make sure to rename this option asap.');
+      }
+
+      this.options = Object(_babel_runtime_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_1__["default"])({}, get(), this.options, transformOptions(options));
+      this.format = this.options.interpolation.format;
+      if (!callback) callback = noop;
+
+      function createClassOnDemand(ClassOrObject) {
+        if (!ClassOrObject) return null;
+        if (typeof ClassOrObject === 'function') return new ClassOrObject();
+        return ClassOrObject;
+      }
+
+      if (!this.options.isClone) {
+        if (this.modules.logger) {
+          baseLogger.init(createClassOnDemand(this.modules.logger), this.options);
+        } else {
+          baseLogger.init(null, this.options);
+        }
+
+        var lu = new LanguageUtil(this.options);
+        this.store = new ResourceStore(this.options.resources, this.options);
+        var s = this.services;
+        s.logger = baseLogger;
+        s.resourceStore = this.store;
+        s.languageUtils = lu;
+        s.pluralResolver = new PluralResolver(lu, {
+          prepend: this.options.pluralSeparator,
+          compatibilityJSON: this.options.compatibilityJSON,
+          simplifyPluralSuffix: this.options.simplifyPluralSuffix
+        });
+        s.interpolator = new Interpolator(this.options);
+        s.utils = {
+          hasLoadedNamespace: this.hasLoadedNamespace.bind(this)
+        };
+        s.backendConnector = new Connector(createClassOnDemand(this.modules.backend), s.resourceStore, s, this.options);
+        s.backendConnector.on('*', function (event) {
+          for (var _len = arguments.length, args = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
+            args[_key - 1] = arguments[_key];
+          }
+
+          _this2.emit.apply(_this2, [event].concat(args));
+        });
+
+        if (this.modules.languageDetector) {
+          s.languageDetector = createClassOnDemand(this.modules.languageDetector);
+          s.languageDetector.init(s, this.options.detection, this.options);
+        }
+
+        if (this.modules.i18nFormat) {
+          s.i18nFormat = createClassOnDemand(this.modules.i18nFormat);
+          if (s.i18nFormat.init) s.i18nFormat.init(this);
+        }
+
+        this.translator = new Translator(this.services, this.options);
+        this.translator.on('*', function (event) {
+          for (var _len2 = arguments.length, args = new Array(_len2 > 1 ? _len2 - 1 : 0), _key2 = 1; _key2 < _len2; _key2++) {
+            args[_key2 - 1] = arguments[_key2];
+          }
+
+          _this2.emit.apply(_this2, [event].concat(args));
+        });
+        this.modules.external.forEach(function (m) {
+          if (m.init) m.init(_this2);
+        });
+      }
+
+      if (this.options.fallbackLng && !this.services.languageDetector && !this.options.lng) {
+        var codes = this.services.languageUtils.getFallbackCodes(this.options.fallbackLng);
+        if (codes.length > 0 && codes[0] !== 'dev') this.options.lng = codes[0];
+      }
+
+      if (!this.services.languageDetector && !this.options.lng) {
+        this.logger.warn('init: no languageDetector is used and no lng is defined');
+      }
+
+      var storeApi = ['getResource', 'hasResourceBundle', 'getResourceBundle', 'getDataByLanguage'];
+      storeApi.forEach(function (fcName) {
+        _this2[fcName] = function () {
+          var _this2$store;
+
+          return (_this2$store = _this2.store)[fcName].apply(_this2$store, arguments);
+        };
+      });
+      var storeApiChained = ['addResource', 'addResources', 'addResourceBundle', 'removeResourceBundle'];
+      storeApiChained.forEach(function (fcName) {
+        _this2[fcName] = function () {
+          var _this2$store2;
+
+          (_this2$store2 = _this2.store)[fcName].apply(_this2$store2, arguments);
+
+          return _this2;
+        };
+      });
+      var deferred = defer();
+
+      var load = function load() {
+        var finish = function finish(err, t) {
+          if (_this2.isInitialized) _this2.logger.warn('init: i18next is already initialized. You should call init just once!');
+          _this2.isInitialized = true;
+          if (!_this2.options.isClone) _this2.logger.log('initialized', _this2.options);
+
+          _this2.emit('initialized', _this2.options);
+
+          deferred.resolve(t);
+          callback(err, t);
+        };
+
+        if (_this2.languages && _this2.options.compatibilityAPI !== 'v1' && !_this2.isInitialized) return finish(null, _this2.t.bind(_this2));
+
+        _this2.changeLanguage(_this2.options.lng, finish);
+      };
+
+      if (this.options.resources || !this.options.initImmediate) {
+        load();
+      } else {
+        setTimeout(load, 0);
+      }
+
+      return deferred;
+    }
+  }, {
+    key: "loadResources",
+    value: function loadResources(language) {
+      var _this3 = this;
+
+      var callback = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : noop;
+      var usedCallback = callback;
+      var usedLng = typeof language === 'string' ? language : this.language;
+      if (typeof language === 'function') usedCallback = language;
+
+      if (!this.options.resources || this.options.partialBundledLanguages) {
+        if (usedLng && usedLng.toLowerCase() === 'cimode') return usedCallback();
+        var toLoad = [];
+
+        var append = function append(lng) {
+          if (!lng) return;
+
+          var lngs = _this3.services.languageUtils.toResolveHierarchy(lng);
+
+          lngs.forEach(function (l) {
+            if (toLoad.indexOf(l) < 0) toLoad.push(l);
+          });
+        };
+
+        if (!usedLng) {
+          var fallbacks = this.services.languageUtils.getFallbackCodes(this.options.fallbackLng);
+          fallbacks.forEach(function (l) {
+            return append(l);
+          });
+        } else {
+          append(usedLng);
+        }
+
+        if (this.options.preload) {
+          this.options.preload.forEach(function (l) {
+            return append(l);
+          });
+        }
+
+        this.services.backendConnector.load(toLoad, this.options.ns, usedCallback);
+      } else {
+        usedCallback(null);
+      }
+    }
+  }, {
+    key: "reloadResources",
+    value: function reloadResources(lngs, ns, callback) {
+      var deferred = defer();
+      if (!lngs) lngs = this.languages;
+      if (!ns) ns = this.options.ns;
+      if (!callback) callback = noop;
+      this.services.backendConnector.reload(lngs, ns, function (err) {
+        deferred.resolve();
+        callback(err);
+      });
+      return deferred;
+    }
+  }, {
+    key: "use",
+    value: function use(module) {
+      if (!module) throw new Error('You are passing an undefined module! Please check the object you are passing to i18next.use()');
+      if (!module.type) throw new Error('You are passing a wrong module! Please check the object you are passing to i18next.use()');
+
+      if (module.type === 'backend') {
+        this.modules.backend = module;
+      }
+
+      if (module.type === 'logger' || module.log && module.warn && module.error) {
+        this.modules.logger = module;
+      }
+
+      if (module.type === 'languageDetector') {
+        this.modules.languageDetector = module;
+      }
+
+      if (module.type === 'i18nFormat') {
+        this.modules.i18nFormat = module;
+      }
+
+      if (module.type === 'postProcessor') {
+        postProcessor.addPostProcessor(module);
+      }
+
+      if (module.type === '3rdParty') {
+        this.modules.external.push(module);
+      }
+
+      return this;
+    }
+  }, {
+    key: "changeLanguage",
+    value: function changeLanguage(lng, callback) {
+      var _this4 = this;
+
+      this.isLanguageChangingTo = lng;
+      var deferred = defer();
+      this.emit('languageChanging', lng);
+
+      var done = function done(err, l) {
+        if (l) {
+          _this4.language = l;
+          _this4.languages = _this4.services.languageUtils.toResolveHierarchy(l);
+
+          _this4.translator.changeLanguage(l);
+
+          _this4.isLanguageChangingTo = undefined;
+
+          _this4.emit('languageChanged', l);
+
+          _this4.logger.log('languageChanged', l);
+        } else {
+          _this4.isLanguageChangingTo = undefined;
+        }
+
+        deferred.resolve(function () {
+          return _this4.t.apply(_this4, arguments);
+        });
+        if (callback) callback(err, function () {
+          return _this4.t.apply(_this4, arguments);
+        });
+      };
+
+      var setLng = function setLng(lngs) {
+        var l = typeof lngs === 'string' ? lngs : _this4.services.languageUtils.getBestMatchFromCodes(lngs);
+
+        if (l) {
+          if (!_this4.language) {
+            _this4.language = l;
+            _this4.languages = _this4.services.languageUtils.toResolveHierarchy(l);
+          }
+
+          if (!_this4.translator.language) _this4.translator.changeLanguage(l);
+          if (_this4.services.languageDetector) _this4.services.languageDetector.cacheUserLanguage(l);
+        }
+
+        _this4.loadResources(l, function (err) {
+          done(err, l);
+        });
+      };
+
+      if (!lng && this.services.languageDetector && !this.services.languageDetector.async) {
+        setLng(this.services.languageDetector.detect());
+      } else if (!lng && this.services.languageDetector && this.services.languageDetector.async) {
+        this.services.languageDetector.detect(setLng);
+      } else {
+        setLng(lng);
+      }
+
+      return deferred;
+    }
+  }, {
+    key: "getFixedT",
+    value: function getFixedT(lng, ns) {
+      var _this5 = this;
+
+      var fixedT = function fixedT(key, opts) {
+        var options;
+
+        if (Object(_babel_runtime_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_0__["default"])(opts) !== 'object') {
+          for (var _len3 = arguments.length, rest = new Array(_len3 > 2 ? _len3 - 2 : 0), _key3 = 2; _key3 < _len3; _key3++) {
+            rest[_key3 - 2] = arguments[_key3];
+          }
+
+          options = _this5.options.overloadTranslationOptionHandler([key, opts].concat(rest));
+        } else {
+          options = Object(_babel_runtime_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_1__["default"])({}, opts);
+        }
+
+        options.lng = options.lng || fixedT.lng;
+        options.lngs = options.lngs || fixedT.lngs;
+        options.ns = options.ns || fixedT.ns;
+        return _this5.t(key, options);
+      };
+
+      if (typeof lng === 'string') {
+        fixedT.lng = lng;
+      } else {
+        fixedT.lngs = lng;
+      }
+
+      fixedT.ns = ns;
+      return fixedT;
+    }
+  }, {
+    key: "t",
+    value: function t() {
+      var _this$translator;
+
+      return this.translator && (_this$translator = this.translator).translate.apply(_this$translator, arguments);
+    }
+  }, {
+    key: "exists",
+    value: function exists() {
+      var _this$translator2;
+
+      return this.translator && (_this$translator2 = this.translator).exists.apply(_this$translator2, arguments);
+    }
+  }, {
+    key: "setDefaultNamespace",
+    value: function setDefaultNamespace(ns) {
+      this.options.defaultNS = ns;
+    }
+  }, {
+    key: "hasLoadedNamespace",
+    value: function hasLoadedNamespace(ns) {
+      var _this6 = this;
+
+      var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+
+      if (!this.isInitialized) {
+        this.logger.warn('hasLoadedNamespace: i18next was not initialized', this.languages);
+        return false;
+      }
+
+      if (!this.languages || !this.languages.length) {
+        this.logger.warn('hasLoadedNamespace: i18n.languages were undefined or empty', this.languages);
+        return false;
+      }
+
+      var lng = this.languages[0];
+      var fallbackLng = this.options ? this.options.fallbackLng : false;
+      var lastLng = this.languages[this.languages.length - 1];
+      if (lng.toLowerCase() === 'cimode') return true;
+
+      var loadNotPending = function loadNotPending(l, n) {
+        var loadState = _this6.services.backendConnector.state["".concat(l, "|").concat(n)];
+
+        return loadState === -1 || loadState === 2;
+      };
+
+      if (options.precheck) {
+        var preResult = options.precheck(this, loadNotPending);
+        if (preResult !== undefined) return preResult;
+      }
+
+      if (this.hasResourceBundle(lng, ns)) return true;
+      if (!this.services.backendConnector.backend) return true;
+      if (loadNotPending(lng, ns) && (!fallbackLng || loadNotPending(lastLng, ns))) return true;
+      return false;
+    }
+  }, {
+    key: "loadNamespaces",
+    value: function loadNamespaces(ns, callback) {
+      var _this7 = this;
+
+      var deferred = defer();
+
+      if (!this.options.ns) {
+        callback && callback();
+        return Promise.resolve();
+      }
+
+      if (typeof ns === 'string') ns = [ns];
+      ns.forEach(function (n) {
+        if (_this7.options.ns.indexOf(n) < 0) _this7.options.ns.push(n);
+      });
+      this.loadResources(function (err) {
+        deferred.resolve();
+        if (callback) callback(err);
+      });
+      return deferred;
+    }
+  }, {
+    key: "loadLanguages",
+    value: function loadLanguages(lngs, callback) {
+      var deferred = defer();
+      if (typeof lngs === 'string') lngs = [lngs];
+      var preloaded = this.options.preload || [];
+      var newLngs = lngs.filter(function (lng) {
+        return preloaded.indexOf(lng) < 0;
+      });
+
+      if (!newLngs.length) {
+        if (callback) callback();
+        return Promise.resolve();
+      }
+
+      this.options.preload = preloaded.concat(newLngs);
+      this.loadResources(function (err) {
+        deferred.resolve();
+        if (callback) callback(err);
+      });
+      return deferred;
+    }
+  }, {
+    key: "dir",
+    value: function dir(lng) {
+      if (!lng) lng = this.languages && this.languages.length > 0 ? this.languages[0] : this.language;
+      if (!lng) return 'rtl';
+      var rtlLngs = ['ar', 'shu', 'sqr', 'ssh', 'xaa', 'yhd', 'yud', 'aao', 'abh', 'abv', 'acm', 'acq', 'acw', 'acx', 'acy', 'adf', 'ads', 'aeb', 'aec', 'afb', 'ajp', 'apc', 'apd', 'arb', 'arq', 'ars', 'ary', 'arz', 'auz', 'avl', 'ayh', 'ayl', 'ayn', 'ayp', 'bbz', 'pga', 'he', 'iw', 'ps', 'pbt', 'pbu', 'pst', 'prp', 'prd', 'ug', 'ur', 'ydd', 'yds', 'yih', 'ji', 'yi', 'hbo', 'men', 'xmn', 'fa', 'jpr', 'peo', 'pes', 'prs', 'dv', 'sam'];
+      return rtlLngs.indexOf(this.services.languageUtils.getLanguagePartFromCode(lng)) >= 0 ? 'rtl' : 'ltr';
+    }
+  }, {
+    key: "createInstance",
+    value: function createInstance() {
+      var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+      var callback = arguments.length > 1 ? arguments[1] : undefined;
+      return new I18n(options, callback);
+    }
+  }, {
+    key: "cloneInstance",
+    value: function cloneInstance() {
+      var _this8 = this;
+
+      var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+      var callback = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : noop;
+
+      var mergedOptions = Object(_babel_runtime_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_1__["default"])({}, this.options, options, {
+        isClone: true
+      });
+
+      var clone = new I18n(mergedOptions);
+      var membersToCopy = ['store', 'services', 'language'];
+      membersToCopy.forEach(function (m) {
+        clone[m] = _this8[m];
+      });
+      clone.services = Object(_babel_runtime_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_1__["default"])({}, this.services);
+      clone.services.utils = {
+        hasLoadedNamespace: clone.hasLoadedNamespace.bind(clone)
+      };
+      clone.translator = new Translator(clone.services, clone.options);
+      clone.translator.on('*', function (event) {
+        for (var _len4 = arguments.length, args = new Array(_len4 > 1 ? _len4 - 1 : 0), _key4 = 1; _key4 < _len4; _key4++) {
+          args[_key4 - 1] = arguments[_key4];
+        }
+
+        clone.emit.apply(clone, [event].concat(args));
+      });
+      clone.init(mergedOptions, callback);
+      clone.translator.options = clone.options;
+      clone.translator.backendConnector.services.utils = {
+        hasLoadedNamespace: clone.hasLoadedNamespace.bind(clone)
+      };
+      return clone;
+    }
+  }]);
+
+  return I18n;
+}(EventEmitter);
+
+var i18next = new I18n();
+
+/* harmony default export */ __webpack_exports__["default"] = (i18next);
 
 
 /***/ }),
@@ -63854,6 +67024,914 @@ if (false) {} else {
 
 /***/ }),
 
+/***/ "./node_modules/react-i18next/dist/es/I18nextProvider.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/react-i18next/dist/es/I18nextProvider.js ***!
+  \***************************************************************/
+/*! exports provided: I18nextProvider */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "I18nextProvider", function() { return I18nextProvider; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _context__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./context */ "./node_modules/react-i18next/dist/es/context.js");
+
+
+function I18nextProvider(_ref) {
+  var i18n = _ref.i18n,
+      defaultNS = _ref.defaultNS,
+      children = _ref.children;
+  var value = Object(react__WEBPACK_IMPORTED_MODULE_0__["useMemo"])(function () {
+    return {
+      i18n: i18n,
+      defaultNS: defaultNS
+    };
+  }, [i18n, defaultNS]);
+  return Object(react__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_context__WEBPACK_IMPORTED_MODULE_1__["I18nContext"].Provider, {
+    value: value
+  }, children);
+}
+
+/***/ }),
+
+/***/ "./node_modules/react-i18next/dist/es/Trans.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/react-i18next/dist/es/Trans.js ***!
+  \*****************************************************/
+/*! exports provided: nodesToString, Trans */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "nodesToString", function() { return nodesToString; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Trans", function() { return Trans; });
+/* harmony import */ var _babel_runtime_helpers_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/objectWithoutProperties */ "./node_modules/@babel/runtime/helpers/objectWithoutProperties.js");
+/* harmony import */ var _babel_runtime_helpers_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _babel_runtime_helpers_typeof__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/typeof */ "./node_modules/@babel/runtime/helpers/typeof.js");
+/* harmony import */ var _babel_runtime_helpers_typeof__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_typeof__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/defineProperty */ "./node_modules/@babel/runtime/helpers/defineProperty.js");
+/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var html_parse_stringify2__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! html-parse-stringify2 */ "./node_modules/html-parse-stringify2/index.js");
+/* harmony import */ var html_parse_stringify2__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(html_parse_stringify2__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _context__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./context */ "./node_modules/react-i18next/dist/es/context.js");
+/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./utils */ "./node_modules/react-i18next/dist/es/utils.js");
+
+
+
+
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_2___default()(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+
+
+
+
+
+function hasChildren(node, checkLength) {
+  if (!node) return false;
+  var base = node.props ? node.props.children : node.children;
+  if (checkLength) return base.length > 0;
+  return !!base;
+}
+
+function getChildren(node) {
+  if (!node) return [];
+  return node && node.children ? node.children : node.props && node.props.children;
+}
+
+function hasValidReactChildren(children) {
+  if (Object.prototype.toString.call(children) !== '[object Array]') return false;
+  return children.every(function (child) {
+    return react__WEBPACK_IMPORTED_MODULE_3___default.a.isValidElement(child);
+  });
+}
+
+function getAsArray(data) {
+  return Array.isArray(data) ? data : [data];
+}
+
+function mergeProps(source, target) {
+  var newTarget = _objectSpread({}, target);
+
+  newTarget.props = Object.assign(source.props, target.props);
+  return newTarget;
+}
+
+function nodesToString(children, i18nOptions) {
+  if (!children) return '';
+  var stringNode = '';
+  var childrenArray = getAsArray(children);
+  var keepArray = i18nOptions.transKeepBasicHtmlNodesFor || [];
+  childrenArray.forEach(function (child, childIndex) {
+    if (typeof child === 'string') {
+      stringNode += "".concat(child);
+    } else if (react__WEBPACK_IMPORTED_MODULE_3___default.a.isValidElement(child)) {
+      var childPropsCount = Object.keys(child.props).length;
+      var shouldKeepChild = keepArray.indexOf(child.type) > -1;
+      var childChildren = child.props.children;
+
+      if (!childChildren && shouldKeepChild && childPropsCount === 0) {
+        stringNode += "<".concat(child.type, "/>");
+      } else if (!childChildren && (!shouldKeepChild || childPropsCount !== 0)) {
+        stringNode += "<".concat(childIndex, "></").concat(childIndex, ">");
+      } else if (child.props.i18nIsDynamicList) {
+        stringNode += "<".concat(childIndex, "></").concat(childIndex, ">");
+      } else if (shouldKeepChild && childPropsCount === 1 && typeof childChildren === 'string') {
+        stringNode += "<".concat(child.type, ">").concat(childChildren, "</").concat(child.type, ">");
+      } else {
+        var content = nodesToString(childChildren, i18nOptions);
+        stringNode += "<".concat(childIndex, ">").concat(content, "</").concat(childIndex, ">");
+      }
+    } else if (_babel_runtime_helpers_typeof__WEBPACK_IMPORTED_MODULE_1___default()(child) === 'object') {
+      var format = child.format,
+          clone = _babel_runtime_helpers_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_0___default()(child, ["format"]);
+
+      var keys = Object.keys(clone);
+
+      if (keys.length === 1) {
+        var value = format ? "".concat(keys[0], ", ").concat(format) : keys[0];
+        stringNode += "{{".concat(value, "}}");
+      } else {
+        Object(_utils__WEBPACK_IMPORTED_MODULE_6__["warn"])("react-i18next: the passed in object contained more than one variable - the object should look like {{ value, format }} where format is optional.", child);
+      }
+    } else {
+      Object(_utils__WEBPACK_IMPORTED_MODULE_6__["warn"])("Trans: the passed in value is invalid - seems you passed in a variable like {number} - please pass in variables for interpolation as full objects like {{number}}.", child);
+    }
+  });
+  return stringNode;
+}
+
+function renderNodes(children, targetString, i18n, i18nOptions, combinedTOpts) {
+  if (targetString === '') return [];
+  var keepArray = i18nOptions.transKeepBasicHtmlNodesFor || [];
+  var emptyChildrenButNeedsHandling = targetString && new RegExp(keepArray.join('|')).test(targetString);
+  if (!children && !emptyChildrenButNeedsHandling) return [targetString];
+  var data = {};
+
+  function getData(childs) {
+    var childrenArray = getAsArray(childs);
+    childrenArray.forEach(function (child) {
+      if (typeof child === 'string') return;
+      if (hasChildren(child)) getData(getChildren(child));else if (_babel_runtime_helpers_typeof__WEBPACK_IMPORTED_MODULE_1___default()(child) === 'object' && !react__WEBPACK_IMPORTED_MODULE_3___default.a.isValidElement(child)) Object.assign(data, child);
+    });
+  }
+
+  getData(children);
+  var interpolatedString = i18n.services.interpolator.interpolate(targetString, _objectSpread(_objectSpread({}, data), combinedTOpts), i18n.language);
+  var ast = html_parse_stringify2__WEBPACK_IMPORTED_MODULE_4___default.a.parse("<0>".concat(interpolatedString, "</0>"));
+
+  function renderInner(child, node, rootReactNode) {
+    var childs = getChildren(child);
+    var mappedChildren = mapAST(childs, node.children, rootReactNode);
+    return hasValidReactChildren(childs) && mappedChildren.length === 0 ? childs : mappedChildren;
+  }
+
+  function pushTranslatedJSX(child, inner, mem, i, isVoid) {
+    if (child.dummy) child.children = inner;
+    mem.push(react__WEBPACK_IMPORTED_MODULE_3___default.a.cloneElement(child, _objectSpread(_objectSpread({}, child.props), {}, {
+      key: i
+    }), isVoid ? undefined : inner));
+  }
+
+  function mapAST(reactNode, astNode, rootReactNode) {
+    var reactNodes = getAsArray(reactNode);
+    var astNodes = getAsArray(astNode);
+    return astNodes.reduce(function (mem, node, i) {
+      var translationContent = node.children && node.children[0] && node.children[0].content;
+
+      if (node.type === 'tag') {
+        var tmp = reactNodes[parseInt(node.name, 10)];
+        if (!tmp && rootReactNode.length === 1 && rootReactNode[0][node.name]) tmp = rootReactNode[0][node.name];
+        if (!tmp) tmp = {};
+        var child = Object.keys(node.attrs).length !== 0 ? mergeProps({
+          props: node.attrs
+        }, tmp) : tmp;
+        var isElement = react__WEBPACK_IMPORTED_MODULE_3___default.a.isValidElement(child);
+        var isValidTranslationWithChildren = isElement && hasChildren(node, true) && !node.voidElement;
+        var isEmptyTransWithHTML = emptyChildrenButNeedsHandling && _babel_runtime_helpers_typeof__WEBPACK_IMPORTED_MODULE_1___default()(child) === 'object' && child.dummy && !isElement;
+        var isKnownComponent = _babel_runtime_helpers_typeof__WEBPACK_IMPORTED_MODULE_1___default()(children) === 'object' && children !== null && Object.hasOwnProperty.call(children, node.name);
+
+        if (typeof child === 'string') {
+          mem.push(child);
+        } else if (hasChildren(child) || isValidTranslationWithChildren) {
+            var inner = renderInner(child, node, rootReactNode);
+            pushTranslatedJSX(child, inner, mem, i);
+          } else if (isEmptyTransWithHTML) {
+          var _inner = mapAST(reactNodes, node.children, rootReactNode);
+
+          mem.push(react__WEBPACK_IMPORTED_MODULE_3___default.a.cloneElement(child, _objectSpread(_objectSpread({}, child.props), {}, {
+            key: i
+          }), _inner));
+        } else if (Number.isNaN(parseFloat(node.name))) {
+          if (isKnownComponent) {
+            var _inner2 = renderInner(child, node, rootReactNode);
+
+            pushTranslatedJSX(child, _inner2, mem, i, node.voidElement);
+          } else if (i18nOptions.transSupportBasicHtmlNodes && keepArray.indexOf(node.name) > -1) {
+            if (node.voidElement) {
+              mem.push(react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(node.name, {
+                key: "".concat(node.name, "-").concat(i)
+              }));
+            } else {
+              var _inner3 = mapAST(reactNodes, node.children, rootReactNode);
+
+              mem.push(react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(node.name, {
+                key: "".concat(node.name, "-").concat(i)
+              }, _inner3));
+            }
+          } else if (node.voidElement) {
+            mem.push("<".concat(node.name, " />"));
+          } else {
+            var _inner4 = mapAST(reactNodes, node.children, rootReactNode);
+
+            mem.push("<".concat(node.name, ">").concat(_inner4, "</").concat(node.name, ">"));
+          }
+        } else if (_babel_runtime_helpers_typeof__WEBPACK_IMPORTED_MODULE_1___default()(child) === 'object' && !isElement) {
+          var content = node.children[0] ? translationContent : null;
+          if (content) mem.push(content);
+        } else if (node.children.length === 1 && translationContent) {
+          mem.push(react__WEBPACK_IMPORTED_MODULE_3___default.a.cloneElement(child, _objectSpread(_objectSpread({}, child.props), {}, {
+            key: i
+          }), translationContent));
+        } else {
+          mem.push(react__WEBPACK_IMPORTED_MODULE_3___default.a.cloneElement(child, _objectSpread(_objectSpread({}, child.props), {}, {
+            key: i
+          })));
+        }
+      } else if (node.type === 'text') {
+        mem.push(node.content);
+      }
+
+      return mem;
+    }, []);
+  }
+
+  var result = mapAST([{
+    dummy: true,
+    children: children
+  }], ast, getAsArray(children || []));
+  return getChildren(result[0]);
+}
+
+function Trans(_ref) {
+  var children = _ref.children,
+      count = _ref.count,
+      parent = _ref.parent,
+      i18nKey = _ref.i18nKey,
+      _ref$tOptions = _ref.tOptions,
+      tOptions = _ref$tOptions === void 0 ? {} : _ref$tOptions,
+      values = _ref.values,
+      defaults = _ref.defaults,
+      components = _ref.components,
+      ns = _ref.ns,
+      i18nFromProps = _ref.i18n,
+      tFromProps = _ref.t,
+      additionalProps = _babel_runtime_helpers_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_0___default()(_ref, ["children", "count", "parent", "i18nKey", "tOptions", "values", "defaults", "components", "ns", "i18n", "t"]);
+
+  var _ref2 = Object(react__WEBPACK_IMPORTED_MODULE_3__["useContext"])(_context__WEBPACK_IMPORTED_MODULE_5__["I18nContext"]) || {},
+      i18nFromContext = _ref2.i18n,
+      defaultNSFromContext = _ref2.defaultNS;
+
+  var i18n = i18nFromProps || i18nFromContext || Object(_context__WEBPACK_IMPORTED_MODULE_5__["getI18n"])();
+
+  if (!i18n) {
+    Object(_utils__WEBPACK_IMPORTED_MODULE_6__["warnOnce"])('You will need to pass in an i18next instance by using i18nextReactModule');
+    return children;
+  }
+
+  var t = tFromProps || i18n.t.bind(i18n) || function (k) {
+    return k;
+  };
+
+  var reactI18nextOptions = _objectSpread(_objectSpread({}, Object(_context__WEBPACK_IMPORTED_MODULE_5__["getDefaults"])()), i18n.options && i18n.options.react);
+
+  var namespaces = ns || t.ns || defaultNSFromContext || i18n.options && i18n.options.defaultNS;
+  namespaces = typeof namespaces === 'string' ? [namespaces] : namespaces || ['translation'];
+  var defaultValue = defaults || nodesToString(children, reactI18nextOptions) || reactI18nextOptions.transEmptyNodeValue || i18nKey;
+  var hashTransKey = reactI18nextOptions.hashTransKey;
+  var key = i18nKey || (hashTransKey ? hashTransKey(defaultValue) : defaultValue);
+  var interpolationOverride = values ? tOptions.interpolation : {
+    interpolation: _objectSpread(_objectSpread({}, tOptions.interpolation), {}, {
+      prefix: '#$?',
+      suffix: '?$#'
+    })
+  };
+
+  var combinedTOpts = _objectSpread(_objectSpread(_objectSpread(_objectSpread({}, tOptions), {}, {
+    count: count
+  }, values), interpolationOverride), {}, {
+    defaultValue: defaultValue,
+    ns: namespaces
+  });
+
+  var translation = key ? t(key, combinedTOpts) : defaultValue;
+  var content = renderNodes(components || children, translation, i18n, reactI18nextOptions, combinedTOpts);
+  var useAsParent = parent !== undefined ? parent : reactI18nextOptions.defaultTransParent;
+  return useAsParent ? react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(useAsParent, additionalProps, content) : content;
+}
+
+/***/ }),
+
+/***/ "./node_modules/react-i18next/dist/es/Translation.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/react-i18next/dist/es/Translation.js ***!
+  \***********************************************************/
+/*! exports provided: Translation */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Translation", function() { return Translation; });
+/* harmony import */ var _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/slicedToArray */ "./node_modules/@babel/runtime/helpers/slicedToArray.js");
+/* harmony import */ var _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _babel_runtime_helpers_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/objectWithoutProperties */ "./node_modules/@babel/runtime/helpers/objectWithoutProperties.js");
+/* harmony import */ var _babel_runtime_helpers_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _useTranslation__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./useTranslation */ "./node_modules/react-i18next/dist/es/useTranslation.js");
+
+
+
+function Translation(props) {
+  var ns = props.ns,
+      children = props.children,
+      options = _babel_runtime_helpers_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1___default()(props, ["ns", "children"]);
+
+  var _useTranslation = Object(_useTranslation__WEBPACK_IMPORTED_MODULE_2__["useTranslation"])(ns, options),
+      _useTranslation2 = _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0___default()(_useTranslation, 3),
+      t = _useTranslation2[0],
+      i18n = _useTranslation2[1],
+      ready = _useTranslation2[2];
+
+  return children(t, {
+    i18n: i18n,
+    lng: i18n.language
+  }, ready);
+}
+
+/***/ }),
+
+/***/ "./node_modules/react-i18next/dist/es/context.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/react-i18next/dist/es/context.js ***!
+  \*******************************************************/
+/*! exports provided: I18nContext, setDefaults, getDefaults, ReportNamespaces, setI18n, getI18n, initReactI18next, composeInitialProps, getInitialProps */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "I18nContext", function() { return I18nContext; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "setDefaults", function() { return setDefaults; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getDefaults", function() { return getDefaults; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ReportNamespaces", function() { return ReportNamespaces; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "setI18n", function() { return setI18n; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getI18n", function() { return getI18n; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "initReactI18next", function() { return initReactI18next; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "composeInitialProps", function() { return composeInitialProps; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getInitialProps", function() { return getInitialProps; });
+/* harmony import */ var _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/classCallCheck */ "./node_modules/@babel/runtime/helpers/classCallCheck.js");
+/* harmony import */ var _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/createClass */ "./node_modules/@babel/runtime/helpers/createClass.js");
+/* harmony import */ var _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/defineProperty */ "./node_modules/@babel/runtime/helpers/defineProperty.js");
+/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
+
+
+
+
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_2___default()(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+
+var defaultOptions = {
+  bindI18n: 'languageChanged',
+  bindI18nStore: '',
+  transEmptyNodeValue: '',
+  transSupportBasicHtmlNodes: true,
+  transKeepBasicHtmlNodesFor: ['br', 'strong', 'i', 'p'],
+  useSuspense: true
+};
+var i18nInstance;
+var I18nContext = react__WEBPACK_IMPORTED_MODULE_3___default.a.createContext();
+function setDefaults() {
+  var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+  defaultOptions = _objectSpread(_objectSpread({}, defaultOptions), options);
+}
+function getDefaults() {
+  return defaultOptions;
+}
+var ReportNamespaces = function () {
+  function ReportNamespaces() {
+    _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_0___default()(this, ReportNamespaces);
+
+    this.usedNamespaces = {};
+  }
+
+  _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_1___default()(ReportNamespaces, [{
+    key: "addUsedNamespaces",
+    value: function addUsedNamespaces(namespaces) {
+      var _this = this;
+
+      namespaces.forEach(function (ns) {
+        if (!_this.usedNamespaces[ns]) _this.usedNamespaces[ns] = true;
+      });
+    }
+  }, {
+    key: "getUsedNamespaces",
+    value: function getUsedNamespaces() {
+      return Object.keys(this.usedNamespaces);
+    }
+  }]);
+
+  return ReportNamespaces;
+}();
+function setI18n(instance) {
+  i18nInstance = instance;
+}
+function getI18n() {
+  return i18nInstance;
+}
+var initReactI18next = {
+  type: '3rdParty',
+  init: function init(instance) {
+    setDefaults(instance.options.react);
+    setI18n(instance);
+  }
+};
+function composeInitialProps(ForComponent) {
+  return function (ctx) {
+    return new Promise(function (resolve) {
+      var i18nInitialProps = getInitialProps();
+
+      if (ForComponent.getInitialProps) {
+        ForComponent.getInitialProps(ctx).then(function (componentsInitialProps) {
+          resolve(_objectSpread(_objectSpread({}, componentsInitialProps), i18nInitialProps));
+        });
+      } else {
+        resolve(i18nInitialProps);
+      }
+    });
+  };
+}
+function getInitialProps() {
+  var i18n = getI18n();
+  var namespaces = i18n.reportNamespaces ? i18n.reportNamespaces.getUsedNamespaces() : [];
+  var ret = {};
+  var initialI18nStore = {};
+  i18n.languages.forEach(function (l) {
+    initialI18nStore[l] = {};
+    namespaces.forEach(function (ns) {
+      initialI18nStore[l][ns] = i18n.getResourceBundle(l, ns) || {};
+    });
+  });
+  ret.initialI18nStore = initialI18nStore;
+  ret.initialLanguage = i18n.language;
+  return ret;
+}
+
+/***/ }),
+
+/***/ "./node_modules/react-i18next/dist/es/index.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/react-i18next/dist/es/index.js ***!
+  \*****************************************************/
+/*! exports provided: Trans, useTranslation, withTranslation, Translation, I18nextProvider, withSSR, useSSR, I18nContext, initReactI18next, setDefaults, getDefaults, setI18n, getI18n, composeInitialProps, getInitialProps */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Trans__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Trans */ "./node_modules/react-i18next/dist/es/Trans.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Trans", function() { return _Trans__WEBPACK_IMPORTED_MODULE_0__["Trans"]; });
+
+/* harmony import */ var _useTranslation__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./useTranslation */ "./node_modules/react-i18next/dist/es/useTranslation.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "useTranslation", function() { return _useTranslation__WEBPACK_IMPORTED_MODULE_1__["useTranslation"]; });
+
+/* harmony import */ var _withTranslation__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./withTranslation */ "./node_modules/react-i18next/dist/es/withTranslation.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "withTranslation", function() { return _withTranslation__WEBPACK_IMPORTED_MODULE_2__["withTranslation"]; });
+
+/* harmony import */ var _Translation__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Translation */ "./node_modules/react-i18next/dist/es/Translation.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Translation", function() { return _Translation__WEBPACK_IMPORTED_MODULE_3__["Translation"]; });
+
+/* harmony import */ var _I18nextProvider__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./I18nextProvider */ "./node_modules/react-i18next/dist/es/I18nextProvider.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "I18nextProvider", function() { return _I18nextProvider__WEBPACK_IMPORTED_MODULE_4__["I18nextProvider"]; });
+
+/* harmony import */ var _withSSR__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./withSSR */ "./node_modules/react-i18next/dist/es/withSSR.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "withSSR", function() { return _withSSR__WEBPACK_IMPORTED_MODULE_5__["withSSR"]; });
+
+/* harmony import */ var _useSSR__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./useSSR */ "./node_modules/react-i18next/dist/es/useSSR.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "useSSR", function() { return _useSSR__WEBPACK_IMPORTED_MODULE_6__["useSSR"]; });
+
+/* harmony import */ var _context__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./context */ "./node_modules/react-i18next/dist/es/context.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "I18nContext", function() { return _context__WEBPACK_IMPORTED_MODULE_7__["I18nContext"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "initReactI18next", function() { return _context__WEBPACK_IMPORTED_MODULE_7__["initReactI18next"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "setDefaults", function() { return _context__WEBPACK_IMPORTED_MODULE_7__["setDefaults"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "getDefaults", function() { return _context__WEBPACK_IMPORTED_MODULE_7__["getDefaults"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "setI18n", function() { return _context__WEBPACK_IMPORTED_MODULE_7__["setI18n"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "getI18n", function() { return _context__WEBPACK_IMPORTED_MODULE_7__["getI18n"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "composeInitialProps", function() { return _context__WEBPACK_IMPORTED_MODULE_7__["composeInitialProps"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "getInitialProps", function() { return _context__WEBPACK_IMPORTED_MODULE_7__["getInitialProps"]; });
+
+
+
+
+
+
+
+
+
+
+/***/ }),
+
+/***/ "./node_modules/react-i18next/dist/es/useSSR.js":
+/*!******************************************************!*\
+  !*** ./node_modules/react-i18next/dist/es/useSSR.js ***!
+  \******************************************************/
+/*! exports provided: useSSR */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "useSSR", function() { return useSSR; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _context__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./context */ "./node_modules/react-i18next/dist/es/context.js");
+
+
+function useSSR(initialI18nStore, initialLanguage) {
+  var props = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
+  var i18nFromProps = props.i18n;
+
+  var _ref = Object(react__WEBPACK_IMPORTED_MODULE_0__["useContext"])(_context__WEBPACK_IMPORTED_MODULE_1__["I18nContext"]) || {},
+      i18nFromContext = _ref.i18n;
+
+  var i18n = i18nFromProps || i18nFromContext || Object(_context__WEBPACK_IMPORTED_MODULE_1__["getI18n"])();
+  if (i18n.options && i18n.options.isClone) return;
+
+  if (initialI18nStore && !i18n.initializedStoreOnce) {
+    i18n.services.resourceStore.data = initialI18nStore;
+    i18n.options.ns = Object.values(initialI18nStore).reduce(function (mem, lngResources) {
+      Object.keys(lngResources).forEach(function (ns) {
+        if (mem.indexOf(ns) < 0) mem.push(ns);
+      });
+      return mem;
+    }, i18n.options.ns);
+    i18n.initializedStoreOnce = true;
+    i18n.isInitialized = true;
+  }
+
+  if (initialLanguage && !i18n.initializedLanguageOnce) {
+    i18n.changeLanguage(initialLanguage);
+    i18n.initializedLanguageOnce = true;
+  }
+}
+
+/***/ }),
+
+/***/ "./node_modules/react-i18next/dist/es/useTranslation.js":
+/*!**************************************************************!*\
+  !*** ./node_modules/react-i18next/dist/es/useTranslation.js ***!
+  \**************************************************************/
+/*! exports provided: useTranslation */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "useTranslation", function() { return useTranslation; });
+/* harmony import */ var _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/slicedToArray */ "./node_modules/@babel/runtime/helpers/slicedToArray.js");
+/* harmony import */ var _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/defineProperty */ "./node_modules/@babel/runtime/helpers/defineProperty.js");
+/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _context__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./context */ "./node_modules/react-i18next/dist/es/context.js");
+/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./utils */ "./node_modules/react-i18next/dist/es/utils.js");
+
+
+
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1___default()(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+
+
+
+function useTranslation(ns) {
+  var props = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+  var i18nFromProps = props.i18n;
+
+  var _ref = Object(react__WEBPACK_IMPORTED_MODULE_2__["useContext"])(_context__WEBPACK_IMPORTED_MODULE_3__["I18nContext"]) || {},
+      i18nFromContext = _ref.i18n,
+      defaultNSFromContext = _ref.defaultNS;
+
+  var i18n = i18nFromProps || i18nFromContext || Object(_context__WEBPACK_IMPORTED_MODULE_3__["getI18n"])();
+  if (i18n && !i18n.reportNamespaces) i18n.reportNamespaces = new _context__WEBPACK_IMPORTED_MODULE_3__["ReportNamespaces"]();
+
+  if (!i18n) {
+    Object(_utils__WEBPACK_IMPORTED_MODULE_4__["warnOnce"])('You will need to pass in an i18next instance by using initReactI18next');
+
+    var notReadyT = function notReadyT(k) {
+      return Array.isArray(k) ? k[k.length - 1] : k;
+    };
+
+    var retNotReady = [notReadyT, {}, false];
+    retNotReady.t = notReadyT;
+    retNotReady.i18n = {};
+    retNotReady.ready = false;
+    return retNotReady;
+  }
+
+  if (i18n.options.react && i18n.options.react.wait !== undefined) Object(_utils__WEBPACK_IMPORTED_MODULE_4__["warnOnce"])('It seems you are still using the old wait option, you may migrate to the new useSuspense behaviour.');
+
+  var i18nOptions = _objectSpread(_objectSpread(_objectSpread({}, Object(_context__WEBPACK_IMPORTED_MODULE_3__["getDefaults"])()), i18n.options.react), props);
+
+  var useSuspense = i18nOptions.useSuspense;
+  var namespaces = ns || defaultNSFromContext || i18n.options && i18n.options.defaultNS;
+  namespaces = typeof namespaces === 'string' ? [namespaces] : namespaces || ['translation'];
+  if (i18n.reportNamespaces.addUsedNamespaces) i18n.reportNamespaces.addUsedNamespaces(namespaces);
+  var ready = (i18n.isInitialized || i18n.initializedStoreOnce) && namespaces.every(function (n) {
+    return Object(_utils__WEBPACK_IMPORTED_MODULE_4__["hasLoadedNamespace"])(n, i18n, i18nOptions);
+  });
+
+  function getT() {
+    return i18n.getFixedT(null, i18nOptions.nsMode === 'fallback' ? namespaces : namespaces[0]);
+  }
+
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_2__["useState"])(getT),
+      _useState2 = _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0___default()(_useState, 2),
+      t = _useState2[0],
+      setT = _useState2[1];
+
+  var isMounted = Object(react__WEBPACK_IMPORTED_MODULE_2__["useRef"])(true);
+  Object(react__WEBPACK_IMPORTED_MODULE_2__["useEffect"])(function () {
+    var bindI18n = i18nOptions.bindI18n,
+        bindI18nStore = i18nOptions.bindI18nStore;
+    isMounted.current = true;
+
+    if (!ready && !useSuspense) {
+      Object(_utils__WEBPACK_IMPORTED_MODULE_4__["loadNamespaces"])(i18n, namespaces, function () {
+        if (isMounted.current) setT(getT);
+      });
+    }
+
+    function boundReset() {
+      if (isMounted.current) setT(getT);
+    }
+
+    if (bindI18n && i18n) i18n.on(bindI18n, boundReset);
+    if (bindI18nStore && i18n) i18n.store.on(bindI18nStore, boundReset);
+    return function () {
+      isMounted.current = false;
+      if (bindI18n && i18n) bindI18n.split(' ').forEach(function (e) {
+        return i18n.off(e, boundReset);
+      });
+      if (bindI18nStore && i18n) bindI18nStore.split(' ').forEach(function (e) {
+        return i18n.store.off(e, boundReset);
+      });
+    };
+  }, [i18n, namespaces.join()]);
+  var isInitial = Object(react__WEBPACK_IMPORTED_MODULE_2__["useRef"])(true);
+  Object(react__WEBPACK_IMPORTED_MODULE_2__["useEffect"])(function () {
+    if (isMounted.current && !isInitial.current) {
+      setT(getT);
+    }
+
+    isInitial.current = false;
+  }, [i18n]);
+  var ret = [t, i18n, ready];
+  ret.t = t;
+  ret.i18n = i18n;
+  ret.ready = ready;
+  if (ready) return ret;
+  if (!ready && !useSuspense) return ret;
+  throw new Promise(function (resolve) {
+    Object(_utils__WEBPACK_IMPORTED_MODULE_4__["loadNamespaces"])(i18n, namespaces, function () {
+      resolve();
+    });
+  });
+}
+
+/***/ }),
+
+/***/ "./node_modules/react-i18next/dist/es/utils.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/react-i18next/dist/es/utils.js ***!
+  \*****************************************************/
+/*! exports provided: warn, warnOnce, loadNamespaces, hasLoadedNamespace, getDisplayName */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "warn", function() { return warn; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "warnOnce", function() { return warnOnce; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "loadNamespaces", function() { return loadNamespaces; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "hasLoadedNamespace", function() { return hasLoadedNamespace; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getDisplayName", function() { return getDisplayName; });
+function warn() {
+  if (console && console.warn) {
+    var _console;
+
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    if (typeof args[0] === 'string') args[0] = "react-i18next:: ".concat(args[0]);
+
+    (_console = console).warn.apply(_console, args);
+  }
+}
+var alreadyWarned = {};
+function warnOnce() {
+  for (var _len2 = arguments.length, args = new Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {
+    args[_key2] = arguments[_key2];
+  }
+
+  if (typeof args[0] === 'string' && alreadyWarned[args[0]]) return;
+  if (typeof args[0] === 'string') alreadyWarned[args[0]] = new Date();
+  warn.apply(void 0, args);
+}
+function loadNamespaces(i18n, ns, cb) {
+  i18n.loadNamespaces(ns, function () {
+    if (i18n.isInitialized) {
+      cb();
+    } else {
+      var initialized = function initialized() {
+        setTimeout(function () {
+          i18n.off('initialized', initialized);
+        }, 0);
+        cb();
+      };
+
+      i18n.on('initialized', initialized);
+    }
+  });
+}
+function hasLoadedNamespace(ns, i18n) {
+  var options = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
+
+  if (!i18n.languages || !i18n.languages.length) {
+    warnOnce('i18n.languages were undefined or empty', i18n.languages);
+    return true;
+  }
+
+  var lng = i18n.languages[0];
+  var fallbackLng = i18n.options ? i18n.options.fallbackLng : false;
+  var lastLng = i18n.languages[i18n.languages.length - 1];
+  if (lng.toLowerCase() === 'cimode') return true;
+
+  var loadNotPending = function loadNotPending(l, n) {
+    var loadState = i18n.services.backendConnector.state["".concat(l, "|").concat(n)];
+    return loadState === -1 || loadState === 2;
+  };
+
+  if (options.bindI18n && options.bindI18n.indexOf('languageChanging') > -1 && i18n.services.backendConnector.backend && i18n.isLanguageChangingTo && !loadNotPending(i18n.isLanguageChangingTo, ns)) return false;
+  if (i18n.hasResourceBundle(lng, ns)) return true;
+  if (!i18n.services.backendConnector.backend) return true;
+  if (loadNotPending(lng, ns) && (!fallbackLng || loadNotPending(lastLng, ns))) return true;
+  return false;
+}
+function getDisplayName(Component) {
+  return Component.displayName || Component.name || (typeof Component === 'string' && Component.length > 0 ? Component : 'Unknown');
+}
+
+/***/ }),
+
+/***/ "./node_modules/react-i18next/dist/es/withSSR.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/react-i18next/dist/es/withSSR.js ***!
+  \*******************************************************/
+/*! exports provided: withSSR */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "withSSR", function() { return withSSR; });
+/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/defineProperty */ "./node_modules/@babel/runtime/helpers/defineProperty.js");
+/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _babel_runtime_helpers_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/objectWithoutProperties */ "./node_modules/@babel/runtime/helpers/objectWithoutProperties.js");
+/* harmony import */ var _babel_runtime_helpers_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _useSSR__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./useSSR */ "./node_modules/react-i18next/dist/es/useSSR.js");
+/* harmony import */ var _context__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./context */ "./node_modules/react-i18next/dist/es/context.js");
+/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./utils */ "./node_modules/react-i18next/dist/es/utils.js");
+
+
+
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0___default()(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+
+
+
+
+function withSSR() {
+  return function Extend(WrappedComponent) {
+    function I18nextWithSSR(_ref) {
+      var initialI18nStore = _ref.initialI18nStore,
+          initialLanguage = _ref.initialLanguage,
+          rest = _babel_runtime_helpers_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1___default()(_ref, ["initialI18nStore", "initialLanguage"]);
+
+      Object(_useSSR__WEBPACK_IMPORTED_MODULE_3__["useSSR"])(initialI18nStore, initialLanguage);
+      return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(WrappedComponent, _objectSpread({}, rest));
+    }
+
+    I18nextWithSSR.getInitialProps = Object(_context__WEBPACK_IMPORTED_MODULE_4__["composeInitialProps"])(WrappedComponent);
+    I18nextWithSSR.displayName = "withI18nextSSR(".concat(Object(_utils__WEBPACK_IMPORTED_MODULE_5__["getDisplayName"])(WrappedComponent), ")");
+    I18nextWithSSR.WrappedComponent = WrappedComponent;
+    return I18nextWithSSR;
+  };
+}
+
+/***/ }),
+
+/***/ "./node_modules/react-i18next/dist/es/withTranslation.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/react-i18next/dist/es/withTranslation.js ***!
+  \***************************************************************/
+/*! exports provided: withTranslation */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "withTranslation", function() { return withTranslation; });
+/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/defineProperty */ "./node_modules/@babel/runtime/helpers/defineProperty.js");
+/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/slicedToArray */ "./node_modules/@babel/runtime/helpers/slicedToArray.js");
+/* harmony import */ var _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _babel_runtime_helpers_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/objectWithoutProperties */ "./node_modules/@babel/runtime/helpers/objectWithoutProperties.js");
+/* harmony import */ var _babel_runtime_helpers_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _useTranslation__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./useTranslation */ "./node_modules/react-i18next/dist/es/useTranslation.js");
+/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./utils */ "./node_modules/react-i18next/dist/es/utils.js");
+
+
+
+
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0___default()(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+
+
+
+function withTranslation(ns) {
+  var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+  return function Extend(WrappedComponent) {
+    function I18nextWithTranslation(_ref) {
+      var forwardedRef = _ref.forwardedRef,
+          rest = _babel_runtime_helpers_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_2___default()(_ref, ["forwardedRef"]);
+
+      var _useTranslation = Object(_useTranslation__WEBPACK_IMPORTED_MODULE_4__["useTranslation"])(ns, rest),
+          _useTranslation2 = _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_1___default()(_useTranslation, 3),
+          t = _useTranslation2[0],
+          i18n = _useTranslation2[1],
+          ready = _useTranslation2[2];
+
+      var passDownProps = _objectSpread(_objectSpread({}, rest), {}, {
+        t: t,
+        i18n: i18n,
+        tReady: ready
+      });
+
+      if (options.withRef && forwardedRef) {
+        passDownProps.ref = forwardedRef;
+      } else if (!options.withRef && forwardedRef) {
+        passDownProps.forwardedRef = forwardedRef;
+      }
+
+      return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(WrappedComponent, passDownProps);
+    }
+
+    I18nextWithTranslation.displayName = "withI18nextTranslation(".concat(Object(_utils__WEBPACK_IMPORTED_MODULE_5__["getDisplayName"])(WrappedComponent), ")");
+    I18nextWithTranslation.WrappedComponent = WrappedComponent;
+
+    var forwardRef = function forwardRef(props, ref) {
+      return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(I18nextWithTranslation, Object.assign({}, props, {
+        forwardedRef: ref
+      }));
+    };
+
+    return options.withRef ? react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(forwardRef) : I18nextWithTranslation;
+  };
+}
+
+/***/ }),
+
 /***/ "./node_modules/react-is/cjs/react-is.development.js":
 /*!***********************************************************!*\
   !*** ./node_modules/react-is/cjs/react-is.development.js ***!
@@ -67270,6 +71348,40 @@ if (false) {} else {
 
 /***/ }),
 
+/***/ "./node_modules/void-elements/index.js":
+/*!*********************************************!*\
+  !*** ./node_modules/void-elements/index.js ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/**
+ * This file automatically generated from `pre-publish.js`.
+ * Do not manually edit.
+ */
+
+module.exports = {
+  "area": true,
+  "base": true,
+  "br": true,
+  "col": true,
+  "embed": true,
+  "hr": true,
+  "img": true,
+  "input": true,
+  "keygen": true,
+  "link": true,
+  "menuitem": true,
+  "meta": true,
+  "param": true,
+  "source": true,
+  "track": true,
+  "wbr": true
+};
+
+
+/***/ }),
+
 /***/ "./node_modules/webpack/buildin/global.js":
 /*!***********************************!*\
   !*** (webpack)/buildin/global.js ***!
@@ -67338,13 +71450,9 @@ module.exports = function(module) {
 /*!*****************************!*\
   !*** ./resources/js/app.js ***!
   \*****************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _kirschbaum_development_laravel_translations_loader_kirschbaum_development_laravel_translations_loader__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @kirschbaum-development/laravel-translations-loader!@kirschbaum-development/laravel-translations-loader */ "./node_modules/@kirschbaum-development/laravel-translations-loader/all.js!./node_modules/@kirschbaum-development/laravel-translations-loader/all.js");
-/* harmony import */ var _kirschbaum_development_laravel_translations_loader_kirschbaum_development_laravel_translations_loader__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_kirschbaum_development_laravel_translations_loader_kirschbaum_development_laravel_translations_loader__WEBPACK_IMPORTED_MODULE_0__);
 /**
  * First we will load all of this project's JavaScript dependencies which
  * includes React and other helpers. It's a great starting point while
@@ -67361,8 +71469,6 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 __webpack_require__(/*! ./components/experiments/arduino/ExperimentTimer */ "./resources/js/components/experiments/arduino/ExperimentTimer.js");
 
 __webpack_require__(/*! ./components/experiments/arduino/Menu */ "./resources/js/components/experiments/arduino/Menu.js");
-
-
 
 /***/ }),
 
@@ -67527,6 +71633,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _MenuItem__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./MenuItem */ "./resources/js/components/experiments/arduino/MenuItem.js");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
+function _readOnlyError(name) { throw new TypeError("\"" + name + "\" is read-only"); }
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
@@ -67578,7 +71686,8 @@ var ArduinoMenu = /*#__PURE__*/function (_React$Component) {
           tts: obj.tts,
           tte: obj.tte,
           name: name,
-          queue_qty: obj.queue_qty
+          queue_qty: obj.queue_qty,
+          lang: _this2.props.lang
         });
       }));
     }
@@ -67602,8 +71711,15 @@ if (menu) {
     }
   }
 
+  var lang = menu.getAttribute('data-lang');
+
+  if (!lang) {
+    lang = (_readOnlyError("lang"), 'en');
+  }
+
   react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ArduinoMenu, {
-    menu: json
+    menu: json,
+    lang: lang
   }), menu);
 }
 
@@ -67621,6 +71737,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _ExperimentTimer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ExperimentTimer */ "./resources/js/components/experiments/arduino/ExperimentTimer.js");
+/* harmony import */ var _helpers_lang_withTransHook__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../helpers/lang/withTransHook */ "./resources/js/helpers/lang/withTransHook.js");
+/* harmony import */ var _kirschbaum_development_laravel_translations_loader_kirschbaum_development_laravel_translations_loader__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @kirschbaum-development/laravel-translations-loader!@kirschbaum-development/laravel-translations-loader */ "./node_modules/@kirschbaum-development/laravel-translations-loader/all.js!./node_modules/@kirschbaum-development/laravel-translations-loader/all.js");
+/* harmony import */ var _kirschbaum_development_laravel_translations_loader_kirschbaum_development_laravel_translations_loader__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_kirschbaum_development_laravel_translations_loader_kirschbaum_development_laravel_translations_loader__WEBPACK_IMPORTED_MODULE_3__);
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -67646,6 +71765,8 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 
 
 
+
+
 var ArduinoMenuItem = /*#__PURE__*/function (_React$Component) {
   _inherits(ArduinoMenuItem, _React$Component);
 
@@ -67660,37 +71781,38 @@ var ArduinoMenuItem = /*#__PURE__*/function (_React$Component) {
   _createClass(ArduinoMenuItem, [{
     key: "render",
     value: function render() {
+      var trans = this.props.trans;
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("nav", {
-        "class": "mt-2"
+        className: "mt-2"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
-        "class": "nav nav-pills nav-sidebar flex-column",
+        className: "nav nav-pills nav-sidebar flex-column",
         "data-widget": "treeview",
         role: "menu",
         "data-accordion": "false"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        "class": "nav-item has-treeview"
+        className: "nav-item has-treeview"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-        "class": "nav-link"
+        className: "nav-link"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-        "class": "nav-icon fas fa-copy"
+        className: "nav-icon fas fa-copy"
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, trans("all.".concat(this.props.name)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-        "class": "fas fa-angle-left right"
+        className: "fas fa-angle-left right"
       }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
-        "class": "nav nav-treeview"
+        className: "nav nav-treeview"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-        "class": "nav-item"
+        className: "nav-item"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-        "class": "nav-link title"
+        className: "nav-link title"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, trans('experiments.tts'), ":"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ExperimentTimer__WEBPACK_IMPORTED_MODULE_1__["default"], {
         time: this.props.tts
       })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-        "class": "nav-link title"
+        className: "nav-link title"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, trans('experiments.tte'), ":"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ExperimentTimer__WEBPACK_IMPORTED_MODULE_1__["default"], {
         time: this.props.tte
       })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-        "class": "nav-link title"
+        className: "nav-link title"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, trans('experiments.queue_qty'), ": "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-        "class": "badge badge-warning right"
+        className: "badge badge-warning right"
       }, this.props.queue_qty)))))));
     }
   }]);
@@ -67698,7 +71820,74 @@ var ArduinoMenuItem = /*#__PURE__*/function (_React$Component) {
   return ArduinoMenuItem;
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
-/* harmony default export */ __webpack_exports__["default"] = (ArduinoMenuItem);
+/* harmony default export */ __webpack_exports__["default"] = (Object(_helpers_lang_withTransHook__WEBPACK_IMPORTED_MODULE_2__["default"])(ArduinoMenuItem));
+
+/***/ }),
+
+/***/ "./resources/js/helpers/lang/i18n.js":
+/*!*******************************************!*\
+  !*** ./resources/js/helpers/lang/i18n.js ***!
+  \*******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _kirschbaum_development_laravel_translations_loader_namespace_translation_kirschbaum_development_laravel_translations_loader__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @kirschbaum-development/laravel-translations-loader?namespace=translation!@kirschbaum-development/laravel-translations-loader */ "./node_modules/@kirschbaum-development/laravel-translations-loader/all.js?namespace=translation!./node_modules/@kirschbaum-development/laravel-translations-loader/all.js");
+/* harmony import */ var _kirschbaum_development_laravel_translations_loader_namespace_translation_kirschbaum_development_laravel_translations_loader__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_kirschbaum_development_laravel_translations_loader_namespace_translation_kirschbaum_development_laravel_translations_loader__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var i18next__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! i18next */ "./node_modules/i18next/dist/esm/i18next.js");
+/* harmony import */ var react_i18next__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-i18next */ "./node_modules/react-i18next/dist/es/index.js");
+
+
+
+i18next__WEBPACK_IMPORTED_MODULE_1__["default"].use(react_i18next__WEBPACK_IMPORTED_MODULE_2__["initReactI18next"]) // passes i18n down to react-i18next
+.init({
+  resources: _kirschbaum_development_laravel_translations_loader_namespace_translation_kirschbaum_development_laravel_translations_loader__WEBPACK_IMPORTED_MODULE_0___default.a,
+  lng: 'en',
+  fallbackLng: 'en',
+  interpolation: {
+    escapeValue: false
+  }
+});
+/* harmony default export */ __webpack_exports__["default"] = (i18next__WEBPACK_IMPORTED_MODULE_1__["default"]);
+
+/***/ }),
+
+/***/ "./resources/js/helpers/lang/withTransHook.js":
+/*!****************************************************!*\
+  !*** ./resources/js/helpers/lang/withTransHook.js ***!
+  \****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return withTransHook; });
+/* harmony import */ var _lang_i18n__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../lang/i18n */ "./resources/js/helpers/lang/i18n.js");
+/* harmony import */ var react_i18next__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-i18next */ "./node_modules/react-i18next/dist/es/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+
+
+
+function withTransHook(Component) {
+  return function WrappedComponent(props) {
+    var _props$lang;
+
+    var lang = (_props$lang = props.lang) !== null && _props$lang !== void 0 ? _props$lang : 'en';
+    _lang_i18n__WEBPACK_IMPORTED_MODULE_0__["default"].changeLanguage(lang);
+
+    var _useTranslation = Object(react_i18next__WEBPACK_IMPORTED_MODULE_1__["useTranslation"])(),
+        t = _useTranslation.t;
+
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Component, _extends({}, props, {
+      trans: t,
+      i18n: _lang_i18n__WEBPACK_IMPORTED_MODULE_0__["default"]
+    }));
+  };
+}
 
 /***/ }),
 

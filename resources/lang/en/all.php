@@ -397,6 +397,5 @@ return [
     'zone_5' => 'Turn on perimeter control and simulate the crossing of the perimeter by opening the garage door. Review the result of turning on the light alarm in the experiment window.',
     'zone_6' => 'Turn on/off perimeter control',
     'zone_7' => 'Crossing the perimeter',
-    'zone_8' => 'Infrared perimeter example',
-];
-?>
+    'zone_8' => 'Infrared perimeter example'
+    ];

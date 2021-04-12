@@ -11,7 +11,7 @@
     </a>
 
     <!-- Sidebar -->
-    <div class="sidebar" id="arduino-menu" data-menu="{{ json_encode($menu) }}">
+    <div class="sidebar" id="arduino-menu" data-menu="{{ json_encode($menu) }}" data-lang="{{  app()->getLocale()  }}">
      
     </div>
     <!-- /.sidebar -->

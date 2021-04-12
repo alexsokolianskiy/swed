@@ -12,7 +12,7 @@ class ArduinoMenu extends React.Component {
         return <div>
             {Object.keys(this.props.menu).map((name) => {
                 const obj = this.props.menu[name];
-                return <ArduinoMenuItem tts={obj.tts} tte={obj.tte} name={name} queue_qty={obj.queue_qty}></ArduinoMenuItem>
+                return <ArduinoMenuItem tts={obj.tts} tte={obj.tte} name={name} queue_qty={obj.queue_qty} lang={this.props.lang}></ArduinoMenuItem>
             })}
         </div>
     }
@@ -32,5 +32,9 @@ if (menu) {
             console.log('wrong experiments json');
         }
     }
-    ReactDOM.render(<ArduinoMenu menu={json} />, menu);
+    const lang = menu.getAttribute('data-lang');
+    if (!lang) {
+        lang = 'en';
+    }
+    ReactDOM.render(<ArduinoMenu menu={json} lang={lang} />, menu);
 }

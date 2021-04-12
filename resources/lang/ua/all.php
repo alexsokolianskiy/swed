@@ -772,6 +772,5 @@ sudo ./openhab.sh',
 форм-фактор',
 'rs_title3' =>'Етапи роботи з сервісом',
 'rs_pic1' =>'<img src="/images/rs_manufacturer_ukr.png"/ width="150" hight="150" alt="KnowlageBase">',
-'rs_pic2' =>'<img src="/images/rs_platforms_ukr.png"/ width="150" hight="150" alt="Platforms">',
+'rs_pic2' =>'<img src="/images/rs_platforms_ukr.png"/ width="150" hight="150" alt="Platforms">'
 ];
-?>
