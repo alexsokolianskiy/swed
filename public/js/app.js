@@ -71666,28 +71666,24 @@ var ArduinoMenu = /*#__PURE__*/function (_React$Component) {
   var _super = _createSuper(ArduinoMenu);
 
   function ArduinoMenu(props) {
-    var _this;
-
     _classCallCheck(this, ArduinoMenu);
 
-    _this = _super.call(this, props);
-    console.log("menu props is", props);
-    return _this;
+    return _super.call(this, props);
   }
 
   _createClass(ArduinoMenu, [{
     key: "render",
     value: function render() {
-      var _this2 = this;
+      var _this = this;
 
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, Object.keys(this.props.menu).map(function (name) {
-        var obj = _this2.props.menu[name];
+        var obj = _this.props.menu[name];
         return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_MenuItem__WEBPACK_IMPORTED_MODULE_3__["default"], {
           tts: obj.tts,
           tte: obj.tte,
           name: name,
           queue_qty: obj.queue_qty,
-          lang: _this2.props.lang
+          lang: _this.props.lang
         });
       }));
     }

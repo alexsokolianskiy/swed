@@ -13,6 +13,6 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         // $this->call(UserSeeder::class);
-        $this->call(ArduinoExperimentSeeder::class);
+        $this->call(\Database\Seeders\Experiment\ArduinoExperimentSeeder::class);
     }
 }

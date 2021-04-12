@@ -1,5 +1,5 @@
 <?php
-namespace Database\Seeders;
+namespace Database\Seeders\Experiment;
 use App\Models\Experiment\Experiment;
 use Illuminate\Database\Seeder;
 

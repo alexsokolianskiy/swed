@@ -6,7 +6,6 @@ import ArduinoMenuItem from './MenuItem';
 class ArduinoMenu extends React.Component {
     constructor(props) {
         super(props);
-        console.log("menu props is", props);
     }
     render() {
         return <div>
