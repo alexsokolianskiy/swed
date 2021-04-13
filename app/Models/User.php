@@ -1,10 +1,11 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
+use Illuminate\Notifications\Notifiable;
+use App\Models\Experiment\ExperimentQueue;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
-use Illuminate\Notifications\Notifiable;
 
 class User extends Authenticatable
 {
@@ -36,4 +37,12 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    /**
+     * Relation to experiment queue table
+     * @return \Illuminate\Database\Eloquent\Relations\HasOne
+     */
+    public function expQueueInstance() {
+        return $this->hasOne(ExperimentQueue::class);
+    }
 }

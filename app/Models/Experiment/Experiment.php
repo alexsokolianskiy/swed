@@ -4,6 +4,7 @@ namespace App\Models\Experiment;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Builder;
+use App\Models\Experiment\ExperimentQueue;
 
 class Experiment extends Model
 {
@@ -70,5 +71,13 @@ class Experiment extends Model
     public function scopeOpenHab(Builder $query)
     {
         return $query->where('type', static::OPEN_HAB);
+    }
+
+    /**
+     * Relation to experiment queue table
+     * @return \Illuminate\Database\Eloquent\Relations\HasOne
+     */
+    public function expQueueInstance() {
+        return $this->hasOne(ExperimentQueue::class);
     }
 }
