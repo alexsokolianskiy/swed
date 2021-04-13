@@ -8,6 +8,7 @@ class Menu {
         'led',
         'display'
     ];
+
     public function getExperiments() {
         $result = [];
         foreach ($this->experiments as $experiment) {
@@ -19,5 +20,11 @@ class Menu {
         }
 
         return $result;
+    }
+
+    public function getArduinoExperiments() {
+        $exps = ExperimentQueue::with(['experiments' => function($query) {
+            $query->whereIn('experiments.name', $this->experiments);
+        }])->get();
     }
 }

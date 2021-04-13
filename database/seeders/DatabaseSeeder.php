@@ -14,5 +14,6 @@ class DatabaseSeeder extends Seeder
     {
         // $this->call(UserSeeder::class);
         $this->call(\Database\Seeders\Experiment\ArduinoExperimentSeeder::class);
+        $this->call(\Database\Seeders\TestSeeder::class);
     }
 }

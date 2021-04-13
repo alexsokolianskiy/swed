@@ -6,9 +6,11 @@ use App\Models\User;
 use App\Models\Experiment\Experiment;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Database\Factories\Experiments\ExperimentQueueFactory;
 
 class ExperimentQueue extends Model
 {
+    use HasFactory;
         /**
      * The attributes that are mass assignable.
      *
@@ -59,5 +61,15 @@ class ExperimentQueue extends Model
      */
     public function user() {
         return $this->belongsTo(User::class);
+    }
+
+    /**
+     * Create a new factory instance for the model.
+     *
+     * @return \Illuminate\Database\Eloquent\Factories\Factory
+     */
+    protected static function newFactory()
+    {
+        return ExperimentQueueFactory::new();
     }
 }
