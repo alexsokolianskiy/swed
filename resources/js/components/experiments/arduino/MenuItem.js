@@ -23,11 +23,13 @@ class ArduinoMenuItem extends React.Component {
                         <li className="nav-item">
                             <span className="nav-link title" >
                                 <i>{trans('experiments.tts')}:</i>
-                                <ExperimentTimer time={this.props.tts}></ExperimentTimer>
+                                {/* <ExperimentTimer time={this.props.tts}></ExperimentTimer> */}
+                                <span className="badge badge-info right">{this.props.tts}</span>
                             </span>
                             <span className="nav-link title">
                                 <i>{trans('experiments.tte')}:</i>
-                                <ExperimentTimer time={this.props.tte}></ExperimentTimer>
+                                {/* <ExperimentTimer time={this.props.tte}></ExperimentTimer> */}
+                                <span className="badge badge-info right">{this.props.tte}</span>
                             </span>
 
                             <span className="nav-link title">

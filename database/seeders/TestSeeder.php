@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use App\Models\Experiment\ExperimentQueue;
+use App\Models\User;
 
 class TestSeeder extends Seeder
 {
@@ -14,6 +15,7 @@ class TestSeeder extends Seeder
      */
     public function run()
     {
-       ExperimentQueue::factory()->count(10)->create();
+        User::factory()->count(20)->create();
+        ExperimentQueue::factory()->count(10)->create();
     }
 }
