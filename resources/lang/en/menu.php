@@ -11,4 +11,4 @@ return [
     'servo' => 'Servo',
     'LED' => 'Distance sensor',
     'display' => 'Display',
-]
+];

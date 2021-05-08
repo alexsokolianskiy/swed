@@ -48,6 +48,8 @@ Route::group(['namespace' => 'Arduino', 'prefix' => 'experiments'], function () 
         Route::get('/led', 'RunController@led')->name('experiments.led.run');
         Route::get('/display', 'RunController@display')->name('experiments.display.run');
     });
+    //register
+    Route::post('/register', 'DescriptionController@registerForExp')->name('experiments.register');
 });
 
 Auth::routes();
