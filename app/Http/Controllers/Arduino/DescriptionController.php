@@ -7,6 +7,10 @@ use App\Jobs\ExperimentJob;
 use App\Models\Experiment\Experiment;
 use App\Models\Experiment\ExperimentQueue;
 use App\Services\Experiment\Example;
+<<<<<<< Updated upstream
+=======
+use App\Services\QueueService;
+>>>>>>> Stashed changes
 use Exception;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
@@ -29,7 +33,12 @@ class DescriptionController extends Controller
 
             $model->save();
 
+<<<<<<< Updated upstream
             $this->_addQueue($model, auth()->user()->name);
+=======
+            $timeStart = QueueService::_timeStart($model);
+            QueueService::_addQueue($model, auth()->user()->name, $timeStart);
+>>>>>>> Stashed changes
 
             return response()->json(['model' => $model]);
         } catch (Exception $ex) {
@@ -41,7 +50,11 @@ class DescriptionController extends Controller
     {
         if (Auth::check()) {
             return view('arduino.experiments.distance.page', [
+<<<<<<< Updated upstream
                 'queue' => $this->_expQueueInstance(1)
+=======
+                'queue' => QueueService::_expQueueInstance(1)
+>>>>>>> Stashed changes
             ]);
         }
 
@@ -52,7 +65,11 @@ class DescriptionController extends Controller
     {
         if (Auth::check()) {
             return view('arduino.experiments.servo.page', [
+<<<<<<< Updated upstream
                 'queue' => $this->_expQueueInstance(2)
+=======
+                'queue' => QueueService::_expQueueInstance(2)
+>>>>>>> Stashed changes
             ]);
         }
 
@@ -63,7 +80,11 @@ class DescriptionController extends Controller
     {
         if (Auth::check()) {
             return view('arduino.experiments.led.page', [
+<<<<<<< Updated upstream
                 'queue' => $this->_expQueueInstance(3)
+=======
+                'queue' => QueueService::_expQueueInstance(3)
+>>>>>>> Stashed changes
             ]);
         }
 
@@ -76,7 +97,11 @@ class DescriptionController extends Controller
 
         if (Auth::check()) {
             return view('arduino.experiments.display.page', [
+<<<<<<< Updated upstream
                 'queue' => $this->_expQueueInstance(4),
+=======
+                'queue' => QueueService::_expQueueInstance(4),
+>>>>>>> Stashed changes
                 'examples' => $examples
             ]);
         }
