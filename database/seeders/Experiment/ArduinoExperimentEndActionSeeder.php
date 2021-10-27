@@ -1,8 +1,9 @@
 <?php
 namespace Database\Seeders\Experiment;
 
-use App\Models\Experiment\Experiment;
 use Illuminate\Database\Seeder;
+use App\Models\Experiment\Experiment;
+use App\Models\Experiment\ExperimentEndAction;
 
 class ArduinoExperimentEndActionSeeder extends Seeder
 {
@@ -13,12 +14,13 @@ class ArduinoExperimentEndActionSeeder extends Seeder
      */
     public function run()
     {
-        $experiments = Experiment::arduino()->all();
+        $experiments = Experiment::arduino()->get();
         foreach ($experiments as $experiment) {
-    
-            $experiment->endAction()->attach([
-                
-            ]);
+            $emptyCode = new ExperimentEndAction();
+            $emptyCode->action = 'void setup(){}; void loop(){}';
+            if (!$experiment->endAction) {
+                $experiment->endAction()->save($emptyCode);
+            }
         }
     }
 }
