@@ -26,10 +26,12 @@ services:
       - "3388:3306"
     ## keep mysql data on localhost so we don't lose them ##
     volumes:
-      - ./docker-volumes-data/db:/var/lib/database
+      - ./docker-volumes-data/db:/var/lib/mysql
     environment:
       MYSQL_DATABASE: swed
       MYSQL_ROOT_PASSWORD: swed
+      MYSQL_USER: swed
+      MYSQL_PASSWORD: swed
   redis:
     image: redis
     volumes:
