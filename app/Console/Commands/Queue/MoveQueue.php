@@ -40,6 +40,7 @@ class MoveQueue extends Command
     {
         $service = new Queue();
         $service->removeExpired();
+        $service->activateNext();
         return 0;
     }
 }

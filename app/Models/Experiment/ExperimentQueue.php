@@ -43,7 +43,6 @@ class ExperimentQueue extends Model
      * @var array
      */
     protected $dates = [
-        'start', 'end'
     ];
 
     /**

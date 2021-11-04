@@ -28,8 +28,6 @@ class ExperimentQueueFactory extends Factory
         $user = User::inRandomOrder()->first();
         $start = rand(time()-1000, time() + 1000);
         $end = $start + $arduinoExperiment->time;
-        echo "start ";
-        echo $start;
         return [
             'experiment_id' => $arduinoExperiment->id,
             'start' => $start,

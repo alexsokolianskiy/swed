@@ -1,14 +1,15 @@
 <?php
 namespace App\Services\Experiment;
 
-use Illuminate\Support\Carbon;
+use Carbon\Carbon;
 use App\Models\Experiment\Experiment;
 use App\Models\Experiment\ExperimentQueue;
 
 class Queue {
     public function removeExpired() {
+
         $experiments = ExperimentQueue::where(
-            'end', '>=', Carbon::now()
+            'end', '<=', Carbon::now()->timestamp
         )->get();
         $expForFree = [];
         foreach($experiments as $exp) {
@@ -25,7 +26,13 @@ class Queue {
 
 
     public function activateNext() {
-
+        ExperimentQueue::where(
+            'start', '<', Carbon::now()->timestamp
+        )->where(
+            'status', '=', 0
+        )->update([
+            'status' => 1
+        ]);
     }
 
     public function append() {
