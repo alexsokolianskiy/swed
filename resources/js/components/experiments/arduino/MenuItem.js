@@ -9,6 +9,9 @@ class ArduinoMenuItem extends React.Component {
         console.log(this.props);
     }
 
+    componentDidMount() {
+    }
+
     render() {
         const trans = this.props.trans;
         return <nav className="mt-2">
