@@ -16,7 +16,9 @@
 <body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">
     @include('layouts.experiment.partials.top-navbar')
-    @include('layouts.experiment.partials.left')
+    @include('layouts.experiment.partials.left', [
+        'experiment' => $experiment
+    ])
     <div class="content-wrapper">
         <section class="content">
             <div class="container-fluid">

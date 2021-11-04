@@ -75,4 +75,47 @@ class Queue {
         }
         return true;
     }
+
+    public function getArduinoExperiments() {
+        return Experiment::arduino()->get();
+    }
+
+    public function getIotExperiments() {
+        return Experiment::openHab()->get();
+    }
+
+    public function timeToStart($expId, $userId)
+    {
+        $queueRow = $this->getUserQueueRow($expId, $userId);
+        if ($queueRow) {
+            return $queueRow->start - Carbon::now()->timestamp;
+        }
+
+        return null;
+    }
+
+    public function timeToEnd($expId, $userId)
+    {
+        $queueRow = $this->getUserQueueRow($expId, $userId);
+        if ($queueRow) {
+            return $queueRow->end - Carbon::now()->timestamp;
+        }
+
+        return null;
+    }
+
+    public function getUserQueueRow($expId, $userId) {
+        return ExperimentQueue::where(
+            'experiment_id', '=', $expId
+        )->where(
+            'user_id', '=', $userId
+        )->first();
+    }
+
+    public function totalLength($expId)
+    {
+        return ExperimentQueue::where(
+            'experiment_id', '=', $expId
+        )->count();
+    }
 }

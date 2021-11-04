@@ -11,7 +11,7 @@ class ArduinoMenu extends React.Component {
         return <div>
             {Object.keys(this.props.menu).map((name) => {
                 const obj = this.props.menu[name];
-                return <ArduinoMenuItem tts={obj.tts} tte={obj.tte} name={name} queue_qty={obj.queue_qty} lang={this.props.lang}></ArduinoMenuItem>
+                return <ArduinoMenuItem active={this.props.active} tts={obj.tts} tte={obj.tte} name={name} queue_qty={obj.queue_qty} lang={this.props.lang}></ArduinoMenuItem>
             })}
         </div>
     }
@@ -35,5 +35,9 @@ if (menu) {
     if (!lang) {
         lang = 'en';
     }
-    ReactDOM.render(<ArduinoMenu menu={json} lang={lang} />, menu);
+    const active = menu.getAttribute('data-active');
+    if (!active) {
+        active = null;
+    }
+    ReactDOM.render(<ArduinoMenu active={active} menu={json} lang={lang} />, menu);
 }

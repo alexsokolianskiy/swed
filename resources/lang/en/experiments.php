@@ -5,5 +5,6 @@ return [
     'run' => 'Run',
     'tts' => "Time to start",
     'tte' => "Time to end",
-    'queue_qty' => "Queue length"
+    'queue_qty' => "Queue length",
+    'stay_queue' => 'Get in',
 ];

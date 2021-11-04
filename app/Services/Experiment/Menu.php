@@ -1,30 +1,31 @@
 <?php
 namespace App\Services\Experiment;
 
-class Menu {
-    protected $experiments = [
-        'distance',
-        'servo',
-        'led',
-        'display'
-    ];
+use App\Services\Experiment\Queue;
 
-    public function getExperiments() {
+class Menu {
+    private $queueService;
+    protected $arduinoExperiments;
+    protected $iotExperiments;
+
+    public function __construct() {
+        $this->queueService = new Queue();
+        $this->arduinoExperiments = $this->queueService->getArduinoExperiments();
+        $this->iotExperiments = $this->queueService->getIotExperiments();
+    }
+
+    public function getExperiments($userId) {
         $result = [];
-        foreach ($this->experiments as $experiment) {
-            $result[$experiment] = [
-                'tts' => null,
-                'tte' => null,
-                'queue_qty' => null
+        foreach ($this->arduinoExperiments as $experiment) {
+            $result[$experiment->name] = [
+                'tts' => $this->queueService->timeToStart($experiment->id, $userId),
+                'tte' => $this->queueService->timeToEnd($experiment->id, $userId),
+                'queue_qty' => $this->queueService->totalLength($experiment->id)
             ];
         }
 
         return $result;
     }
 
-    public function getArduinoExperiments() {
-        $exps = ExperimentQueue::with(['experiments' => function($query) {
-            $query->whereIn('experiments.name', $this->experiments);
-        }])->get();
-    }
+
 }
