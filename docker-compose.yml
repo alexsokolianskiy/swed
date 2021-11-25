@@ -1,16 +1,22 @@
-version: '2'
+version: '3'
+networks:
+  app-network:
+    driver: bridge
 services:
   webserver:
+    container_name: swed_nginx
     image: nginx:alpine
     volumes:
-      - ./:/var/www
-            ## copy nginx configuration for our application ##
+      - ./:/var/www ## copy nginx configuration for our application ##
       - ./docker/nginx/conf.d/:/etc/nginx/conf.d/
     ports:
-            ## run the webserver on port 8080 ##
+      ## run the webserver on port 8080 ##
       - "8080:80"
+    networks:
+      - app-network
   app:
-        ## read php image from our custom docker image ##
+    container_name: swed_php_app
+    ## read php image from our custom docker image ##
     build:
       context: .
       dockerfile: ./docker/php/Dockerfile
@@ -18,8 +24,10 @@ services:
       ## copy project files to /var/www ##
       - ./:/var/www
     working_dir: /var/www
-
+    networks:
+      - app-network
   db:
+    container_name: swed_mysql
     image: mysql:5.7
     ## expose the mysql port to our machine so we can access it from any mysql-client like TablePlus ##
     ports:
@@ -32,8 +40,13 @@ services:
       MYSQL_ROOT_PASSWORD: swed
       MYSQL_USER: swed
       MYSQL_PASSWORD: swed
+    networks:
+      - app-network
   redis:
+    container_name: swed_redis
     image: redis
     volumes:
       ## keep redis data on localhost so we don't lose them ##
       - ./docker-volumes-data/redis:/data
+    networks:
+      - app-network
