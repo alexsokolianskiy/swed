@@ -12,7 +12,7 @@
     "devDependencies": {
         "@babel/preset-react": "^7.0.0",
         "@kirschbaum-development/laravel-translations-loader": "^1.2.0",
-        "axios": ">=0.21.2",
+        "axios": "^0.25.0",
         "babel-preset-react": "^6.24.1",
         "babel-preset-stage-1": "^6.24.1",
         "bootstrap": "^4.0.0",
@@ -30,7 +30,7 @@
     "dependencies": {
         "core-js": "^3.9.1",
         "cross-env": "^7.0.3",
-        "i18next": "^20.2.1",
+        "i18next": "^20.6.1",
         "react-countdown": "^2.3.1",
         "react-i18next": "^11.8.12",
         "timezz": "^6.1.1",
